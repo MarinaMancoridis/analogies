@@ -6,8 +6,9 @@ N_TRIALS = 10
 RNG = random.Random()
 
 ANALOGY_SPECS = [
-    {"key": "identity", "module": "analogies.analogy_types.identity", "weight": 1},
-    {"key": "cyclic",   "module": "analogies.analogy_types.cyclic",   "weight": 1},
+    # {"key": "identity", "module": "analogies.analogy_types.identity", "weight": 1},
+    # {"key": "cyclic",   "module": "analogies.analogy_types.cyclic",   "weight": 1},
+    {"key": "pair",     "module": "analogies.analogy_types.pair_analogy", "weight": 1},
 ]
 
 def load_runners(specs):
@@ -31,72 +32,75 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     print(f"Run dir: {out_dir}")
 
-    # Run-level combined stream + latest snapshot
-    combined_path = os.path.join(out_dir, "trials.ndjson")   # all types, appended per trial
-    latest_path   = os.path.join(out_dir, "latest.json")     # snapshot of last trial
+    combined_path = os.path.join(out_dir, "trials.ndjson")  # all types combined
+    latest_path   = os.path.join(out_dir, "latest.json")    # snapshot of last trial
 
-    # Start timestamp for this run
     started_at = datetime.datetime.utcnow().isoformat() + "Z"
 
-    runners = load_runners(ANALOGY_SPECS)
-    keys = list(runners.keys())
-    weights = [runners[k]["weight"] for k in keys]
+    runners = load_runners(ANALOGY_SPECS)   # weights ignored in per-type mode
+    keys = list(runners.keys())             # deterministic order = insertion order of ANALOGY_SPECS
 
-    # Per-type dirs, paths, counters — derived from registry
+    # ------ CONFIG: N trials per type ------
+    N_TRIALS_PER_TYPE = 10
+    total_planned = N_TRIALS_PER_TYPE * len(keys)
+
+    # Per-type dirs, paths, counters
     type_dirs   = {k: os.path.join(out_dir, k) for k in keys}
     trial_paths = {k: os.path.join(type_dirs[k], "trials.ndjson") for k in keys}
     for k, d in type_dirs.items():
         os.makedirs(d, exist_ok=True)
-        # touch the per-type stream so it's visible immediately
         if not os.path.exists(trial_paths[k]):
             open(trial_paths[k], "a", encoding="utf-8").close()
     counts = {k: {"n": 0, "hits": 0} for k in keys}
 
-    summary = None  # will be filled each iteration
+    summary = None
 
-    for i in range(N_TRIALS):
-        kind = random.choices(keys, weights=weights, k=1)[0]
-        print(f"\n===== Trial {i+1}/{N_TRIALS} [{kind}] =====")
+    # --------- Run N trials per type (deterministic, batched) ---------
+    trial_idx = 0
+    for kind in keys:  # identity -> cyclic -> pair -> ...
+        for j in range(N_TRIALS_PER_TYPE):
+            trial_idx += 1
+            print(f"\n===== Trial {trial_idx}/{total_planned} [{kind}] ({j+1}/{N_TRIALS_PER_TYPE}) =====")
 
-        trial = runners[kind]["run"](MODEL, verbose=True)
+            trial = runners[kind]["run"](MODEL, verbose=True)
 
-        # ---- Write immediately on every completion ----
-        append_jsonl(trial_paths[kind], trial)                              # per-type stream
-        append_jsonl(combined_path, trial)                                  # run-level combined stream
-        write_summary(os.path.join(type_dirs[kind], "latest.json"), trial)  # per-type snapshot
-        write_summary(latest_path, trial)                                   # run-level snapshot
+            # Write immediately
+            append_jsonl(trial_paths[kind], trial)                              # per-type stream
+            append_jsonl(combined_path, trial)                                  # run-level stream
+            write_summary(os.path.join(type_dirs[kind], "latest.json"), trial)  # per-type snapshot
+            write_summary(latest_path, trial)                                   # run-level snapshot
 
-        # Update counters
-        counts[kind]["n"] += 1
-        counts[kind]["hits"] += int(infer_hit(trial))
+            # Update counters
+            counts[kind]["n"] += 1
+            counts[kind]["hits"] += int(infer_hit(trial))
 
-        # Per-type summary (kept current)
-        type_summary = {
-            "model": MODEL,
-            "n": counts[kind]["n"],
-            "hits": counts[kind]["hits"],
-            "success_rate": (counts[kind]["hits"] / counts[kind]["n"]) if counts[kind]["n"] else 0.0,
-        }
-        write_summary(os.path.join(type_dirs[kind], "summary.json"), type_summary)
-
-        # Run summary (kept current)
-        overall_n = sum(v["n"] for v in counts.values())
-        overall_h = sum(v["hits"] for v in counts.values())
-        summary = {
-            "model": MODEL,
-            "n_trials_so_far": overall_n,
-            "overall_success_rate": (overall_h / overall_n) if overall_n else 0.0,
-            "by_type": {
-                t: {
-                    "n": counts[t]["n"],
-                    "hits": counts[t]["hits"],
-                    "success_rate": (counts[t]["hits"] / counts[t]["n"]) if counts[t]["n"] else 0.0
-                } for t in counts
+            # Per-type summary (kept current)
+            type_summary = {
+                "model": MODEL,
+                "n": counts[kind]["n"],
+                "hits": counts[kind]["hits"],
+                "success_rate": (counts[kind]["hits"] / counts[kind]["n"]) if counts[kind]["n"] else 0.0,
             }
-        }
-        write_summary(os.path.join(out_dir, "summary.json"), summary)
+            write_summary(os.path.join(type_dirs[kind], "summary.json"), type_summary)
 
-    # ---- End-of-run record (append once per run) ----
+            # Run summary (kept current)
+            overall_n = sum(v["n"] for v in counts.values())
+            overall_h = sum(v["hits"] for v in counts.values())
+            summary = {
+                "model": MODEL,
+                "n_trials_so_far": overall_n,
+                "overall_success_rate": (overall_h / overall_n) if overall_n else 0.0,
+                "by_type": {
+                    t: {
+                        "n": counts[t]["n"],
+                        "hits": counts[t]["hits"],
+                        "success_rate": (counts[t]["hits"] / counts[t]["n"]) if counts[t]["n"] else 0.0
+                    } for t in counts
+                }
+            }
+            write_summary(os.path.join(out_dir, "summary.json"), summary)
+
+    # ---- End-of-run record ----
     ended_at = datetime.datetime.utcnow().isoformat() + "Z"
     run_record = {
         "run_id": os.path.basename(out_dir),
@@ -110,8 +114,8 @@ def main():
     }
 
     runs_index = os.path.join(base_responses, "runs.ndjson")
-    append_jsonl(runs_index, run_record)                          # global append-only log
-    write_summary(os.path.join(base_responses, "latest_run.json"), run_record)  # snapshot
+    append_jsonl(runs_index, run_record)
+    write_summary(os.path.join(base_responses, "latest_run.json"), run_record)
 
     print("\n=== Run complete ===")
     if summary:
