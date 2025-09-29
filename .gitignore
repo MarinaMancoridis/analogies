@@ -1,0 +1,5 @@
+responses/*
+!responses/.gitkeep
+echo "*.pyc
+__pycache__/
+.env
