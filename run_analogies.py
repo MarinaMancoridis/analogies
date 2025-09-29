@@ -1,4 +1,4 @@
-import os, json, random, importlib, datetime  # <-- add datetime
+import os, json, random, importlib, datetime
 from analogies.common import make_run_dir, append_jsonl, write_summary
 
 MODEL = "gpt-5"
@@ -25,31 +25,61 @@ def infer_hit(trial: dict) -> bool:
     return False
 
 def main():
-    out_dir = make_run_dir()
+    # Always write inside the package's responses/ folder
+    base_responses = os.path.join(os.path.dirname(__file__), "responses")
+    out_dir = make_run_dir(base=base_responses)
+    os.makedirs(out_dir, exist_ok=True)
     print(f"Run dir: {out_dir}")
 
-    # ---- start timestamp for this run ----
-    started_at = datetime.datetime.utcnow().isoformat() + "Z"  # <-- add
+    # Run-level combined stream + latest snapshot
+    combined_path = os.path.join(out_dir, "trials.ndjson")   # all types, appended per trial
+    latest_path   = os.path.join(out_dir, "latest.json")     # snapshot of last trial
+
+    # Start timestamp for this run
+    started_at = datetime.datetime.utcnow().isoformat() + "Z"
 
     runners = load_runners(ANALOGY_SPECS)
     keys = list(runners.keys())
     weights = [runners[k]["weight"] for k in keys]
 
+    # Per-type dirs, paths, counters — derived from registry
     type_dirs   = {k: os.path.join(out_dir, k) for k in keys}
     trial_paths = {k: os.path.join(type_dirs[k], "trials.ndjson") for k in keys}
-    for d in type_dirs.values(): os.makedirs(d, exist_ok=True)
+    for k, d in type_dirs.items():
+        os.makedirs(d, exist_ok=True)
+        # touch the per-type stream so it's visible immediately
+        if not os.path.exists(trial_paths[k]):
+            open(trial_paths[k], "a", encoding="utf-8").close()
     counts = {k: {"n": 0, "hits": 0} for k in keys}
+
+    summary = None  # will be filled each iteration
 
     for i in range(N_TRIALS):
         kind = random.choices(keys, weights=weights, k=1)[0]
         print(f"\n===== Trial {i+1}/{N_TRIALS} [{kind}] =====")
 
         trial = runners[kind]["run"](MODEL, verbose=True)
-        append_jsonl(trial_paths[kind], trial)
 
+        # ---- Write immediately on every completion ----
+        append_jsonl(trial_paths[kind], trial)                              # per-type stream
+        append_jsonl(combined_path, trial)                                  # run-level combined stream
+        write_summary(os.path.join(type_dirs[kind], "latest.json"), trial)  # per-type snapshot
+        write_summary(latest_path, trial)                                   # run-level snapshot
+
+        # Update counters
         counts[kind]["n"] += 1
         counts[kind]["hits"] += int(infer_hit(trial))
 
+        # Per-type summary (kept current)
+        type_summary = {
+            "model": MODEL,
+            "n": counts[kind]["n"],
+            "hits": counts[kind]["hits"],
+            "success_rate": (counts[kind]["hits"] / counts[kind]["n"]) if counts[kind]["n"] else 0.0,
+        }
+        write_summary(os.path.join(type_dirs[kind], "summary.json"), type_summary)
+
+        # Run summary (kept current)
         overall_n = sum(v["n"] for v in counts.values())
         overall_h = sum(v["hits"] for v in counts.values())
         summary = {
@@ -66,31 +96,26 @@ def main():
         }
         write_summary(os.path.join(out_dir, "summary.json"), summary)
 
-    # ---- end timestamp + append a one-line record for the whole run ----
-    ended_at = datetime.datetime.utcnow().isoformat() + "Z"  # <-- add
-
-    # Build the run record using final summary from above loop
+    # ---- End-of-run record (append once per run) ----
+    ended_at = datetime.datetime.utcnow().isoformat() + "Z"
     run_record = {
         "run_id": os.path.basename(out_dir),
         "run_dir": out_dir,
         "model": MODEL,
         "started_at": started_at,
         "ended_at": ended_at,
-        # snapshot of final summary
-        "n_trials": summary["n_trials_so_far"],
-        "overall_success_rate": summary["overall_success_rate"],
-        "by_type": summary["by_type"],
+        "n_trials": summary["n_trials_so_far"] if summary else 0,
+        "overall_success_rate": summary["overall_success_rate"] if summary else 0.0,
+        "by_type": summary["by_type"] if summary else {},
     }
 
-    responses_root = os.path.dirname(out_dir)                     # e.g., "responses"
-    runs_index = os.path.join(responses_root, "runs.ndjson")      # <-- append-only log
-    append_jsonl(runs_index, run_record)                          # <-- add
-
-    # optional: a quick pointer to the last run
-    write_summary(os.path.join(responses_root, "latest_run.json"), run_record)  # <-- add
+    runs_index = os.path.join(base_responses, "runs.ndjson")
+    append_jsonl(runs_index, run_record)                          # global append-only log
+    write_summary(os.path.join(base_responses, "latest_run.json"), run_record)  # snapshot
 
     print("\n=== Run complete ===")
-    print(json.dumps(summary, indent=2))
+    if summary:
+        print(json.dumps(summary, indent=2))
     print(f"Saved under {out_dir}")
 
 if __name__ == "__main__":
