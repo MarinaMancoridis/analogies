@@ -12,7 +12,7 @@ from google.api_core.exceptions import ResourceExhausted
 import unicodedata
 from analogies.constants import models_to_developer, models, api_keys, BENCHMARK_PATHS, FINAL_TAG
 
-# calls apis to extract responses to a prompt
+# calls apis to extract responses to a prompt 
 def generate_inference(prompt, model):
     if models_to_developer[model] == "openai":
         client = OpenAI(api_key=api_keys["openai"])
