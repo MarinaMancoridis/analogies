@@ -4,26 +4,66 @@ from analogies.common import make_run_dir, append_jsonl, write_summary
 MODEL = "gpt-5"
 N_TRIALS = 10
 RNG = random.Random()
+N_TRIALS_PER_TYPE = 10
 
+# ---- ANALOGY TYPES ----
 ANALOGY_SPECS = [
     # {"key": "identity", "module": "analogies.analogy_types.identity", "weight": 1},
     # {"key": "cyclic",   "module": "analogies.analogy_types.cyclic",   "weight": 1},
     {"key": "pair",     "module": "analogies.analogy_types.pair_analogy", "weight": 1},
 ]
+# def load_runners(specs):
+#     runners = {}
+#     for s in specs:
+#         mod = importlib.import_module(s["module"])
+#         run = getattr(mod, "run_trial")
+#         runners[s["key"]] = {"run": run, "weight": s.get("weight", 1)}
+#     return runners
+
+# ---- popular/rare variants of identity ----
+ANALOGY_SPECS = [
+    {"key": "identity_pop_pop",   "module": "analogies.analogy_types.identity",
+     "kwargs": {"A_mode": "popular", "C_mode": "popular"}},
+    {"key": "identity_pop_rare",  "module": "analogies.analogy_types.identity",
+     "kwargs": {"A_mode": "popular", "C_mode": "rare"}},
+    {"key": "identity_rare_pop",  "module": "analogies.analogy_types.identity",
+     "kwargs": {"A_mode": "rare",    "C_mode": "popular"}},
+    {"key": "identity_rare_rare", "module": "analogies.analogy_types.identity",
+     "kwargs": {"A_mode": "rare",    "C_mode": "rare"}},
+]
+
 
 def load_runners(specs):
     runners = {}
     for s in specs:
         mod = importlib.import_module(s["module"])
         run = getattr(mod, "run_trial")
-        runners[s["key"]] = {"run": run, "weight": s.get("weight", 1)}
+        runners[s["key"]] = {
+            "run": run,
+            "weight": s.get("weight", 1),
+            "kwargs": s.get("kwargs", {}),
+        }
     return runners
+
+# ---- identity by POS ----
+# 10 trials per POS x 5 POS = 50 total runs
+POS_LIST = ["noun", "verb", "adjective", "adverb"]
+ANALOGY_SPECS = [
+    {
+        "key": f"identity_pos_{pos}",
+        "module": "analogies.analogy_types.identity",
+        "kwargs": {"A_mode": f"pos:{pos}", "C_mode": f"pos:{pos}"},
+        "weight": 1,
+    }
+    for pos in POS_LIST
+]
 
 def infer_hit(trial: dict) -> bool:
     for k in ("is_success", "is_correct", "grade_correct", "is_identity", "hit", "success"):
         if k in trial:
             return bool(trial[k])
     return False
+
 
 def main():
     # Always write inside the package's responses/ folder
@@ -41,7 +81,6 @@ def main():
     keys = list(runners.keys())             # deterministic order = insertion order of ANALOGY_SPECS
 
     # ------ CONFIG: N trials per type ------
-    N_TRIALS_PER_TYPE = 10
     total_planned = N_TRIALS_PER_TYPE * len(keys)
 
     # Per-type dirs, paths, counters
@@ -62,7 +101,8 @@ def main():
             trial_idx += 1
             print(f"\n===== Trial {trial_idx}/{total_planned} [{kind}] ({j+1}/{N_TRIALS_PER_TYPE}) =====")
 
-            trial = runners[kind]["run"](MODEL, verbose=True)
+            # trial = runners[kind]["run"](MODEL, verbose=True)
+            trial = runners[kind]["run"](MODEL, verbose=True, **runners[kind].get("kwargs", {}))
 
             # Write immediately
             append_jsonl(trial_paths[kind], trial)                              # per-type stream
@@ -122,5 +162,8 @@ def main():
         print(json.dumps(summary, indent=2))
     print(f"Saved under {out_dir}")
 
+
+
+# python -m analogies.run_analogies
 if __name__ == "__main__":
     main()
