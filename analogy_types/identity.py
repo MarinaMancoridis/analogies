@@ -28,14 +28,18 @@ def _prompt(A: str, C: str) -> str:
 # ------------- UPDATED run_trial -------------
 def run_trial(model: str, *, A_mode: str, C_mode: str, verbose: bool = True):
     relmeta = None  # keep defined
+    domainmeta = None
 
     if A_mode.startswith("rel"):
         rel_key = A_mode.split(":", 1)[1] if ":" in A_mode else None
         A, C, relmeta = _ac_from_relation(model, rel_key)
     else:
         A_picker = _get_picker(A_mode)
-        if getattr(A_picker, "_joint", None):       # ← check A first
-            A, C = A_picker()                       # (A, C) from joint picker
+        if getattr(A_picker, "_joint", None):
+            A, C = A_picker()
+            # Only collect domain meta for domain joint pickers
+            if getattr(A_picker, "_joint", "") in ("domain_same", "domain_diff"):
+                domainmeta = getattr(A_picker, "_meta", None)                      # (A, C) from joint picker
         else:
             C_picker = _get_picker(C_mode)          # only look up C if needed
             if getattr(C_picker, "_joint", None):
@@ -63,6 +67,8 @@ def run_trial(model: str, *, A_mode: str, C_mode: str, verbose: bool = True):
     }
     if relmeta:
         out["_relmeta"] = relmeta
+    if domainmeta:
+        out["_domainmeta"] = domainmeta  # private; file-only
     if verbose:
         print(f"[identity] A={A} C={C} hit={hit} rel={out.get('relation_key')}")
     return out

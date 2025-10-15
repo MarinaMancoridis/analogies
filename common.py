@@ -15,6 +15,7 @@ RNG = random.Random()
 ALL: List[str] = top_n_list("en", 50_000)  # master list, most→least popular
 WORDS = top_n_list("en", 50000)
 nltk.download('wordnet')
+_DOMAIN_NOUNS_ONLY = True
 
 # ---------- POS tagging ----------
 _UNIVERSAL_POS = {"NOUN", "VERB", "ADJ", "ADV", "ADP"} # five popular POS tags- noun, verb, adjective, adverb, adposition
@@ -174,13 +175,16 @@ def _get_picker(mode: str):
     elif mode == "domain:same":
         # JOINT picker: returns an (A, C) pair from the same WordNet lexname
         def _joint():
-            A, C, _dom = sample_same_domain_pair()
+            A, C, dom = sample_same_domain_pair()
+            _joint._meta = {"domain_mode": "same", "domain_A": dom, "domain_C": dom}  # ← add this
             return A, C
         _joint._joint = "domain_same"
         return _joint
     elif mode == "domain:diff":
+        # JOINT picker: returns an (A, C) pair from different WordNet lexnames
         def _joint():
-            A, C, _dA, _dC = sample_different_domain_pair()
+            A, C, dA, dC = sample_different_domain_pair()
+            _joint._meta = {"domain_mode": "diff", "domain_A": dA, "domain_C": dC}    # ← add this
             return A, C
         _joint._joint = "domain_diff"
         return _joint
@@ -323,13 +327,15 @@ def _build_domain_index():
         return
     idx = {}
     for syn in wn.all_synsets():
-        dom = syn.lexname()  # e.g., 'noun.food', 'verb.motion'
+        dom = syn.lexname()  # e.g., 'noun.food', 'verb.motion', 'adj.all'
+        if _DOMAIN_NOUNS_ONLY and not dom.startswith("noun."):
+            continue
         for lemma in syn.lemmas():
             w = lemma.name().lower().replace('_', ' ')
             if _is_simple_token(w):
                 idx.setdefault(dom, set()).add(w)
-    # keep only decent-sized domains
     _DOMAIN_INDEX = {d: sorted(v) for d, v in idx.items() if len(v) >= 200}
+
 
 def _sample_from_domain(dom: str) -> str:
     words = _DOMAIN_INDEX[dom]

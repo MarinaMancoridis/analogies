@@ -258,8 +258,17 @@ def main():
 
             # trial = runners[kind]["run"](MODEL, verbose=True)
             trial = runners[kind]["run"](MODEL, verbose=True, **runners[kind].get("kwargs", {}))
-            relmeta = trial.pop("_relmeta", None)
-            trial_file = {**trial, **(relmeta or {})}
+
+            # Private, file-only metadata
+            relmeta    = trial.pop("_relmeta", None)
+            domainmeta = trial.pop("_domainmeta", None)
+
+            # Build the object to write
+            trial_file = dict(trial)                   # start with the public fields
+            if relmeta:
+                trial_file.update(relmeta)             # always include relation meta when present
+            if domainmeta and str(trial.get("A_mode", "")).startswith("domain:"):
+                trial_file.update(domainmeta)          # include domain meta only for domain tests
 
             # Write immediately 
             append_jsonl(trial_paths[kind], trial_file)            # per-type stream
