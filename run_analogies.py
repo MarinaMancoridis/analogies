@@ -5,7 +5,7 @@ BRYS_PATH = "./analogies/concreteness.txt"
 MODEL = "gpt-5"
 N_TRIALS = 1
 RNG = random.Random()
-N_TRIALS_PER_TYPE = 10
+N_TRIALS_PER_TYPE = 20
 
 # ---- Config toggles ----
 MODE = "per_type"     # "per_type" or "weighted" (mixture)
@@ -20,6 +20,8 @@ def build_identity_specs(
     include_cooccurring=True,       
     include_noncooccurring=True,    
     include_concreteness=True,
+    include_relationship_relations=True,
+    include_semantic_domains=True,            
     weight=1
 ) -> list[dict]:
     specs: list[dict] = []
@@ -78,6 +80,24 @@ def build_identity_specs(
             {"key": "identity_conc_conc", "module": "analogies.analogy_types.identity",
              "kwargs": {"A_mode": "ac:concrete", "C_mode": "ac:concrete"}, "weight": weight},
         ]
+    if include_relationship_relations:
+        specs.append({
+            "key": "identity_rel_any",
+            "module": "analogies.analogy_types.identity",
+            "kwargs": {"A_mode": "rel", "C_mode": "ignored"},
+            "weight": weight,
+        })
+    if include_semantic_domains:
+        specs += [
+            {"key": "identity_domain_same",
+             "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "domain:same", "C_mode": "ignored"},
+             "weight": weight},
+            {"key": "identity_domain_diff",
+             "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "domain:diff", "C_mode": "ignored"},
+             "weight": weight},
+        ]
     return specs
 
 def build_cyclic_specs(*, weight=1) -> list[dict]:
@@ -135,7 +155,9 @@ ANALOGY_SPECS = build_specs(
         "include_cross_pos": False,  # ← A≠C variants
         "include_cooccurring": False,     
         "include_noncooccurring": False,  
-        "include_concreteness": True,
+        "include_concreteness": False,
+        "include_relationship_relations": False,
+        "include_semantic_domains": True,
     },
     weights={"identity": 2, "cyclic": 1, "pair": 1},  # used only in weighted mode
 )
@@ -236,12 +258,14 @@ def main():
 
             # trial = runners[kind]["run"](MODEL, verbose=True)
             trial = runners[kind]["run"](MODEL, verbose=True, **runners[kind].get("kwargs", {}))
+            relmeta = trial.pop("_relmeta", None)
+            trial_file = {**trial, **(relmeta or {})}
 
-            # Write immediately
-            append_jsonl(trial_paths[kind], trial)                              # per-type stream
-            append_jsonl(combined_path, trial)                                  # run-level stream
-            write_summary(os.path.join(type_dirs[kind], "latest.json"), trial)  # per-type snapshot
-            write_summary(latest_path, trial)                                   # run-level snapshot
+            # Write immediately 
+            append_jsonl(trial_paths[kind], trial_file)            # per-type stream
+            append_jsonl(combined_path, trial_file)                # run-level stream
+            write_summary(os.path.join(type_dirs[kind], "latest.json"), trial_file)
+            write_summary(latest_path, trial_file)
 
             # Update counters
             counts[kind]["n"] += 1

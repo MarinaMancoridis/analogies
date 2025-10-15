@@ -5,6 +5,7 @@ from analogies.utils import generate_inference
 import random
 from typing import List
 import nltk # used for identity — part of speech
+from nltk.corpus import wordnet as wn
 import stanza # used for identity — part of speech
 from functools import lru_cache
 import csv
@@ -13,6 +14,7 @@ import csv
 RNG = random.Random()
 ALL: List[str] = top_n_list("en", 50_000)  # master list, most→least popular
 WORDS = top_n_list("en", 50000)
+nltk.download('wordnet')
 
 # ---------- POS tagging ----------
 _UNIVERSAL_POS = {"NOUN", "VERB", "ADJ", "ADV", "ADP"} # five popular POS tags- noun, verb, adjective, adverb, adposition
@@ -169,6 +171,19 @@ def _get_picker(mode: str):
         return lambda: sample_abstract_brys(picker=sample_word)
     elif mode == "ac:concrete":
         return lambda: sample_concrete_brys(picker=sample_word)
+    elif mode == "domain:same":
+        # JOINT picker: returns an (A, C) pair from the same WordNet lexname
+        def _joint():
+            A, C, _dom = sample_same_domain_pair()
+            return A, C
+        _joint._joint = "domain_same"
+        return _joint
+    elif mode == "domain:diff":
+        def _joint():
+            A, C, _dA, _dC = sample_different_domain_pair()
+            return A, C
+        _joint._joint = "domain_diff"
+        return _joint
     else:
         raise ValueError(f"unknown mode: {mode}")
 
@@ -298,6 +313,53 @@ def sample_abstract_brys(*, picker: Optional[Callable[[], str]] = None, **kw) ->
 def sample_concrete_brys(*, picker: Optional[Callable[[], str]] = None, **kw) -> str:
     return sample_by_concreteness_brys("concrete", picker=picker, **kw)
 
+
+# ---- WordNet semantic domains (lexnames) ----
+_DOMAIN_INDEX = None  # domain -> list[str] words
+
+def _build_domain_index():
+    global _DOMAIN_INDEX
+    if _DOMAIN_INDEX is not None:
+        return
+    idx = {}
+    for syn in wn.all_synsets():
+        dom = syn.lexname()  # e.g., 'noun.food', 'verb.motion'
+        for lemma in syn.lemmas():
+            w = lemma.name().lower().replace('_', ' ')
+            if _is_simple_token(w):
+                idx.setdefault(dom, set()).add(w)
+    # keep only decent-sized domains
+    _DOMAIN_INDEX = {d: sorted(v) for d, v in idx.items() if len(v) >= 200}
+
+def _sample_from_domain(dom: str) -> str:
+    words = _DOMAIN_INDEX[dom]
+    return _pick(words)
+
+def sample_same_domain_pair() -> tuple[str, str, str]:
+    """Return (A, C, domain) with both from the same WordNet lexname."""
+    _build_domain_index()
+    dom = RNG.choice(list(_DOMAIN_INDEX.keys()))
+    # ensure A != C
+    A = _sample_from_domain(dom)
+    while True:
+        C = _sample_from_domain(dom)
+        if C != A:
+            break
+    return A, C, dom
+
+def sample_different_domain_pair() -> tuple[str, str, str, str]:
+    """Return (A, C, domain_A, domain_C) with A/C from different WordNet lexnames."""
+    _build_domain_index()
+    doms = list(_DOMAIN_INDEX.keys())
+    dA = RNG.choice(doms)
+    dC = RNG.choice(doms)
+    while dC == dA:
+        dC = RNG.choice(doms)
+    A = _sample_from_domain(dA)
+    C = _sample_from_domain(dC)
+    if C == A:  # extremely rare, but guard anyway
+        C = _sample_from_domain(dC)
+    return A, C, dA, dC
 
 
 # ---- co-occurrence sampling ----
