@@ -7,6 +7,7 @@ from typing import List
 import nltk # used for identity — part of speech
 import stanza # used for identity — part of speech
 from functools import lru_cache
+import csv
 
 
 RNG = random.Random()
@@ -250,29 +251,36 @@ def _brys_score(word: str) -> Optional[float]:
         raise RuntimeError("Brysbaert norms not loaded. Call load_brysbaert_norms(path) once.")
     return _BRYS_NORMS.get(word.lower())
 
-def ac_label_brys(word: str, threshold: float = 3.0) -> str:
+def ac_label_brys(word: str, *, low: float = 1, high: float = 5) -> str:
     """
-    Map Brysbaert concreteness (1..5) to a label.
-    - >= threshold → 'concrete'
-    - <  threshold → 'abstract'
-    - missing      → 'neither'
+    Map Brysbaert concreteness (1..5) to a label with a gap:
+      v <= low   -> 'abstract'
+      v >= high  -> 'concrete'
+      else       -> 'neither'   (keeps borderline items out)
     """
     v = _brys_score(word)
     if v is None:
         return "neither"
-    return "concrete" if v >= threshold else "abstract"
+    if v <= low:
+        return "abstract"
+    if v >= high:
+        return "concrete"
+    return "neither"
 
 def sample_by_concreteness_brys(
     kind: str,
     *,
-    picker: Callable[[], str] = sample_word,
-    max_tries: int = 1000,
-    threshold: float = 3.0,
+    picker: Optional[Callable[[], str]] = None,
+    max_tries: int = 2000,
+    low: float = 2.6,
+    high: float = 3.4,
 ) -> str:
     """
-    Sample until the word appears in Brysbaert norms with desired concreteness.
-    Does NOT call any model (fast + cheap).
+    Sample until the Brysbaert label (with gap) matches.
+    Increase the gap (e.g., low=2.0, high=4.0) to make the divide even larger.
     """
+    if picker is None:
+        picker = sample_word
     kind = kind.strip().lower()
     if kind not in ("abstract", "concrete"):
         raise ValueError("kind must be 'abstract' or 'concrete'")
@@ -280,17 +288,16 @@ def sample_by_concreteness_brys(
         w = picker()
         if not _is_simple_token(w):
             continue
-        label = ac_label_brys(w, threshold=threshold)
-        if label == kind:
+        if ac_label_brys(w, low=low, high=high) == kind:
             return w
     raise RuntimeError(f"Could not sample a {kind} word via Brysbaert in {max_tries} tries.")
 
-# Tiny convenience wrappers
-def sample_abstract_brys(**kw) -> str:
-    return sample_by_concreteness_brys("abstract", **kw)
+def sample_abstract_brys(*, picker: Optional[Callable[[], str]] = None, **kw) -> str:
+    return sample_by_concreteness_brys("abstract", picker=picker, **kw)
 
-def sample_concrete_brys(**kw) -> str:
-    return sample_by_concreteness_brys("concrete", **kw)
+def sample_concrete_brys(*, picker: Optional[Callable[[], str]] = None, **kw) -> str:
+    return sample_by_concreteness_brys("concrete", picker=picker, **kw)
+
 
 
 # ---- co-occurrence sampling ----
@@ -434,3 +441,35 @@ def write_summary(path: str, obj) -> None:
 #     for i in range(10):
 #         a, c = sample_noncooccurring_words()
 #         print(f"{i+1:2d}. {a} — {c}")
+
+
+# ------------- TESTING CONCRETE / ABSTRACT word pairs -------------
+# if __name__ == "__main__":
+#     import os, sys
+
+#     # ---- Set your path to the Brysbaert file here ----
+#     BRYS_PATH = "./analogies/concreteness.txt"
+#     load_brysbaert_norms(BRYS_PATH)
+
+#     def _unique_samples(fn, n=10, max_tries=5000):
+#         out, seen = [], set()
+#         tries = 0
+#         while len(out) < n and tries < max_tries:
+#             w = fn()
+#             tries += 1
+#             if w and w not in seen:
+#                 out.append(w)
+#                 seen.add(w)
+#         return out
+
+#     # Sample using your existing picker; swap picker=sample_popular_word if you prefer
+#     abs_words = _unique_samples(lambda: sample_abstract_brys(picker=sample_word), n=10)
+#     conc_words = _unique_samples(lambda: sample_concrete_brys(picker=sample_word), n=10)
+
+#     print("=== Abstract (10) ===")
+#     for i, w in enumerate(abs_words, 1):
+#         print(f"{i:2d}. {w}")
+
+#     print("\n=== Concrete (10) ===")
+#     for i, w in enumerate(conc_words, 1):
+#         print(f"{i:2d}. {w}")

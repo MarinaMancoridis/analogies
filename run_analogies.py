@@ -1,6 +1,6 @@
 import os, json, random, importlib, datetime
 from analogies.common import make_run_dir, append_jsonl, write_summary, load_brysbaert_norms
-BRYS_PATH = "./concreteness.txt" 
+BRYS_PATH = "./analogies/concreteness.txt" 
 
 MODEL = "gpt-5"
 N_TRIALS = 1
