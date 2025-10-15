@@ -143,7 +143,7 @@ def sample_rare_word() -> str:
     x = min(x, len(ALL))
     return _pick(ALL[-x:])
 
-# helper to choose a frequency-based picker
+# helper to choose a picker for how to sample words
 def _get_picker(mode: str):
     if mode == "popular":
         return sample_popular_word
@@ -152,6 +152,22 @@ def _get_picker(mode: str):
     elif mode.startswith("pos:"):
         _, pos = mode.split(":", 1)
         return lambda: sample_word_by_pos(pos)  # uses NLTK tagging under the hood
+    elif mode == "cooccurring":
+        # JOINT picker: returns a (A, C) pair
+        def _joint():
+            return sample_cooccurring_words()
+        _joint._joint = "cooccurring"   # tag so run_trial knows this is joint
+        return _joint
+    elif mode == "noncooccurring":
+        # JOINT picker: returns a (A, C) pair
+        def _joint():
+            return sample_noncooccurring_words()
+        _joint._joint = "noncooccurring"
+        return _joint
+    elif mode == "ac:abstract":
+        return lambda: sample_abstract_brys(picker=sample_word)
+    elif mode == "ac:concrete":
+        return lambda: sample_concrete_brys(picker=sample_word)
     else:
         raise ValueError(f"unknown mode: {mode}")
 
@@ -188,6 +204,159 @@ def sample_noun() -> str: return sample_word_by_pos("noun")
 def sample_verb() -> str: return sample_word_by_pos("verb")
 def sample_adjective() -> str: return sample_word_by_pos("adjective")
 def sample_adverb() -> str: return sample_word_by_pos("adverb")
+
+# ---- concreteness sampling ----
+_BRYS_NORMS = None  # word(lower) -> float (1..5)
+
+def load_brysbaert_norms(path: str) -> None:
+    """Load once; supports TSV or CSV with columns like 'Word'/'word' and 'Conc.M'/'concreteness'."""
+    global _BRYS_NORMS
+    if _BRYS_NORMS is not None:
+        return
+    norms = {}
+    with open(path, "r", encoding="utf-8", newline="") as f:
+        # Try to auto-detect delimiter; fall back to tab.
+        raw = f.read(4096)
+        f.seek(0)
+        try:
+            dialect = csv.Sniffer().sniff(raw, delimiters=",\t;")
+            delim = dialect.delimiter
+        except Exception:
+            delim = "\t"
+        reader = csv.DictReader(f, delimiter=delim)
+        # Heuristic column names used in various releases
+        word_keys = ["Word", "word", "lemma", "Item", "item"]
+        score_keys = ["Conc.M", "Conc.Mean", "Concreteness", "concreteness", "conc", "Mean"]
+        for row in reader:
+            w = None
+            for k in word_keys:
+                if k in row and row[k]:
+                    w = row[k].strip().lower()
+                    break
+            s = None
+            for k in score_keys:
+                if k in row and row[k]:
+                    try:
+                        s = float(row[k])
+                    except ValueError:
+                        s = None
+                    break
+            if w and s is not None:
+                norms[w] = s
+    _BRYS_NORMS = norms
+
+def _brys_score(word: str) -> Optional[float]:
+    if _BRYS_NORMS is None:
+        raise RuntimeError("Brysbaert norms not loaded. Call load_brysbaert_norms(path) once.")
+    return _BRYS_NORMS.get(word.lower())
+
+def ac_label_brys(word: str, threshold: float = 3.0) -> str:
+    """
+    Map Brysbaert concreteness (1..5) to a label.
+    - >= threshold → 'concrete'
+    - <  threshold → 'abstract'
+    - missing      → 'neither'
+    """
+    v = _brys_score(word)
+    if v is None:
+        return "neither"
+    return "concrete" if v >= threshold else "abstract"
+
+def sample_by_concreteness_brys(
+    kind: str,
+    *,
+    picker: Callable[[], str] = sample_word,
+    max_tries: int = 1000,
+    threshold: float = 3.0,
+) -> str:
+    """
+    Sample until the word appears in Brysbaert norms with desired concreteness.
+    Does NOT call any model (fast + cheap).
+    """
+    kind = kind.strip().lower()
+    if kind not in ("abstract", "concrete"):
+        raise ValueError("kind must be 'abstract' or 'concrete'")
+    for _ in range(max_tries):
+        w = picker()
+        if not _is_simple_token(w):
+            continue
+        label = ac_label_brys(w, threshold=threshold)
+        if label == kind:
+            return w
+    raise RuntimeError(f"Could not sample a {kind} word via Brysbaert in {max_tries} tries.")
+
+# Tiny convenience wrappers
+def sample_abstract_brys(**kw) -> str:
+    return sample_by_concreteness_brys("abstract", **kw)
+
+def sample_concrete_brys(**kw) -> str:
+    return sample_by_concreteness_brys("concrete", **kw)
+
+
+# ---- co-occurrence sampling ----
+def _ensure_cooccurrence_index():
+    """
+    Build once: a list of strong co-occurring bigrams and a set of all observed bigrams
+    from the NLTK Brown corpus.
+    """
+    global _COOC_READY, _COOC_LIST, _OBS_BIGRAMS, _COOC_VOCAB
+    try:
+        _COOC_READY
+    except NameError:
+        _COOC_READY = False
+
+    if _COOC_READY:
+        return
+
+    import nltk
+    from nltk.collocations import BigramAssocMeasures, BigramCollocationFinder
+
+    try:
+        nltk.data.find("corpora/brown")
+    except LookupError:
+        nltk.download("brown", quiet=True)
+
+    from nltk.corpus import brown
+
+    tokens = [w.lower() for w in brown.words() if _is_simple_token(w)]
+
+    measures = BigramAssocMeasures()
+    finder = BigramCollocationFinder.from_words(tokens)  # adjacent bigrams
+    finder.apply_freq_filter(3)  # drop ultra-rare bigrams
+
+    # Top N strongest collocations by PMI
+    _COOC_LIST = finder.nbest(measures.pmi, 5000)
+
+    # All seen bigrams (for fast negative checks)
+    _OBS_BIGRAMS = set(finder.ngram_fd.keys())
+
+    # Negative-sampling vocab: overlap with your ALL to keep words familiar
+    tokset = set(tokens)
+    _COOC_VOCAB = [w for w in ALL if w in tokset][:20_000] or list(tokset)
+
+    _COOC_READY = True
+
+
+def sample_cooccurring_words() -> Tuple[str, str]:
+    """Return a frequently co-occurring word pair (adjacent bigram in Brown)."""
+    _ensure_cooccurrence_index()
+    return RNG.choice(_COOC_LIST)
+
+
+def sample_noncooccurring_words(max_tries: int = 10_000) -> Tuple[str, str]:
+    """
+    Return two words that do NOT appear as an adjacent bigram in the Brown corpus
+    (in either order).
+    """
+    _ensure_cooccurrence_index()
+    for _ in range(max_tries):
+        w1 = _pick(_COOC_VOCAB)
+        w2 = _pick(_COOC_VOCAB)
+        if w1 == w2:
+            continue
+        if (w1, w2) not in _OBS_BIGRAMS and (w2, w1) not in _OBS_BIGRAMS:
+            return (w1, w2)
+    return (RNG.choice(_COOC_VOCAB), RNG.choice(_COOC_VOCAB))
 
 
 # ---------- token + parsing ----------
@@ -252,3 +421,16 @@ def append_jsonl(path: str, obj) -> None:
 def write_summary(path: str, obj) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
+
+
+# ------------- TESTING CO-OCCURRENCE / NON-CO-OCCURRENCE word pairs -------------
+# if __name__ == "__main__":
+#     print("=== Co-occurring word pairs ===")
+#     for i in range(10):
+#         a, c = sample_cooccurring_words()
+#         print(f"{i+1:2d}. {a} — {c}")
+
+#     print("\n=== Non-co-occurring word pairs ===")
+#     for i in range(10):
+#         a, c = sample_noncooccurring_words()
+#         print(f"{i+1:2d}. {a} — {c}")

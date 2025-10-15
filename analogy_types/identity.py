@@ -6,13 +6,25 @@ import math
 def _prompt(A: str, C: str) -> str:
     return f"Complete the analogy. Reply ONLY as: ANSWER: <word>\n\n{A} : {A} :: {C} : ____"
 
+# ------------- UPDATED run_trial -------------
 def run_trial(model: str, *, A_mode: str, C_mode: str, verbose: bool = True):
     A_picker = _get_picker(A_mode)
     C_picker = _get_picker(C_mode)
 
-    # Only what we need: A and C; each retried until it is a real concept.
-    A = sample_concept(model, picker=A_picker, verbose=verbose)
-    C = sample_concept(model, picker=C_picker, verbose=verbose)  # C==A allowed
+    # If either picker is "joint", use it to get (A, C) together.
+    joint_picker = None
+    for p in (A_picker, C_picker):
+        if getattr(p, "_joint", None):
+            joint_picker = p
+            break
+
+    if joint_picker is not None:
+        # Choose A and C together via co-/non-cooccurrence.
+        A, C = joint_picker()
+    else:
+        # Original independent sampling path
+        A = sample_concept(model, picker=A_picker, verbose=verbose)
+        C = sample_concept(model, picker=C_picker, verbose=verbose)
 
     prompt = _prompt(A, C)
     if verbose:
@@ -36,4 +48,3 @@ def run_trial(model: str, *, A_mode: str, C_mode: str, verbose: bool = True):
         "expected": C,
         "is_identity": hit
     }
-

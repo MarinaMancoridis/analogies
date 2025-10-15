@@ -1,39 +1,149 @@
 import os, json, random, importlib, datetime
-from analogies.common import make_run_dir, append_jsonl, write_summary
+from analogies.common import make_run_dir, append_jsonl, write_summary, load_brysbaert_norms
+BRYS_PATH = "./concreteness.txt" 
 
 MODEL = "gpt-5"
-N_TRIALS = 10
+N_TRIALS = 1
 RNG = random.Random()
 N_TRIALS_PER_TYPE = 10
 
-# ---- ANALOGY TYPES ----
-ANALOGY_SPECS = [
-    # {"key": "identity", "module": "analogies.analogy_types.identity", "weight": 1},
-    # {"key": "cyclic",   "module": "analogies.analogy_types.cyclic",   "weight": 1},
-    {"key": "pair",     "module": "analogies.analogy_types.pair_analogy", "weight": 1},
-]
-# def load_runners(specs):
-#     runners = {}
-#     for s in specs:
-#         mod = importlib.import_module(s["module"])
-#         run = getattr(mod, "run_trial")
-#         runners[s["key"]] = {"run": run, "weight": s.get("weight", 1)}
-#     return runners
+# ---- Config toggles ----
+MODE = "per_type"     # "per_type" or "weighted" (mixture)
+POS_LIST = ["noun", "verb", "adjective", "adverb"]
 
-# ---- popular/rare variants of identity ----
-ANALOGY_SPECS = [
-    {"key": "identity_pop_pop",   "module": "analogies.analogy_types.identity",
-     "kwargs": {"A_mode": "popular", "C_mode": "popular"}},
-    {"key": "identity_pop_rare",  "module": "analogies.analogy_types.identity",
-     "kwargs": {"A_mode": "popular", "C_mode": "rare"}},
-    {"key": "identity_rare_pop",  "module": "analogies.analogy_types.identity",
-     "kwargs": {"A_mode": "rare",    "C_mode": "popular"}},
-    {"key": "identity_rare_rare", "module": "analogies.analogy_types.identity",
-     "kwargs": {"A_mode": "rare",    "C_mode": "rare"}},
-]
+# ---- Spec builders ----
+def build_identity_specs(
+    *,
+    include_pop_rare=True,
+    include_same_pos=True,
+    include_cross_pos=True,
+    include_cooccurring=True,       
+    include_noncooccurring=True,    
+    include_concreteness=True,
+    weight=1
+) -> list[dict]:
+    specs: list[dict] = []
+    if include_pop_rare:
+        specs += [
+            {"key": "identity_pop_pop",   "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "popular", "C_mode": "popular"}, "weight": weight},
+            {"key": "identity_pop_rare",  "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "popular", "C_mode": "rare"},    "weight": weight},
+            {"key": "identity_rare_pop",  "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "rare",    "C_mode": "popular"}, "weight": weight},
+            {"key": "identity_rare_rare", "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "rare",    "C_mode": "rare"},    "weight": weight},
+        ]
+    if include_same_pos:
+        for pos in POS_LIST:
+            specs.append({
+                "key": f"identity_pos_{pos}",
+                "module": "analogies.analogy_types.identity",
+                "kwargs": {"A_mode": f"pos:{pos}", "C_mode": f"pos:{pos}"},
+                "weight": weight,
+            })
+    if include_cross_pos:
+        for a in POS_LIST:
+            for c in POS_LIST:
+                if a == c:
+                    continue
+                specs.append({
+                    "key": f"identity_pos_{a}_to_{c}",
+                    "module": "analogies.analogy_types.identity",
+                    "kwargs": {"A_mode": f"pos:{a}", "C_mode": f"pos:{c}"},
+                    "weight": weight,
+                })
+    if include_cooccurring:
+        specs.append({
+            "key": "identity_cooccurring",
+            "module": "analogies.analogy_types.identity",
+            "kwargs": {"A_mode": "cooccurring", "C_mode": "cooccurring"},
+            "weight": weight,
+        })
+    if include_noncooccurring:
+        specs.append({
+            "key": "identity_noncooccurring",
+            "module": "analogies.analogy_types.identity",
+            "kwargs": {"A_mode": "noncooccurring", "C_mode": "noncooccurring"},
+            "weight": weight,
+        })
+    if include_concreteness:
+        specs += [
+            {"key": "identity_abs_abs", "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "ac:abstract", "C_mode": "ac:abstract"}, "weight": weight},
+            {"key": "identity_abs_conc", "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "ac:abstract", "C_mode": "ac:concrete"}, "weight": weight},
+            {"key": "identity_conc_abs", "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "ac:concrete", "C_mode": "ac:abstract"}, "weight": weight},
+            {"key": "identity_conc_conc", "module": "analogies.analogy_types.identity",
+             "kwargs": {"A_mode": "ac:concrete", "C_mode": "ac:concrete"}, "weight": weight},
+        ]
+    return specs
+
+def build_cyclic_specs(*, weight=1) -> list[dict]:
+    return [{
+        "key": "cyclic",
+        "module": "analogies.analogy_types.cyclic",
+        "kwargs": {},
+        "weight": weight,
+    }]
+
+def build_pair_specs(*, weight=1) -> list[dict]:
+    return [{
+        "key": "pair",
+        "module": "analogies.analogy_types.pair_analogy",
+        "kwargs": {},
+        "weight": weight,
+    }]
+
+def build_specs(
+    *,
+    use_identity=True,
+    use_cyclic=True,
+    use_pair=True,
+    identity_opts=None,
+    weights=None,
+) -> list[dict]:
+    """
+    identity_opts: dict for identity flags (include_pop_rare, include_same_pos, include_cross_pos)
+    weights: optional dict like {"identity": 2, "cyclic": 1, "pair": 1}
+    """
+    identity_opts = identity_opts or {
+        "include_pop_rare": True,
+        "include_same_pos": True,
+        "include_cross_pos": True,
+    }
+    weights = weights or {}
+    out: list[dict] = []
+    if use_identity:
+        out += build_identity_specs(weight=weights.get("identity", 1), **identity_opts)
+    if use_cyclic:
+        out += build_cyclic_specs(weight=weights.get("cyclic", 1))
+    if use_pair:
+        out += build_pair_specs(weight=weights.get("pair", 1))
+    return out
+
+# ------------- (for run-time) build_specs -------------
+# Build the full menu (identity + cyclic + pair) -> where you can toggle the use of each type
+ANALOGY_SPECS = build_specs(
+    use_identity=True,
+    use_cyclic=False,
+    use_pair=False,
+    identity_opts={
+        "include_pop_rare": False,
+        "include_same_pos": False,
+        "include_cross_pos": False,  # ← A≠C variants
+        "include_cooccurring": False,     
+        "include_noncooccurring": False,  
+        "include_concreteness": True,
+    },
+    weights={"identity": 2, "cyclic": 1, "pair": 1},  # used only in weighted mode
+)
 
 
-def load_runners(specs):
+# ---- Loaders: per-type (deterministic) vs mixture (weighted) ----
+def load_runners_per_type(specs):
+    """Deterministic per-type execution. Keeps kwargs."""
     runners = {}
     for s in specs:
         mod = importlib.import_module(s["module"])
@@ -45,18 +155,37 @@ def load_runners(specs):
         }
     return runners
 
-# ---- identity by POS ----
-# 10 trials per POS x 5 POS = 50 total runs
-POS_LIST = ["noun", "verb", "adjective", "adverb"]
-ANALOGY_SPECS = [
-    {
-        "key": f"identity_pos_{pos}",
-        "module": "analogies.analogy_types.identity",
-        "kwargs": {"A_mode": f"pos:{pos}", "C_mode": f"pos:{pos}"},
-        "weight": 1,
-    }
-    for pos in POS_LIST
-]
+def load_runners_weighted(specs):
+    """
+    Mixture loader: returns (runners, chooser) where chooser() gives a key
+    sampled by weights across ALL entries (identity variants + cyclic + pair).
+    """
+    runners = load_runners_per_type(specs)
+    keys = list(runners.keys())
+    weights = [max(0.0, float(runners[k]["weight"])) for k in keys]
+    total = sum(weights) or 1.0
+    probs = [w/total for w in weights]
+
+    def chooser(rng: random.Random) -> str:
+        r = rng.random()
+        cum = 0.0
+        for k, p in zip(keys, probs):
+            cum += p
+            if r <= cum:
+                return k
+        return keys[-1]
+
+    return runners, chooser
+
+# ---- Loaders: per-type (deterministic) vs mixture (weighted) ----
+def load_runners(specs):
+    if MODE == "per_type":
+        return load_runners_per_type(specs)
+    elif MODE == "weighted":
+        return load_runners_weighted(specs)
+    else:
+        raise ValueError(f"Unknown mode: {MODE}")
+
 
 def infer_hit(trial: dict) -> bool:
     for k in ("is_success", "is_correct", "grade_correct", "is_identity", "hit", "success"):
@@ -65,7 +194,11 @@ def infer_hit(trial: dict) -> bool:
     return False
 
 
+# ---- Main entrypoint ----
 def main():
+    # Load Brysbaert norms -> used for concreteness sampling
+    load_brysbaert_norms(BRYS_PATH)
+
     # Always write inside the package's responses/ folder
     base_responses = os.path.join(os.path.dirname(__file__), "responses")
     out_dir = make_run_dir(base=base_responses)
