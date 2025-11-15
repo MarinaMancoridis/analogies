@@ -44,6 +44,9 @@ def run_trial(model: str, *, A_mode: str, C_mode: str, verbose: bool = True):
             C_picker = _get_picker(C_mode)          # only look up C if needed
             if getattr(C_picker, "_joint", None):
                 A, C = C_picker()
+            elif A_mode == "random" and C_mode == "random":
+                A = A_picker()
+                C = C_picker()
             else:
                 A = sample_concept(model, picker=A_picker, verbose=verbose)
                 C = sample_concept(model, picker=C_picker, verbose=verbose)

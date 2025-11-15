@@ -1,11 +1,12 @@
 import os, json, random, importlib, datetime
+from re import T
 from analogies.common import make_run_dir, append_jsonl, write_summary, load_brysbaert_norms
 BRYS_PATH = "./analogies/concreteness.txt" 
 
 MODEL = "gpt-5"
 N_TRIALS = 1
 RNG = random.Random()
-N_TRIALS_PER_TYPE = 20
+N_TRIALS_PER_TYPE = 50
 
 # ---- Config toggles ----
 MODE = "per_type"     # "per_type" or "weighted" (mixture)
@@ -14,14 +15,16 @@ POS_LIST = ["noun", "verb", "adjective", "adverb"]
 # ---- Spec builders ----
 def build_identity_specs(
     *,
-    include_pop_rare=True,
-    include_same_pos=True,
-    include_cross_pos=True,
-    include_cooccurring=True,       
-    include_noncooccurring=True,    
-    include_concreteness=True,
-    include_relationship_relations=True,
-    include_semantic_domains=True,            
+    include_pop_rare=False,
+    include_same_pos=False,
+    include_cross_pos=False,
+    include_cooccurring=False,       
+    include_noncooccurring=False,    
+    include_concreteness=False,
+    include_relationship_relations=False,
+    include_semantic_domains=False,            
+    include_random=False,
+    include_polysemy=True,
     weight=1
 ) -> list[dict]:
     specs: list[dict] = []
@@ -98,6 +101,28 @@ def build_identity_specs(
              "kwargs": {"A_mode": "domain:diff", "C_mode": "ignored"},
              "weight": weight},
         ]
+    if include_random:
+        specs.append({
+            "key": "identity_random",
+            "module": "analogies.analogy_types.identity",
+            "kwargs": {"A_mode": "random", "C_mode": "random"},
+            "weight": weight,
+        })
+    if include_polysemy:
+        specs += [
+            {
+                "key": "identity_poly_mono",
+                "module": "analogies.analogy_types.identity",
+                "kwargs": {"A_mode": "poly:poly", "C_mode": "poly:mono"},
+                "weight": weight,
+            },
+            {
+                "key": "identity_poly_poly",
+                "module": "analogies.analogy_types.identity",
+                "kwargs": {"A_mode": "poly:poly", "C_mode": "poly:poly"},
+                "weight": weight,
+            },
+        ]
     return specs
 
 def build_cyclic_specs(*, weight=1) -> list[dict]:
@@ -157,7 +182,9 @@ ANALOGY_SPECS = build_specs(
         "include_noncooccurring": False,  
         "include_concreteness": False,
         "include_relationship_relations": False,
-        "include_semantic_domains": True,
+        "include_semantic_domains": False,
+        "include_random": False,
+        "include_polysemy": True,
     },
     weights={"identity": 2, "cyclic": 1, "pair": 1},  # used only in weighted mode
 )

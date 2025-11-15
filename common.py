@@ -6,9 +6,10 @@ import random
 from typing import List
 import nltk # used for identity — part of speech
 from nltk.corpus import wordnet as wn
-import stanza # used for identity — part of speech
+# import stanza # used for identity — part of speech
 from functools import lru_cache
 import csv
+import string
 
 
 RNG = random.Random()
@@ -188,6 +189,14 @@ def _get_picker(mode: str):
             return A, C
         _joint._joint = "domain_diff"
         return _joint
+    elif mode == "random":
+        return random_word
+    elif mode == "poly:mono":
+        # words with exactly one WordNet sense
+        return lambda: sample_monosemous_word()
+    elif mode == "poly:poly":
+        # highly polysemous words (>= min_polysemy senses)
+        return lambda: sample_polysemous_word()
     else:
         raise ValueError(f"unknown mode: {mode}")
 
@@ -224,6 +233,89 @@ def sample_noun() -> str: return sample_word_by_pos("noun")
 def sample_verb() -> str: return sample_word_by_pos("verb")
 def sample_adjective() -> str: return sample_word_by_pos("adjective")
 def sample_adverb() -> str: return sample_word_by_pos("adverb")
+
+
+# ------ random word sampling ------
+def random_word(length: int = 10) -> str:
+    letters = string.ascii_lowercase
+    return "".join(RNG.choice(letters) for _ in range(length))
+
+
+# ------ number of senses sampling ------------
+# ---- polysemy (WordNet-based) ----
+
+def polysemy_count_wordnet(word: str) -> int:
+    """
+    Return the number of WordNet senses (synsets) for this word,
+    across all parts of speech.
+    """
+    w = word.lower()
+    return len(wn.synsets(w))
+
+
+_POLY_MONO_POOL = None   # words with exactly 1 sense
+_POLY_POLY_POOL = None   # words with many senses (>= min_polysemy)
+
+
+def _build_polysemy_pools(
+    *,
+    min_polysemy: int = 3,
+) -> None:
+    """
+    Build global pools of monosemous vs. polysemous words based on
+    WordNet synset counts.
+
+    monosemous: polysemy_count == 1
+    polysemous: polysemy_count >= min_polysemy
+    """
+    global _POLY_MONO_POOL, _POLY_POLY_POOL
+    if _POLY_MONO_POOL is not None and _POLY_POLY_POOL is not None:
+        return
+
+    mono: List[str] = []
+    poly: List[str] = []
+
+    for w in ALL:
+        if not _is_simple_token(w):
+            continue
+        n_senses = polysemy_count_wordnet(w)
+        if n_senses == 0:
+            continue  # skip words that aren't in WordNet at all
+        if n_senses == 1:
+            mono.append(w)
+        elif n_senses >= min_polysemy:
+            poly.append(w)
+
+    _POLY_MONO_POOL = mono
+    _POLY_POLY_POOL = poly
+
+
+def sample_monosemous_word(
+    *,
+    min_polysemy: int = 3,
+) -> str:
+    """
+    Sample a word that has exactly one WordNet sense.
+    """
+    _build_polysemy_pools(min_polysemy=min_polysemy)
+    if not _POLY_MONO_POOL:
+        raise RuntimeError("No monosemous words found in pool.")
+    return RNG.choice(_POLY_MONO_POOL)
+
+
+def sample_polysemous_word(
+    *,
+    min_polysemy: int = 3,
+) -> str:
+    """
+    Sample a word that has many meanings (>= min_polysemy WordNet senses).
+    """
+    _build_polysemy_pools(min_polysemy=min_polysemy)
+    if not _POLY_POLY_POOL:
+        raise RuntimeError("No polysemous words found in pool.")
+    return RNG.choice(_POLY_POLY_POOL)
+
+
 
 # ---- concreteness sampling ----
 _BRYS_NORMS = None  # word(lower) -> float (1..5)

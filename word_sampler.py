@@ -19,6 +19,7 @@ import csv
 import math
 import random
 import re
+import os
 from typing import Dict, Iterable, List, Optional, Set, Tuple
 
 from wordfreq import top_n_list
@@ -77,6 +78,49 @@ def _wn_lexnames_for(word: str, upos: str) -> Set[str]:
     pos = _UPOS_TO_WNPOS.get(upos)
     synsets = wn.synsets(word, pos=pos) if pos else wn.synsets(word)
     return {syn.lexname() for syn in synsets}
+
+# ---- polysemy-based WordNet lexnames ----
+# --- Polysemy (WordNet-based) ---
+
+def _polysemy_count_wordnet(word: str) -> int:
+    """
+    Return the number of WordNet senses (synsets) for this word,
+    across all parts of speech.
+    """
+    _ensure_nltk()
+    return len(wn.synsets(word.lower()))
+
+
+def _normalized_polysemy_from_count(n_senses: int) -> Optional[float]:
+    """
+    Map integer number of senses to a score in [0,1] with 0.1 steps:
+
+        1 sense -> 0.0
+        2 senses -> 0.1
+        3 senses -> 0.2
+        ...
+        11+ senses -> 1.0
+
+    Anything with no senses (n_senses <= 0) returns None.
+    """
+    if n_senses <= 0:
+        return None
+
+    score = 0.1 * (n_senses - 1)   # 1 -> 0.0, 2 -> 0.1, ...
+    if score < 0.0:
+        score = 0.0
+    if score > 1.0:
+        score = 1.0
+    return float(score)
+
+
+def _polysemy_score(word: str) -> Optional[float]:
+    """
+    Compute number of WordNet senses for `word` and convert to [0,1] score
+    where 0 = 1 sense, 0.1 = 2 senses, ..., 1.0 = 11+ senses.
+    """
+    n = _polysemy_count_wordnet(word)
+    return _normalized_polysemy_from_count(n)
 
 # --- Brysbaert et al. (2014) concreteness norms ---
 _BRYS_NORMS: Optional[Dict[str, float]] = None  # word(lower) -> concreteness (1..5)
@@ -137,15 +181,19 @@ def robust_word_sampler(
     accept_pronouns: bool = False,
     allowed_domains: Optional[Iterable[str]] = None,
     brys_path: Optional[str] = None,
-) -> Tuple[str, float, str, str, float]:
+) -> Tuple[str, float, str, str, float, float]:
     """
-    Returns (word, popularity, upos, domain, abstraction).
-    Keeps sampling until POS, WordNet domain, and Brysbaert score are all available.
+    Returns (word, popularity, upos, domain, abstraction, polysemy).
+
+    Keeps sampling until POS, WordNet domain, Brysbaert score, and
+    WordNet polysemy score are all available.
 
     Process: uniformly sample from the cleaned 50k list (ASCII alphabetic only),
     tag with NLTK Universal POS, require a WordNet lexname consistent with POS,
-    require a Brysbaert concreteness score, then map rank to popularity [0,1]
-    and concreteness (1–5) to abstraction [0,1] via (conc-1)/4.
+    require a Brysbaert concreteness score, then map:
+      - rank to popularity [0,1]
+      - concreteness (1–5) to abstraction [0,1] via (conc-1)/4
+      - WordNet num_senses to polysemy [0,1] via linear scaling
     """
     global _BRYS_NORMS
     if _BRYS_NORMS is None:
@@ -181,13 +229,21 @@ def robust_word_sampler(
             chosen_domain = r.choice(sorted(dom_matches))
         else:
             chosen_domain = r.choice(sorted(domains))
+
         conc = _brys_concreteness(w)
         if conc is None:
             continue
+
+        poly = _polysemy_score(w)
+        if poly is None:
+            continue
+
         idx = lst.index(w)
         popularity = 1.0 - (idx / (N - 1))
         abstraction = _normalized_abstraction_from_concreteness(conc)
-        return w, float(popularity), upos, chosen_domain, float(abstraction)
+
+        # Now include poly in the return tuple
+        return w, float(popularity), upos, chosen_domain, float(abstraction), float(poly)
 
 # --- two-word sampler ---
 def robust_word_sampler_pair(*, rng: Optional[random.Random] = None, **kw):
@@ -303,11 +359,14 @@ def _print_table(title: str, rows, col_widths=(13, 28, 28, 22)):
 
 # --- example run ---
 if __name__ == "__main__":
-    BRYS_PATH = "./concreteness.txt"  # Brysbaert file in same directory
+    # Path relative to this file's directory
+    here = os.path.dirname(__file__)
+    BRYS_PATH = os.path.join(here, "concreteness.txt")
     load_brysbaert_norms(BRYS_PATH)
 
     # Two independent samples A and B
-    (a_word, a_pop, a_upos, a_dom, a_abstr), (b_word, b_pop, b_upos, b_dom, b_abstr) = robust_word_sampler_pair(
+    (a_word, a_pop, a_upos, a_dom, a_abstr, a_poly), \
+    (b_word, b_pop, b_upos, b_dom, b_abstr, b_poly) = robust_word_sampler_pair(
         accept_determiners=False,
         accept_pronouns=False,
         allowed_domains=None
@@ -320,6 +379,7 @@ if __name__ == "__main__":
         ("UPOS",        a_upos,           "NLTK Universal",       "grammar category tag"),
         ("Domain",      a_dom,            "Princeton WordNet",    "semantic domain lexname"),
         ("Abstraction", f"{a_abstr:.4f}", "Brysbaert 2014",       "0 abstract; 1 concrete"),
+        ("Polysemy",    f"{a_poly:.4f}",  "WordNet synsets",      "0 = 1 sense; 1 = many"),
     ]
     rows_B = [
         ("Word",        b_word,           "wordfreq top_n_list", "simple ASCII token"),
@@ -327,17 +387,9 @@ if __name__ == "__main__":
         ("UPOS",        b_upos,           "NLTK Universal",       "grammar category tag"),
         ("Domain",      b_dom,            "Princeton WordNet",    "semantic domain lexname"),
         ("Abstraction", f"{b_abstr:.4f}", "Brysbaert 2014",       "0 abstract; 1 concrete"),
+        ("Polysemy",    f"{b_poly:.4f}",  "WordNet synsets",      "0 = 1 sense; 1 = many"),
     ]
 
     _print_table(f"A Word: {a_word}", rows_A)
     _print_table(f"B Word: {b_word}", rows_B)
 
-    # Pair-level co-occurrence (C4: same-sentence NPMI → [0,1])
-    c4_cooc = c4_sentence_cooccurrence_score(
-        a_word, b_word,
-        lang="en",
-        sample_prob=0.02,    # increase for more stable estimates
-        max_docs=10000       # optional cap
-    )
-    print("=== Pair A–B ===")
-    print(f"C4 Co-occurrence : {c4_cooc:.4f}   Dataset: allenai/c4 (same-sentence NPMI)   Note: 0 far-below-chance; 1 strong co-sentence")
