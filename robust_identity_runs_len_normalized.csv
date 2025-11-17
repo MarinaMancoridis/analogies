@@ -1,0 +1,1501 @@
+trial_id,model,A_word,B_word,A_len,B_len,A_popularity,B_popularity,A_upos,B_upos,A_domain,B_domain,A_abstraction,B_abstraction,A_polysemy,B_polysemy,identity_success,prompt,raw_response,parsed_answer
+1,gpt-5,lion,shit,0.125000,0.125000,0.906298,0.993700,NOUN,NOUN,noun.location,noun.attribute,0.990000,0.832500,0.300000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lion : lion :: shit : ____",ANSWER: shit,shit
+2,gpt-5,unfortunate,wickedness,0.562500,0.500000,0.881538,0.363367,NOUN,NOUN,noun.person,noun.state,0.195000,0.180000,0.300000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unfortunate : unfortunate :: wickedness : ____",ANSWER: wickedness,wickedness
+3,gpt-5,extravaganza,delinquency,0.625000,0.562500,0.384208,0.361007,NOUN,NOUN,noun.act,noun.attribute,0.395000,0.330000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+extravaganza : extravaganza :: delinquency : ____",ANSWER: delinquency,delinquency
+4,gpt-5,likely,posse,0.250000,0.187500,0.987280,0.538571,ADJ,NOUN,adj.all,noun.group,0.190000,0.722500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+likely : likely :: posse : ____",ANSWER: posse,posse
+5,gpt-5,boardroom,decommissioning,0.437500,0.812500,0.393268,0.295026,NOUN,VERB,noun.artifact,verb.possession,0.915000,0.267500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+boardroom : boardroom :: decommissioning : ____",ANSWER: decommissioning,decommissioning
+6,gpt-5,islam,laptop,0.187500,0.250000,0.929979,0.902658,NOUN,NOUN,noun.group,noun.artifact,0.475000,0.990000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+islam : islam :: laptop : ____",ANSWER: laptop,laptop
+7,gpt-5,necessarily,original,0.562500,0.375000,0.937679,0.985700,ADV,ADJ,adv.all,adj.all,0.090000,0.267500,0.200000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+necessarily : necessarily :: original : ____",ANSWER: originally,originally
+8,gpt-5,betrothed,poverty,0.437500,0.312500,0.312066,0.934999,VERB,NOUN,verb.communication,noun.state,0.340000,0.385000,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+betrothed : betrothed :: poverty : ____",ANSWER: poor,poor
+9,gpt-5,excommunication,equator,0.812500,0.312500,0.167623,0.587512,NOUN,NOUN,noun.act,noun.location,0.325000,0.712500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+excommunication : excommunication :: equator : ____",ANSWER: equator,equator
+10,gpt-5,feminist,tuft,0.375000,0.125000,0.882358,0.006360,NOUN,NOUN,noun.person,noun.group,0.365000,0.712500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+feminist : feminist :: tuft : ____",ANSWER: tuft,tuft
+11,gpt-5,coloration,insulating,0.500000,0.500000,0.430049,0.434909,NOUN,VERB,noun.attribute,verb.change,0.397500,0.457500,0.200000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+coloration : coloration :: insulating : ____",ANSWER: insulation,insulation
+12,gpt-5,cultivated,chestnut,0.500000,0.375000,0.740975,0.684514,VERB,NOUN,verb.social,noun.animal,0.412500,0.925000,0.600000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cultivated : cultivated :: chestnut : ____",ANSWER: chestnut,chestnut
+13,gpt-5,bow,dystopia,0.062500,0.375000,0.914278,0.186564,NOUN,NOUN,noun.artifact,noun.state,0.902500,0.230000,1.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bow : bow :: dystopia : ____",ANSWER: utopia,utopia
+14,gpt-5,terrifying,visibility,0.500000,0.500000,0.844957,0.800336,VERB,NOUN,verb.emotion,noun.state,0.270000,0.510000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+terrifying : terrifying :: visibility : ____",ANSWER: visibility,visibility
+15,gpt-5,ache,bologna,0.125000,0.312500,0.672073,0.582892,NOUN,NOUN,noun.state,noun.food,0.607500,0.982500,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ache : ache :: bologna : ____",ANSWER: baloney,baloney
+16,gpt-5,consenting,intact,0.500000,0.250000,0.451809,0.852997,VERB,ADJ,verb.communication,adj.all,0.180000,0.410000,0.100000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+consenting : consenting :: intact : ____",ANSWER: untouched,untouched
+17,gpt-5,refugee,wreath,0.312500,0.250000,0.852357,0.635493,NOUN,NOUN,noun.person,noun.artifact,0.742500,0.982500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+refugee : refugee :: wreath : ____",ANSWER: thawer,thawer
+18,gpt-5,sideshow,incisive,0.375000,0.375000,0.373107,0.221984,NOUN,ADJ,noun.act,adj.all,0.757500,0.215000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sideshow : sideshow :: incisive : ____",ANSWER: incisive,incisive
+19,gpt-5,rust,acute,0.125000,0.187500,0.787936,0.858197,NOUN,NOUN,noun.process,noun.communication,0.880000,0.230000,0.700000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rust : rust :: acute : ____",ANSWER: accent,accent
+20,gpt-5,yarn,profoundly,0.125000,0.500000,0.738375,0.703694,NOUN,ADV,noun.artifact,adv.all,0.982500,0.177500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+yarn : yarn :: profoundly : ____",ANSWER: profoundly,profoundly
+21,gpt-5,oat,accredited,0.062500,0.500000,0.341087,0.780536,NOUN,VERB,noun.food,verb.social,1.000000,0.317500,0.100000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+oat : oat :: accredited : ____",ANSWER: credited,credited
+22,gpt-5,falsehood,prerequisite,0.437500,0.625000,0.360447,0.573611,NOUN,NOUN,noun.communication,noun.cognition,0.250000,0.365000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+falsehood : falsehood :: prerequisite : ____",ANSWER: prerequisite,prerequisite
+23,gpt-5,gossiping,spacecraft,0.437500,0.500000,0.250585,0.791056,VERB,NOUN,verb.communication,noun.artifact,0.422500,0.950000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gossiping : gossiping :: spacecraft : ____",ANSWER: spacecraft,spacecraft
+24,gpt-5,costing,doorbell,0.312500,0.375000,0.772755,0.457449,VERB,NOUN,verb.stative,noun.artifact,0.462500,0.955000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+costing : costing :: doorbell : ____",ANSWER: doorbell,doorbell
+25,gpt-5,recent,gambling,0.250000,0.375000,0.980480,0.875058,ADJ,VERB,adj.all,verb.competition,0.375000,0.635000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+recent : recent :: gambling : ____",ANSWER: gambling,gambling
+26,gpt-5,drawbridge,souvenir,0.500000,0.375000,0.071421,0.636213,NOUN,NOUN,noun.artifact,noun.artifact,0.972500,0.862500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+drawbridge : drawbridge :: souvenir : ____",ANSWER: souvenir,souvenir
+27,gpt-5,fatigue,loosing,0.312500,0.312500,0.824236,0.490790,NOUN,VERB,noun.state,verb.change,0.535000,0.242500,0.500000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fatigue : fatigue :: loosing : ____",ANSWER: losing,losing
+28,gpt-5,trade,flamed,0.187500,0.250000,0.984100,0.035241,NOUN,VERB,noun.act,verb.communication,0.520000,0.542500,1.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+trade : trade :: flamed : ____",ANSWER: flame,flame
+29,gpt-5,exhaustive,bride,0.500000,0.187500,0.608212,0.875718,ADJ,NOUN,adj.all,noun.person,0.325000,0.907500,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+exhaustive : exhaustive :: bride : ____",ANSWER: be,be
+30,gpt-5,bowel,surge,0.187500,0.187500,0.722574,0.811956,NOUN,NOUN,noun.body,noun.act,0.882500,0.445000,0.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bowel : bowel :: surge : ____",ANSWER: surge,surge
+31,gpt-5,purgatory,vamp,0.437500,0.125000,0.489170,0.305186,NOUN,NOUN,noun.cognition,noun.artifact,0.380000,0.512500,0.100000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+purgatory : purgatory :: vamp : ____",ANSWER: vamp,vamp
+32,gpt-5,sporadically,longevity,0.625000,0.437500,0.356167,0.721034,ADV,NOUN,adv.all,noun.attribute,0.302500,0.225000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sporadically : sporadically :: longevity : ____",ANSWER: longevity,longevity
+33,gpt-5,mantel,dropper,0.250000,0.312500,0.350207,0.025721,NOUN,NOUN,noun.artifact,noun.artifact,0.910000,0.697500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mantel : mantel :: dropper : ____",ANSWER: dropper,dropper
+34,gpt-5,chairperson,supermodel,0.562500,0.500000,0.524430,0.487990,NOUN,NOUN,noun.person,noun.person,0.895000,0.832500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chairperson : chairperson :: supermodel : ____",ANSWER: supermodel,supermodel
+35,gpt-5,slaying,bling,0.312500,0.187500,0.584512,0.559771,VERB,NOUN,verb.social,noun.artifact,0.732500,0.750000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+slaying : slaying :: bling : ____",ANSWER: bling,bling
+36,gpt-5,physiology,toots,0.500000,0.187500,0.743455,0.063541,NOUN,NOUN,noun.attribute,noun.act,0.430000,0.540000,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+physiology : physiology :: toots : ____",ANSWER: tootology,tootology
+37,gpt-5,doorknob,workman,0.375000,0.312500,0.116562,0.386848,NOUN,NOUN,noun.artifact,noun.person,0.992500,0.777500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+doorknob : doorknob :: workman : ____",ANSWER: workman,workman
+38,gpt-5,highest,runoff,0.312500,0.250000,0.970879,0.711934,ADJ,NOUN,adj.all,noun.act,0.430000,0.722500,0.600000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+highest : highest :: runoff : ____",ANSWER: runoff,runoff
+39,gpt-5,pizza,ante,0.187500,0.125000,0.931119,0.624872,NOUN,NOUN,noun.food,noun.possession,1.000000,0.500000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pizza : pizza :: ante : ____",ANSWER: before,before
+40,gpt-5,youngster,preferable,0.437500,0.500000,0.589112,0.673833,NOUN,ADJ,noun.person,adj.all,0.690000,0.135000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+youngster : youngster :: preferable : ____",ANSWER: preferable,preferable
+41,gpt-5,accommodation,expenditure,0.687500,0.562500,0.871417,0.789136,NOUN,NOUN,noun.cognition,noun.possession,0.490000,0.440000,0.500000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+accommodation : accommodation :: expenditure : ____",ANSWER: expenditure,expenditure
+42,gpt-5,gull,writing,0.125000,0.312500,0.421248,0.981620,NOUN,VERB,noun.person,verb.creation,0.770000,0.675000,0.300000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gull : gull :: writing : ____",ANSWER: righting,righting
+43,gpt-5,pose,measuring,0.125000,0.437500,0.878338,0.872477,NOUN,VERB,noun.act,verb.change,0.582500,0.630000,0.800000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pose : pose :: measuring : ____",ANSWER: meter,meter
+44,gpt-5,entrepreneurial,countryman,0.812500,0.500000,0.657413,0.345107,ADJ,NOUN,adj.pert,noun.person,0.285000,0.665000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+entrepreneurial : entrepreneurial :: countryman : ____",ANSWER: countryman,countryman
+45,gpt-5,triangulation,mistletoe,0.687500,0.437500,0.150803,0.266585,NOUN,NOUN,noun.act,noun.plant,0.347500,0.962500,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+triangulation : triangulation :: mistletoe : ____",ANSWER: osculation,osculation
+46,gpt-5,unpalatable,bling,0.562500,0.187500,0.006100,0.559771,ADJ,NOUN,adj.all,noun.artifact,0.395000,0.750000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unpalatable : unpalatable :: bling : ____",ANSWER: bling,bling
+47,gpt-5,upset,congratulation,0.187500,0.750000,0.950619,0.196404,NOUN,NOUN,noun.artifact,noun.communication,0.352500,0.317500,1.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+upset : upset :: congratulation : ____",ANSWER: congratulate,congratulate
+48,gpt-5,newbie,consecrated,0.250000,0.562500,0.551031,0.535631,NOUN,VERB,noun.person,verb.social,0.457500,0.267500,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+newbie : newbie :: consecrated : ____",ANSWER: consecrated,consecrated
+49,gpt-5,cusp,menacing,0.125000,0.375000,0.457769,0.539231,NOUN,VERB,noun.artifact,verb.stative,0.435000,0.297500,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cusp : cusp :: menacing : ____",ANSWER: menacing,menacing
+50,gpt-5,worsening,only,0.437500,0.125000,0.518810,0.998440,VERB,ADV,verb.change,adv.all,0.240000,0.352500,0.400000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+worsening : worsening :: only : ____",ANSWER: only,only
+51,gpt-5,hairpin,toots,0.312500,0.187500,0.240885,0.063541,NOUN,NOUN,noun.artifact,noun.act,0.957500,0.540000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hairpin : hairpin :: toots : ____",ANSWER: toots,toots
+52,gpt-5,thou,smother,0.125000,0.312500,0.888858,0.298306,NOUN,NOUN,noun.quantity,noun.phenomenon,0.297500,0.525000,0.000000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+thou : thou :: smother : ____",ANSWER: mother,mother
+53,gpt-5,illegitimate,oddity,0.625000,0.250000,0.670073,0.229545,NOUN,NOUN,noun.person,noun.attribute,0.205000,0.277500,0.200000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+illegitimate : illegitimate :: oddity : ____",ANSWER: odd,odd
+54,gpt-5,horoscope,mover,0.437500,0.187500,0.491730,0.556851,NOUN,NOUN,noun.communication,noun.group,0.572500,0.687500,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+horoscope : horoscope :: mover : ____",ANSWER: mover,mover
+55,gpt-5,mug,fertility,0.062500,0.437500,0.778576,0.802176,NOUN,NOUN,noun.quantity,noun.state,0.950000,0.397500,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mug : mug :: fertility : ____",ANSWER: fertility,fertility
+56,gpt-5,acceleration,stereo,0.625000,0.250000,0.787216,0.797296,NOUN,NOUN,noun.attribute,noun.artifact,0.492500,0.907500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+acceleration : acceleration :: stereo : ____",ANSWER: stereo,stereo
+57,gpt-5,sped,metamorphic,0.125000,0.562500,0.584372,0.134783,VERB,ADJ,verb.change,adj.all,0.595000,0.405000,0.400000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sped : sped :: metamorphic : ____",ANSWER: metamorphic,metamorphic
+58,gpt-5,reasoning,truffle,0.437500,0.312500,0.859037,0.459829,VERB,NOUN,verb.cognition,noun.food,0.097500,0.900000,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+reasoning : reasoning :: truffle : ____",ANSWER: truffle,truffle
+59,gpt-5,wednesday,afterlife,0.437500,0.437500,0.948699,0.639913,NOUN,NOUN,noun.time,noun.time,0.535000,0.225000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+wednesday : wednesday :: afterlife : ____",ANSWER: afterlife,afterlife
+60,gpt-5,firebird,snug,0.375000,0.125000,0.127083,0.488310,NOUN,NOUN,noun.animal,noun.artifact,0.892500,0.385000,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+firebird : firebird :: snug : ____",ANSWER: snug,snug
+61,gpt-5,artillery,considered,0.437500,0.500000,0.849537,0.982740,NOUN,VERB,noun.group,verb.communication,0.827500,0.242500,0.200000,0.900000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+artillery : artillery :: considered : ____",ANSWER: considered,considered
+62,gpt-5,sudoku,problem,0.250000,0.312500,0.097862,0.992200,NOUN,NOUN,noun.communication,noun.communication,0.865000,0.420000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sudoku : sudoku :: problem : ____",ANSWER: problem,problem
+63,gpt-5,daisy,unsubstantiated,0.187500,0.812500,0.802656,0.322006,NOUN,ADJ,noun.plant,adj.all,1.000000,0.205000,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+daisy : daisy :: unsubstantiated : ____",ANSWER: substantiated,substantiated
+64,gpt-5,shithead,avoidable,0.375000,0.437500,0.298466,0.401528,NOUN,ADJ,noun.person,adj.all,0.315000,0.197500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shithead : shithead :: avoidable : ____",ANSWER: voidable,voidable
+65,gpt-5,charging,finisher,0.375000,0.375000,0.892078,0.516850,VERB,NOUN,verb.creation,noun.animal,0.585000,0.455000,1.000000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+charging : charging :: finisher : ____",ANSWER: closer,closer
+66,gpt-5,hatchback,brutality,0.437500,0.437500,0.406388,0.741455,NOUN,NOUN,noun.artifact,noun.act,0.870000,0.370000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hatchback : hatchback :: brutality : ____",ANSWER: brutality,brutality
+67,gpt-5,petition,process,0.375000,0.312500,0.913638,0.989000,NOUN,NOUN,noun.communication,noun.Tops,0.780000,0.482500,0.200000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+petition : petition :: process : ____",ANSWER: process,process
+68,gpt-5,organically,employ,0.562500,0.250000,0.440969,0.848857,ADV,NOUN,adv.all,noun.state,0.415000,0.352500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+organically : organically :: employ : ____",ANSWER: employ,employ
+69,gpt-5,stroke,telepathy,0.250000,0.437500,0.908918,0.322486,NOUN,NOUN,noun.event,noun.communication,0.775000,0.292500,1.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+stroke : stroke :: telepathy : ____",ANSWER: mind,mind
+70,gpt-5,creative,max,0.375000,0.062500,0.950499,0.955579,ADJ,NOUN,adj.all,noun.artifact,0.232500,0.295000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+creative : creative :: max : ____",ANSWER: max,max
+71,gpt-5,airport,agonizing,0.312500,0.437500,0.969699,0.416908,NOUN,VERB,noun.artifact,verb.emotion,0.967500,0.250000,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+airport : airport :: agonizing : ____",ANSWER: agonising,agonising
+72,gpt-5,fiduciary,impenetrable,0.437500,0.625000,0.457029,0.470649,ADJ,ADJ,adj.pert,adj.all,0.345000,0.405000,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fiduciary : fiduciary :: impenetrable : ____",ANSWER: impenetrability,impenetrability
+73,gpt-5,raft,coincidence,0.125000,0.562500,0.682174,0.849177,NOUN,NOUN,noun.quantity,noun.event,1.000000,0.142500,0.400000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+raft : raft :: coincidence : ____",ANSWER: incidence,incidence
+74,gpt-5,spear,brutality,0.187500,0.437500,0.774095,0.741455,NOUN,NOUN,noun.artifact,noun.act,1.000000,0.370000,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+spear : spear :: brutality : ____",ANSWER: brutalize,brutalize
+75,gpt-5,shortly,crescendo,0.312500,0.437500,0.936119,0.286546,ADV,NOUN,adv.all,noun.attribute,0.327500,0.510000,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shortly : shortly :: crescendo : ____",ANSWER: crescendo,crescendo
+76,gpt-5,does,nut,0.125000,0.062500,0.996480,0.865717,VERB,NOUN,verb.creation,noun.artifact,0.310000,0.880000,1.000000,0.700000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+does : does :: nut : ____",ANSWER: nuts,nuts
+77,gpt-5,imaginary,reading,0.437500,0.312500,0.804676,0.984960,ADJ,NOUN,adj.all,noun.cognition,0.185000,0.677500,0.100000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+imaginary : imaginary :: reading : ____",ANSWER: reading,reading
+78,gpt-5,guacamole,appointee,0.437500,0.437500,0.351567,0.329727,NOUN,NOUN,noun.food,noun.person,0.972500,0.625000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+guacamole : guacamole :: appointee : ____",ANSWER: appointees,appointees
+79,gpt-5,paparazzi,engraving,0.437500,0.437500,0.556631,0.613492,NOUN,VERB,noun.person,verb.creation,0.777500,0.820000,0.000000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+paparazzi : paparazzi :: engraving : ____",ANSWER: graffiti,graffiti
+80,gpt-5,fired,bolt,0.187500,0.125000,0.953099,0.866837,VERB,NOUN,verb.competition,noun.phenomenon,0.370000,0.917500,0.900000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fired : fired :: bolt : ____",ANSWER: bolted,bolted
+81,gpt-5,fullback,loan,0.375000,0.125000,0.563931,0.957659,NOUN,NOUN,noun.person,noun.communication,0.750000,0.680000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fullback : fullback :: loan : ____",ANSWER: loan,loan
+82,gpt-5,fallible,fine,0.375000,0.125000,0.013480,0.988300,ADJ,NOUN,adj.all,noun.possession,0.240000,0.402500,0.100000,0.900000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fallible : fallible :: fine : ____",ANSWER: fine,fine
+83,gpt-5,fallback,hypothesis,0.375000,0.500000,0.127283,0.826457,NOUN,NOUN,noun.act,noun.cognition,0.287500,0.280000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fallback : fallback :: hypothesis : ____",ANSWER: hypothesis,hypothesis
+84,gpt-5,baroness,combo,0.375000,0.187500,0.649073,0.808316,NOUN,NOUN,noun.person,noun.group,0.730000,0.592500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+baroness : baroness :: combo : ____",ANSWER: comboh,comboh
+85,gpt-5,illegally,veil,0.437500,0.125000,0.826437,0.760135,ADV,NOUN,adv.all,noun.plant,0.232500,0.862500,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+illegally : illegally :: veil : ____",ANSWER: veil,veil
+86,gpt-5,exertion,landowner,0.375000,0.437500,0.344007,0.497710,NOUN,NOUN,noun.act,noun.person,0.360000,0.822500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+exertion : exertion :: landowner : ____",ANSWER: landowner,landowner
+87,gpt-5,figuratively,hardly,0.625000,0.250000,0.406908,0.943339,ADV,ADV,adv.all,adv.all,0.052500,0.155000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+figuratively : figuratively :: hardly : ____",ANSWER: barely,barely
+88,gpt-5,wiggle,restlessness,0.250000,0.625000,0.583692,0.256005,NOUN,NOUN,noun.act,noun.state,0.732500,0.330000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+wiggle : wiggle :: restlessness : ____",ANSWER: restlessness,restlessness
+89,gpt-5,livery,temptation,0.250000,0.500000,0.490870,0.781096,NOUN,NOUN,noun.act,noun.cognition,0.717500,0.210000,0.300000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+livery : livery :: temptation : ____",ANSWER: attemptation,attemptation
+90,gpt-5,pizzeria,artistry,0.375000,0.375000,0.315466,0.506790,NOUN,NOUN,noun.artifact,noun.cognition,0.890000,0.250000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pizzeria : pizzeria :: artistry : ____",ANSWER: artistry,artistry
+91,gpt-5,drew,browse,0.125000,0.250000,0.935499,0.737835,NOUN,NOUN,noun.person,noun.act,0.542500,0.517500,1.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+drew : drew :: browse : ____",ANSWER: browse,browse
+92,gpt-5,sensuous,daily,0.375000,0.187500,0.246385,0.982040,ADJ,ADJ,adj.all,adj.all,0.225000,0.537500,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sensuous : sensuous :: daily : ____",ANSWER: daily,daily
+93,gpt-5,backpacker,serve,0.500000,0.187500,0.107382,0.969979,NOUN,NOUN,noun.person,noun.act,0.972500,0.695000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+backpacker : backpacker :: serve : ____",ANSWER: serve,serve
+94,gpt-5,bonding,defibrillator,0.312500,0.687500,0.769795,0.128043,NOUN,NOUN,noun.act,noun.artifact,0.370000,0.920000,0.600000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bonding : bonding :: defibrillator : ____",ANSWER: defibrillator,defibrillator
+95,gpt-5,collector,victimization,0.437500,0.687500,0.837397,0.272185,NOUN,NOUN,noun.artifact,noun.act,0.775000,0.225000,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+collector : collector :: victimization : ____",ANSWER: victimisation,victimisation
+96,gpt-5,lift,debris,0.125000,0.250000,0.939899,0.839577,NOUN,NOUN,noun.artifact,noun.substance,0.722500,0.922500,1.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lift : lift :: debris : ____",ANSWER: refuse,refuse
+97,gpt-5,irritable,premises,0.437500,0.375000,0.483910,0.860997,ADJ,NOUN,adj.all,noun.location,0.287500,0.550000,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+irritable : irritable :: premises : ____",ANSWER: premises,premises
+98,gpt-5,integration,stork,0.562500,0.187500,0.900918,0.322806,NOUN,NOUN,noun.act,noun.animal,0.222500,0.930000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+integration : integration :: stork : ____",ANSWER: stork,stork
+99,gpt-5,assistive,aftermath,0.437500,0.437500,0.038541,0.835377,ADJ,NOUN,adj.all,noun.phenomenon,0.260000,0.242500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+assistive : assistive :: aftermath : ____",ANSWER: aftermath,aftermath
+100,gpt-5,politically,phobia,0.562500,0.250000,0.870017,0.489430,ADV,NOUN,adv.all,noun.state,0.222500,0.275000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+politically : politically :: phobia : ____",ANSWER: phobically,phobically
+101,gpt-5,badminton,operation,0.437500,0.437500,0.599172,0.974439,NOUN,NOUN,noun.act,noun.process,0.925000,0.610000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+badminton : badminton :: operation : ____",ANSWER: operation,operation
+102,gpt-5,favoritism,roulette,0.500000,0.375000,0.241485,0.650673,NOUN,NOUN,noun.cognition,noun.act,0.232500,0.787500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+favoritism : favoritism :: roulette : ____",ANSWER: roulette,roulette
+103,gpt-5,herder,upwardly,0.250000,0.375000,0.176584,0.006020,NOUN,ADV,noun.person,adv.all,0.740000,0.412500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+herder : herder :: upwardly : ____",ANSWER: upwardly,upwardly
+104,gpt-5,meteor,island,0.250000,0.250000,0.720834,0.978980,NOUN,NOUN,noun.phenomenon,noun.artifact,0.990000,0.990000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+meteor : meteor :: island : ____",ANSWER: island,island
+105,gpt-5,ruby,extravaganza,0.125000,0.625000,0.852297,0.384208,NOUN,NOUN,noun.substance,noun.act,0.942500,0.395000,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ruby : ruby :: extravaganza : ____",ANSWER: extravaganza,extravaganza
+106,gpt-5,mismatch,method,0.375000,0.250000,0.490470,0.966739,NOUN,NOUN,noun.cognition,noun.cognition,0.500000,0.352500,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mismatch : mismatch :: method : ____",ANSWER: hod,hod
+107,gpt-5,liberty,routing,0.312500,0.312500,0.919438,0.719794,NOUN,VERB,noun.act,verb.competition,0.212500,0.405000,0.400000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+liberty : liberty :: routing : ____",ANSWER: routing,routing
+108,gpt-5,vacuum,invariably,0.250000,0.500000,0.876078,0.674853,NOUN,ADV,noun.artifact,adv.all,0.805000,0.230000,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vacuum : vacuum :: invariably : ____",ANSWER: invariably,invariably
+109,gpt-5,apparently,gynecology,0.500000,0.500000,0.966919,0.293586,ADV,NOUN,adv.all,noun.cognition,0.187500,0.625000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+apparently : apparently :: gynecology : ____",ANSWER: gynaecology,gynaecology
+110,gpt-5,trucking,invite,0.375000,0.250000,0.630973,0.913798,NOUN,NOUN,noun.act,noun.communication,0.680000,0.500000,0.100000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+trucking : trucking :: invite : ____",ANSWER: invite,invite
+111,gpt-5,unopposed,stupor,0.437500,0.250000,0.305246,0.181804,ADJ,NOUN,adj.all,noun.feeling,0.312500,0.425000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unopposed : unopposed :: stupor : ____",ANSWER: sprout,sprout
+112,gpt-5,demonstrably,socialist,0.625000,0.437500,0.242365,0.900358,ADV,NOUN,adv.all,noun.person,0.250000,0.547500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+demonstrably : demonstrably :: socialist : ____",ANSWER: socialist,socialist
+113,gpt-5,leukemia,mucous,0.375000,0.250000,0.682994,0.220364,NOUN,ADJ,noun.state,adj.pert,0.642500,0.792500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+leukemia : leukemia :: mucous : ____",ANSWER: mucus,mucus
+114,gpt-5,reprehensible,harvest,0.687500,0.312500,0.396008,0.864177,ADJ,NOUN,adj.all,noun.act,0.167500,0.750000,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+reprehensible : reprehensible :: harvest : ____",ANSWER: harvest,harvest
+115,gpt-5,orientation,spaghetti,0.562500,0.437500,0.867997,0.757155,NOUN,NOUN,noun.act,noun.food,0.357500,1.000000,0.500000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+orientation : orientation :: spaghetti : ____",ANSWER: western,western
+116,gpt-5,following,fiftieth,0.437500,0.375000,0.993460,0.092582,VERB,NOUN,verb.perception,noun.relation,0.457500,0.510000,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+following : following :: fiftieth : ____",ANSWER: fiftieth,fiftieth
+117,gpt-5,emancipation,approximation,0.625000,0.687500,0.597912,0.619732,NOUN,NOUN,noun.act,noun.act,0.342500,0.212500,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+emancipation : emancipation :: approximation : ____",ANSWER: approximation,approximation
+118,gpt-5,tripping,drafting,0.375000,0.375000,0.706954,0.762395,VERB,VERB,verb.consumption,verb.creation,0.577500,0.620000,0.600000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tripping : tripping :: drafting : ____",ANSWER: draughting,draughting
+119,gpt-5,orbit,practicable,0.187500,0.562500,0.863697,0.290706,NOUN,ADJ,noun.attribute,adj.all,0.732500,0.232500,0.500000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+orbit : orbit :: practicable : ____",ANSWER: practicable,practicable
+120,gpt-5,garbage,inactive,0.312500,0.375000,0.893478,0.751155,NOUN,ADJ,noun.substance,adj.all,0.922500,0.542500,0.200000,0.900000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+garbage : garbage :: inactive : ____",ANSWER: active,active
+121,gpt-5,sternum,characteristic,0.312500,0.750000,0.217844,0.851457,NOUN,ADJ,noun.body,adj.all,0.922500,0.345000,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sternum : sternum :: characteristic : ____",ANSWER: characteristic,characteristic
+122,gpt-5,processing,unrivalled,0.500000,0.500000,0.934959,0.254645,NOUN,ADJ,noun.process,adj.all,0.257500,0.162500,0.700000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+processing : processing :: unrivalled : ____",ANSWER: unrivaled,unrivaled
+123,gpt-5,irradiated,proofs,0.500000,0.250000,0.367627,0.641473,VERB,NOUN,verb.change,noun.act,0.365000,0.532500,0.200000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+irradiated : irradiated :: proofs : ____",ANSWER: proofs,proofs
+124,gpt-5,sterling,axis,0.375000,0.125000,0.883178,0.862637,NOUN,NOUN,noun.possession,noun.artifact,0.732500,0.642500,0.100000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sterling : sterling :: axis : ____",ANSWER: axial,axial
+125,gpt-5,fort,experienced,0.125000,0.562500,0.933979,0.953159,NOUN,ADJ,noun.artifact,adj.all,0.930000,0.125000,0.400000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fort : fort :: experienced : ____",ANSWER: expert,expert
+126,gpt-5,cyborg,adjoining,0.250000,0.437500,0.564611,0.702474,NOUN,VERB,noun.person,verb.change,0.720000,0.482500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cyborg : cyborg :: adjoining : ____",ANSWER: adjoining,adjoining
+127,gpt-5,lecturer,pension,0.375000,0.312500,0.782396,0.900638,NOUN,NOUN,noun.person,noun.possession,0.835000,0.722500,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lecturer : lecturer :: pension : ____",ANSWER: pensioner,pensioner
+128,gpt-5,disproportionately,plodding,1.000000,0.375000,0.608432,0.020560,ADV,VERB,adv.all,verb.motion,0.295000,0.410000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+disproportionately : disproportionately :: plodding : ____",ANSWER: plodding,plodding
+129,gpt-5,symposium,sharpshooter,0.437500,0.625000,0.742595,0.086982,NOUN,NOUN,noun.group,noun.artifact,0.645000,0.897500,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+symposium : symposium :: sharpshooter : ____",ANSWER: shooter,shooter
+130,gpt-5,expertise,permit,0.437500,0.250000,0.870677,0.900618,NOUN,NOUN,noun.cognition,noun.animal,0.160000,0.607500,0.000000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+expertise : expertise :: permit : ____",ANSWER: permits,permits
+131,gpt-5,handsomely,revulsion,0.500000,0.437500,0.326607,0.172983,ADV,NOUN,adv.all,noun.feeling,0.267500,0.260000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+handsomely : handsomely :: revulsion : ____",ANSWER: revulsion,revulsion
+132,gpt-5,plunder,trapping,0.312500,0.375000,0.489330,0.645253,NOUN,VERB,noun.possession,verb.contact,0.527500,0.595000,0.400000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+plunder : plunder :: trapping : ____",ANSWER: trappings,trappings
+133,gpt-5,risk,polo,0.125000,0.125000,0.980920,0.797856,NOUN,NOUN,noun.state,noun.act,0.157500,0.857500,0.500000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+risk : risk :: polo : ____",ANSWER: polo,polo
+134,gpt-5,featured,date,0.375000,0.125000,0.932779,0.987920,VERB,NOUN,verb.stative,noun.group,0.380000,0.725000,0.300000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+featured : featured :: date : ____",ANSWER: date,date
+135,gpt-5,attendee,negligible,0.375000,0.500000,0.188684,0.651493,NOUN,ADJ,noun.person,adj.all,0.697500,0.162500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+attendee : attendee :: negligible : ____",ANSWER: negligible,negligible
+136,gpt-5,petticoat,professionally,0.437500,0.750000,0.088362,0.794796,NOUN,ADV,noun.artifact,adv.all,0.920000,0.257500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+petticoat : petticoat :: professionally : ____",ANSWER: professionally,professionally
+137,gpt-5,pants,dyeing,0.187500,0.250000,0.937639,0.369427,NOUN,VERB,noun.event,verb.change,0.965000,0.667500,0.500000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pants : pants :: dyeing : ____",ANSWER: dying,dying
+138,gpt-5,homestead,contest,0.437500,0.312500,0.696274,0.943499,NOUN,NOUN,noun.possession,noun.act,0.767500,0.630000,0.300000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+homestead : homestead :: contest : ____",ANSWER: contest,contest
+139,gpt-5,chimney,birthing,0.312500,0.375000,0.722374,0.378368,NOUN,NOUN,noun.artifact,noun.process,1.000000,0.605000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chimney : chimney :: birthing : ____",ANSWER: birthing,birthing
+140,gpt-5,shit,paprika,0.125000,0.312500,0.993700,0.389428,NOUN,NOUN,noun.process,noun.plant,0.832500,1.000000,0.700000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shit : shit :: paprika : ____",ANSWER: paprika,paprika
+141,gpt-5,retribution,preoccupied,0.562500,0.562500,0.645953,0.585212,NOUN,VERB,noun.possession,verb.emotion,0.250000,0.315000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+retribution : retribution :: preoccupied : ____",ANSWER: preoccupied,preoccupied
+142,gpt-5,remainder,frosting,0.437500,0.375000,0.863417,0.456929,NOUN,VERB,noun.quantity,verb.contact,0.527500,0.965000,0.400000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+remainder : remainder :: frosting : ____",ANSWER: icing,icing
+143,gpt-5,ratio,aggressively,0.187500,0.625000,0.923278,0.752855,NOUN,ADV,noun.relation,adv.all,0.387500,0.312500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ratio : ratio :: aggressively : ____",ANSWER: aggressively,aggressively
+144,gpt-5,wallop,molding,0.250000,0.312500,0.074821,0.545151,NOUN,VERB,noun.act,verb.contact,0.612500,0.847500,0.300000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+wallop : wallop :: molding : ____",ANSWER: moulding,moulding
+145,gpt-5,normalcy,deviant,0.375000,0.312500,0.282986,0.443909,NOUN,NOUN,noun.state,noun.person,0.192500,0.260000,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+normalcy : normalcy :: deviant : ____",ANSWER: deviancy,deviancy
+146,gpt-5,waterfront,moan,0.500000,0.125000,0.723234,0.641993,NOUN,NOUN,noun.location,noun.communication,0.917500,0.680000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+waterfront : waterfront :: moan : ____",ANSWER: woman,woman
+147,gpt-5,cause,bloomer,0.187500,0.312500,0.991200,0.129283,NOUN,NOUN,noun.communication,noun.act,0.357500,0.670000,0.600000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cause : cause :: bloomer : ____",ANSWER: bloomer,bloomer
+148,gpt-5,lifetime,hurriedly,0.375000,0.437500,0.925999,0.250005,NOUN,ADV,noun.time,adv.all,0.287500,0.230000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lifetime : lifetime :: hurriedly : ____",ANSWER: hurriedly,hurriedly
+149,gpt-5,translational,couple,0.687500,0.250000,0.417408,0.987000,ADJ,NOUN,adj.pert,noun.quantity,0.210000,0.732500,0.000000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+translational : translational :: couple : ____",ANSWER: couple,couple
+150,gpt-5,naive,elliptical,0.187500,0.500000,0.791856,0.558651,ADJ,ADJ,adj.all,adj.all,0.212500,0.625000,0.400000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+naive : naive :: elliptical : ____",ANSWER: ellipsis,ellipsis
+151,gpt-5,insurance,import,0.437500,0.250000,0.975500,0.878798,NOUN,NOUN,noun.possession,noun.cognition,0.465000,0.380000,0.200000,0.700000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+insurance : insurance :: import : ____",ANSWER: importance,importance
+152,gpt-5,trembling,rapist,0.437500,0.250000,0.589592,0.746755,VERB,NOUN,verb.motion,noun.person,0.597500,0.830000,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+trembling : trembling :: rapist : ____",ANSWER: therapist,therapist
+153,gpt-5,spices,decibel,0.250000,0.312500,0.719494,0.002740,NOUN,NOUN,noun.substance,noun.quantity,0.915000,0.475000,0.400000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+spices : spices :: decibel : ____",ANSWER: bel,bel
+154,gpt-5,larceny,chute,0.312500,0.187500,0.342187,0.547731,NOUN,NOUN,noun.act,noun.artifact,0.400000,0.902500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+larceny : larceny :: chute : ____",ANSWER: chute,chute
+155,gpt-5,bid,shark,0.062500,0.187500,0.927999,0.878058,NOUN,NOUN,noun.communication,noun.animal,0.427500,0.982500,0.900000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bid : bid :: shark : ____",ANSWER: shark,shark
+156,gpt-5,eyeball,graveyard,0.312500,0.437500,0.492370,0.725435,NOUN,NOUN,noun.body,noun.location,0.980000,0.957500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+eyeball : eyeball :: graveyard : ____",ANSWER: graveyard,graveyard
+157,gpt-5,meld,foreground,0.125000,0.500000,0.184104,0.587212,NOUN,NOUN,noun.act,noun.artifact,0.465000,0.482500,0.300000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+meld : meld :: foreground : ____",ANSWER: foreground,foreground
+158,gpt-5,launcher,sideline,0.375000,0.375000,0.642333,0.615932,NOUN,NOUN,noun.artifact,noun.act,0.717500,0.732500,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+launcher : launcher :: sideline : ____",ANSWER: sideline,sideline
+159,gpt-5,chamomile,subordinate,0.437500,0.562500,0.083242,0.677114,NOUN,NOUN,noun.plant,noun.communication,0.925000,0.432500,0.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chamomile : chamomile :: subordinate : ____",ANSWER: subordinate,subordinate
+160,gpt-5,hotel,self,0.187500,0.125000,0.976200,0.988740,NOUN,NOUN,noun.artifact,noun.cognition,0.982500,0.525000,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hotel : hotel :: self : ____",ANSWER: itself,itself
+161,gpt-5,thrower,pound,0.312500,0.187500,0.338907,0.916418,NOUN,NOUN,noun.person,noun.quantity,0.615000,0.902500,0.200000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+thrower : thrower :: pound : ____",ANSWER: pounder,pounder
+162,gpt-5,passage,salsa,0.312500,0.187500,0.909078,0.711894,NOUN,NOUN,noun.communication,noun.food,0.700000,0.925000,0.900000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+passage : passage :: salsa : ____",ANSWER: sauce,sauce
+163,gpt-5,blender,creeper,0.312500,0.312500,0.671653,0.377548,NOUN,NOUN,noun.artifact,noun.plant,1.000000,0.620000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+blender : blender :: creeper : ____",ANSWER: creeper,creeper
+164,gpt-5,unexplored,probably,0.500000,0.375000,0.322066,0.991520,ADJ,ADV,adj.all,adv.all,0.197500,0.182500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unexplored : unexplored :: probably : ____",ANSWER: probably,probably
+165,gpt-5,ridiculous,masquerade,0.500000,0.500000,0.934879,0.455829,ADJ,NOUN,adj.all,noun.artifact,0.197500,0.587500,0.200000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ridiculous : ridiculous :: masquerade : ____",ANSWER: charade,charade
+166,gpt-5,stone,unrequited,0.187500,0.500000,0.966499,0.235605,NOUN,ADJ,noun.object,adj.all,0.930000,0.250000,1.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+stone : stone :: unrequited : ____",ANSWER: love,love
+167,gpt-5,moving,sixty,0.250000,0.187500,0.979580,0.840457,VERB,NOUN,verb.motion,noun.quantity,0.705000,0.640000,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+moving : moving :: sixty : ____",ANSWER: sixty,sixty
+168,gpt-5,plunger,exploitation,0.312500,0.625000,0.357487,0.819156,NOUN,NOUN,noun.artifact,noun.act,0.990000,0.175000,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+plunger : plunger :: exploitation : ____",ANSWER: exploiter,exploiter
+169,gpt-5,poll,scammer,0.125000,0.312500,0.920638,0.380828,NOUN,NOUN,noun.animal,noun.person,0.577500,0.640000,0.800000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+poll : poll :: scammer : ____",ANSWER: scam,scam
+170,gpt-5,internally,grading,0.500000,0.312500,0.792336,0.687594,ADV,VERB,adv.all,verb.contact,0.465000,0.417500,0.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+internally : internally :: grading : ____",ANSWER: grading,grading
+171,gpt-5,leeches,asylum,0.312500,0.250000,0.316866,0.856077,NOUN,NOUN,noun.person,noun.artifact,0.910000,0.852500,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+leeches : leeches :: asylum : ____",ANSWER: asylum,asylum
+172,gpt-5,cranium,snowflake,0.312500,0.437500,0.105682,0.578592,NOUN,NOUN,noun.body,noun.animal,0.875000,0.940000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cranium : cranium :: snowflake : ____",ANSWER: snowflake,snowflake
+173,gpt-5,illuminated,trailblazer,0.562500,0.562500,0.700694,0.181364,VERB,NOUN,verb.cognition,noun.person,0.665000,0.370000,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+illuminated : illuminated :: trailblazer : ____",ANSWER: trailblazer,trailblazer
+174,gpt-5,tops,plodding,0.125000,0.375000,0.871517,0.020560,NOUN,VERB,noun.attribute,verb.motion,0.707500,0.410000,1.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tops : tops :: plodding : ____",ANSWER: pants,pants
+175,gpt-5,exasperated,web,0.562500,0.062500,0.376688,0.962359,VERB,NOUN,verb.emotion,noun.animal,0.275000,0.842500,0.300000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+exasperated : exasperated :: web : ____",ANSWER: web,web
+176,gpt-5,semantic,undeserved,0.375000,0.500000,0.655253,0.150603,ADJ,ADJ,adj.pert,adj.all,0.205000,0.267500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+semantic : semantic :: undeserved : ____",ANSWER: deserved,deserved
+177,gpt-5,pussycat,cinematographer,0.375000,0.812500,0.209944,0.328647,NOUN,NOUN,noun.person,noun.person,0.947500,0.830000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pussycat : pussycat :: cinematographer : ____",ANSWER: cinematographer,cinematographer
+178,gpt-5,productively,input,0.625000,0.187500,0.054541,0.920958,ADV,NOUN,adv.all,noun.communication,0.207500,0.375000,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+productively : productively :: input : ____",ANSWER: input,input
+179,gpt-5,unlisted,bracing,0.375000,0.312500,0.198624,0.506330,ADJ,NOUN,adj.all,noun.artifact,0.365000,0.535000,0.100000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unlisted : unlisted :: bracing : ____",ANSWER: bracing,bracing
+180,gpt-5,maggot,backwater,0.250000,0.437500,0.239425,0.296166,NOUN,NOUN,noun.animal,noun.location,0.992500,0.510000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+maggot : maggot :: backwater : ____",ANSWER: backwater,backwater
+181,gpt-5,herb,payload,0.125000,0.312500,0.798816,0.636953,NOUN,NOUN,noun.food,noun.artifact,0.892500,0.705000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+herb : herb :: payload : ____",ANSWER: payload,payload
+182,gpt-5,lymph,canter,0.187500,0.250000,0.551431,0.187944,NOUN,NOUN,noun.body,noun.act,0.620000,0.605000,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lymph : lymph :: canter : ____",ANSWER: cantor,cantor
+183,gpt-5,choke,newsflash,0.187500,0.437500,0.783536,0.044141,NOUN,NOUN,noun.artifact,noun.communication,0.742500,0.705000,1.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+choke : choke :: newsflash : ____",ANSWER: stop-press,stop-press
+184,gpt-5,suede,bouncing,0.187500,0.375000,0.578312,0.741555,NOUN,VERB,noun.artifact,verb.possession,0.810000,0.732500,0.100000,0.900000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+suede : suede :: bouncing : ____",ANSWER: bouncing,bouncing
+185,gpt-5,summation,twine,0.437500,0.187500,0.355987,0.363887,NOUN,NOUN,noun.group,noun.artifact,0.337500,0.757500,0.300000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+summation : summation :: twine : ____",ANSWER: twine,twine
+186,gpt-5,equestrian,frostbite,0.500000,0.437500,0.552711,0.302126,ADJ,NOUN,adj.pert,noun.state,0.740000,0.832500,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+equestrian : equestrian :: frostbite : ____",ANSWER: frostbitten,frostbitten
+187,gpt-5,silt,chemist,0.125000,0.312500,0.388308,0.705654,NOUN,NOUN,noun.substance,noun.person,0.927500,0.810000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+silt : silt :: chemist : ____",ANSWER: chemist,chemist
+188,gpt-5,exploit,rooftop,0.312500,0.312500,0.816476,0.719834,NOUN,NOUN,noun.act,noun.location,0.170000,0.965000,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+exploit : exploit :: rooftop : ____",ANSWER: rooftop,rooftop
+189,gpt-5,dogmatic,anthropologist,0.375000,0.750000,0.369587,0.530871,ADJ,NOUN,adj.all,noun.person,0.222500,0.750000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dogmatic : dogmatic :: anthropologist : ____",ANSWER: anthropologist,anthropologist
+190,gpt-5,persecuting,bucking,0.562500,0.312500,0.066241,0.261925,VERB,VERB,verb.social,verb.social,0.277500,0.702500,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+persecuting : persecuting :: bucking : ____",ANSWER: bucking,bucking
+191,gpt-5,faithfulness,typesetting,0.625000,0.562500,0.421648,0.006300,NOUN,VERB,noun.attribute,verb.creation,0.180000,0.605000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+faithfulness : faithfulness :: typesetting : ____",ANSWER: typesetting,typesetting
+192,gpt-5,clang,removable,0.187500,0.437500,0.094462,0.600832,NOUN,ADJ,noun.event,adj.all,0.740000,0.370000,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+clang : clang :: removable : ____",ANSWER: movable,movable
+193,gpt-5,muzzle,learning,0.250000,0.375000,0.612092,0.974499,NOUN,VERB,noun.animal,verb.cognition,0.897500,0.535000,0.600000,0.700000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+muzzle : muzzle :: learning : ____",ANSWER: learn,learn
+194,gpt-5,inlay,tonic,0.187500,0.187500,0.145763,0.649873,NOUN,NOUN,noun.artifact,noun.communication,0.602500,0.775000,0.200000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+inlay : inlay :: tonic : ____",ANSWER: tonic,tonic
+195,gpt-5,decomposition,hydra,0.687500,0.187500,0.587932,0.612772,NOUN,NOUN,noun.state,noun.object,0.525000,0.572500,0.400000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+decomposition : decomposition :: hydra : ____",ANSWER: hydra,hydra
+196,gpt-5,informational,betrayal,0.687500,0.375000,0.539871,0.769835,ADJ,NOUN,adj.pert,noun.act,0.260000,0.190000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+informational : informational :: betrayal : ____",ANSWER: betrayal,betrayal
+197,gpt-5,arresting,northerly,0.437500,0.437500,0.702294,0.382008,VERB,ADV,verb.contact,adv.all,0.460000,0.480000,0.400000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+arresting : arresting :: northerly : ____",ANSWER: northerly,northerly
+198,gpt-5,credit,denier,0.250000,0.250000,0.978580,0.214324,NOUN,NOUN,noun.cognition,noun.person,0.427500,0.370000,1.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+credit : credit :: denier : ____",ANSWER: reined,reined
+199,gpt-5,doom,outflow,0.125000,0.312500,0.810836,0.426909,NOUN,NOUN,noun.event,noun.object,0.125000,0.577500,0.300000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+doom : doom :: outflow : ____",ANSWER: inflow,inflow
+200,gpt-5,scored,samurai,0.250000,0.312500,0.952719,0.757335,VERB,NOUN,verb.contact,noun.person,0.542500,0.875000,0.600000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+scored : scored :: samurai : ____",ANSWER: samurai,samurai
+201,gpt-5,cucumber,basil,0.375000,0.187500,0.662373,0.759855,NOUN,NOUN,noun.food,noun.person,0.957500,0.940000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cucumber : cucumber :: basil : ____",ANSWER: basil,basil
+202,gpt-5,tempting,journeyman,0.375000,0.500000,0.756975,0.350807,VERB,NOUN,verb.communication,noun.person,0.232500,0.712500,0.700000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tempting : tempting :: journeyman : ____",ANSWER: journeyman,journeyman
+203,gpt-5,stash,nipping,0.187500,0.312500,0.715474,0.055481,NOUN,VERB,noun.possession,verb.contact,0.682500,0.577500,0.100000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+stash : stash :: nipping : ____",ANSWER: nippin',nippin'
+204,gpt-5,archives,roast,0.375000,0.187500,0.879578,0.825597,NOUN,NOUN,noun.artifact,noun.cognition,0.732500,0.850000,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+archives : archives :: roast : ____",ANSWER: roast,roast
+205,gpt-5,dominoes,globally,0.375000,0.375000,0.286146,0.813256,NOUN,ADV,noun.person,adv.all,0.915000,0.457500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dominoes : dominoes :: globally : ____",ANSWER: globally,globally
+206,gpt-5,harshly,inflection,0.312500,0.500000,0.592512,0.326287,ADV,NOUN,adv.all,noun.relation,0.302500,0.197500,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+harshly : harshly :: inflection : ____",ANSWER: inflection,inflection
+207,gpt-5,nobleman,childhood,0.375000,0.437500,0.433849,0.941399,NOUN,NOUN,noun.person,noun.time,0.712500,0.382500,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+nobleman : nobleman :: childhood : ____",ANSWER: minority,minority
+208,gpt-5,indentation,rider,0.562500,0.187500,0.102742,0.860877,NOUN,NOUN,noun.shape,noun.person,0.730000,0.767500,0.300000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+indentation : indentation :: rider : ____",ANSWER: rider,rider
+209,gpt-5,previous,deferred,0.375000,0.375000,0.978160,0.717954,ADJ,VERB,adj.all,verb.communication,0.380000,0.250000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+previous : previous :: deferred : ____",ANSWER: deferred,deferred
+210,gpt-5,myriad,roll,0.250000,0.125000,0.695514,0.963259,NOUN,NOUN,noun.quantity,noun.communication,0.280000,0.790000,0.200000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+myriad : myriad :: roll : ____",ANSWER: role,role
+211,gpt-5,envious,tending,0.312500,0.312500,0.564251,0.600312,ADJ,VERB,adj.all,verb.stative,0.190000,0.240000,0.000000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+envious : envious :: tending : ____",ANSWER: tendent,tendent
+212,gpt-5,beam,swagger,0.125000,0.312500,0.886838,0.526131,NOUN,NOUN,noun.communication,noun.person,0.740000,0.422500,1.000000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+beam : beam :: swagger : ____",ANSWER: strut,strut
+213,gpt-5,deprived,overweight,0.375000,0.500000,0.772675,0.788296,VERB,NOUN,verb.change,noun.attribute,0.260000,0.642500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+deprived : deprived :: overweight : ____",ANSWER: overweight,overweight
+214,gpt-5,expressive,insomniac,0.500000,0.437500,0.670673,0.080162,ADJ,NOUN,adj.all,noun.person,0.257500,0.525000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+expressive : expressive :: insomniac : ____",ANSWER: insomniac,insomniac
+215,gpt-5,yarn,liar,0.125000,0.125000,0.738375,0.861397,NOUN,NOUN,noun.communication,noun.person,0.982500,0.607500,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+yarn : yarn :: liar : ____",ANSWER: lie,lie
+216,gpt-5,pretense,daybreak,0.375000,0.375000,0.426509,0.443989,NOUN,NOUN,noun.act,noun.time,0.190000,0.802500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pretense : pretense :: daybreak : ____",ANSWER: daybreak,daybreak
+217,gpt-5,piece,handkerchief,0.187500,0.625000,0.980520,0.540231,NOUN,NOUN,noun.artifact,noun.artifact,0.785000,1.000000,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+piece : piece :: handkerchief : ____",ANSWER: handkerchief,handkerchief
+218,gpt-5,swoon,sawed,0.187500,0.187500,0.322606,0.255745,NOUN,VERB,noun.event,verb.contact,0.500000,0.797500,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+swoon : swoon :: sawed : ____",ANSWER: wades,wades
+219,gpt-5,rudimentary,olympics,0.562500,0.375000,0.532411,0.933639,ADJ,NOUN,adj.all,noun.event,0.180000,0.777500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rudimentary : rudimentary :: olympics : ____",ANSWER: olympics,olympics
+220,gpt-5,favoring,impurity,0.375000,0.375000,0.529251,0.156083,VERB,NOUN,verb.social,noun.state,0.250000,0.232500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+favoring : favoring :: impurity : ____",ANSWER: impurity,impurity
+221,gpt-5,capital,reception,0.312500,0.437500,0.979140,0.902318,NOUN,NOUN,noun.location,noun.act,0.775000,0.482500,1.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+capital : capital :: reception : ____",ANSWER: Reception,reception
+222,gpt-5,rendition,unregulated,0.437500,0.562500,0.677774,0.467069,NOUN,ADJ,noun.act,adj.all,0.355000,0.165000,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rendition : rendition :: unregulated : ____",ANSWER: unregulated,unregulated
+223,gpt-5,unclassified,fossil,0.625000,0.250000,0.245025,0.855457,ADJ,NOUN,adj.all,noun.object,0.347500,0.975000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unclassified : unclassified :: fossil : ____",ANSWER: fossil,fossil
+224,gpt-5,nip,reissue,0.062500,0.312500,0.617032,0.426189,NOUN,NOUN,noun.cognition,noun.communication,0.607500,0.287500,0.800000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+nip : nip :: reissue : ____",ANSWER: issue,issue
+225,gpt-5,industrialist,convert,0.687500,0.312500,0.284526,0.881038,NOUN,NOUN,noun.person,noun.person,0.500000,0.432500,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+industrialist : industrialist :: convert : ____",ANSWER: convert,convert
+226,gpt-5,sensor,climb,0.250000,0.187500,0.838237,0.901438,NOUN,NOUN,noun.artifact,noun.act,0.740000,0.777500,0.000000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sensor : sensor :: climb : ____",ANSWER: climb,climb
+227,gpt-5,starter,profit,0.312500,0.250000,0.860757,0.958999,NOUN,NOUN,noun.person,noun.attribute,0.595000,0.517500,0.600000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+starter : starter :: profit : ____",ANSWER: profit,profit
+228,gpt-5,swing,caravan,0.187500,0.312500,0.918998,0.748835,VERB,NOUN,verb.change,noun.group,0.885000,0.842500,1.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+swing : swing :: caravan : ____",ANSWER: caravan,caravan
+229,gpt-5,enhancer,charmingly,0.375000,0.500000,0.285886,0.026821,NOUN,ADV,noun.cognition,adv.all,0.287500,0.285000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+enhancer : enhancer :: charmingly : ____",ANSWER: charmingly,charmingly
+230,gpt-5,mail,lump,0.125000,0.125000,0.960979,0.778716,NOUN,NOUN,noun.artifact,noun.person,0.922500,0.890000,0.600000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mail : mail :: lump : ____",ANSWER: lump,lump
+231,gpt-5,disposal,hydraulics,0.375000,0.500000,0.857577,0.309446,NOUN,NOUN,noun.artifact,noun.cognition,0.472500,0.677500,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+disposal : disposal :: hydraulics : ____",ANSWER: hydraulic,hydraulic
+232,gpt-5,expressive,buster,0.500000,0.250000,0.670673,0.688394,ADJ,NOUN,adj.all,noun.person,0.257500,0.392500,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+expressive : expressive :: buster : ____",ANSWER: buster,buster
+233,gpt-5,chorus,landlady,0.250000,0.375000,0.834857,0.342207,NOUN,NOUN,noun.event,noun.person,0.757500,0.805000,0.600000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chorus : chorus :: landlady : ____",ANSWER: ladyland,ladyland
+234,gpt-5,aiming,go,0.250000,0.000000,0.832357,0.998060,VERB,VERB,verb.cognition,verb.cognition,0.500000,0.537500,0.600000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+aiming : aiming :: go : ____",ANSWER: going,going
+235,gpt-5,monolithic,pleasantly,0.500000,0.500000,0.419968,0.632073,ADJ,ADV,adj.all,adv.all,0.412500,0.260000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+monolithic : monolithic :: pleasantly : ____",ANSWER: pleasantly,pleasantly
+236,gpt-5,terrorism,mainframe,0.437500,0.437500,0.903918,0.412788,NOUN,NOUN,noun.act,noun.artifact,0.447500,0.715000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+terrorism : terrorism :: mainframe : ____",ANSWER: mainframe,mainframe
+237,gpt-5,eye,album,0.062500,0.187500,0.979660,0.979820,NOUN,NOUN,noun.artifact,noun.communication,0.975000,0.922500,0.500000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+eye : eye :: album : ____",ANSWER: mubla,mubla
+238,gpt-5,puzzled,likeness,0.312500,0.375000,0.596132,0.627853,VERB,NOUN,verb.cognition,noun.attribute,0.260000,0.305000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+puzzled : puzzled :: likeness : ____",ANSWER: likeness,likeness
+239,gpt-5,cultivated,lint,0.500000,0.125000,0.740975,0.413088,VERB,NOUN,verb.change,noun.artifact,0.412500,0.990000,0.600000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cultivated : cultivated :: lint : ____",ANSWER: lint,lint
+240,gpt-5,lifeblood,gratified,0.437500,0.437500,0.155203,0.046841,NOUN,VERB,noun.attribute,verb.emotion,0.500000,0.250000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lifeblood : lifeblood :: gratified : ____",ANSWER: gratified,gratified
+241,gpt-5,kingfisher,rip,0.500000,0.062500,0.317046,0.907418,NOUN,NOUN,noun.animal,noun.person,0.927500,0.697500,0.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+kingfisher : kingfisher :: rip : ____",ANSWER: rip,rip
+242,gpt-5,hiker,scarring,0.187500,0.375000,0.240625,0.468249,NOUN,VERB,noun.person,verb.contact,0.882500,0.455000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hiker : hiker :: scarring : ____",ANSWER: scarring,scarring
+243,gpt-5,chug,printer,0.125000,0.312500,0.361707,0.840817,NOUN,NOUN,noun.event,noun.artifact,0.670000,0.917500,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chug : chug :: printer : ____",ANSWER: print,print
+244,gpt-5,identification,persisting,0.750000,0.500000,0.893358,0.163863,NOUN,VERB,noun.cognition,verb.stative,0.600000,0.240000,0.400000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+identification : identification :: persisting : ____",ANSWER: persisting,persisting
+245,gpt-5,intuitively,firmly,0.562500,0.250000,0.449629,0.857337,ADV,ADV,adv.all,adv.all,0.052500,0.332500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+intuitively : intuitively :: firmly : ____",ANSWER: firmly,firmly
+246,gpt-5,citizen,exploitative,0.312500,0.625000,0.926499,0.302406,NOUN,ADJ,noun.person,adj.all,0.857500,0.297500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+citizen : citizen :: exploitative : ____",ANSWER: exploitative,exploitative
+247,gpt-5,institutional,sportsmanship,0.687500,0.687500,0.857157,0.425249,ADJ,NOUN,adj.pert,noun.attribute,0.335000,0.242500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+institutional : institutional :: sportsmanship : ____",ANSWER: sportsmanship,sportsmanship
+248,gpt-5,contagious,footprint,0.500000,0.437500,0.733775,0.709174,ADJ,NOUN,adj.all,noun.attribute,0.427500,0.842500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+contagious : contagious :: footprint : ____",ANSWER: footprint,footprint
+249,gpt-5,diagonally,stardust,0.500000,0.375000,0.377288,0.531911,ADV,NOUN,adv.all,noun.attribute,0.595000,0.520000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+diagonally : diagonally :: stardust : ____",ANSWER: stardust,stardust
+250,gpt-5,retardant,apocalypse,0.437500,0.500000,0.099042,0.780376,NOUN,NOUN,noun.object,noun.event,0.417500,0.302500,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+retardant : retardant :: apocalypse : ____",ANSWER: apocalyptic,apocalyptic
+251,gpt-5,turd,superstructure,0.125000,0.750000,0.519290,0.331247,NOUN,NOUN,noun.substance,noun.artifact,0.750000,0.680000,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+turd : turd :: superstructure : ____",ANSWER: structure,structure
+252,gpt-5,toiled,cornea,0.250000,0.250000,0.063581,0.370167,VERB,NOUN,verb.social,noun.body,0.397500,0.965000,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+toiled : toiled :: cornea : ____",ANSWER: cornet,cornet
+253,gpt-5,dashed,integrity,0.250000,0.437500,0.598312,0.900898,VERB,NOUN,verb.motion,noun.state,0.542500,0.110000,0.600000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dashed : dashed :: integrity : ____",ANSWER: gritty,gritty
+254,gpt-5,approaching,messiah,0.562500,0.312500,0.892278,0.720854,VERB,NOUN,verb.communication,noun.person,0.407500,0.565000,0.800000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+approaching : approaching :: messiah : ____",ANSWER: messiah,messiah
+255,gpt-5,specific,style,0.375000,0.187500,0.979920,0.983660,ADJ,NOUN,adj.all,noun.animal,0.295000,0.417500,0.500000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+specific : specific :: style : ____",ANSWER: style,style
+256,gpt-5,greens,banana,0.250000,0.250000,0.824076,0.858097,NOUN,NOUN,noun.person,noun.plant,0.775000,1.000000,0.900000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+greens : greens :: banana : ____",ANSWER: yellow,yellow
+257,gpt-5,anthrax,providing,0.312500,0.437500,0.525131,0.960779,NOUN,VERB,noun.state,verb.stative,0.860000,0.370000,0.100000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+anthrax : anthrax :: providing : ____",ANSWER: provided,provided
+258,gpt-5,paranoia,fringed,0.375000,0.312500,0.664693,0.223004,NOUN,VERB,noun.state,verb.contact,0.185000,0.692500,0.000000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+paranoia : paranoia :: fringed : ____",ANSWER: fringe,fringe
+259,gpt-5,unparalleled,weekend,0.625000,0.312500,0.549271,0.974879,ADJ,NOUN,adj.all,noun.time,0.165000,0.707500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unparalleled : unparalleled :: weekend : ____",ANSWER: weekend,weekend
+260,gpt-5,strapped,faulting,0.375000,0.375000,0.672793,0.001700,VERB,VERB,verb.change,verb.communication,0.572500,0.327500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+strapped : strapped :: faulting : ____",ANSWER: faulting,faulting
+261,gpt-5,cerebral,cooking,0.375000,0.312500,0.741295,0.934279,ADJ,NOUN,adj.pert,noun.act,0.305000,0.797500,0.100000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cerebral : cerebral :: cooking : ____",ANSWER: culinary,culinary
+262,gpt-5,protracted,bylaw,0.500000,0.187500,0.585172,0.060801,VERB,NOUN,verb.change,noun.communication,0.230000,0.500000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+protracted : protracted :: bylaw : ____",ANSWER: byelaw,byelaw
+263,gpt-5,knitting,vacancy,0.375000,0.312500,0.678854,0.756755,VERB,NOUN,verb.creation,noun.state,0.785000,0.570000,0.400000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+knitting : knitting :: vacancy : ____",ANSWER: vacancy,vacancy
+264,gpt-5,zeal,purchase,0.125000,0.375000,0.594512,0.959799,NOUN,NOUN,noun.attribute,noun.act,0.332500,0.490000,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+zeal : zeal :: purchase : ____",ANSWER: purchase,purchase
+265,gpt-5,downtown,phoenix,0.375000,0.312500,0.927599,0.898578,NOUN,NOUN,noun.location,noun.object,0.847500,0.825000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+downtown : downtown :: phoenix : ____",ANSWER: phoenix,phoenix
+266,gpt-5,juror,subjected,0.187500,0.437500,0.510250,0.822756,NOUN,VERB,noun.person,verb.perception,0.822500,0.240000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+juror : juror :: subjected : ____",ANSWER: subjected,subjected
+267,gpt-5,display,lit,0.312500,0.062500,0.953239,0.895398,NOUN,NOUN,noun.communication,noun.cognition,0.715000,0.667500,0.700000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+display : display :: lit : ____",ANSWER: lit,lit
+268,gpt-5,refinery,stocking,0.375000,0.375000,0.694914,0.694394,NOUN,VERB,noun.artifact,verb.possession,0.897500,0.965000,0.000000,0.800000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+refinery : refinery :: stocking : ____",ANSWER: sock,sock
+269,gpt-5,courtyard,shrug,0.437500,0.187500,0.759515,0.606092,NOUN,NOUN,noun.artifact,noun.communication,0.892500,0.802500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+courtyard : courtyard :: shrug : ____",ANSWER: shrug,shrug
+270,gpt-5,truce,ocean,0.187500,0.187500,0.706934,0.959039,NOUN,NOUN,noun.state,noun.quantity,0.367500,0.965000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+truce : truce :: ocean : ____",ANSWER: pacific,pacific
+271,gpt-5,apparition,wise,0.500000,0.125000,0.312446,0.940519,NOUN,NOUN,noun.act,noun.attribute,0.365000,0.242500,0.300000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+apparition : apparition :: wise : ____",ANSWER: wise,wise
+272,gpt-5,air,unoccupied,0.062500,0.500000,0.991660,0.363747,NOUN,ADJ,noun.communication,adj.all,0.777500,0.410000,1.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+air : air :: unoccupied : ____",ANSWER: empty,empty
+273,gpt-5,jellyfish,daylight,0.437500,0.375000,0.580572,0.819416,NOUN,NOUN,noun.animal,noun.time,0.982500,0.775000,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+jellyfish : jellyfish :: daylight : ____",ANSWER: daylights,daylights
+274,gpt-5,globalization,vessel,0.687500,0.250000,0.683574,0.908718,NOUN,NOUN,noun.process,noun.artifact,0.282500,0.915000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+globalization : globalization :: vessel : ____",ANSWER: vessel,vessel
+275,gpt-5,assumed,liter,0.312500,0.187500,0.926639,0.682914,VERB,NOUN,verb.cognition,noun.quantity,0.215000,0.810000,0.900000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+assumed : assumed :: liter : ____",ANSWER: litre,litre
+276,gpt-5,specialize,sweater,0.500000,0.312500,0.595412,0.800676,VERB,NOUN,verb.communication,noun.person,0.175000,0.945000,0.400000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+specialize : specialize :: sweater : ____",ANSWER: jumper,jumper
+277,gpt-5,finish,insect,0.250000,0.250000,0.973919,0.795476,NOUN,NOUN,noun.event,noun.person,0.472500,0.972500,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+finish : finish :: insect : ____",ANSWER: insect,insect
+278,gpt-5,cornucopia,lull,0.500000,0.125000,0.014740,0.477010,NOUN,NOUN,noun.attribute,noun.state,0.777500,0.330000,0.100000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cornucopia : cornucopia :: lull : ____",ANSWER: lullaby,lullaby
+279,gpt-5,elated,dilation,0.250000,0.375000,0.399668,0.327707,VERB,NOUN,verb.emotion,noun.act,0.320000,0.642500,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+elated : elated :: dilation : ____",ANSWER: dilation,dilation
+280,gpt-5,counterpart,patented,0.562500,0.375000,0.776196,0.716354,NOUN,VERB,noun.artifact,verb.possession,0.407500,0.385000,0.100000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+counterpart : counterpart :: patented : ____",ANSWER: copyrighted,copyrighted
+281,gpt-5,metaphysics,terror,0.562500,0.250000,0.476690,0.907278,NOUN,NOUN,noun.cognition,noun.feeling,0.250000,0.357500,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+metaphysics : metaphysics :: terror : ____",ANSWER: error,error
+282,gpt-5,catering,systematically,0.375000,0.750000,0.756035,0.707114,NOUN,ADV,noun.act,adv.all,0.702500,0.362500,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+catering : catering :: systematically : ____",ANSWER: systematic,systematic
+283,gpt-5,prompt,ammonia,0.250000,0.312500,0.823116,0.639873,NOUN,NOUN,noun.communication,noun.substance,0.312500,0.860000,0.700000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+prompt : prompt :: ammonia : ____",ANSWER: pneumonia,pneumonia
+284,gpt-5,reach,lifeline,0.187500,0.375000,0.975360,0.568711,NOUN,NOUN,noun.cognition,noun.cognition,0.675000,0.570000,1.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+reach : reach :: lifeline : ____",ANSWER: lifeline,lifeline
+285,gpt-5,lever,laced,0.187500,0.187500,0.754595,0.602372,NOUN,VERB,noun.artifact,verb.creation,0.942500,0.675000,0.300000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lever : lever :: laced : ____",ANSWER: decal,decal
+286,gpt-5,truce,relieving,0.187500,0.437500,0.706934,0.561731,NOUN,VERB,noun.state,verb.body,0.367500,0.257500,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+truce : truce :: relieving : ____",ANSWER: relieving,relieving
+287,gpt-5,read,thyroid,0.125000,0.312500,0.994700,0.711214,NOUN,NOUN,noun.communication,noun.body,0.640000,0.902500,1.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+read : read :: thyroid : ____",ANSWER: thyroid,thyroid
+288,gpt-5,veil,desirability,0.125000,0.625000,0.760135,0.128003,NOUN,NOUN,noun.artifact,noun.attribute,0.862500,0.222500,0.500000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+veil : veil :: desirability : ____",ANSWER: desirable,desirable
+289,gpt-5,cinematographer,raucous,0.812500,0.312500,0.328647,0.273865,NOUN,ADJ,noun.person,adj.all,0.830000,0.347500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cinematographer : cinematographer :: raucous : ____",ANSWER: raucous,raucous
+290,gpt-5,lighter,household,0.312500,0.437500,0.876798,0.936599,NOUN,NOUN,noun.substance,noun.group,0.882500,0.715000,1.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lighter : lighter :: household : ____",ANSWER: householder,householder
+291,gpt-5,do,periodically,0.000000,0.625000,0.999020,0.735775,VERB,ADV,verb.social,adv.all,0.365000,0.225000,1.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+do : do :: periodically : ____",ANSWER: colon,colon
+292,gpt-5,pluralism,stew,0.437500,0.125000,0.340567,0.689694,NOUN,NOUN,noun.cognition,noun.food,0.197500,0.857500,0.200000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pluralism : pluralism :: stew : ____",ANSWER: stewish,stewish
+293,gpt-5,giggle,winnings,0.250000,0.375000,0.633593,0.571511,NOUN,NOUN,noun.communication,noun.act,0.680000,0.492500,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+giggle : giggle :: winnings : ____",ANSWER: win,win
+294,gpt-5,inflatable,related,0.500000,0.312500,0.580712,0.983320,ADJ,ADJ,adj.all,adj.all,0.517500,0.390000,0.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+inflatable : inflatable :: related : ____",ANSWER: related,related
+295,gpt-5,snipe,alarmingly,0.187500,0.500000,0.447049,0.130003,NOUN,ADV,noun.act,adv.all,0.592500,0.285000,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+snipe : snipe :: alarmingly : ____",ANSWER: alarmingly,alarmingly
+296,gpt-5,plastics,rigorous,0.375000,0.375000,0.731995,0.768075,NOUN,ADJ,noun.possession,adj.all,0.895000,0.392500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+plastics : plastics :: rigorous : ____",ANSWER: rigorous,rigorous
+297,gpt-5,uplifting,diminutive,0.437500,0.500000,0.615212,0.485350,VERB,NOUN,verb.motion,noun.communication,0.240000,0.392500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+uplifting : uplifting :: diminutive : ____",ANSWER: diminutive,diminutive
+298,gpt-5,basement,heroically,0.375000,0.500000,0.894138,0.080522,NOUN,ADV,noun.artifact,adv.all,0.972500,0.207500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+basement : basement :: heroically : ____",ANSWER: heroically,heroically
+299,gpt-5,exchange,extinction,0.375000,0.500000,0.970399,0.795836,NOUN,NOUN,noun.act,noun.act,0.435000,0.357500,1.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+exchange : exchange :: extinction : ____",ANSWER: extinction,extinction
+300,gpt-5,bulldog,hostility,0.312500,0.437500,0.648773,0.744215,NOUN,NOUN,noun.animal,noun.state,0.927500,0.310000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bulldog : bulldog :: hostility : ____",ANSWER: hostility,hostility
+301,gpt-5,ketchup,recruit,0.312500,0.312500,0.683014,0.830497,NOUN,NOUN,noun.food,noun.person,1.000000,0.620000,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ketchup : ketchup :: recruit : ____",ANSWER: recruit,recruit
+302,gpt-5,adventurer,photography,0.500000,0.562500,0.542411,0.933519,NOUN,NOUN,noun.person,noun.act,0.682500,0.775000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+adventurer : adventurer :: photography : ____",ANSWER: photography,photography
+303,gpt-5,staff,fill,0.187500,0.125000,0.982260,0.954079,NOUN,NOUN,noun.group,noun.quantity,0.840000,0.580000,0.700000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+staff : staff :: fill : ____",ANSWER: fill,fill
+304,gpt-5,surprise,blade,0.375000,0.187500,0.963199,0.896198,NOUN,NOUN,noun.act,noun.person,0.560000,0.982500,0.500000,0.800000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+surprise : surprise :: blade : ____",ANSWER: runner,runner
+305,gpt-5,statistics,needs,0.500000,0.187500,0.949959,0.991580,NOUN,NOUN,noun.cognition,noun.object,0.597500,0.312500,0.100000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+statistics : statistics :: needs : ____",ANSWER: needs,needs
+306,gpt-5,burst,connector,0.187500,0.437500,0.888438,0.688234,NOUN,NOUN,noun.event,noun.artifact,0.525000,0.795000,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+burst : burst :: connector : ____",ANSWER: connector,connector
+307,gpt-5,insurance,impressionist,0.437500,0.687500,0.975500,0.301346,NOUN,NOUN,noun.state,noun.person,0.465000,0.422500,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+insurance : insurance :: impressionist : ____",ANSWER: impressionist,impressionist
+308,gpt-5,distressed,reducing,0.500000,0.375000,0.729995,0.921998,ADJ,VERB,adj.all,verb.possession,0.302500,0.375000,0.500000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+distressed : distressed :: reducing : ____",ANSWER: reducing,reducing
+309,gpt-5,modifier,lyrical,0.375000,0.312500,0.333287,0.669573,NOUN,ADJ,noun.communication,adj.all,0.352500,0.287500,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+modifier : modifier :: lyrical : ____",ANSWER: modifier,modifier
+310,gpt-5,theology,decency,0.375000,0.312500,0.838057,0.701374,NOUN,NOUN,noun.cognition,noun.attribute,0.232500,0.250000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+theology : theology :: decency : ____",ANSWER: decency,decency
+311,gpt-5,retainer,zany,0.375000,0.125000,0.502290,0.130423,NOUN,NOUN,noun.artifact,noun.person,0.750000,0.145000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+retainer : retainer :: zany : ____",ANSWER: zany,zany
+312,gpt-5,vertices,impeding,0.375000,0.375000,0.387128,0.259205,NOUN,VERB,noun.cognition,verb.contact,0.677500,0.275000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vertices : vertices :: impeding : ____",ANSWER: impeding,impeding
+313,gpt-5,dispenser,lavatory,0.437500,0.375000,0.443749,0.342167,NOUN,NOUN,noun.artifact,noun.artifact,0.710000,0.952500,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dispenser : dispenser :: lavatory : ____",ANSWER: restroom,restroom
+314,gpt-5,penning,cheat,0.312500,0.187500,0.200964,0.871097,VERB,NOUN,verb.creation,noun.act,0.565000,0.307500,0.100000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+penning : penning :: cheat : ____",ANSWER: cheat,cheat
+315,gpt-5,swan,snow,0.125000,0.125000,0.817856,0.955399,NOUN,NOUN,noun.animal,noun.phenomenon,0.990000,0.962500,0.300000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+swan : swan :: snow : ____",ANSWER: snaw,snaw
+316,gpt-5,approve,renewed,0.312500,0.312500,0.875858,0.865417,VERB,VERB,verb.communication,verb.change,0.212500,0.197500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+approve : approve :: renewed : ____",ANSWER: renewed,renewed
+317,gpt-5,courier,ethnically,0.312500,0.500000,0.769495,0.505170,NOUN,ADV,noun.person,adv.all,0.895000,0.202500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+courier : courier :: ethnically : ____",ANSWER: ethnic,ethnic
+318,gpt-5,wetland,vanity,0.312500,0.250000,0.512890,0.787356,NOUN,NOUN,noun.object,noun.feeling,0.822500,0.287500,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+wetland : wetland :: vanity : ____",ANSWER: vanity,vanity
+319,gpt-5,rerun,romanticism,0.187500,0.562500,0.339987,0.395868,NOUN,NOUN,noun.communication,noun.cognition,0.490000,0.115000,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rerun : rerun :: romanticism : ____",ANSWER: romanticism,romanticism
+320,gpt-5,diligently,thirteenth,0.500000,0.500000,0.511490,0.635933,ADV,NOUN,adv.all,noun.relation,0.192500,0.500000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+diligently : diligently :: thirteenth : ____",ANSWER: thirteenth,thirteenth
+321,gpt-5,negativity,capitulation,0.500000,0.625000,0.695414,0.345607,NOUN,NOUN,noun.attribute,noun.act,0.325000,0.195000,0.300000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+negativity : negativity :: capitulation : ____",ANSWER: capitulation,capitulation
+322,gpt-5,choker,photojournalist,0.250000,0.812500,0.060441,0.256845,NOUN,NOUN,noun.person,noun.person,0.827500,0.777500,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+choker : choker :: photojournalist : ____",ANSWER: shooter,shooter
+323,gpt-5,dimple,decathlon,0.250000,0.437500,0.186904,0.026121,NOUN,NOUN,noun.substance,noun.event,0.935000,0.770000,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dimple : dimple :: decathlon : ____",ANSWER: decathlon,decathlon
+324,gpt-5,comprised,formation,0.437500,0.437500,0.813916,0.938839,VERB,NOUN,verb.stative,noun.object,0.320000,0.557500,0.200000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+comprised : comprised :: formation : ____",ANSWER: formation,formation
+325,gpt-5,aggrieved,matinee,0.437500,0.312500,0.346647,0.275166,VERB,NOUN,verb.social,noun.communication,0.280000,0.695000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+aggrieved : aggrieved :: matinee : ____",ANSWER: matinée,matin
+326,gpt-5,minor,annual,0.187500,0.250000,0.952079,0.975800,NOUN,ADJ,noun.person,adj.all,0.402500,0.195000,1.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+minor : minor :: annual : ____",ANSWER: annual,annual
+327,gpt-5,relieving,publicly,0.437500,0.375000,0.561731,0.910438,VERB,ADV,verb.change,adv.all,0.257500,0.345000,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+relieving : relieving :: publicly : ____",ANSWER: publicly,publicly
+328,gpt-5,marrow,gasping,0.250000,0.312500,0.712734,0.456809,NOUN,VERB,noun.cognition,verb.body,0.870000,0.535000,0.400000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+marrow : marrow :: gasping : ____",ANSWER: breath,breath
+329,gpt-5,bicarbonate,scalping,0.562500,0.375000,0.197044,0.042241,NOUN,VERB,noun.substance,verb.possession,0.677500,0.635000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bicarbonate : bicarbonate :: scalping : ____",ANSWER: scalping,scalping
+330,gpt-5,forensics,endocrine,0.437500,0.437500,0.558231,0.464549,NOUN,NOUN,noun.act,noun.body,0.282500,0.517500,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+forensics : forensics :: endocrine : ____",ANSWER: endocrinology,endocrinology
+331,gpt-5,mailer,unwillingness,0.250000,0.687500,0.375048,0.495050,NOUN,NOUN,noun.person,noun.attribute,0.780000,0.200000,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mailer : mailer :: unwillingness : ____",ANSWER: won't,won't
+332,gpt-5,apparatus,wilderness,0.437500,0.500000,0.803056,0.844757,NOUN,NOUN,noun.body,noun.state,0.695000,0.697500,0.100000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+apparatus : apparatus :: wilderness : ____",ANSWER: wildernesses,wildernesses
+333,gpt-5,victor,bowl,0.250000,0.125000,0.892458,0.953379,NOUN,NOUN,noun.person,noun.quantity,0.470000,0.967500,0.100000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+victor : victor :: bowl : ____",ANSWER: bravo,bravo
+334,gpt-5,baffle,cataract,0.250000,0.375000,0.188524,0.400868,NOUN,NOUN,noun.artifact,noun.state,0.342500,0.845000,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+baffle : baffle :: cataract : ____",ANSWER: cataract,cataract
+335,gpt-5,bomb,jeweler,0.125000,0.312500,0.950519,0.267565,NOUN,NOUN,noun.event,noun.person,0.960000,0.902500,0.400000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bomb : bomb :: jeweler : ____",ANSWER: jewel,jewel
+336,gpt-5,hub,dubious,0.062500,0.312500,0.874937,0.697014,NOUN,ADJ,noun.artifact,adj.all,0.647500,0.130000,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hub : hub :: dubious : ____",ANSWER: bio,bio
+337,gpt-5,constipation,promiscuity,0.625000,0.562500,0.505810,0.173563,NOUN,NOUN,noun.act,noun.act,0.590000,0.292500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+constipation : constipation :: promiscuity : ____",ANSWER: promiscuity,promiscuity
+338,gpt-5,shy,pasted,0.062500,0.250000,0.888998,0.433589,NOUN,VERB,noun.act,verb.contact,0.380000,0.570000,0.500000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shy : shy :: pasted : ____",ANSWER: adepts,adepts
+339,gpt-5,gland,unsupervised,0.187500,0.625000,0.647613,0.355427,NOUN,ADJ,noun.body,adj.all,0.785000,0.397500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gland : gland :: unsupervised : ____",ANSWER: unsupervised,unsupervised
+340,gpt-5,forensics,warbler,0.437500,0.312500,0.558231,0.226425,NOUN,NOUN,noun.act,noun.person,0.282500,0.787500,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+forensics : forensics :: warbler : ____",ANSWER: warblers,warblers
+341,gpt-5,vagrant,brace,0.312500,0.187500,0.216984,0.783616,NOUN,NOUN,noun.person,noun.group,0.615000,0.740000,0.100000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vagrant : vagrant :: brace : ____",ANSWER: brace,brace
+342,gpt-5,lose,painting,0.125000,0.375000,0.982440,0.950139,VERB,NOUN,verb.possession,noun.act,0.312500,0.897500,1.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lose : lose :: painting : ____",ANSWER: painting,painting
+343,gpt-5,calculation,gall,0.562500,0.125000,0.796556,0.607912,NOUN,NOUN,noun.act,noun.feeling,0.500000,0.400000,0.200000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+calculation : calculation :: gall : ____",ANSWER: gall,gall
+344,gpt-5,ravens,esteemed,0.250000,0.375000,0.761015,0.597832,NOUN,VERB,noun.animal,verb.cognition,0.947500,0.240000,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ravens : ravens :: esteemed : ____",ANSWER: esteemed,esteemed
+345,gpt-5,grunt,cringing,0.187500,0.375000,0.523010,0.204804,NOUN,VERB,noun.animal,verb.motion,0.640000,0.455000,0.300000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+grunt : grunt :: cringing : ____",ANSWER: cringer,cringer
+346,gpt-5,soda,topic,0.125000,0.187500,0.865217,0.938159,NOUN,NOUN,noun.food,noun.cognition,0.992500,0.397500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+soda : soda :: topic : ____",ANSWER: topic,topic
+347,gpt-5,intersection,timothy,0.625000,0.312500,0.828817,0.811836,NOUN,NOUN,noun.act,noun.plant,0.785000,0.620000,0.500000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+intersection : intersection :: timothy : ____",ANSWER: timothy,timothy
+348,gpt-5,emotional,trench,0.437500,0.250000,0.956039,0.773775,ADJ,NOUN,adj.pert,noun.object,0.250000,0.865000,0.300000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+emotional : emotional :: trench : ____",ANSWER: trench,trench
+349,gpt-5,cultural,nominated,0.375000,0.437500,0.963639,0.893178,ADJ,VERB,adj.pert,verb.social,0.275000,0.307500,0.300000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cultural : cultural :: nominated : ____",ANSWER: nominated,nominated
+350,gpt-5,potential,negotiation,0.437500,0.562500,0.978880,0.801576,ADJ,NOUN,adj.all,noun.act,0.227500,0.342500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+potential : potential :: negotiation : ____",ANSWER: negotiation,negotiation
+351,gpt-5,lord,cheering,0.125000,0.375000,0.983380,0.817076,NOUN,VERB,noun.person,verb.communication,0.510000,0.657500,0.300000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lord : lord :: cheering : ____",ANSWER: cheer,cheer
+352,gpt-5,cinnamon,sorcery,0.375000,0.312500,0.776376,0.513670,NOUN,NOUN,noun.plant,noun.cognition,0.962500,0.250000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cinnamon : cinnamon :: sorcery : ____",ANSWER: sorcery,sorcery
+353,gpt-5,plateau,ratchet,0.312500,0.312500,0.743415,0.520730,NOUN,NOUN,noun.object,noun.artifact,0.827500,0.910000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+plateau : plateau :: ratchet : ____",ANSWER: ratchet,ratchet
+354,gpt-5,gingerbread,maximum,0.562500,0.312500,0.442929,0.950199,NOUN,NOUN,noun.food,noun.quantity,0.970000,0.385000,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gingerbread : gingerbread :: maximum : ____",ANSWER: maxima,maxima
+355,gpt-5,arrest,tarantula,0.250000,0.437500,0.945759,0.181564,NOUN,NOUN,noun.act,noun.animal,0.732500,0.957500,0.500000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+arrest : arrest :: tarantula : ____",ANSWER: tarantula,tarantula
+356,gpt-5,scorer,bygone,0.250000,0.250000,0.750075,0.287146,NOUN,NOUN,noun.person,noun.time,0.612500,0.172500,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+scorer : scorer :: bygone : ____",ANSWER: bygone,bygone
+357,gpt-5,glorified,warranted,0.437500,0.437500,0.569451,0.654613,VERB,VERB,verb.change,verb.communication,0.190000,0.232500,0.400000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+glorified : glorified :: warranted : ____",ANSWER: warranted,warranted
+358,gpt-5,dermatologist,citizen,0.687500,0.312500,0.465049,0.926499,NOUN,NOUN,noun.person,noun.person,0.802500,0.857500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dermatologist : dermatologist :: citizen : ____",ANSWER: citizen,citizen
+359,gpt-5,specifically,specificity,0.625000,0.562500,0.954639,0.561151,ADV,NOUN,adv.all,noun.attribute,0.155000,0.220000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+specifically : specifically :: specificity : ____",ANSWER: specificity,specificity
+360,gpt-5,treble,mogul,0.250000,0.187500,0.620492,0.469869,ADJ,NOUN,adj.all,noun.shape,0.430000,0.760000,0.600000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+treble : treble :: mogul : ____",ANSWER: mogul,mogul
+361,gpt-5,demonstrator,lymph,0.625000,0.187500,0.344707,0.551431,NOUN,NOUN,noun.person,noun.body,0.750000,0.620000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+demonstrator : demonstrator :: lymph : ____",ANSWER: lymph,lymph
+362,gpt-5,tweezers,ocean,0.375000,0.187500,0.226825,0.959039,NOUN,NOUN,noun.artifact,noun.object,0.990000,0.965000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tweezers : tweezers :: ocean : ____",ANSWER: fish,fish
+363,gpt-5,perfected,finely,0.437500,0.250000,0.606812,0.709274,VERB,ADV,verb.change,adv.all,0.260000,0.270000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+perfected : perfected :: finely : ____",ANSWER: finely,finely
+364,gpt-5,unwashed,ragtime,0.375000,0.312500,0.181024,0.020120,ADJ,NOUN,adj.all,noun.communication,0.537500,0.510000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unwashed : unwashed :: ragtime : ____",ANSWER: ragtime,ragtime
+365,gpt-5,minimally,knife,0.437500,0.187500,0.469909,0.928679,ADV,NOUN,adv.all,noun.shape,0.272500,0.975000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+minimally : minimally :: knife : ____",ANSWER: knife,knife
+366,gpt-5,unanimously,whip,0.562500,0.125000,0.745895,0.858317,ADV,NOUN,adv.all,noun.act,0.470000,0.920000,0.000000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unanimously : unanimously :: whip : ____",ANSWER: wip,wip
+367,gpt-5,seasonal,site,0.375000,0.125000,0.852197,0.987760,ADJ,NOUN,adj.all,noun.location,0.490000,0.890000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+seasonal : seasonal :: site : ____",ANSWER: site,site
+368,gpt-5,gangster,bedding,0.375000,0.312500,0.721594,0.658333,NOUN,NOUN,noun.person,noun.artifact,0.732500,0.902500,0.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gangster : gangster :: bedding : ____",ANSWER: bedding,bedding
+369,gpt-5,bunk,unreleased,0.125000,0.500000,0.680574,0.571971,NOUN,ADJ,noun.artifact,adj.all,0.825000,0.385000,0.800000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bunk : bunk :: unreleased : ____",ANSWER: leased,leased
+370,gpt-5,morbidity,meteorological,0.437500,0.750000,0.382248,0.651713,NOUN,ADJ,noun.cognition,adj.pert,0.367500,0.405000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+morbidity : morbidity :: meteorological : ____",ANSWER: meteorological,meteorological
+371,gpt-5,parkland,storeroom,0.375000,0.437500,0.461829,0.064101,NOUN,NOUN,noun.location,noun.artifact,0.760000,0.875000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+parkland : parkland :: storeroom : ____",ANSWER: storeroom,storeroom
+372,gpt-5,brush,shanghai,0.187500,0.375000,0.903458,0.865337,NOUN,NOUN,noun.group,noun.location,0.885000,0.670000,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+brush : brush :: shanghai : ____",ANSWER: shanghai,shanghai
+373,gpt-5,rationalist,energize,0.562500,0.375000,0.008380,0.223484,NOUN,VERB,noun.person,verb.change,0.130000,0.365000,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rationalist : rationalist :: energize : ____",ANSWER: energist,energist
+374,gpt-5,chopping,wobbling,0.375000,0.375000,0.644193,0.074581,VERB,VERB,verb.creation,verb.motion,0.695000,0.652500,0.500000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chopping : chopping :: wobbling : ____",ANSWER: wobbling,wobbling
+375,gpt-5,harvester,packaging,0.437500,0.437500,0.318046,0.848237,NOUN,NOUN,noun.person,noun.artifact,0.802500,0.860000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+harvester : harvester :: packaging : ____",ANSWER: packaging,packaging
+376,gpt-5,suing,stockholder,0.187500,0.562500,0.698634,0.076102,VERB,NOUN,verb.social,noun.person,0.385000,0.742500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+suing : suing :: stockholder : ____",ANSWER: shareholder,shareholder
+377,gpt-5,aggravation,glance,0.562500,0.250000,0.225785,0.837017,NOUN,NOUN,noun.feeling,noun.act,0.132500,0.620000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+aggravation : aggravation :: glance : ____",ANSWER: glance,glance
+378,gpt-5,shaker,sun,0.250000,0.062500,0.566931,0.976940,NOUN,NOUN,noun.person,noun.time,0.777500,0.957500,0.200000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shaker : shaker :: sun : ____",ANSWER: moon,moon
+379,gpt-5,platinum,peasantry,0.375000,0.437500,0.861057,0.163883,NOUN,NOUN,noun.substance,noun.group,0.860000,0.457500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+platinum : platinum :: peasantry : ____",ANSWER: peasant,peasant
+380,gpt-5,logistical,stinging,0.500000,0.375000,0.574751,0.467669,ADJ,VERB,adj.pert,verb.contact,0.267500,0.760000,0.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+logistical : logistical :: stinging : ____",ANSWER: stinging,stinging
+381,gpt-5,particularly,madly,0.625000,0.187500,0.976560,0.533391,ADV,ADV,adv.all,adv.all,0.160000,0.187500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+particularly : particularly :: madly : ____",ANSWER: madly,madly
+382,gpt-5,down,centered,0.125000,0.375000,0.997280,0.855957,ADV,VERB,adv.all,verb.motion,0.630000,0.577500,1.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+down : down :: centered : ____",ANSWER: centred,centred
+383,gpt-5,tuba,reduced,0.125000,0.312500,0.288786,0.953839,NOUN,VERB,noun.artifact,verb.emotion,0.965000,0.302500,0.000000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tuba : tuba :: reduced : ____",ANSWER: deducer,deducer
+384,gpt-5,modern,toe,0.250000,0.062500,0.981860,0.871537,ADJ,NOUN,adj.all,noun.body,0.327500,0.982500,0.600000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+modern : modern :: toe : ____",ANSWER: toe,toe
+385,gpt-5,swag,guava,0.125000,0.187500,0.543351,0.070081,NOUN,NOUN,noun.artifact,noun.plant,0.535000,0.965000,0.500000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+swag : swag :: guava : ____",ANSWER: guav,guav
+386,gpt-5,extra,polluting,0.187500,0.437500,0.977640,0.468929,ADJ,VERB,adj.all,verb.change,0.365000,0.647500,0.600000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+extra : extra :: polluting : ____",ANSWER: pollutant,pollutant
+387,gpt-5,exes,mood,0.125000,0.125000,0.471709,0.932459,NOUN,NOUN,noun.communication,noun.relation,0.517500,0.187500,0.200000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+exes : exes :: mood : ____",ANSWER: mooed,mooed
+388,gpt-5,germ,metaphysics,0.125000,0.562500,0.552251,0.476690,NOUN,NOUN,noun.cognition,noun.cognition,0.722500,0.250000,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+germ : germ :: metaphysics : ____",ANSWER: physics,physics
+389,gpt-5,socialite,mitochondria,0.437500,0.625000,0.331487,0.483130,NOUN,NOUN,noun.person,noun.body,0.732500,0.565000,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+socialite : socialite :: mitochondria : ____",ANSWER: mitochondrion,mitochondrion
+390,gpt-5,warmly,automobile,0.250000,0.500000,0.571751,0.844577,ADV,NOUN,adv.all,noun.artifact,0.282500,0.990000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+warmly : warmly :: automobile : ____",ANSWER: automobile,automobile
+391,gpt-5,sustaining,phrase,0.500000,0.250000,0.719354,0.913618,VERB,NOUN,verb.stative,noun.act,0.232500,0.465000,0.600000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sustaining : sustaining :: phrase : ____",ANSWER: phrase,phrase
+392,gpt-5,eyes,vodka,0.125000,0.187500,0.987640,0.814556,NOUN,NOUN,noun.body,noun.food,0.962500,0.992500,0.600000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+eyes : eyes :: vodka : ____",ANSWER: ice,ice
+393,gpt-5,mucus,refinery,0.187500,0.375000,0.521710,0.694914,NOUN,NOUN,noun.body,noun.artifact,0.940000,0.897500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mucus : mucus :: refinery : ____",ANSWER: refinery,refinery
+394,gpt-5,harpoon,penguin,0.312500,0.312500,0.285046,0.801316,NOUN,NOUN,noun.artifact,noun.animal,0.917500,1.000000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+harpoon : harpoon :: penguin : ____",ANSWER: penguin,penguin
+395,gpt-5,ocular,almost,0.250000,0.250000,0.374547,0.992120,NOUN,ADV,noun.artifact,adv.all,0.472500,0.165000,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ocular : ocular :: almost : ____",ANSWER: stomal,stomal
+396,gpt-5,politics,knee,0.375000,0.125000,0.971339,0.918058,NOUN,NOUN,noun.relation,noun.animal,0.415000,1.000000,0.400000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+politics : politics :: knee : ____",ANSWER: nee,nee
+397,gpt-5,mallet,psychology,0.250000,0.500000,0.420268,0.914798,NOUN,NOUN,noun.artifact,noun.cognition,0.982500,0.327500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mallet : mallet :: psychology : ____",ANSWER: psychology,psychology
+398,gpt-5,information,stereotyping,0.562500,0.625000,0.992880,0.372787,NOUN,VERB,noun.communication,verb.cognition,0.467500,0.427500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+information : information :: stereotyping : ____",ANSWER: stereotyping,stereotyping
+399,gpt-5,earning,theater,0.312500,0.312500,0.902978,0.920258,VERB,NOUN,verb.possession,noun.communication,0.482500,0.980000,0.100000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+earning : earning :: theater : ____",ANSWER: theatre,theatre
+400,gpt-5,landmark,conceit,0.375000,0.312500,0.831097,0.278326,NOUN,NOUN,noun.communication,noun.communication,0.775000,0.275000,0.300000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+landmark : landmark :: conceit : ____",ANSWER: conceit,conceit
+401,gpt-5,annoyance,rushing,0.437500,0.312500,0.624912,0.845297,NOUN,VERB,noun.person,verb.creation,0.285000,0.475000,0.400000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+annoyance : annoyance :: rushing : ____",ANSWER: rushing,rushing
+402,gpt-5,astrophysical,majesty,0.687500,0.312500,0.061721,0.868257,ADJ,NOUN,adj.pert,noun.attribute,0.192500,0.235000,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+astrophysical : astrophysical :: majesty : ____",ANSWER: majestic,majestic
+403,gpt-5,lighthouse,tease,0.500000,0.187500,0.721054,0.734955,NOUN,NOUN,noun.artifact,noun.person,0.990000,0.397500,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lighthouse : lighthouse :: tease : ____",ANSWER: tease,tease
+404,gpt-5,enactment,typography,0.437500,0.500000,0.564291,0.424628,NOUN,NOUN,noun.communication,noun.act,0.362500,0.585000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+enactment : enactment :: typography : ____",ANSWER: typography,typography
+405,gpt-5,profitable,detachable,0.500000,0.500000,0.863537,0.369887,ADJ,ADJ,adj.all,adj.all,0.340000,0.510000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+profitable : profitable :: detachable : ____",ANSWER: detachable,detachable
+406,gpt-5,initial,determination,0.312500,0.687500,0.961079,0.890158,ADJ,NOUN,adj.all,noun.cognition,0.507500,0.175000,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+initial : initial :: determination : ____",ANSWER: determination,determination
+407,gpt-5,cape,leftist,0.125000,0.312500,0.914238,0.750895,NOUN,NOUN,noun.object,noun.person,0.942500,0.287500,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cape : cape :: leftist : ____",ANSWER: eft,eft
+408,gpt-5,uptight,quack,0.312500,0.187500,0.321986,0.461469,ADJ,NOUN,adj.all,noun.event,0.215000,0.732500,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+uptight : uptight :: quack : ____",ANSWER: quack,quack
+409,gpt-5,cash,looking,0.125000,0.312500,0.974739,0.995180,NOUN,VERB,noun.person,verb.communication,0.870000,0.632500,0.300000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cash : cash :: looking : ____",ANSWER: looking,looking
+410,gpt-5,urgently,handout,0.375000,0.312500,0.689134,0.421168,ADV,NOUN,adv.all,noun.act,0.275000,0.630000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+urgently : urgently :: handout : ____",ANSWER: handout,handout
+411,gpt-5,unpopular,refrigerant,0.437500,0.562500,0.780796,0.122462,ADJ,NOUN,adj.all,noun.substance,0.267500,0.732500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unpopular : unpopular :: refrigerant : ____",ANSWER: refrigerant,refrigerant
+412,gpt-5,navigational,deference,0.625000,0.437500,0.412168,0.392208,ADJ,NOUN,adj.pert,noun.act,0.362500,0.230000,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+navigational : navigational :: deference : ____",ANSWER: deferential,deferential
+413,gpt-5,importer,hanging,0.375000,0.312500,0.477530,0.939979,NOUN,VERB,noun.person,verb.motion,0.607500,0.757500,0.000000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+importer : importer :: hanging : ____",ANSWER: hanger,hanger
+414,gpt-5,ant,enticing,0.062500,0.375000,0.824936,0.505250,NOUN,VERB,noun.animal,verb.communication,0.965000,0.277500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ant : ant :: enticing : ____",ANSWER: enticing,enticing
+415,gpt-5,contorted,haze,0.437500,0.125000,0.003160,0.665553,VERB,NOUN,verb.contact,noun.phenomenon,0.472500,0.760000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+contorted : contorted :: haze : ____",ANSWER: haze,haze
+416,gpt-5,pair,passive,0.125000,0.312500,0.960919,0.863657,NOUN,NOUN,noun.quantity,noun.relation,0.720000,0.315000,0.800000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pair : pair :: passive : ____",ANSWER: active,active
+417,gpt-5,faculty,fragmented,0.312500,0.500000,0.916898,0.623432,NOUN,VERB,noun.group,verb.change,0.740000,0.602500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+faculty : faculty :: fragmented : ____",ANSWER: fragmented,fragmented
+418,gpt-5,cutter,unusually,0.250000,0.437500,0.776116,0.793916,NOUN,ADV,noun.person,adv.all,0.767500,0.202500,0.500000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cutter : cutter :: unusually : ____",ANSWER: usually,usually
+419,gpt-5,flammable,cereal,0.437500,0.250000,0.534591,0.789856,ADJ,NOUN,adj.all,noun.plant,0.652500,0.957500,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+flammable : flammable :: cereal : ____",ANSWER: serial,serial
+420,gpt-5,panties,loudspeaker,0.312500,0.562500,0.764895,0.382588,NOUN,NOUN,noun.artifact,noun.artifact,0.975000,0.955000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+panties : panties :: loudspeaker : ____",ANSWER: loudspeaker,loudspeaker
+421,gpt-5,story,arguably,0.187500,0.375000,0.993200,0.835297,NOUN,ADV,noun.communication,adv.all,0.575000,0.197500,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+story : story :: arguably : ____",ANSWER: arguably,arguably
+422,gpt-5,brig,vermouth,0.125000,0.375000,0.619372,0.040021,NOUN,NOUN,noun.artifact,noun.food,0.870000,0.790000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+brig : brig :: vermouth : ____",ANSWER: martini,martini
+423,gpt-5,reusable,spank,0.375000,0.187500,0.556031,0.474849,ADJ,NOUN,adj.all,noun.act,0.335000,0.802500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+reusable : reusable :: spank : ____",ANSWER: spank,spank
+424,gpt-5,escort,discipline,0.250000,0.500000,0.857377,0.903078,NOUN,NOUN,noun.act,noun.cognition,0.825000,0.310000,0.500000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+escort : escort :: discipline : ____",ANSWER: discipline,discipline
+425,gpt-5,silver,freelance,0.250000,0.437500,0.967059,0.769055,NOUN,NOUN,noun.artifact,noun.person,0.880000,0.230000,1.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+silver : silver :: freelance : ____",ANSWER: freelance,freelance
+426,gpt-5,expose,guest,0.250000,0.187500,0.853257,0.948439,VERB,NOUN,verb.cognition,noun.artifact,0.615000,0.707500,0.900000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+expose : expose :: guest : ____",ANSWER: guest,guest
+427,gpt-5,gentleman,lynx,0.437500,0.125000,0.890058,0.462589,NOUN,NOUN,noun.person,noun.animal,0.642500,0.875000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gentleman : gentleman :: lynx : ____",ANSWER: lynx,lynx
+428,gpt-5,turkey,bottleneck,0.250000,0.500000,0.945899,0.401208,NOUN,NOUN,noun.food,noun.artifact,0.972500,0.742500,0.400000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+turkey : turkey :: bottleneck : ____",ANSWER: traffic,traffic
+429,gpt-5,superstructure,debriefing,0.750000,0.500000,0.331247,0.014360,NOUN,VERB,noun.artifact,verb.communication,0.680000,0.552500,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+superstructure : superstructure :: debriefing : ____",ANSWER: briefing,briefing
+430,gpt-5,lemon,prevalence,0.187500,0.500000,0.878698,0.761135,NOUN,NOUN,noun.food,noun.relation,1.000000,0.205000,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lemon : lemon :: prevalence : ____",ANSWER: prevalence,prevalence
+431,gpt-5,responsible,refining,0.562500,0.375000,0.971879,0.659773,ADJ,NOUN,adj.all,noun.process,0.172500,0.325000,0.200000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+responsible : responsible :: refining : ____",ANSWER: refining,refining
+432,gpt-5,categorization,ratchet,0.750000,0.312500,0.278686,0.520730,NOUN,NOUN,noun.cognition,noun.artifact,0.330000,0.910000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+categorization : categorization :: ratchet : ____",ANSWER: ratchet,ratchet
+433,gpt-5,assault,barrier,0.312500,0.312500,0.933039,0.888538,NOUN,NOUN,noun.act,noun.cognition,0.602500,0.852500,0.600000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+assault : assault :: barrier : ____",ANSWER: bar,bar
+434,gpt-5,mobile,singular,0.250000,0.375000,0.970259,0.787816,NOUN,NOUN,noun.artifact,noun.communication,0.482500,0.302500,0.700000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mobile : mobile :: singular : ____",ANSWER: singular,singular
+435,gpt-5,visitation,old,0.500000,0.062500,0.625393,0.996540,NOUN,ADJ,noun.event,adj.all,0.520000,0.430000,0.200000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+visitation : visitation :: old : ____",ANSWER: old,old
+436,gpt-5,hacker,engagement,0.250000,0.500000,0.765755,0.915358,NOUN,NOUN,noun.person,noun.event,0.685000,0.437500,0.300000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hacker : hacker :: engagement : ____",ANSWER: engagement,engagement
+437,gpt-5,penis,unturned,0.187500,0.375000,0.867917,0.190024,NOUN,ADJ,noun.body,adj.all,1.000000,0.355000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+penis : penis :: unturned : ____",ANSWER: unturned,unturned
+438,gpt-5,splice,retiree,0.250000,0.312500,0.314106,0.265265,NOUN,NOUN,noun.artifact,noun.person,0.547500,0.732500,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+splice : splice :: retiree : ____",ANSWER: retiree,retiree
+439,gpt-5,sensor,corvette,0.250000,0.375000,0.838237,0.624132,NOUN,NOUN,noun.artifact,noun.artifact,0.740000,0.940000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sensor : sensor :: corvette : ____",ANSWER: corvette,corvette
+440,gpt-5,pleading,rebate,0.375000,0.250000,0.712294,0.611332,VERB,NOUN,verb.communication,noun.possession,0.400000,0.552500,0.500000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pleading : pleading :: rebate : ____",ANSWER: rebait,rebait
+441,gpt-5,chest,redistribution,0.187500,0.750000,0.942359,0.590512,NOUN,NOUN,noun.body,noun.act,0.982500,0.300000,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chest : chest :: redistribution : ____",ANSWER: rib,rib
+442,gpt-5,knife,coherence,0.187500,0.437500,0.928679,0.485850,NOUN,NOUN,noun.shape,noun.state,0.975000,0.405000,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+knife : knife :: coherence : ____",ANSWER: cohere,cohere
+443,gpt-5,stunted,scribbling,0.312500,0.500000,0.395068,0.076702,VERB,VERB,verb.social,verb.creation,0.292500,0.775000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+stunted : stunted :: scribbling : ____",ANSWER: scribbling,scribbling
+444,gpt-5,dependability,alto,0.687500,0.125000,0.002680,0.688714,NOUN,NOUN,noun.attribute,noun.communication,0.242500,0.592500,0.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dependability : dependability :: alto : ____",ANSWER: alto,alto
+445,gpt-5,snapper,inclusion,0.312500,0.437500,0.418168,0.861597,NOUN,NOUN,noun.animal,noun.relation,0.880000,0.302500,0.500000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+snapper : snapper :: inclusion : ____",ANSWER: inclusion,inclusion
+446,gpt-5,ravens,redress,0.250000,0.312500,0.761015,0.520650,NOUN,NOUN,noun.animal,noun.act,0.947500,0.410000,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ravens : ravens :: redress : ____",ANSWER: redress,redress
+447,gpt-5,tot,indie,0.062500,0.187500,0.525871,0.857217,NOUN,NOUN,noun.person,noun.group,0.805000,0.340000,0.200000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tot : tot :: indie : ____",ANSWER: eidni,eidni
+448,gpt-5,sharpness,incumbent,0.437500,0.437500,0.425669,0.798716,NOUN,NOUN,noun.cognition,noun.person,0.422500,0.545000,0.600000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sharpness : sharpness :: incumbent : ____",ANSWER: incumbent,incumbent
+449,gpt-5,godsend,bet,0.312500,0.062500,0.241085,0.966339,NOUN,NOUN,noun.event,noun.act,0.135000,0.525000,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+godsend : godsend :: bet : ____",ANSWER: bet,bet
+450,gpt-5,conditioner,embarrassed,0.562500,0.562500,0.653473,0.868617,NOUN,VERB,noun.act,verb.emotion,0.802500,0.250000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+conditioner : conditioner :: embarrassed : ____",ANSWER: embarrassed,embarrassed
+451,gpt-5,manifesto,grout,0.437500,0.187500,0.758035,0.285166,NOUN,NOUN,noun.communication,noun.substance,0.560000,0.920000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+manifesto : manifesto :: grout : ____",ANSWER: rout,rout
+452,gpt-5,congresswoman,stoning,0.687500,0.312500,0.361347,0.208304,NOUN,VERB,noun.person,verb.contact,0.870000,0.652500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+congresswoman : congresswoman :: stoning : ____",ANSWER: stoning,stoning
+453,gpt-5,optically,intellect,0.437500,0.437500,0.183564,0.696114,ADV,NOUN,adv.all,noun.cognition,0.375000,0.340000,0.000000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+optically : optically :: intellect : ____",ANSWER: intellectually,intellectually
+454,gpt-5,bureaucracy,readership,0.562500,0.500000,0.722474,0.502470,NOUN,NOUN,noun.group,noun.group,0.160000,0.375000,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bureaucracy : bureaucracy :: readership : ____",ANSWER: readers,readers
+455,gpt-5,schooling,packet,0.437500,0.250000,0.784716,0.797996,VERB,NOUN,verb.motion,noun.group,0.517500,0.865000,0.500000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+schooling : schooling :: packet : ____",ANSWER: packet,packet
+456,gpt-5,philanthropist,circumcised,0.750000,0.562500,0.502730,0.336487,NOUN,VERB,noun.person,verb.contact,0.482500,0.832500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+philanthropist : philanthropist :: circumcised : ____",ANSWER: circumcised,circumcised
+457,gpt-5,raider,ovulation,0.250000,0.437500,0.611432,0.404428,NOUN,NOUN,noun.person,noun.process,0.575000,0.547500,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+raider : raider :: ovulation : ____",ANSWER: valuation,valuation
+458,gpt-5,rioting,actually,0.312500,0.375000,0.590412,0.993980,NOUN,ADV,noun.state,adv.all,0.697500,0.092500,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rioting : rioting :: actually : ____",ANSWER: actually,actually
+459,gpt-5,pulmonary,pseudoscience,0.437500,0.687500,0.699274,0.008580,ADJ,NOUN,adj.pert,noun.cognition,0.390000,0.305000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pulmonary : pulmonary :: pseudoscience : ____",ANSWER: pseudoscience,pseudoscience
+460,gpt-5,muscle,storybook,0.250000,0.437500,0.932439,0.245825,NOUN,NOUN,noun.attribute,noun.communication,0.875000,0.980000,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+muscle : muscle :: storybook : ____",ANSWER: storybook,storybook
+461,gpt-5,molasses,snack,0.375000,0.187500,0.420008,0.832997,NOUN,NOUN,noun.food,noun.food,0.960000,0.840000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+molasses : molasses :: snack : ____",ANSWER: snacks,snacks
+462,gpt-5,expanse,class,0.312500,0.187500,0.552651,0.991420,NOUN,NOUN,noun.attribute,noun.group,0.420000,0.712500,0.200000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+expanse : expanse :: class : ____",ANSWER: class,class
+463,gpt-5,adhesive,wire,0.375000,0.125000,0.644993,0.930819,ADJ,NOUN,adj.all,noun.artifact,0.837500,0.930000,0.100000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+adhesive : adhesive :: wire : ____",ANSWER: wire,wire
+464,gpt-5,crested,rod,0.312500,0.062500,0.328107,0.885398,VERB,NOUN,verb.stative,noun.animal,0.537500,0.857500,0.400000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+crested : crested :: rod : ____",ANSWER: rodent,rodent
+465,gpt-5,extremist,captivating,0.437500,0.562500,0.683734,0.536151,NOUN,VERB,noun.person,verb.emotion,0.435000,0.187500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+extremist : extremist :: captivating : ____",ANSWER: captivating,captivating
+466,gpt-5,radiotherapy,simplified,0.625000,0.500000,0.475630,0.770755,NOUN,VERB,noun.act,verb.change,0.510000,0.302500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+radiotherapy : radiotherapy :: simplified : ____",ANSWER: simplified,simplified
+467,gpt-5,bullet,postmortem,0.250000,0.500000,0.905198,0.210244,NOUN,NOUN,noun.artifact,noun.act,0.957500,0.675000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bullet : bullet :: postmortem : ____",ANSWER: postmortem,postmortem
+468,gpt-5,squeal,crescendo,0.250000,0.437500,0.280906,0.286546,NOUN,NOUN,noun.event,noun.attribute,0.605000,0.510000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+squeal : squeal :: crescendo : ____",ANSWER: crescendo,crescendo
+469,gpt-5,toke,postage,0.125000,0.312500,0.198884,0.703774,NOUN,NOUN,noun.act,noun.communication,0.597500,0.842500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+toke : toke :: postage : ____",ANSWER: postage,postage
+470,gpt-5,innocent,damsel,0.375000,0.250000,0.933839,0.336107,NOUN,NOUN,noun.person,noun.person,0.135000,0.720000,0.700000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+innocent : innocent :: damsel : ____",ANSWER: demoiselle,demoiselle
+471,gpt-5,boldness,tradesman,0.375000,0.437500,0.345867,0.075502,NOUN,NOUN,noun.attribute,noun.person,0.250000,0.767500,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+boldness : boldness :: tradesman : ____",ANSWER: tradesmen,tradesmen
+472,gpt-5,grandmother,pod,0.562500,0.062500,0.886298,0.778276,NOUN,NOUN,noun.person,noun.plant,0.912500,0.907500,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+grandmother : grandmother :: pod : ____",ANSWER: pod,pod
+473,gpt-5,dew,further,0.062500,0.312500,0.709794,0.990220,NOUN,ADV,noun.substance,adv.all,0.845000,0.220000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dew : dew :: further : ____",ANSWER: further,further
+474,gpt-5,riches,whiskey,0.250000,0.312500,0.728135,0.800276,NOUN,NOUN,noun.possession,noun.food,0.630000,0.935000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+riches : riches :: whiskey : ____",ANSWER: whisky,whisky
+475,gpt-5,argumentation,confinement,0.687500,0.562500,0.118722,0.684354,NOUN,NOUN,noun.communication,noun.state,0.250000,0.652500,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+argumentation : argumentation :: confinement : ____",ANSWER: confinement,confinement
+476,gpt-5,multiplicity,dislocation,0.625000,0.562500,0.257865,0.319506,NOUN,NOUN,noun.attribute,noun.state,0.302500,0.545000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+multiplicity : multiplicity :: dislocation : ____",ANSWER: dislocation,dislocation
+477,gpt-5,literate,railing,0.375000,0.312500,0.591712,0.585072,NOUN,VERB,noun.person,verb.possession,0.370000,0.947500,0.300000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+literate : literate :: railing : ____",ANSWER: railing,railing
+478,gpt-5,restrained,triumphantly,0.500000,0.625000,0.673473,0.131363,VERB,ADV,verb.emotion,adv.all,0.500000,0.260000,0.900000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+restrained : restrained :: triumphantly : ____",ANSWER: triumphant,triumphant
+479,gpt-5,conceit,info,0.312500,0.125000,0.278326,0.950239,NOUN,NOUN,noun.communication,noun.communication,0.275000,0.347500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+conceit : conceit :: info : ____",ANSWER: info,info
+480,gpt-5,revolutionary,sulfate,0.687500,0.312500,0.891018,0.543411,ADJ,NOUN,adj.all,noun.substance,0.315000,0.715000,0.400000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+revolutionary : revolutionary :: sulfate : ____",ANSWER: sulphate,sulphate
+481,gpt-5,merely,abbreviated,0.250000,0.562500,0.923458,0.548791,ADV,VERB,adv.all,verb.change,0.105000,0.525000,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+merely : merely :: abbreviated : ____",ANSWER: abbr.,abbr
+482,gpt-5,fuselage,tulip,0.375000,0.187500,0.484630,0.537271,NOUN,NOUN,noun.artifact,noun.plant,0.947500,1.000000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fuselage : fuselage :: tulip : ____",ANSWER: tulip,tulip
+483,gpt-5,cumin,videotape,0.187500,0.437500,0.429929,0.473969,NOUN,NOUN,noun.plant,noun.artifact,0.982500,0.980000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cumin : cumin :: videotape : ____",ANSWER: videotape,videotape
+484,gpt-5,repute,list,0.250000,0.125000,0.099062,0.989400,NOUN,NOUN,noun.state,noun.communication,0.190000,0.857500,0.100000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+repute : repute :: list : ____",ANSWER: list,list
+485,gpt-5,fucking,cant,0.312500,0.125000,0.990720,0.921458,VERB,NOUN,verb.contact,noun.object,0.607500,0.262500,0.300000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fucking : fucking :: cant : ____",ANSWER: can't,can't
+486,gpt-5,marketplace,claimant,0.562500,0.375000,0.812796,0.517730,NOUN,NOUN,noun.act,noun.person,0.820000,0.590000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+marketplace : marketplace :: claimant : ____",ANSWER: claimant,claimant
+487,gpt-5,doubting,retrial,0.375000,0.312500,0.613632,0.163043,VERB,NOUN,verb.cognition,noun.act,0.267500,0.445000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+doubting : doubting :: retrial : ____",ANSWER: retrial,retrial
+488,gpt-5,fled,offensive,0.125000,0.437500,0.868557,0.935079,VERB,ADJ,verb.motion,adj.all,0.535000,0.275000,0.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fled : fled :: offensive : ____",ANSWER: offensive,offensive
+489,gpt-5,sensibility,aspiring,0.562500,0.375000,0.549971,0.726775,NOUN,VERB,noun.feeling,verb.cognition,0.130000,0.217500,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sensibility : sensibility :: aspiring : ____",ANSWER: aspiring,aspiring
+490,gpt-5,grammatically,sexism,0.687500,0.250000,0.166963,0.707374,ADV,NOUN,adv.all,noun.act,0.277500,0.152500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+grammatically : grammatically :: sexism : ____",ANSWER: sexism,sexism
+491,gpt-5,elaboration,boil,0.562500,0.125000,0.277606,0.817236,NOUN,NOUN,noun.attribute,noun.state,0.277500,0.800000,0.400000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+elaboration : elaboration :: boil : ____",ANSWER: boil,boil
+492,gpt-5,disciple,sissy,0.375000,0.187500,0.648133,0.566871,NOUN,NOUN,noun.person,noun.person,0.572500,0.407500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+disciple : disciple :: sissy : ____",ANSWER: sissy,sissy
+493,gpt-5,derelict,playtime,0.375000,0.375000,0.493010,0.419208,NOUN,NOUN,noun.person,noun.time,0.602500,0.630000,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+derelict : derelict :: playtime : ____",ANSWER: playtime,playtime
+494,gpt-5,rented,recombination,0.250000,0.687500,0.828037,0.396108,VERB,NOUN,verb.possession,noun.event,0.427500,0.280000,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rented : rented :: recombination : ____",ANSWER: combination,combination
+495,gpt-5,marvel,sarcastically,0.250000,0.687500,0.889598,0.373347,NOUN,ADV,noun.event,adv.all,0.280000,0.160000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+marvel : marvel :: sarcastically : ____",ANSWER: sarcastically,sarcastically
+496,gpt-5,fairytale,haunt,0.437500,0.187500,0.558411,0.717394,NOUN,NOUN,noun.communication,noun.location,0.482500,0.257500,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fairytale : fairytale :: haunt : ____",ANSWER: haunt,haunt
+497,gpt-5,mythical,lobby,0.375000,0.187500,0.674413,0.863897,ADJ,NOUN,adj.all,noun.artifact,0.250000,0.925000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mythical : mythical :: lobby : ____",ANSWER: lobby,lobby
+498,gpt-5,schooling,borrower,0.437500,0.375000,0.784716,0.582812,VERB,NOUN,verb.social,noun.person,0.517500,0.567500,0.500000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+schooling : schooling :: borrower : ____",ANSWER: lender,lender
+499,gpt-5,perfecting,shrub,0.500000,0.187500,0.448109,0.543811,VERB,NOUN,verb.change,noun.plant,0.205000,0.980000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+perfecting : perfecting :: shrub : ____",ANSWER: shrub,shrub
+500,gpt-5,maker,enforcement,0.187500,0.562500,0.902598,0.934099,NOUN,NOUN,noun.group,noun.act,0.725000,0.370000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+maker : maker :: enforcement : ____",ANSWER: enforcement,enforcement

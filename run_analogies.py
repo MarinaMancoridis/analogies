@@ -111,15 +111,15 @@ def build_identity_specs(
     if include_polysemy:
         specs += [
             {
-                "key": "identity_poly_mono",
+                "key": "identity_mono_mono",
                 "module": "analogies.analogy_types.identity",
-                "kwargs": {"A_mode": "poly:poly", "C_mode": "poly:mono"},
+                "kwargs": {"A_mode": "poly:mono", "C_mode": "poly:mono"},
                 "weight": weight,
             },
             {
-                "key": "identity_poly_poly",
+                "key": "identity_mono_poly",
                 "module": "analogies.analogy_types.identity",
-                "kwargs": {"A_mode": "poly:poly", "C_mode": "poly:poly"},
+                "kwargs": {"A_mode": "poly:mono", "C_mode": "poly:poly"},
                 "weight": weight,
             },
         ]

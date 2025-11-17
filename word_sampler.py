@@ -27,6 +27,12 @@ import nltk
 from nltk import pos_tag
 from nltk.corpus import wordnet as wn
 
+
+from analogies.utils import generate_inference
+from analogies.common import clean_answer
+from analogies.analogy_types.identity import _prompt as identity_prompt
+
+
 # C4 streaming (requires: pip install 'datasets==3.*' xxhash)
 # We keep the import optional and handle failures gracefully.
 try:
@@ -364,32 +370,125 @@ if __name__ == "__main__":
     BRYS_PATH = os.path.join(here, "concreteness.txt")
     load_brysbaert_norms(BRYS_PATH)
 
-    # Two independent samples A and B
-    (a_word, a_pop, a_upos, a_dom, a_abstr, a_poly), \
-    (b_word, b_pop, b_upos, b_dom, b_abstr, b_poly) = robust_word_sampler_pair(
-        accept_determiners=False,
-        accept_pronouns=False,
-        allowed_domains=None
-    )
+    MODEL = "gpt-5"      # or whatever model name you want
+    N_TRIALS = 500
 
-    # Per-word tables with requested headers
-    rows_A = [
-        ("Word",        a_word,           "wordfreq top_n_list", "simple ASCII token"),
-        ("Popularity",  f"{a_pop:.4f}",   "wordfreq ranks",       "top one; bottom zero"),
-        ("UPOS",        a_upos,           "NLTK Universal",       "grammar category tag"),
-        ("Domain",      a_dom,            "Princeton WordNet",    "semantic domain lexname"),
-        ("Abstraction", f"{a_abstr:.4f}", "Brysbaert 2014",       "0 abstract; 1 concrete"),
-        ("Polysemy",    f"{a_poly:.4f}",  "WordNet synsets",      "0 = 1 sense; 1 = many"),
-    ]
-    rows_B = [
-        ("Word",        b_word,           "wordfreq top_n_list", "simple ASCII token"),
-        ("Popularity",  f"{b_pop:.4f}",   "wordfreq ranks",       "top one; bottom zero"),
-        ("UPOS",        b_upos,           "NLTK Universal",       "grammar category tag"),
-        ("Domain",      b_dom,            "Princeton WordNet",    "semantic domain lexname"),
-        ("Abstraction", f"{b_abstr:.4f}", "Brysbaert 2014",       "0 abstract; 1 concrete"),
-        ("Polysemy",    f"{b_poly:.4f}",  "WordNet synsets",      "0 = 1 sense; 1 = many"),
-    ]
+    # CSV output path
+    csv_path = os.path.join(here, "robust_identity_runs.csv")
 
-    _print_table(f"A Word: {a_word}", rows_A)
-    _print_table(f"B Word: {b_word}", rows_B)
+    # Open in append mode and write header only if file is new/empty
+    file_exists = os.path.exists(csv_path)
+    with open(csv_path, "a", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
 
+        if not file_exists or os.path.getsize(csv_path) == 0:
+            writer.writerow([
+                "trial_id",
+                "model",
+                # words
+                "A_word",
+                "B_word",
+                # popularity
+                "A_popularity",
+                "B_popularity",
+                # POS
+                "A_upos",
+                "B_upos",
+                # domains
+                "A_domain",
+                "B_domain",
+                # abstraction
+                "A_abstraction",
+                "B_abstraction",
+                # polysemy
+                "A_polysemy",
+                "B_polysemy",
+                # identity eval
+                "identity_success",
+                "prompt",
+                "raw_response",
+                "parsed_answer",
+            ])
+
+        hits = 0
+
+        for trial_id in range(1, N_TRIALS + 1):
+            # Sample two independent words with all semantic features
+            (a_word, a_pop, a_upos, a_dom, a_abstr, a_poly), \
+            (b_word, b_pop, b_upos, b_dom, b_abstr, b_poly) = robust_word_sampler_pair(
+                accept_determiners=False,
+                accept_pronouns=False,
+                allowed_domains=None,
+            )
+
+            a_len = len(a_word)
+            b_len = len(b_word)
+
+            # Identity prompt: same as your identity test
+            #   "Complete the analogy. Reply ONLY as: ANSWER: <word>\n\nA : A :: C : ____"
+            prompt = identity_prompt(a_word, b_word)
+            raw_response = generate_inference(prompt, MODEL)
+            answer = clean_answer(raw_response)
+            identity_success = (answer == b_word.lower())
+            hits += int(identity_success)
+
+            # ---- Print the tables for this pair ----
+            rows_A = [
+                ("Word",        a_word,           "wordfreq top_n_list", "simple ASCII token"),
+                ("Popularity",  f"{a_pop:.4f}",   "wordfreq ranks",       "top one; bottom zero"),
+                ("UPOS",        a_upos,           "NLTK Universal",       "grammar category tag"),
+                ("Domain",      a_dom,            "Princeton WordNet",    "semantic domain lexname"),
+                ("Abstraction", f"{a_abstr:.4f}", "Brysbaert 2014",       "0 abstract; 1 concrete"),
+                ("Polysemy",    f"{a_poly:.4f}",  "WordNet synsets",      "0 = 1 sense; 1 = many"),
+                ("IdentityHit", str(int(identity_success)),
+                                "LLM identity",    "1 = success; 0 = failure"),
+            ]
+            rows_B = [
+                ("Word",        b_word,           "wordfreq top_n_list", "simple ASCII token"),
+                ("Popularity",  f"{b_pop:.4f}",   "wordfreq ranks",       "top one; bottom zero"),
+                ("UPOS",        b_upos,           "NLTK Universal",       "grammar category tag"),
+                ("Domain",      b_dom,            "Princeton WordNet",    "semantic domain lexname"),
+                ("Abstraction", f"{b_abstr:.4f}", "Brysbaert 2014",       "0 abstract; 1 concrete"),
+                ("Polysemy",    f"{b_poly:.4f}",  "WordNet synsets",      "0 = 1 sense; 1 = many"),
+                ("IdentityHit", str(int(identity_success)),
+                                "LLM identity",    "1 = success; 0 = failure"),
+            ]
+
+            print(f"\n===== Trial {trial_id}/{N_TRIALS} =====")
+            _print_table(f"A Word: {a_word}", rows_A)
+            _print_table(f"B Word: {b_word}", rows_B)
+
+            # Also log a concise line to stdout
+            print(
+                f"[summary] A={a_word!r}, B={b_word!r}, "
+                f"answer={answer!r}, success={identity_success}"
+            )
+
+            # ---- Write one CSV row per pair ----
+            writer.writerow([
+                trial_id,
+                MODEL,
+                a_word,
+                b_word,
+                a_len,
+                b_len,
+                f"{a_pop:.6f}",
+                f"{b_pop:.6f}",
+                a_upos,
+                b_upos,
+                a_dom,
+                b_dom,
+                f"{a_abstr:.6f}",
+                f"{b_abstr:.6f}",
+                f"{a_poly:.6f}",
+                f"{b_poly:.6f}",
+                int(identity_success),
+                prompt,
+                raw_response,
+                answer,
+            ])
+
+    accuracy = hits / N_TRIALS if N_TRIALS else 0.0
+    print(f"\nFinished {N_TRIALS} identity trials.")
+    print(f"Accuracy: {hits}/{N_TRIALS} = {accuracy:.3f}")
+    print(f"Results written to: {csv_path}")
