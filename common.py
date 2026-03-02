@@ -6,7 +6,7 @@ import random
 from typing import List
 import nltk # used for identity — part of speech
 from nltk.corpus import wordnet as wn
-# import stanza # used for identity — part of speech
+import stanza # used for identity — part of speech
 from functools import lru_cache
 import csv
 import string

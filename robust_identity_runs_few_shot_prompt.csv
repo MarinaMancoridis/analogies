@@ -1,0 +1,801 @@
+trial_id,model,A_word,B_word,A_popularity,B_popularity,A_upos,B_upos,A_domain,B_domain,A_abstraction,B_abstraction,A_polysemy,B_polysemy,identity_success,prompt,raw_response,parsed_answer
+1,gpt-5,buyer,gyro,5,4,0.864697,0.326647,NOUN,NOUN,noun.person,noun.food,0.840000,0.865000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+buyer : buyer :: gyro : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: gyro,gyro
+2,gpt-5,annoying,emphysema,8,9,0.928039,0.186384,VERB,NOUN,verb.emotion,noun.state,0.327500,0.662500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+annoying : annoying :: emphysema : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: emphysema,emphysema
+3,gpt-5,notoriety,extension,9,9,0.545011,0.935399,NOUN,NOUN,noun.state,noun.artifact,0.250000,0.482500,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+notoriety : notoriety :: extension : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: extension,extension
+4,gpt-5,heave,passivity,5,9,0.343187,0.055041,NOUN,NOUN,noun.act,noun.attribute,0.667500,0.150000,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+heave : heave :: passivity : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: passivity,passivity
+5,gpt-5,allies,mailed,6,6,0.909938,0.700194,NOUN,VERB,noun.group,verb.communication,0.620000,0.672500,0.500000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+allies : allies :: mailed : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: mailed,mailed
+6,gpt-5,liable,masculinity,6,11,0.831017,0.642113,ADJ,NOUN,adj.all,noun.attribute,0.260000,0.417500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+liable : liable :: masculinity : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: masculinity,masculinity
+7,gpt-5,statistics,affix,10,5,0.949959,0.096182,NOUN,NOUN,noun.cognition,noun.communication,0.597500,0.360000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+statistics : statistics :: affix : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: affix,affix
+8,gpt-5,fax,swing,3,5,0.751635,0.918998,NOUN,VERB,noun.artifact,verb.social,0.870000,0.885000,0.100000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fax : fax :: swing : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: swing,swing
+9,gpt-5,sitting,asymmetry,7,9,0.970639,0.329607,VERB,NOUN,verb.stative,noun.attribute,0.690000,0.472500,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sitting : sitting :: asymmetry : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: asymmetry,asymmetry
+10,gpt-5,sign,actuarial,4,9,0.982320,0.253845,NOUN,ADJ,noun.event,adj.pert,0.905000,0.332500,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sign : sign :: actuarial : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: actuarial,actuarial
+11,gpt-5,glasses,stubbornly,7,10,0.919598,0.356047,NOUN,ADV,noun.substance,adv.all,0.975000,0.232500,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+glasses : glasses :: stubbornly : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: stubbornly,stubbornly
+12,gpt-5,volcano,streamlined,7,11,0.793736,0.589832,NOUN,VERB,noun.object,verb.creation,0.937500,0.327500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+volcano : volcano :: streamlined : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: streamlined,streamlined
+13,gpt-5,loony,badminton,5,9,0.239505,0.599172,NOUN,NOUN,noun.person,noun.act,0.287500,0.925000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+loony : loony :: badminton : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: badminton,badminton
+14,gpt-5,therefore,southeastern,9,12,0.971219,0.760575,ADV,ADJ,adv.all,adj.all,0.082500,0.630000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+therefore : therefore :: southeastern : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: southeastern,southeastern
+15,gpt-5,dig,pang,3,4,0.901218,0.496750,NOUN,NOUN,noun.act,noun.feeling,0.832500,0.425000,1.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dig : dig :: pang : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: pang,pang
+16,gpt-5,theoretical,ton,11,3,0.858617,0.911638,ADJ,NOUN,adj.all,noun.quantity,0.092500,0.792500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+theoretical : theoretical :: ton : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: ton,ton
+17,gpt-5,mailer,simplistic,6,10,0.375048,0.615892,NOUN,ADJ,noun.artifact,adj.all,0.780000,0.232500,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mailer : mailer :: simplistic : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: simplistic,simplistic
+18,gpt-5,shortcut,acting,8,6,0.631433,0.968259,NOUN,VERB,noun.artifact,verb.social,0.550000,0.385000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shortcut : shortcut :: acting : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: acting,acting
+19,gpt-5,breath,hilarity,6,8,0.942419,0.212944,NOUN,NOUN,noun.communication,noun.feeling,0.840000,0.172500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+breath : breath :: hilarity : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: hilarity,hilarity
+20,gpt-5,risotto,persecution,7,11,0.314686,0.781936,NOUN,NOUN,noun.food,noun.act,0.840000,0.357500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+risotto : risotto :: persecution : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: persecution,persecution
+21,gpt-5,foreclosure,quantitatively,11,14,0.661653,0.087802,NOUN,ADV,noun.act,adv.all,0.575000,0.240000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+foreclosure : foreclosure :: quantitatively : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: quantitatively,quantitatively
+22,gpt-5,overheated,lap,10,3,0.332907,0.893318,VERB,NOUN,verb.change,noun.act,0.580000,0.777500,0.200000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+overheated : overheated :: lap : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: lap,lap
+23,gpt-5,influential,requirement,11,11,0.876998,0.907458,ADJ,NOUN,adj.all,noun.object,0.215000,0.380000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+influential : influential :: requirement : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: requirement,requirement
+24,gpt-5,empirically,snatched,11,8,0.327307,0.689834,ADV,VERB,adv.all,verb.contact,0.167500,0.500000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+empirically : empirically :: snatched : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: snatched,snatched
+25,gpt-5,murderer,realistically,8,13,0.812656,0.621292,NOUN,ADV,noun.person,adv.all,0.707500,0.175000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+murderer : murderer :: realistically : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: realistically,realistically
+26,gpt-5,batting,proportionately,7,15,0.819716,0.111542,NOUN,ADV,noun.act,adv.all,0.785000,0.282500,0.600000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+batting : batting :: proportionately : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: proportionately,proportionately
+27,gpt-5,boost,predetermined,5,13,0.929119,0.606632,NOUN,VERB,noun.attribute,verb.cognition,0.472500,0.142500,0.700000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+boost : boost :: predetermined : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: predetermined,predetermined
+28,gpt-5,oregano,herder,7,6,0.257445,0.176584,NOUN,NOUN,noun.food,noun.person,0.952500,0.740000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+oregano : oregano :: herder : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: herder,herder
+29,gpt-5,horrified,pellet,9,6,0.670173,0.489510,VERB,NOUN,verb.emotion,noun.artifact,0.390000,0.890000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+horrified : horrified :: pellet : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: pellet,pellet
+30,gpt-5,aide,between,4,7,0.773315,0.996700,NOUN,ADP,noun.person,adv.all,0.647500,0.430000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+aide : aide :: between : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: between,between
+31,gpt-5,fitted,necessarily,6,11,0.884198,0.937679,VERB,ADV,verb.stative,adv.all,0.432500,0.090000,0.900000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fitted : fitted :: necessarily : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: necessarily,necessarily
+32,gpt-5,counter,biological,7,10,0.946759,0.915778,NOUN,ADJ,noun.act,adj.pert,0.792500,0.527500,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+counter : counter :: biological : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: biological,biological
+33,gpt-5,blind,forgiveness,5,11,0.942439,0.826637,NOUN,NOUN,noun.artifact,noun.act,0.757500,0.110000,0.900000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+blind : blind :: forgiveness : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: forgiveness,forgiveness
+34,gpt-5,viceroy,noon,7,4,0.473989,0.880258,NOUN,NOUN,noun.animal,noun.time,0.580000,0.417500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+viceroy : viceroy :: noon : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: noon,noon
+35,gpt-5,coffee,pull,6,4,0.971059,0.967799,NOUN,NOUN,noun.attribute,noun.attribute,0.952500,0.742500,0.300000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+coffee : coffee :: pull : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: pull,pull
+36,gpt-5,vicariously,statistical,11,11,0.180904,0.885318,ADV,ADJ,adv.all,adj.pert,0.120000,0.330000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vicariously : vicariously :: statistical : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: statistical,statistical
+37,gpt-5,mankind,dip,7,3,0.828557,0.868797,NOUN,NOUN,noun.animal,noun.event,0.492500,0.805000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mankind : mankind :: dip : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: dip,dip
+38,gpt-5,illustrious,hourly,11,6,0.612732,0.779156,ADJ,ADV,adj.all,adv.all,0.162500,0.375000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+illustrious : illustrious :: hourly : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: hourly,hourly
+39,gpt-5,sham,took,4,4,0.677494,0.994180,NOUN,VERB,noun.artifact,verb.cognition,0.517500,0.402500,0.400000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sham : sham :: took : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: took,took
+40,gpt-5,authoritative,dusting,13,7,0.658433,0.492710,ADJ,VERB,adj.all,verb.contact,0.170000,0.850000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+authoritative : authoritative :: dusting : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: dusting,dusting
+41,gpt-5,crematorium,sledding,11,8,0.242625,0.030261,NOUN,VERB,noun.artifact,verb.motion,0.857500,0.767500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+crematorium : crematorium :: sledding : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: sledding,sledding
+42,gpt-5,minuscule,private,9,7,0.412408,0.986800,NOUN,ADJ,noun.communication,adj.all,0.417500,0.430000,0.400000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+minuscule : minuscule :: private : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: private,private
+43,gpt-5,subcontractor,treading,13,8,0.181784,0.338707,NOUN,VERB,noun.person,verb.contact,0.707500,0.562500,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+subcontractor : subcontractor :: treading : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: treading,treading
+44,gpt-5,untrue,misogynist,6,10,0.658953,0.341507,ADJ,NOUN,adj.all,noun.person,0.277500,0.425000,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+untrue : untrue :: misogynist : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: misogynist,misogynist
+45,gpt-5,sudden,stimulation,6,11,0.926839,0.774015,ADJ,NOUN,adj.all,noun.process,0.267500,0.360000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sudden : sudden :: stimulation : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: stimulation,stimulation
+46,gpt-5,trustee,velocity,7,8,0.767475,0.837957,NOUN,NOUN,noun.person,noun.time,0.575000,0.317500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+trustee : trustee :: velocity : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: velocity,velocity
+47,gpt-5,stewed,unworthy,6,8,0.109902,0.549211,VERB,ADJ,verb.emotion,adj.all,0.492500,0.232500,0.300000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+stewed : stewed :: unworthy : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: unworthy,unworthy
+48,gpt-5,soccer,transported,6,11,0.937259,0.827637,NOUN,VERB,noun.act,verb.motion,0.940000,0.490000,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+soccer : soccer :: transported : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: transported,transported
+49,gpt-5,behemoth,credible,8,8,0.401408,0.799476,NOUN,ADJ,noun.person,adj.all,0.537500,0.180000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+behemoth : behemoth :: credible : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: credible,credible
+50,gpt-5,defensible,typography,10,10,0.269685,0.424628,ADJ,NOUN,adj.all,noun.communication,0.330000,0.585000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+defensible : defensible :: typography : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: typography,typography
+51,gpt-5,paragraph,support,9,7,0.863677,0.994500,NOUN,NOUN,noun.communication,noun.possession,0.740000,0.457500,0.300000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+paragraph : paragraph :: support : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: support,support
+52,gpt-5,partner,mason,7,5,0.969379,0.885838,NOUN,NOUN,noun.person,noun.person,0.632500,0.800000,0.400000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+partner : partner :: mason : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: mason,mason
+53,gpt-5,tempting,leash,8,5,0.756975,0.687014,VERB,NOUN,verb.emotion,noun.act,0.232500,0.972500,0.700000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tempting : tempting :: leash : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: leash,leash
+54,gpt-5,kebab,opportunistic,5,13,0.442089,0.469289,NOUN,ADJ,noun.food,adj.all,0.962500,0.297500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+kebab : kebab :: opportunistic : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: opportunistic,opportunistic
+55,gpt-5,atypical,machine,8,7,0.506690,0.973099,ADJ,NOUN,adj.all,noun.artifact,0.232500,0.812500,0.100000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+atypical : atypical :: machine : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: machine,machine
+56,gpt-5,incidental,nougat,10,6,0.612712,0.021440,NOUN,NOUN,noun.possession,noun.food,0.185000,0.802500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+incidental : incidental :: nougat : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: nougat,nougat
+57,gpt-5,disparity,panache,9,7,0.666173,0.123562,NOUN,NOUN,noun.attribute,noun.artifact,0.195000,0.152500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+disparity : disparity :: panache : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: panache,panache
+58,gpt-5,designated,napkin,10,6,0.906718,0.527831,VERB,NOUN,verb.communication,noun.artifact,0.355000,0.982500,0.400000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+designated : designated :: napkin : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: napkin,napkin
+59,gpt-5,conscious,forcefully,9,10,0.893778,0.587232,ADJ,ADV,adj.all,adv.all,0.257500,0.420000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+conscious : conscious :: forcefully : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: forcefully,forcefully
+60,gpt-5,herding,padded,7,6,0.383528,0.562191,VERB,VERB,verb.stative,verb.communication,0.680000,0.802500,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+herding : herding :: padded : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: padded,padded
+61,gpt-5,whipping,bash,8,4,0.635593,0.811196,VERB,NOUN,verb.motion,noun.event,0.725000,0.630000,1.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+whipping : whipping :: bash : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: bash,bash
+62,gpt-5,politically,harness,11,7,0.870017,0.765715,ADV,NOUN,adv.all,noun.artifact,0.222500,0.785000,0.100000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+politically : politically :: harness : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: harness,harness
+63,gpt-5,plugging,attempted,8,9,0.496550,0.930639,VERB,VERB,verb.communication,verb.creation,0.550000,0.250000,0.500000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+plugging : plugging :: attempted : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: attempted,attempted
+64,gpt-5,camcorder,shimmy,9,6,0.205584,0.110302,NOUN,NOUN,noun.artifact,noun.act,1.000000,0.702500,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+camcorder : camcorder :: shimmy : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: shimmy,shimmy
+65,gpt-5,wreck,slider,5,6,0.847257,0.555611,NOUN,NOUN,noun.artifact,noun.animal,0.767500,0.670000,0.400000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+wreck : wreck :: slider : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: slider,slider
+66,gpt-5,typewriter,scandal,10,7,0.583952,0.890998,NOUN,NOUN,noun.artifact,noun.communication,0.970000,0.282500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+typewriter : typewriter :: scandal : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: scandal,scandal
+67,gpt-5,directly,salad,8,5,0.973419,0.887538,ADV,NOUN,adv.all,noun.food,0.342500,0.992500,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+directly : directly :: salad : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: salad,salad
+68,gpt-5,holocaust,uncharted,9,9,0.831337,0.531591,NOUN,ADJ,noun.act,adj.all,0.702500,0.422500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+holocaust : holocaust :: uncharted : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: uncharted,uncharted
+69,gpt-5,suspect,lingo,7,5,0.940679,0.427769,NOUN,NOUN,noun.person,noun.communication,0.397500,0.317500,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+suspect : suspect :: lingo : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: lingo,lingo
+70,gpt-5,ornamental,extenuating,10,11,0.627193,0.013520,NOUN,VERB,noun.plant,verb.communication,0.425000,0.222500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ornamental : ornamental :: extenuating : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: extenuating,extenuating
+71,gpt-5,blaster,dip,7,3,0.479710,0.868797,NOUN,NOUN,noun.person,noun.artifact,0.667500,0.805000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+blaster : blaster :: dip : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: dip,dip
+72,gpt-5,arched,atom,6,4,0.577272,0.783756,VERB,NOUN,verb.motion,noun.substance,0.705000,0.585000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+arched : arched :: atom : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: atom,atom
+73,gpt-5,inoperable,alternately,10,11,0.221844,0.565631,ADJ,ADV,adj.all,adv.all,0.455000,0.257500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+inoperable : inoperable :: alternately : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: alternately,alternately
+74,gpt-5,whale,concern,5,7,0.851817,0.956119,NOUN,NOUN,noun.animal,noun.feeling,0.990000,0.175000,0.200000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+whale : whale :: concern : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: concern,concern
+75,gpt-5,rushing,asteroid,7,8,0.845297,0.726755,VERB,NOUN,verb.change,noun.object,0.475000,0.965000,0.800000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rushing : rushing :: asteroid : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: asteroid,asteroid
+76,gpt-5,tropical,nick,8,4,0.892538,0.949079,ADJ,NOUN,adj.pert,noun.artifact,0.562500,0.717500,0.300000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tropical : tropical :: nick : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: nick,nick
+77,gpt-5,binge,caption,5,7,0.741615,0.783576,NOUN,NOUN,noun.act,noun.communication,0.525000,0.732500,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+binge : binge :: caption : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: caption,caption
+78,gpt-5,overlord,predominantly,8,13,0.433689,0.807016,NOUN,ADV,noun.person,adv.all,0.652500,0.297500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+overlord : overlord :: predominantly : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: predominantly,predominantly
+79,gpt-5,sinking,adaption,7,8,0.814996,0.197924,NOUN,NOUN,noun.event,noun.process,0.500000,0.350000,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sinking : sinking :: adaption : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: adaption,adaption
+80,gpt-5,glitz,transatlantic,5,13,0.126643,0.549391,NOUN,ADJ,noun.attribute,adj.pert,0.500000,0.470000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+glitz : glitz :: transatlantic : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: transatlantic,transatlantic
+81,gpt-5,collie,overseer,6,8,0.407948,0.366267,NOUN,NOUN,noun.animal,noun.person,0.942500,0.682500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+collie : collie :: overseer : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: overseer,overseer
+82,gpt-5,nausea,besides,6,7,0.716514,0.953459,NOUN,ADP,noun.state,adv.all,0.590000,0.312500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+nausea : nausea :: besides : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: besides,besides
+83,gpt-5,authoritarianism,experienced,16,11,0.423548,0.953159,NOUN,ADJ,noun.group,adj.all,0.167500,0.125000,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+authoritarianism : authoritarianism :: experienced : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: experienced,experienced
+84,gpt-5,subculture,outrageous,10,10,0.403008,0.798016,NOUN,ADJ,noun.group,adj.all,0.285000,0.200000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+subculture : subculture :: outrageous : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: outrageous,outrageous
+85,gpt-5,shuttle,aphrodisiac,7,11,0.833037,0.061841,NOUN,NOUN,noun.artifact,noun.artifact,0.907500,0.547500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shuttle : shuttle :: aphrodisiac : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: aphrodisiac,aphrodisiac
+86,gpt-5,swish,savagery,5,8,0.331167,0.314546,NOUN,NOUN,noun.event,noun.attribute,0.510000,0.182500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+swish : swish :: savagery : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: savagery,savagery
+87,gpt-5,formula,bedrock,7,7,0.933999,0.599132,NOUN,NOUN,noun.food,noun.cognition,0.777500,0.865000,0.600000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+formula : formula :: bedrock : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: bedrock,bedrock
+88,gpt-5,spread,sniffer,6,7,0.967019,0.053241,NOUN,NOUN,noun.event,noun.person,0.670000,0.662500,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+spread : spread :: sniffer : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: sniffer,sniffer
+89,gpt-5,researcher,discovered,10,10,0.838377,0.962919,NOUN,VERB,noun.person,verb.cognition,0.702500,0.342500,0.000000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+researcher : researcher :: discovered : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: discovered,discovered
+90,gpt-5,traversed,crouched,9,8,0.363947,0.224124,VERB,VERB,verb.stative,verb.contact,0.462500,0.620000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+traversed : traversed :: crouched : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: crouched,crouched
+91,gpt-5,pooch,honeycomb,5,9,0.396428,0.375948,NOUN,NOUN,noun.animal,noun.object,0.830000,0.930000,0.100000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pooch : pooch :: honeycomb : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: honeycomb,honeycomb
+92,gpt-5,feasibility,goal,11,4,0.675374,0.981520,NOUN,NOUN,noun.attribute,noun.act,0.202500,0.515000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+feasibility : feasibility :: goal : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: goal,goal
+93,gpt-5,disgrace,untamed,8,7,0.786396,0.207444,NOUN,ADJ,noun.state,adj.all,0.277500,0.267500,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+disgrace : disgrace :: untamed : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: untamed,untamed
+94,gpt-5,badger,cloning,6,7,0.693174,0.570611,NOUN,VERB,noun.person,verb.creation,0.842500,0.422500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+badger : badger :: cloning : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: cloning,cloning
+95,gpt-5,flashing,decompression,8,13,0.769075,0.370027,VERB,NOUN,verb.perception,noun.act,0.767500,0.517500,0.900000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+flashing : flashing :: decompression : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: decompression,decompression
+96,gpt-5,handicapped,murmur,11,6,0.665573,0.358187,NOUN,NOUN,noun.group,noun.event,0.665000,0.547500,0.400000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+handicapped : handicapped :: murmur : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: murmur,murmur
+97,gpt-5,veranda,caddy,7,5,0.330467,0.392988,NOUN,NOUN,noun.artifact,noun.artifact,0.885000,0.830000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+veranda : veranda :: caddy : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: caddy,caddy
+98,gpt-5,vowel,elbow,5,5,0.620192,0.819276,NOUN,NOUN,noun.communication,noun.artifact,0.700000,1.000000,0.100000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vowel : vowel :: elbow : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: elbow,elbow
+99,gpt-5,foster,maize,6,5,0.918318,0.627693,NOUN,NOUN,noun.person,noun.plant,0.327500,0.895000,0.400000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+foster : foster :: maize : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: maize,maize
+100,gpt-5,succulent,insinuating,9,11,0.417888,0.231145,NOUN,VERB,noun.plant,verb.motion,0.437500,0.125000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+succulent : succulent :: insinuating : ____. 
+
+Here are some examples. 
+rose : rose :: flower : flower 
+apple : apple :: fruit : fruit 
+cat : cat :: dog : dog",ANSWER: insinuating,insinuating

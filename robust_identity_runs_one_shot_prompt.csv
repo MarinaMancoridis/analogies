@@ -1,0 +1,601 @@
+trial_id,model,A_word,B_word,A_popularity,B_popularity,A_upos,B_upos,A_domain,B_domain,A_abstraction,B_abstraction,A_polysemy,B_polysemy,identity_success,prompt,raw_response,parsed_answer
+1,gpt-5,starfish,typical,8,7,0.417948,0.948779,NOUN,ADJ,noun.animal,adj.all,0.975000,0.130000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+starfish : starfish :: typical : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: typical,typical
+2,gpt-5,probability,ironclad,11,8,0.860977,0.184924,NOUN,NOUN,noun.attribute,noun.artifact,0.162500,0.397500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+probability : probability :: ironclad : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: ironclad,ironclad
+3,gpt-5,appealing,hereafter,9,9,0.847077,0.491870,VERB,NOUN,verb.emotion,noun.time,0.292500,0.160000,0.600000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+appealing : appealing :: hereafter : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: hereafter,hereafter
+4,gpt-5,pike,authoritarianism,4,16,0.768415,0.423548,NOUN,NOUN,noun.food,noun.group,0.812500,0.167500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pike : pike :: authoritarianism : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: authoritarianism,authoritarianism
+5,gpt-5,malfunction,conceivably,11,11,0.602192,0.377668,NOUN,ADV,noun.event,adv.all,0.435000,0.187500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+malfunction : malfunction :: conceivably : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: conceivably,conceivably
+6,gpt-5,loathing,fabulously,8,10,0.528231,0.157463,VERB,ADV,verb.emotion,adv.all,0.222500,0.155000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+loathing : loathing :: fabulously : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: fabulously,fabulously
+7,gpt-5,impaired,killer,8,6,0.768855,0.936499,ADJ,NOUN,adj.all,noun.person,0.360000,0.577500,0.300000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+impaired : impaired :: killer : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: killer,killer
+8,gpt-5,blonde,fuss,6,4,0.866877,0.747895,NOUN,NOUN,noun.person,noun.state,0.880000,0.357500,0.200000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+blonde : blonde :: fuss : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: fuss,fuss
+9,gpt-5,flagship,come,8,4,0.792696,0.996800,NOUN,VERB,noun.artifact,verb.change,0.722500,0.430000,0.100000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+flagship : flagship :: come : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: come,come
+10,gpt-5,sedan,aqueduct,5,8,0.719714,0.371187,NOUN,NOUN,noun.artifact,noun.artifact,0.930000,0.905000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sedan : sedan :: aqueduct : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: aqueduct,aqueduct
+11,gpt-5,scarring,goop,8,4,0.468249,0.070241,VERB,NOUN,verb.contact,noun.substance,0.455000,0.827500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+scarring : scarring :: goop : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: goop,goop
+12,gpt-5,schoolmaster,reasonable,12,10,0.209104,0.948999,NOUN,ADJ,noun.person,adj.all,0.940000,0.195000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+schoolmaster : schoolmaster :: reasonable : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: reasonable,reasonable
+13,gpt-5,crybaby,aromatherapy,7,12,0.224084,0.073701,NOUN,NOUN,noun.person,noun.act,0.572500,0.552500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+crybaby : crybaby :: aromatherapy : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: aromatherapy,aromatherapy
+14,gpt-5,tangible,teacher,8,7,0.760335,0.971799,ADJ,NOUN,adj.all,noun.cognition,0.442500,0.880000,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tangible : tangible :: teacher : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: teacher,teacher
+15,gpt-5,respectability,gripping,14,8,0.273685,0.638193,NOUN,VERB,noun.attribute,verb.emotion,0.197500,0.575000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+respectability : respectability :: gripping : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: gripping,gripping
+16,gpt-5,moustache,unionization,9,12,0.574251,0.052101,NOUN,NOUN,noun.body,noun.act,0.990000,0.317500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+moustache : moustache :: unionization : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: unionization,unionization
+17,gpt-5,inference,acutely,9,7,0.580752,0.512630,NOUN,ADV,noun.cognition,adv.all,0.162500,0.207500,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+inference : inference :: acutely : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: acutely,acutely
+18,gpt-5,fullness,irrepressible,8,13,0.443089,0.011380,NOUN,ADJ,noun.state,adj.all,0.395000,0.202500,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fullness : fullness :: irrepressible : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: irrepressible,irrepressible
+19,gpt-5,hibiscus,surfboard,8,9,0.222304,0.264605,NOUN,NOUN,noun.plant,noun.artifact,0.870000,0.892500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hibiscus : hibiscus :: surfboard : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: surfboard,surfboard
+20,gpt-5,dinghy,stays,6,5,0.286306,0.907318,NOUN,NOUN,noun.artifact,noun.state,0.800000,0.465000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dinghy : dinghy :: stays : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: stays,stays
+21,gpt-5,tomboy,ascension,6,9,0.245245,0.630293,NOUN,NOUN,noun.person,noun.act,0.812500,0.342500,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tomboy : tomboy :: ascension : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: ascension,ascension
+22,gpt-5,united,done,6,4,0.993560,0.995300,ADJ,VERB,adj.all,verb.body,0.402500,0.250000,0.700000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+united : united :: done : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: done,done
+23,gpt-5,nimrod,feigned,6,7,0.089142,0.116002,NOUN,VERB,noun.person,verb.communication,0.412500,0.260000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+nimrod : nimrod :: feigned : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: feigned,feigned
+24,gpt-5,fluently,submersible,8,11,0.351947,0.245705,ADV,ADJ,adv.all,adj.all,0.250000,0.510000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fluently : fluently :: submersible : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: submersible,submersible
+25,gpt-5,germs,tablet,5,6,0.652633,0.867337,NOUN,NOUN,noun.body,noun.substance,0.657500,0.955000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+germs : germs :: tablet : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: tablet,tablet
+26,gpt-5,lobbyist,whatnot,8,7,0.490810,0.417128,NOUN,NOUN,noun.person,noun.artifact,0.677500,0.230000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lobbyist : lobbyist :: whatnot : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: whatnot,whatnot
+27,gpt-5,editorial,houseboat,9,9,0.880838,0.136123,NOUN,NOUN,noun.communication,noun.artifact,0.610000,0.935000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+editorial : editorial :: houseboat : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: houseboat,houseboat
+28,gpt-5,slipper,stamina,7,7,0.474949,0.649973,NOUN,NOUN,noun.artifact,noun.attribute,0.965000,0.452500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+slipper : slipper :: stamina : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: stamina,stamina
+29,gpt-5,mall,heed,4,4,0.912138,0.679194,NOUN,NOUN,noun.artifact,noun.cognition,0.957500,0.232500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mall : mall :: heed : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: heed,heed
+30,gpt-5,wristband,absolutely,9,10,0.263285,0.977740,NOUN,ADV,noun.artifact,adv.all,0.947500,0.242500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+wristband : wristband :: absolutely : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: absolutely,absolutely
+31,gpt-5,aesthetics,gun,10,3,0.738275,0.976660,NOUN,NOUN,noun.cognition,noun.person,0.305000,0.957500,0.100000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+aesthetics : aesthetics :: gun : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: gun,gun
+32,gpt-5,anesthesiologist,capitol,16,7,0.084362,0.857957,NOUN,NOUN,noun.person,noun.artifact,0.817500,0.827500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+anesthesiologist : anesthesiologist :: capitol : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: capitol,capitol
+33,gpt-5,pleated,informally,7,10,0.192124,0.504110,VERB,ADV,verb.contact,adv.all,0.832500,0.160000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+pleated : pleated :: informally : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: informally,informally
+34,gpt-5,upright,naively,7,7,0.787416,0.144323,ADJ,ADV,adj.all,adv.all,0.647500,0.155000,0.400000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+upright : upright :: naively : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: naive,naive
+35,gpt-5,encryption,analytical,10,10,0.725835,0.787116,NOUN,ADJ,noun.act,adj.all,0.572500,0.215000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+encryption : encryption :: analytical : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: analytical,analytical
+36,gpt-5,math,bassist,4,7,0.933739,0.554071,NOUN,NOUN,noun.cognition,noun.person,0.537500,0.792500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+math : math :: bassist : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: bassist,bassist
+37,gpt-5,seagull,terrible,7,8,0.432849,0.959639,NOUN,ADJ,noun.animal,adj.all,1.000000,0.260000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+seagull : seagull :: terrible : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: terrible,terrible
+38,gpt-5,hypothyroidism,coaster,14,7,0.145903,0.772875,NOUN,NOUN,noun.state,noun.person,0.395000,0.920000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hypothyroidism : hypothyroidism :: coaster : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: coaster,coaster
+39,gpt-5,negation,maestro,8,7,0.291486,0.586052,NOUN,NOUN,noun.communication,noun.person,0.230000,0.790000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+negation : negation :: maestro : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: maestro,maestro
+40,gpt-5,yearbook,prop,8,4,0.672173,0.797776,NOUN,NOUN,noun.communication,noun.artifact,0.895000,0.865000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+yearbook : yearbook :: prop : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: prop,prop
+41,gpt-5,ramping,tabasco,7,7,0.332307,0.086222,VERB,NOUN,verb.possession,noun.location,0.417500,0.897500,0.400000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ramping : ramping :: tabasco : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: tabasco,tabasco
+42,gpt-5,setting,manifold,7,8,0.964559,0.617372,VERB,NOUN,verb.change,noun.artifact,0.490000,0.645000,1.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+setting : setting :: manifold : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: manifold,manifold
+43,gpt-5,apologetics,gradual,11,7,0.107702,0.765815,NOUN,ADJ,noun.cognition,adj.all,0.190000,0.225000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+apologetics : apologetics :: gradual : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: gradual,gradual
+44,gpt-5,shuttle,dodger,7,6,0.833037,0.587672,NOUN,NOUN,noun.artifact,noun.person,0.907500,0.657500,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shuttle : shuttle :: dodger : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: dodger,dodger
+45,gpt-5,necessity,famously,9,8,0.836517,0.696714,NOUN,ADV,noun.state,adv.all,0.270000,0.250000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+necessity : necessity :: famously : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: famously,famously
+46,gpt-5,hookers,false,7,5,0.557751,0.953119,NOUN,ADJ,noun.person,adj.all,0.907500,0.340000,0.400000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hookers : hookers :: false : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: false,false
+47,gpt-5,nobility,prosthetics,8,11,0.686654,0.256525,NOUN,NOUN,noun.group,noun.cognition,0.452500,0.855000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+nobility : nobility :: prosthetics : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: prosthetics,prosthetics
+48,gpt-5,gangland,across,8,6,0.013040,0.988900,NOUN,ADP,noun.group,adv.all,0.600000,0.517500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gangland : gangland :: across : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: across,across
+49,gpt-5,finalist,stride,8,6,0.679494,0.668173,NOUN,NOUN,noun.person,noun.act,0.697500,0.702500,0.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+finalist : finalist :: stride : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: stride,stride
+50,gpt-5,voracious,catcher,9,7,0.226445,0.718354,ADJ,NOUN,adj.all,noun.person,0.185000,0.860000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+voracious : voracious :: catcher : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: catcher,catcher
+51,gpt-5,marlin,cumulative,6,10,0.427689,0.722094,NOUN,ADJ,noun.animal,adj.all,0.890000,0.322500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+marlin : marlin :: cumulative : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: cumulative,cumulative
+52,gpt-5,anyway,fiend,6,5,0.974159,0.492330,ADV,NOUN,adv.all,noun.person,0.170000,0.482500,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+anyway : anyway :: fiend : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: fiend,fiend
+53,gpt-5,disclosed,unusable,9,8,0.808096,0.394568,VERB,ADJ,verb.perception,adj.all,0.190000,0.220000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+disclosed : disclosed :: unusable : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: unusable,unusable
+54,gpt-5,photograph,mormon,10,6,0.902458,0.765055,NOUN,NOUN,noun.artifact,noun.person,0.972500,0.712500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+photograph : photograph :: mormon : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: mormon,mormon
+55,gpt-5,variety,boisterous,7,10,0.963099,0.311966,NOUN,ADJ,noun.group,adj.all,0.282500,0.397500,0.500000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+variety : variety :: boisterous : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: boisterous,boisterous
+56,gpt-5,mistake,jukebox,7,7,0.956699,0.434669,NOUN,NOUN,noun.act,noun.artifact,0.242500,0.982500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mistake : mistake :: jukebox : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: jukebox,jukebox
+57,gpt-5,sacrament,victimization,9,13,0.543931,0.272185,NOUN,NOUN,noun.act,noun.state,0.500000,0.225000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sacrament : sacrament :: victimization : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: victimization,victimization
+58,gpt-5,merchandise,hypo,11,4,0.841197,0.156163,NOUN,NOUN,noun.artifact,noun.substance,0.880000,0.220000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+merchandise : merchandise :: hypo : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: hypo,hypo
+59,gpt-5,nursing,slate,7,5,0.916518,0.812076,NOUN,NOUN,noun.act,noun.substance,0.690000,0.895000,0.700000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+nursing : nursing :: slate : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: slate,slate
+60,gpt-5,chipmunk,consulate,8,9,0.205364,0.726195,NOUN,NOUN,noun.animal,noun.artifact,0.992500,0.650000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+chipmunk : chipmunk :: consulate : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: consulate,consulate
+61,gpt-5,camper,miner,6,5,0.588412,0.732375,NOUN,NOUN,noun.person,noun.person,0.907500,0.825000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+camper : camper :: miner : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: miner,miner
+62,gpt-5,frontal,journey,7,7,0.691774,0.954899,NOUN,NOUN,noun.artifact,noun.act,0.595000,0.392500,0.600000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+frontal : frontal :: journey : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: journey,journey
+63,gpt-5,algorithm,criticism,9,9,0.862817,0.938999,NOUN,NOUN,noun.cognition,noun.cognition,0.517500,0.267500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+algorithm : algorithm :: criticism : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: criticism,criticism
+64,gpt-5,cafeteria,jumper,9,6,0.676254,0.775216,NOUN,NOUN,noun.artifact,noun.act,0.927500,0.757500,0.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cafeteria : cafeteria :: jumper : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: jumper,jumper
+65,gpt-5,catalog,citizenry,7,9,0.837517,0.370487,NOUN,NOUN,noun.communication,noun.group,0.920000,0.412500,0.300000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+catalog : catalog :: citizenry : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: citizenry,citizenry
+66,gpt-5,overtly,profiteering,7,12,0.527531,0.031481,ADV,VERB,adv.all,verb.possession,0.160000,0.292500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+overtly : overtly :: profiteering : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: profiteering,profiteering
+67,gpt-5,lyrics,panther,6,7,0.920818,0.757635,NOUN,NOUN,noun.communication,noun.animal,0.715000,0.982500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lyrics : lyrics :: panther : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: panther,panther
+68,gpt-5,teach,dispensation,5,12,0.956359,0.302826,NOUN,NOUN,noun.person,noun.possession,0.537500,0.250000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+teach : teach :: dispensation : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: dispensation,dispensation
+69,gpt-5,crisis,as,6,2,0.952339,0.999660,NOUN,ADP,noun.event,adv.all,0.332500,0.082500,0.100000,0.900000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+crisis : crisis :: as : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: as,as
+70,gpt-5,refusal,pulp,7,4,0.815156,0.768295,NOUN,NOUN,noun.communication,noun.object,0.452500,0.825000,0.100000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+refusal : refusal :: pulp : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: pulp,pulp
+71,gpt-5,indoctrination,antagonist,14,10,0.342847,0.619772,NOUN,NOUN,noun.act,noun.person,0.220000,0.437500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+indoctrination : indoctrination :: antagonist : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: antagonist,antagonist
+72,gpt-5,digits,thinly,6,6,0.762575,0.589752,NOUN,ADV,noun.quantity,adv.all,0.802500,0.432500,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+digits : digits :: thinly : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: thinly,thinly
+73,gpt-5,reenactment,loop,11,4,0.133343,0.912158,NOUN,NOUN,noun.act,noun.group,0.517500,0.815000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+reenactment : reenactment :: loop : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: loop,loop
+74,gpt-5,unspoiled,game,9,4,0.017500,0.996380,ADJ,NOUN,adj.all,noun.act,0.330000,0.875000,0.100000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unspoiled : unspoiled :: game : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: game,game
+75,gpt-5,dam,gesture,3,7,0.891818,0.834197,NOUN,NOUN,noun.animal,noun.communication,0.970000,0.500000,0.300000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dam : dam :: gesture : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: gesture,gesture
+76,gpt-5,fair,watermelon,4,10,0.977940,0.630813,NOUN,NOUN,noun.act,noun.food,0.347500,0.972500,1.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fair : fair :: watermelon : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: watermelon,watermelon
+77,gpt-5,siege,innovator,5,9,0.840477,0.428069,NOUN,NOUN,noun.act,noun.person,0.545000,0.380000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+siege : siege :: innovator : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: innovator,innovator
+78,gpt-5,unwillingness,tow,13,3,0.495050,0.781016,NOUN,NOUN,noun.attribute,noun.act,0.200000,0.697500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unwillingness : unwillingness :: tow : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: tow,tow
+79,gpt-5,twitter,cola,7,4,0.968339,0.789756,NOUN,NOUN,noun.event,noun.location,0.775000,0.947500,0.100000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+twitter : twitter :: cola : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: cola,cola
+80,gpt-5,plateau,engraver,7,8,0.743415,0.167783,NOUN,NOUN,noun.object,noun.person,0.827500,0.857500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+plateau : plateau :: engraver : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: engraver,engraver
+81,gpt-5,solidity,mural,8,5,0.086642,0.695594,NOUN,ADJ,noun.state,adj.pert,0.580000,0.915000,0.200000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+solidity : solidity :: mural : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: mural,mural
+82,gpt-5,blurred,genius,7,6,0.688474,0.918238,VERB,NOUN,verb.contact,noun.cognition,0.630000,0.500000,0.700000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+blurred : blurred :: genius : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: genius,genius
+83,gpt-5,eighth,deadlock,6,8,0.897518,0.400168,NOUN,NOUN,noun.quantity,noun.state,0.655000,0.490000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+eighth : eighth :: deadlock : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: deadlock,deadlock
+84,gpt-5,opal,solidarity,4,10,0.550851,0.830257,NOUN,NOUN,noun.substance,noun.attribute,0.855000,0.225000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+opal : opal :: solidarity : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: solidarity,solidarity
+85,gpt-5,caregiver,snooze,9,6,0.499950,0.403168,NOUN,NOUN,noun.person,noun.act,0.795000,0.577500,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+caregiver : caregiver :: snooze : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: snooze,snooze
+86,gpt-5,bombshell,burglary,9,8,0.524770,0.676294,NOUN,NOUN,noun.artifact,noun.act,0.720000,0.660000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bombshell : bombshell :: burglary : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: burglary,burglary
+87,gpt-5,shroud,bureaucratic,6,12,0.532131,0.658153,NOUN,ADJ,noun.artifact,adj.pert,0.835000,0.302500,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shroud : shroud :: bureaucratic : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: bureaucratic,bureaucratic
+88,gpt-5,jealous,morocco,7,7,0.904658,0.807276,ADJ,NOUN,adj.all,noun.substance,0.292500,0.750000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+jealous : jealous :: morocco : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: morocco,morocco
+89,gpt-5,fare,labyrinth,4,9,0.844217,0.612452,NOUN,NOUN,noun.possession,noun.body,0.777500,0.805000,0.500000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fare : fare :: labyrinth : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: maze,maze
+90,gpt-5,craze,ammo,5,4,0.634353,0.693494,NOUN,NOUN,noun.cognition,noun.artifact,0.260000,0.962500,0.400000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+craze : craze :: ammo : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: ammo,ammo
+91,gpt-5,seafront,fine,8,4,0.098542,0.988300,NOUN,NOUN,noun.location,noun.possession,0.862500,0.402500,0.000000,0.900000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+seafront : seafront :: fine : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: fine,fine
+92,gpt-5,shamed,development,6,11,0.555711,0.990260,VERB,NOUN,verb.social,noun.act,0.295000,0.352500,0.700000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shamed : shamed :: development : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: development,development
+93,gpt-5,alimony,bullying,7,8,0.486950,0.851537,NOUN,NOUN,noun.possession,noun.act,0.520000,0.480000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+alimony : alimony :: bullying : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: bullying,bullying
+94,gpt-5,bragging,dossier,8,7,0.676334,0.603592,NOUN,NOUN,noun.communication,noun.communication,0.525000,0.802500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bragging : bragging :: dossier : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: dossier,dossier
+95,gpt-5,vomit,nationally,5,10,0.711014,0.818576,NOUN,ADV,noun.substance,adv.all,0.937500,0.365000,0.300000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vomit : vomit :: nationally : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: nationally,nationally
+96,gpt-5,adherence,aromatherapy,9,12,0.630533,0.073701,NOUN,NOUN,noun.attribute,noun.act,0.125000,0.552500,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+adherence : adherence :: aromatherapy : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: aromatherapy,aromatherapy
+97,gpt-5,cherub,high,6,4,0.049381,0.996580,NOUN,ADJ,noun.person,adj.all,0.712500,0.615000,0.100000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cherub : cherub :: high : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: high,high
+98,gpt-5,sociable,deceit,8,6,0.395308,0.576432,ADJ,NOUN,adj.all,noun.act,0.257500,0.342500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sociable : sociable :: deceit : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: deceit,deceit
+99,gpt-5,cell,affluent,4,8,0.971639,0.644933,NOUN,NOUN,noun.artifact,noun.person,0.860000,0.207500,0.600000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+cell : cell :: affluent : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: affluent,affluent
+100,gpt-5,buttocks,rented,8,6,0.524630,0.828037,NOUN,VERB,noun.body,verb.social,0.957500,0.427500,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+buttocks : buttocks :: rented : ____. 
+
+Here is one example. 
+rose : rose :: flower : flower",ANSWER: rented,rented

@@ -1499,3 +1499,12 @@ perfecting : perfecting :: shrub : ____",ANSWER: shrub,shrub
 500,gpt-5,maker,enforcement,5,11,0.902598,0.934099,NOUN,NOUN,noun.group,noun.act,0.725000,0.370000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
 
 maker : maker :: enforcement : ____",ANSWER: enforcement,enforcement
+1,gpt-5,insufficiently,frank,14,5,0.221804,0.963459,ADV,NOUN,adv.all,noun.person,0.250000,0.385000,0.000000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+insufficiently is to insufficiently as frank is to ____",ANSWER: frankly,frankly
+2,gpt-5,linguistically,waist,14,5,0.155143,0.847317,ADV,NOUN,adv.all,noun.body,0.207500,0.930000,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+linguistically is to linguistically as waist is to ____",ANSWER: waste,waste
+3,gpt-5,proudly,prehistory,7,10,0.778136,0.210204,ADV,NOUN,adv.all,noun.time,0.225000,0.297500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+proudly is to proudly as prehistory is to ____",ANSWER: prehistory,prehistory

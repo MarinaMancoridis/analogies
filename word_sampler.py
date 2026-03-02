@@ -30,7 +30,10 @@ from nltk.corpus import wordnet as wn
 
 from analogies.utils import generate_inference
 from analogies.common import clean_answer
-from analogies.analogy_types.identity import _prompt as identity_prompt
+# from analogies.analogy_types.identity import _prompt_english as identity_prompt
+from analogies.analogy_types.identity import _prompt_one_shot as identity_prompt
+# from analogies.analogy_types.identity import _prompt_few_shot as identity_prompt
+
 
 
 # C4 streaming (requires: pip install 'datasets==3.*' xxhash)
@@ -364,6 +367,7 @@ def _print_table(title: str, rows, col_widths=(13, 28, 28, 22)):
     print()
 
 # --- example run ---
+# python -m analogies.word_sampler
 if __name__ == "__main__":
     # Path relative to this file's directory
     here = os.path.dirname(__file__)
@@ -371,10 +375,12 @@ if __name__ == "__main__":
     load_brysbaert_norms(BRYS_PATH)
 
     MODEL = "gpt-5"      # or whatever model name you want
-    N_TRIALS = 500
+    N_TRIALS = 100
 
     # CSV output path
-    csv_path = os.path.join(here, "robust_identity_runs.csv")
+    # csv_path = os.path.join(here, "robust_identity_runs_english_prompt.csv")
+    csv_path = os.path.join(here, "robust_identity_runs_one_shot_prompt.csv")
+    # csv_path = os.path.join(here, "robust_identity_runs_few_shot_prompt.csv")
 
     # Open in append mode and write header only if file is new/empty
     file_exists = os.path.exists(csv_path)

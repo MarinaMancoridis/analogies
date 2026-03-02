@@ -1,0 +1,316 @@
+trial_id,model,A_word,B_word,A_popularity,B_popularity,A_upos,B_upos,A_domain,B_domain,A_abstraction,B_abstraction,A_polysemy,B_polysemy,identity_success,prompt,raw_response,parsed_answer
+1,gpt-5,unclassified,consequence,12,11,0.245025,0.873077,ADJ,NOUN,adj.all,noun.phenomenon,0.347500,0.410000,0.100000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unclassified is to unclassified as consequence is to ____",ANSWER: consequence,consequence
+2,gpt-5,upper,moment,5,6,0.960579,0.988520,ADJ,NOUN,adj.all,noun.time,0.592500,0.152500,0.500000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+upper is to upper as moment is to ____",ANSWER: momentum,momentum
+3,gpt-5,advantageous,forecasting,12,11,0.625053,0.687714,ADJ,NOUN,adj.all,noun.communication,0.267500,0.400000,0.100000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+advantageous is to advantageous as forecasting is to ____",ANSWER: forecasting,forecasting
+4,gpt-5,fire,tied,4,4,0.990000,0.935999,NOUN,VERB,noun.substance,verb.change,0.920000,0.730000,1.000000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fire is to fire as tied is to ____",ANSWER: tie,tie
+5,gpt-5,ricochet,plaintiff,8,9,0.209304,0.720374,NOUN,NOUN,noun.event,noun.person,0.572500,0.725000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+ricochet is to ricochet as plaintiff is to ____",ANSWER: sue,sue
+1,gpt-5,intention,mercury,9,7,0.918118,0.861317,NOUN,NOUN,noun.cognition,noun.person,0.175000,0.880000,0.200000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+intention is to intention as mercury is to ____",ANSWER: mercure,mercure
+2,gpt-5,unneeded,shave,8,5,0.097062,0.815056,ADJ,NOUN,adj.all,noun.act,0.180000,0.807500,0.000000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unneeded is to unneeded as shave is to ____",ANSWER: shaven,shaven
+3,gpt-5,union,sprouting,5,9,0.982220,0.289386,NOUN,VERB,noun.artifact,verb.change,0.595000,0.767500,1.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+union is to union as sprouting is to ____",ANSWER: sprouting,sprouting
+4,gpt-5,anorexic,rainwater,8,9,0.197644,0.418888,NOUN,NOUN,noun.person,noun.substance,0.462500,0.910000,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+anorexic is to anorexic as rainwater is to ____",ANSWER: water,water
+5,gpt-5,assuredly,ways,9,4,0.243885,0.981240,ADV,NOUN,adv.all,noun.artifact,0.205000,0.250000,0.000000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+assuredly is to assuredly as ways is to ____",ANSWER: means,means
+6,gpt-5,corrugated,asymptomatic,10,12,0.524190,0.337367,VERB,ADJ,verb.contact,adj.all,0.690000,0.280000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+corrugated is to corrugated as asymptomatic is to ____",ANSWER: asymptomatic,asymptomatic
+7,gpt-5,dearly,battle,6,6,0.692394,0.975740,ADV,NOUN,adv.all,noun.act,0.150000,0.750000,0.200000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dearly is to dearly as battle is to ____",ANSWER: battle,battle
+8,gpt-5,mayonnaise,miles,10,5,0.574511,0.978220,NOUN,NOUN,noun.food,noun.quantity,0.975000,0.652500,0.000000,0.700000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+mayonnaise is to mayonnaise as miles is to ____",ANSWER: mile,mile
+9,gpt-5,rethink,bedded,7,6,0.686174,0.107142,NOUN,VERB,noun.cognition,verb.possession,0.292500,0.425000,0.100000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+rethink is to rethink as bedded is to ____",ANSWER: bedded,bedded
+10,gpt-5,emulator,firearm,8,7,0.376888,0.772375,NOUN,NOUN,noun.person,noun.artifact,0.520000,0.910000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+emulator is to emulator as firearm is to ____",ANSWER: firearm,firearm
+11,gpt-5,lid,rookie,3,6,0.810196,0.883338,NOUN,NOUN,noun.artifact,noun.person,0.990000,0.457500,0.200000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lid is to lid as rookie is to ____",ANSWER: green,green
+12,gpt-5,hallway,foreboding,7,10,0.782836,0.250765,NOUN,VERB,noun.artifact,verb.communication,0.935000,0.135000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hallway is to hallway as foreboding is to ____",ANSWER: foreboding,foreboding
+13,gpt-5,filet,wipeout,5,7,0.260365,0.198244,NOUN,NOUN,noun.artifact,noun.act,0.897500,0.592500,0.400000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+filet is to filet as wipeout is to ____",ANSWER: wipe out,wipe
+14,gpt-5,perpetual,regard,9,6,0.743495,0.921978,ADJ,NOUN,adj.all,noun.communication,0.325000,0.197500,0.100000,0.900000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+perpetual is to perpetual as regard is to ____",ANSWER: regard,regard
+15,gpt-5,lances,firstly,6,7,0.033721,0.786136,NOUN,ADV,noun.artifact,adv.all,0.647500,0.212500,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lances is to lances as firstly is to ____",ANSWER: firstly,firstly
+16,gpt-5,antagonize,flawlessly,10,10,0.038821,0.360247,VERB,ADV,verb.emotion,adv.all,0.357500,0.195000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+antagonize is to antagonize as flawlessly is to ____",ANSWER: flawlessly,flawlessly
+17,gpt-5,synonymous,yanking,10,7,0.698594,0.028641,ADJ,VERB,adj.all,verb.contact,0.305000,0.677500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+synonymous is to synonymous as yanking is to ____",ANSWER: pulling,pulling
+18,gpt-5,three,execution,5,9,0.996740,0.912538,NUM,NOUN,noun.quantity,noun.process,0.655000,0.732500,0.200000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+three is to three as execution is to ____",ANSWER: sentence,sentence
+19,gpt-5,buffoon,hedge,7,5,0.261905,0.788936,NOUN,NOUN,noun.person,noun.possession,0.597500,0.885000,0.100000,0.600000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+buffoon is to buffoon as hedge is to ____",ANSWER: hedgehog,hedgehog
+20,gpt-5,sprinter,paraphernalia,8,13,0.543551,0.396588,NOUN,NOUN,noun.person,noun.artifact,0.782500,0.667500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sprinter is to sprinter as paraphernalia is to ____",ANSWER: phernalia,phernalia
+21,gpt-5,operatic,guise,8,5,0.366407,0.687514,ADJ,NOUN,adj.pert,noun.attribute,0.260000,0.380000,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+operatic is to operatic as guise is to ____",ANSWER: disguise,disguise
+22,gpt-5,intentionally,sneeze,13,6,0.812996,0.543691,ADV,NOUN,adv.all,noun.state,0.277500,0.757500,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+intentionally is to intentionally as sneeze is to ____",ANSWER: unintentionally,unintentionally
+23,gpt-5,tooth,swerve,5,6,0.873917,0.380068,NOUN,NOUN,noun.artifact,noun.act,0.972500,0.750000,0.400000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tooth is to tooth as swerve is to ____",ANSWER: serve,serve
+24,gpt-5,declaration,aggregator,11,10,0.879198,0.225765,NOUN,NOUN,noun.communication,noun.person,0.380000,0.325000,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+declaration is to declaration as aggregator is to ____",ANSWER: aggregator,aggregator
+25,gpt-5,gazebo,organ,6,5,0.177144,0.885638,NOUN,NOUN,noun.artifact,noun.communication,0.947500,0.942500,0.000000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gazebo is to gazebo as organ is to ____",ANSWER: groan,groan
+26,gpt-5,thrilled,futility,8,8,0.842777,0.391348,VERB,NOUN,verb.motion,noun.attribute,0.327500,0.275000,0.400000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+thrilled is to thrilled as futility is to ____",ANSWER: futile,futile
+27,gpt-5,delusion,territorial,8,11,0.643713,0.835677,NOUN,NOUN,noun.state,noun.person,0.325000,0.427500,0.200000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+delusion is to delusion as territorial is to ____",ANSWER: territorial,territorial
+28,gpt-5,expedition,folks,10,5,0.855577,0.949279,NOUN,NOUN,noun.act,noun.group,0.490000,0.630000,0.400000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+expedition is to expedition as folks is to ____",ANSWER: folks,folks
+29,gpt-5,batch,adjournment,5,11,0.837577,0.130143,NOUN,NOUN,noun.quantity,noun.act,0.700000,0.455000,0.300000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+batch is to batch as adjournment is to ____",ANSWER: adjourn,adjourn
+30,gpt-5,succession,try,10,3,0.849937,0.994040,NOUN,NOUN,noun.process,noun.act,0.182500,0.305000,0.400000,0.900000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+succession is to succession as try is to ____",ANSWER: triumph,triumph
+31,gpt-5,protocol,antisemitism,8,12,0.887638,0.525111,NOUN,NOUN,noun.communication,noun.cognition,0.242500,0.207500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+protocol is to protocol as antisemitism is to ____",ANSWER: antisemitism,antisemitism
+32,gpt-5,hypothetical,repaying,12,8,0.744175,0.133183,ADJ,VERB,adj.all,verb.communication,0.075000,0.292500,0.100000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+hypothetical is to hypothetical as repaying is to ____",ANSWER: replaying,replaying
+33,gpt-5,untapped,buddhist,8,8,0.372147,0.821996,ADJ,NOUN,adj.all,noun.person,0.302500,0.730000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+untapped is to untapped as buddhist is to ____",ANSWER: Buddhist,buddhist
+34,gpt-5,gloss,density,5,7,0.687614,0.918498,NOUN,NOUN,noun.attribute,noun.attribute,0.700000,0.380000,0.700000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gloss is to gloss as density is to ____",ANSWER: densify,densify
+35,gpt-5,humiliation,fretted,11,7,0.721414,0.047341,NOUN,VERB,noun.event,verb.perception,0.240000,0.330000,0.300000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+humiliation is to humiliation as fretted is to ____",ANSWER: fretted,fretted
+36,gpt-5,reassignment,deformity,12,9,0.332247,0.286426,NOUN,NOUN,noun.act,noun.state,0.225000,0.647500,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+reassignment is to reassignment as deformity is to ____",ANSWER: disfigurement,disfigurement
+37,gpt-5,unbelievable,bulletin,12,8,0.873817,0.805716,ADJ,NOUN,adj.all,noun.communication,0.135000,0.930000,0.100000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+unbelievable is to unbelievable as bulletin is to ____",ANSWER: bulletin,bulletin
+38,gpt-5,executable,fullness,10,8,0.260505,0.443089,ADJ,NOUN,adj.all,noun.state,0.232500,0.395000,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+executable is to executable as fullness is to ____",ANSWER: full,full
+39,gpt-5,treason,rafting,7,7,0.817656,0.281946,NOUN,VERB,noun.attribute,verb.motion,0.257500,0.800000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+treason is to treason as rafting is to ____",ANSWER: rafting,rafting
+40,gpt-5,guidance,publishing,8,10,0.918198,0.923298,NOUN,NOUN,noun.act,noun.act,0.365000,0.465000,0.200000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+guidance is to guidance as publishing is to ____",ANSWER: publication,publication
+41,gpt-5,beachfront,fifty,10,5,0.233925,0.912498,NOUN,NOUN,noun.object,noun.possession,0.865000,0.620000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+beachfront is to beachfront as fifty is to ____",ANSWER: fifty,fifty
+42,gpt-5,tormented,develop,9,7,0.531671,0.963619,VERB,VERB,verb.emotion,verb.perception,0.340000,0.217500,0.400000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+tormented is to tormented as develop is to ____",ANSWER: develop,develop
+43,gpt-5,gibberish,disappointed,9,12,0.398788,0.930399,NOUN,ADJ,noun.communication,adj.all,0.332500,0.230000,0.000000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gibberish is to gibberish as disappointed is to ____",ANSWER: appointed,appointed
+44,gpt-5,estate,oat,6,3,0.968119,0.341087,NOUN,NOUN,noun.possession,noun.food,0.777500,1.000000,0.200000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+estate is to estate as oat is to ____",ANSWER: stoat,stoat
+45,gpt-5,farmer,scream,6,6,0.888098,0.885378,NOUN,NOUN,noun.person,noun.communication,0.885000,0.830000,0.200000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+farmer is to farmer as scream is to ____",ANSWER: screamer,screamer
+46,gpt-5,bridesmaid,habitual,10,8,0.479550,0.516390,NOUN,ADJ,noun.person,adj.all,0.852500,0.250000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bridesmaid is to bridesmaid as habitual is to ____",ANSWER: habitual,habitual
+47,gpt-5,elixir,hearth,6,6,0.529571,0.491930,NOUN,NOUN,noun.substance,noun.artifact,0.767500,0.845000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+elixir is to elixir as hearth is to ____",ANSWER: hearth,hearth
+48,gpt-5,efficiency,swell,10,5,0.925039,0.753235,NOUN,NOUN,noun.relation,noun.object,0.287500,0.577500,0.100000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+efficiency is to efficiency as swell is to ____",ANSWER: well,well
+49,gpt-5,incest,mystified,6,9,0.637853,0.067121,NOUN,VERB,noun.act,verb.cognition,0.310000,0.260000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+incest is to incest as mystified is to ____",ANSWER: mystified,mystified
+50,gpt-5,acidity,expediency,7,10,0.554531,0.070961,NOUN,NOUN,noun.cognition,noun.attribute,0.600000,0.297500,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+acidity is to acidity as expediency is to ____",ANSWER: expediency,expediency
+51,gpt-5,proposal,disoriented,8,11,0.936239,0.344487,NOUN,VERB,noun.communication,verb.perception,0.437500,0.302500,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+proposal is to proposal as disoriented is to ____",ANSWER: disoriented,disoriented
+52,gpt-5,metaphorical,hock,12,4,0.490510,0.293226,ADJ,NOUN,adj.all,noun.animal,0.185000,0.572500,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+metaphorical is to metaphorical as hock is to ____",ANSWER: hock,hock
+53,gpt-5,lima,maddening,4,9,0.732435,0.258445,NOUN,VERB,noun.location,verb.emotion,0.717500,0.270000,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lima is to lima as maddening is to ____",ANSWER: delta,delta
+54,gpt-5,drill,unremarkable,5,12,0.877378,0.279946,NOUN,ADJ,noun.animal,adj.all,0.850000,0.202500,0.800000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+drill is to drill as unremarkable is to ____",ANSWER: bore,bore
+55,gpt-5,punishment,temptation,10,10,0.919218,0.781096,NOUN,NOUN,noun.act,noun.act,0.365000,0.210000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+punishment is to punishment as temptation is to ____",ANSWER: temptation,temptation
+56,gpt-5,electrostatic,feat,13,4,0.376948,0.855477,ADJ,NOUN,adj.pert,noun.act,0.590000,0.360000,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+electrostatic is to electrostatic as feat is to ____",ANSWER: feat,feat
+57,gpt-5,muse,residue,4,7,0.736035,0.711994,NOUN,NOUN,noun.person,noun.substance,0.362500,0.695000,0.200000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+muse is to muse as residue is to ____",ANSWER: residuum,residuum
+58,gpt-5,shroud,scaffolding,6,11,0.532131,0.488750,NOUN,VERB,noun.artifact,verb.contact,0.835000,0.957500,0.500000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+shroud is to shroud as scaffolding is to ____",ANSWER: scaffold,scaffold
+59,gpt-5,imaginative,godfather,11,9,0.679074,0.675154,ADJ,NOUN,adj.all,noun.person,0.205000,0.785000,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+imaginative is to imaginative as godfather is to ____",ANSWER: godfather,godfather
+60,gpt-5,vault,adjoining,5,9,0.832517,0.702474,NOUN,VERB,noun.artifact,verb.contact,0.905000,0.482500,0.500000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+vault is to vault as adjoining is to ____",ANSWER: adjoin,adjoin
+61,gpt-5,recluse,scorecard,7,9,0.357067,0.373307,NOUN,NOUN,noun.person,noun.communication,0.570000,0.902500,0.100000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+recluse is to recluse as scorecard is to ____",ANSWER: record,record
+62,gpt-5,listed,braced,6,6,0.958419,0.444909,VERB,VERB,verb.social,verb.emotion,0.452500,0.500000,0.500000,0.500000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+listed is to listed as braced is to ____",ANSWER: embraced,embraced
+63,gpt-5,volcano,banning,7,7,0.793736,0.808616,NOUN,VERB,noun.object,verb.social,0.937500,0.320000,0.100000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+volcano is to volcano as banning is to ____",ANSWER: baning,baning
+64,gpt-5,lupus,religion,5,8,0.551471,0.962479,NOUN,NOUN,noun.object,noun.group,0.615000,0.177500,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+lupus is to lupus as religion is to ____",ANSWER: religio,religio
+65,gpt-5,remotely,obese,8,5,0.791396,0.768555,ADV,ADJ,adv.all,adj.all,0.257500,0.675000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+remotely is to remotely as obese is to ____",ANSWER: obese,obese
+66,gpt-5,absorber,evening,8,7,0.180284,0.970979,NOUN,VERB,noun.substance,verb.contact,0.490000,0.565000,0.000000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+absorber is to absorber as evening is to ____",ANSWER: evening,evening
+67,gpt-5,weekday,scheming,7,8,0.609972,0.468209,NOUN,VERB,noun.time,verb.cognition,0.545000,0.320000,0.000000,0.300000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+weekday is to weekday as scheming is to ____",ANSWER: scheming,scheming
+68,gpt-5,citizenry,screen,9,6,0.370487,0.969999,NOUN,NOUN,noun.group,noun.group,0.412500,0.900000,0.000000,1.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+citizenry is to citizenry as screen is to ____",ANSWER: scenery,scenery
+69,gpt-5,morbidly,quivering,8,9,0.032721,0.200404,ADV,VERB,adv.all,verb.motion,0.190000,0.615000,0.000000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+morbidly is to morbidly as quivering is to ____",ANSWER: quiveringly,quiveringly
+70,gpt-5,deceased,formulation,8,11,0.848977,0.691814,VERB,NOUN,verb.change,noun.substance,0.742500,0.230000,0.200000,0.200000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+deceased is to deceased as formulation is to ____",ANSWER: shun,shun
+71,gpt-5,bleeding,hookup,8,6,0.875778,0.540091,NOUN,NOUN,noun.state,noun.artifact,0.825000,0.620000,0.500000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bleeding is to bleeding as hookup is to ____",ANSWER: hookup,hookup
+72,gpt-5,slut,joining,4,7,0.794456,0.936519,NOUN,VERB,noun.person,verb.stative,0.547500,0.432500,0.100000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+slut is to slut as joining is to ____",ANSWER: joining,joining
+73,gpt-5,dragging,establishment,8,13,0.813576,0.930219,VERB,NOUN,verb.change,noun.process,0.677500,0.620000,1.000000,0.600000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+dragging is to dragging as establishment is to ____",ANSWER: establishment,establishment
+74,gpt-5,sparring,tortilla,8,8,0.495710,0.460009,VERB,NOUN,verb.communication,noun.food,0.672500,0.972500,0.500000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sparring is to sparring as tortilla is to ____",ANSWER: tortilla,tortilla
+75,gpt-5,interviewer,dibs,11,4,0.704474,0.286346,NOUN,NOUN,noun.person,noun.communication,0.867500,0.307500,0.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+interviewer is to interviewer as dibs is to ____",ANSWER: dibs,dibs
+76,gpt-5,gunshot,rimmed,7,6,0.696374,0.218784,NOUN,VERB,noun.act,verb.possession,0.982500,0.520000,0.000000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gunshot is to gunshot as rimmed is to ____",ANSWER: dimmer,dimmer
+77,gpt-5,resiliency,interplanetary,10,14,0.122422,0.276086,NOUN,ADJ,noun.event,adj.pert,0.270000,0.415000,0.100000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+resiliency is to resiliency as interplanetary is to ____",ANSWER: interplanetary,interplanetary
+78,gpt-5,child,womb,5,4,0.990020,0.749355,NOUN,NOUN,noun.person,noun.body,0.945000,0.842500,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+child is to child as womb is to ____",ANSWER: women,women
+79,gpt-5,light,fingered,5,8,0.990680,0.478250,NOUN,VERB,noun.phenomenon,verb.communication,0.802500,0.647500,1.000000,0.400000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+light is to light as fingered is to ____",ANSWER: fingered,fingered
+80,gpt-5,millionth,schooled,9,8,0.274985,0.496050,NOUN,VERB,noun.relation,verb.social,0.425000,0.405000,0.200000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+millionth is to millionth as schooled is to ____",ANSWER: schooled,schooled
+81,gpt-5,seaport,enduring,7,8,0.348347,0.766175,NOUN,VERB,noun.location,verb.cognition,0.892500,0.285000,0.000000,0.800000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+seaport is to seaport as enduring is to ____",ANSWER: enduring,enduring
+82,gpt-5,troubled,muff,8,4,0.835577,0.164523,ADJ,NOUN,adj.all,noun.act,0.205000,0.780000,0.600000,0.300000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+troubled is to troubled as muff is to ____",ANSWER: muffled,muffled
+83,gpt-5,fetus,exotic,5,6,0.740475,0.837177,NOUN,ADJ,noun.animal,adj.all,0.905000,0.277500,0.000000,0.100000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+fetus is to fetus as exotic is to ____",ANSWER: exotic,exotic
+84,gpt-5,loyalty,synaptic,7,8,0.891318,0.432069,NOUN,ADJ,noun.feeling,adj.pert,0.142500,0.385000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+loyalty is to loyalty as synaptic is to ____",ANSWER: synaptic,synaptic
+85,gpt-5,firearm,solid,7,5,0.772375,0.961639,NOUN,ADJ,noun.artifact,adj.all,0.910000,0.855000,0.000000,1.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+firearm is to firearm as solid is to ____",ANSWER: solid,solid
+86,gpt-5,crossed,proverb,7,7,0.921298,0.514350,VERB,NOUN,verb.stative,noun.communication,0.612500,0.315000,0.900000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+crossed is to crossed as proverb is to ____",ANSWER: saw,saw
+87,gpt-5,retrospectively,dishonor,15,8,0.273645,0.327647,ADV,NOUN,adv.all,noun.state,0.132500,0.180000,0.000000,0.400000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+retrospectively is to retrospectively as dishonor is to ____",ANSWER: dishonour,dishonour
+88,gpt-5,sizable,bunker,7,6,0.640853,0.766815,ADJ,NOUN,adj.all,noun.artifact,0.425000,0.947500,0.100000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sizable is to sizable as bunker is to ____",ANSWER: bunker,bunker
+89,gpt-5,staircase,divisible,9,9,0.731435,0.157943,NOUN,ADJ,noun.artifact,adj.all,0.915000,0.342500,0.000000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+staircase is to staircase as divisible is to ____",ANSWER: visible,visible
+90,gpt-5,forward,admitted,7,8,0.984320,0.939259,ADV,VERB,adv.all,verb.possession,0.415000,0.212500,1.000000,0.700000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+forward is to forward as admitted is to ____",ANSWER: admitted,admitted
+91,gpt-5,combined,disclosed,8,9,0.957979,0.808096,VERB,VERB,verb.contact,verb.perception,0.452500,0.190000,0.700000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+combined is to combined as disclosed is to ____",ANSWER: disclosed,disclosed
+92,gpt-5,collapse,uninjured,8,9,0.893838,0.109062,NOUN,ADJ,noun.state,adj.all,0.667500,0.427500,1.000000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+collapse is to collapse as uninjured is to ____",ANSWER: uninjured,uninjured
+93,gpt-5,emu,importance,3,10,0.457309,0.946359,NOUN,NOUN,noun.animal,noun.attribute,0.947500,0.187500,0.100000,0.100000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+emu is to emu as importance is to ____",ANSWER: import ants,import
+94,gpt-5,economist,modernism,9,9,0.826817,0.509550,NOUN,NOUN,noun.person,noun.attribute,0.562500,0.280000,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+economist is to economist as modernism is to ____",ANSWER: modernism,modernism
+95,gpt-5,sample,sentenced,6,9,0.942839,0.876438,NOUN,VERB,noun.cognition,verb.communication,0.697500,0.305000,0.300000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+sample is to sample as sentenced is to ____",ANSWER: sentence,sentence
+96,gpt-5,golfer,throwback,6,9,0.633553,0.578112,NOUN,NOUN,noun.person,noun.person,0.927500,0.307500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+golfer is to golfer as throwback is to ____",ANSWER: throwback,throwback
+97,gpt-5,apache,sufficiently,6,12,0.718714,0.806516,NOUN,ADV,noun.person,adv.all,0.720000,0.180000,0.200000,0.000000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+apache is to apache as sufficiently is to ____",ANSWER: sufficiently,sufficiently
+98,gpt-5,gun,postcard,3,8,0.976660,0.673913,NOUN,NOUN,noun.act,noun.communication,0.957500,0.982500,0.700000,0.000000,0,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+gun is to gun as postcard is to ____",ANSWER: card,card
+99,gpt-5,bulge,fry,5,3,0.577012,0.831477,NOUN,NOUN,noun.shape,noun.person,0.730000,0.842500,0.400000,0.500000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+bulge is to bulge as fry is to ____",ANSWER: fry,fry
+100,gpt-5,landowner,glove,9,5,0.497710,0.785956,NOUN,NOUN,noun.person,noun.artifact,0.822500,0.992500,0.000000,0.200000,1,"Complete the analogy. Reply ONLY as: ANSWER: <word>
+
+landowner is to landowner as glove is to ____",ANSWER: glove,glove

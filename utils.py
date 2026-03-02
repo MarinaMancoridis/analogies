@@ -14,20 +14,27 @@ from analogies.constants import models_to_developer, models, api_keys, BENCHMARK
 
 # calls apis to extract responses to a prompt 
 def generate_inference(prompt, model):
-    if models_to_developer[model] == "openai":
+    developer = models_to_developer[model]
+
+    # -------------------------
+    # OPENAI (fixed properly)
+    # -------------------------
+    if developer == "openai":
         client = OpenAI(api_key=api_keys["openai"])
-        completion = client.chat.completions.create(
+
+        response = client.responses.create(
             model=model,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ]
+            input=prompt
         )
-        return(completion.choices[0].message.content)
-    elif models_to_developer[model] == "together":
+
+        return response.output_text.strip()
+
+    # -------------------------
+    # TOGETHER
+    # -------------------------
+    elif developer == "together":
         client = Together(api_key=api_keys["together"])
+
         resp = client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
@@ -36,26 +43,35 @@ def generate_inference(prompt, model):
             top_k=50,
             repetition_penalty=1,
         )
-        return resp.choices[0].message.content
-    elif models_to_developer[model] == "gemini":
+
+        return resp.choices[0].message.content.strip()
+
+    # -------------------------
+    # GEMINI
+    # -------------------------
+    elif developer == "gemini":
         genai.configure(api_key=api_keys["gemini"])
-        model = genai.GenerativeModel(model)
-        backoff = 1          # seconds, will double each retry up to 60 s
+        gem_model = genai.GenerativeModel(model)
+
+        backoff = 1
         while True:
             try:
-                return model.generate_content(prompt).text
+                return gem_model.generate_content(prompt).text.strip()
             except ResourceExhausted as e:
-                # use server-recommended delay if present
                 delay = getattr(e, "retry_delay", None)
                 delay = delay.seconds if delay else backoff
-                print(f"[Gemini] rate-limited, sleeping {delay}s")  # or use logging
+                print(f"[Gemini] rate-limited, sleeping {delay}s")
                 time.sleep(delay)
                 backoff = min(backoff * 2, 60)
-    elif models_to_developer[model] == "claude":
-        client = Anthropic(
-             api_key=api_keys["claude"],
-        )
+
+    # -------------------------
+    # CLAUDE
+    # -------------------------
+    elif developer == "claude":
+        client = Anthropic(api_key=api_keys["claude"])
+
         message = client.messages.create(
+            model=model,
             max_tokens=1024,
             messages=[
                 {
@@ -63,9 +79,28 @@ def generate_inference(prompt, model):
                     "content": prompt,
                 }
             ],
-            model=model,
         )
-        return(message.content[0].text)
+
+        return message.content[0].text.strip()
+
+    # -------------------------
+    # OPENROUTER
+    # -------------------------
+    elif models_to_developer[model] == "openrouter":
+            client = OpenAI(
+                base_url="https://openrouter.ai/api/v1",
+                api_key=api_keys["openrouter"],
+            )
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": [{
+                    "type": "text",
+                    "text": prompt
+                }]}],
+            )   
+            return response.choices[0].message.content
+    else:
+        raise ValueError(f"Unknown developer for model: {model}")
 
 def save_result(save_dir, result_dict):
     existing_files = [f for f in os.listdir(save_dir) if f.endswith(".json")]
