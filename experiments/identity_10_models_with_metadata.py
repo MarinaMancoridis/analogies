@@ -252,8 +252,8 @@ def evaluate_trial(model: str, A: str, C: str, prompt_types: Optional[List[str]]
         }
 
         # attach lexical metadata
-        A_m = identity_mod.word_metrics(A)
-        C_m = identity_mod.word_metrics(C)
+        A_m = word_metrics(A)
+        C_m = word_metrics(C)
         for k, v in A_m.items():
             trial[f"A_{k}"] = v
         for k, v in C_m.items():
@@ -265,6 +265,10 @@ def evaluate_trial(model: str, A: str, C: str, prompt_types: Optional[List[str]]
 
     return trials
 
+
+# -------------------------------
+# Main
+# -------------------------------
 
 # -------------------------------
 # Main
@@ -304,33 +308,46 @@ def main() -> None:
     for model in MODELS:
         model_dir = os.path.join(out_dir, model.replace("/", "_"))
         os.makedirs(model_dir, exist_ok=True)
-
         trials_path = os.path.join(model_dir, "trials.ndjson")
 
-        counts = Counts()
+        # Counts for overall + per-prompt
+        overall_counts = Counts()
+        prompt_type_counts: Dict[str, Counts] = {ptype: Counts() for ptype in prompt_types_to_test}
 
+        # 1️⃣ Run normal evaluation (default prompt "colon") for all pairs
         for (A, C) in dataset:
-            # Run normal evaluation (default prompt)
-            trial = evaluate_trial(model, A, C)[0]  # only default "colon"
+            trial = evaluate_trial(model, A, C, prompt_types=["colon"])[0]
             _append_ndjson(trials_path, trial)
-            counts.n += 1
-            counts.hits += int(infer_hit(trial))
 
-        # -------------------------------
-        # Run prompt-variation robustness on subset
-        # -------------------------------
+            overall_counts.n += 1
+            overall_counts.hits += int(infer_hit(trial))
+            prompt_type_counts["colon"].n += 1
+            prompt_type_counts["colon"].hits += int(infer_hit(trial))
+
+        # 2️⃣ Run prompt-variation robustness on subset (skip "colon" duplicates)
         for (A, C) in prompt_robustness_subset:
             for trial in evaluate_trial(model, A, C, prompt_types=prompt_types_to_test):
-                # Skip the default "colon" if already ran above
-                if trial["prompt_type"] != "colon":
-                    _append_ndjson(trials_path, trial)
-                    counts.n += 1
-                    counts.hits += int(infer_hit(trial))
+                if trial["prompt_type"] == "colon":
+                    continue  # already ran
+                _append_ndjson(trials_path, trial)
 
+                overall_counts.n += 1
+                overall_counts.hits += int(infer_hit(trial))
+                prompt_type_counts[trial["prompt_type"]].n += 1
+                prompt_type_counts[trial["prompt_type"]].hits += int(infer_hit(trial))
+
+        # Save summary for this model
         run_summary["models"][model] = {
-            "n": counts.n,
-            "hits": counts.hits,
-            "success_rate": counts.hits / counts.n if counts.n else 0.0,
+            "n": overall_counts.n,
+            "hits": overall_counts.hits,
+            "success_rate": overall_counts.hits / overall_counts.n if overall_counts.n else 0.0,
+            "prompt_types": {
+                ptype: {
+                    "n": counts.n,
+                    "hits": counts.hits,
+                    "success_rate": counts.hits / counts.n if counts.n else 0.0
+                } for ptype, counts in prompt_type_counts.items()
+            }
         }
 
         print(f"[{model}] hit_rate={run_summary['models'][model]['success_rate']:.3f}")
