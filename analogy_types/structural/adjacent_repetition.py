@@ -1,0 +1,227 @@
+from analogies.utils import generate_inference
+from analogies.common import clean_answer, ALL, _brys_score, ac_label_brys
+from typing import Dict, Optional
+import random
+import nltk
+from nltk.corpus import wordnet as wn
+from wordfreq import zipf_frequency
+
+# -------------------------------
+# Task name
+# -------------------------------
+TASK_NAME = "adjacent_repetition"
+
+# -------------------------------
+# Prompt variations
+# Pattern: A B B : C D D :: E F F : G H ____
+# Rule: the third token repeats the second
+# Expected answer: H
+# -------------------------------
+PROMPT_VARIATIONS = {
+    "colon": lambda A, B, C, D, E, F, G, H: (
+        f"Complete the analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"{A} {B} {B} : {C} {D} {D} :: {E} {F} {F} : {G} {H} ____"
+    ),
+    "english": lambda A, B, C, D, E, F, G, H: (
+        f"Complete the pattern. Reply ONLY as: ANSWER: <word>\n\n"
+        f"In each triple, the third word repeats the second.\n"
+        f"{A} {B} {B} : {C} {D} {D} :: {E} {F} {F} : {G} {H} ____"
+    ),
+    "one_shot": lambda A, B, C, D, E, F, G, H: (
+        f"Complete the analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"{A} {B} {B} : {C} {D} {D} :: {E} {F} {F} : {G} {H} ____\n\n"
+        f"Here is one example:\n"
+        f"cat fur fur : tree leaf leaf :: cup handle handle : shoe lace ____"
+    ),
+    "few_shot": lambda A, B, C, D, E, F, G, H: (
+        f"Complete the analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"{A} {B} {B} : {C} {D} {D} :: {E} {F} {F} : {G} {H} ____\n\n"
+        f"Here are some examples:\n"
+        f"cat fur fur : tree leaf leaf :: cup handle handle : shoe lace lace\n"
+        f"bird wing wing : fish fin fin :: chair leg leg : table edge edge"
+    ),
+}
+
+# -------------------------------
+# Word metrics
+# -------------------------------
+_RANK_INDEX: Optional[Dict[str, int]] = None
+
+def _ensure_rank_index() -> None:
+    global _RANK_INDEX
+    if _RANK_INDEX is not None:
+        return
+    _RANK_INDEX = {w.lower(): i + 1 for i, w in enumerate(ALL)}
+
+def word_metrics(word: str) -> Dict[str, Optional[float]]:
+    w = word.lower().strip()
+    _ensure_rank_index()
+    try:
+        pos_tag = nltk.pos_tag([w], tagset="universal")[0][1]
+    except Exception:
+        pos_tag = None
+    try:
+        poly = len(wn.synsets(w))
+    except Exception:
+        poly = None
+    try:
+        brys = _brys_score(w)
+        brys_label = ac_label_brys(w)
+    except Exception:
+        brys = brys_label = None
+    try:
+        zipf = float(zipf_frequency(w, "en"))
+    except Exception:
+        zipf = None
+
+    return {
+        "len": len(w),
+        "pop_rank": _RANK_INDEX.get(w),
+        "pop_zipf": zipf,
+        "polysemy": poly,
+        "brys": brys,
+        "brys_label": brys_label,
+        "pos": pos_tag,
+    }
+
+def _valid_word(word: str) -> bool:
+    try:
+        m = word_metrics(word)
+    except Exception:
+        return False
+    required_fields = ["pos", "pop_zipf", "pop_rank"]
+    return all(m.get(f) is not None for f in required_fields)
+
+# -------------------------------
+# Prompt builders
+# -------------------------------
+def _prompt(A, B, C, D, E, F, G, H):
+    return PROMPT_VARIATIONS["colon"](A, B, C, D, E, F, G, H)
+
+def _prompt_english(A, B, C, D, E, F, G, H):
+    return PROMPT_VARIATIONS["english"](A, B, C, D, E, F, G, H)
+
+def _prompt_one_shot(A, B, C, D, E, F, G, H):
+    return PROMPT_VARIATIONS["one_shot"](A, B, C, D, E, F, G, H)
+
+def _prompt_few_shot(A, B, C, D, E, F, G, H):
+    return PROMPT_VARIATIONS["few_shot"](A, B, C, D, E, F, G, H)
+
+# -------------------------------
+# Run a trial
+# -------------------------------
+def run_trial(model: str, *args, prompt_type: str = "colon", verbose: bool = True):
+    """
+    If positional arguments are provided, treat them as A,B,C,D,E,F,G,H.
+    Otherwise, sample automatically.
+
+    For compatibility with the current pipeline, correctness is stored under
+    the key 'is_identity', even though this is not an identity task.
+    """
+    rng = random.Random()
+
+    # Track modes
+    modes = {}
+
+    # -------------------------------
+    # 1️⃣ Positional args override
+    # -------------------------------
+    if len(args) >= 8:
+        A, B, C, D, E, F, G, H = args[:8]
+        for k, v in zip("ABCDEFGH", (A, B, C, D, E, F, G, H)):
+            modes[k] = "from_dataset"
+    else:
+        words = [w for w in ALL if _valid_word(w)]
+        A, B, C, D, E, F, G, H = [rng.choice(words) for _ in range(8)]
+        for k, v in zip("ABCDEFGH", (A, B, C, D, E, F, G, H)):
+            modes[k] = "random"
+
+    # -------------------------------
+    # Prompt
+    # -------------------------------
+    prompt_fn = PROMPT_VARIATIONS.get(prompt_type, _prompt)
+    prompt = prompt_fn(A, B, C, D, E, F, G, H) if callable(prompt_fn) else _prompt(A, B, C, D, E, F, G, H)
+
+    # -------------------------------
+    # Inference
+    # -------------------------------
+    raw = generate_inference(prompt, model)
+    pred = clean_answer(raw)
+    hit = (pred == H.lower())
+
+    # -------------------------------
+    # Lexical metrics
+    # -------------------------------
+    metrics = {
+        f"{k}_metrics": word_metrics(v)
+        for k, v in zip("ABCDEFGH", (A, B, C, D, E, F, G, H))
+    }
+
+    # -------------------------------
+    # Output
+    # -------------------------------
+    out = {
+        "model": model,
+        "analogy_type": TASK_NAME,
+        "A": A, "B": B, "C": C, "D": D,
+        "E": E, "F": F, "G": G, "H": H,
+        **metrics,
+        **{f"{k}_mode": m for k, m in modes.items()},
+        "prompt": prompt,
+        "raw_response": raw,
+        "parsed_answer": pred,
+        "expected": H,
+        "is_identity": hit,   # keep for pipeline compatibility
+        "prompt_type": prompt_type,
+    }
+
+    if verbose:
+        print(
+            f"[adjacent_repetition] "
+            f"A={A} B={B} C={C} D={D} E={E} F={F} G={G} H={H} "
+            f"hit={hit} prompt={prompt_type}"
+        )
+
+    return out
+
+# -------------------------------
+# Dataset generator
+# -------------------------------
+def generate_dataset(n: int, rng: random.Random):
+    """
+    Generate n fixed 8-tuples (A,B,C,D,E,F,G,H) from ALL valid words.
+
+    The task rule is:
+      A B B : C D D :: E F F : G H ____
+    so the correct answer is always H.
+    """
+    words = [w for w in ALL if _valid_word(w)]
+
+    dataset = []
+    rejected = 0
+    attempts = 0
+
+    while len(dataset) < n:
+        attempts += 1
+
+        # Sample 8 words independently.
+        # We intentionally allow collisions because the rule is positional,
+        # but reject degenerate endings like H == G only if you want a cleaner set.
+        A, B, C, D, E, F, G, H = [rng.choice(words) for _ in range(8)]
+
+        # Optional light cleanup to avoid especially degenerate final pair.
+        if G == H:
+            rejected += 1
+            continue
+
+        dataset.append((A, B, C, D, E, F, G, H))
+
+    sampling_stats = {
+        "source_vocab": "ALL",
+        "initial_pool_size": len(words),
+        "total_attempts": attempts,
+        "total_rejected": rejected,
+        "acceptance_rate": len(dataset) / attempts if attempts else None,
+        "rule": "third token repeats the second; expected answer is H",
+    }
+    return dataset, sampling_stats

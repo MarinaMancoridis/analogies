@@ -1,0 +1,75 @@
+{
+  "run_id": "20260309-171341-28759d",
+  "seed": 12345,
+  "n_trials": 1,
+  "models": {
+    "google/gemini-3-flash-preview": {
+      "n": 4,
+      "hits": 4,
+      "success_rate": 1.0,
+      "prompt_types": {
+        "colon": {
+          "n": 1,
+          "hits": 1,
+          "success_rate": 1.0
+        },
+        "english": {
+          "n": 1,
+          "hits": 1,
+          "success_rate": 1.0
+        },
+        "one_shot": {
+          "n": 1,
+          "hits": 1,
+          "success_rate": 1.0
+        },
+        "few_shot": {
+          "n": 1,
+          "hits": 1,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "anthropic/claude-opus-4.5": {
+      "n": 4,
+      "hits": 2,
+      "success_rate": 0.5,
+      "prompt_types": {
+        "colon": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "english": {
+          "n": 1,
+          "hits": 1,
+          "success_rate": 1.0
+        },
+        "one_shot": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "few_shot": {
+          "n": 1,
+          "hits": 1,
+          "success_rate": 1.0
+        }
+      }
+    }
+  },
+  "stimuli": [
+    [
+      "surveyors",
+      "wishy"
+    ]
+  ],
+  "sampling_spec": {
+    "source_vocab": "ALL",
+    "initial_pool_size": 50000,
+    "total_attempts": 1,
+    "total_rejected": 0,
+    "acceptance_rate": 1.0,
+    "rule": "convert word to uppercase; expected answer is 'B.upper()'"
+  }
+}

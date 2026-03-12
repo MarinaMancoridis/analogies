@@ -32,9 +32,20 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 from analogies import common as common_mod
 
-# Swap the task module here: identity or one_cycle
-# from analogies.analogy_types import identity as task_mod
-from analogies.analogy_types import one_cycle as task_mod
+# Different types of tasks to run
+# from analogies.analogy_types.structural import identity as task_mod # classic identity task (good!!! 1)
+# from analogies.analogy_types.structural import one_cycle as task_mod # 1-cycle analogy task (bad)
+# from analogies.analogy_types.structural import adjacent_repetition as task_mod # adjacent repetition task (bad)
+# from analogies.analogy_types.structural import reverse_copy as task_mod # reverse copy task (bad)
+# from analogies.analogy_types.structural import rotation as task_mod # rotation task (bad)
+# from analogies.analogy_types.structural import duplicate_first as task_mod # duplicate first task (bad)
+# from analogies.analogy_types.structural import delete_middle as task_mod # delete middle task (bad)
+# from analogies.analogy_types.structural import endpoints_only as task_mod # endpoints only task (bad)
+# from analogies.analogy_types.structural import repeat_count as task_mod # repeat count task (maybe, bc it only worked on wishy washy. try this exclusively with first half words next?)
+# from analogies.analogy_types.structural import fixed_offset_position as task_mod # fixed offset position task (bad)
+# from analogies.analogy_types.structural import unbracket as task_mod # unbracket task (bad)
+# from analogies.analogy_types.structural import uppercase_transform as task_mod # uppercase transformation task (bad)
+from analogies.analogy_types.relational.class_inclusion import class_inclusion as task_mod
 
 # -------------------------------
 # CONFIG
@@ -48,7 +59,7 @@ MODELS = [
     # "google/gemini-3.1-pro-preview",
     "google/gemini-3-flash-preview",
     # "claude-3-5-sonnet-20241022",
-    # "anthropic/claude-opus-4.5",
+    "anthropic/claude-opus-4.5",
     # "x-ai/grok-4"
 ]
 

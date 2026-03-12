@@ -17,21 +17,21 @@ TASK_NAME = "one_cycle"
 # -------------------------------
 PROMPT_VARIATIONS = {
     "colon": lambda A,B,C,D,E,F,G,H: (
-        f"Complete the 1-cycle analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"Fill in the blank. Reply ONLY as: ANSWER: <word>\n\n"
         f"{A} -> {B} -> {A} : {C} -> {D} -> {C} :: {E} -> {F} -> {E} : {G} -> {H} -> ____"
     ),
     "english": lambda A,B,C,D,E,F,G,H: (
-        f"Complete the 1-cycle analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"Fill in the blank. Reply ONLY as: ANSWER: <word>\n\n"
         f"{A} goes to {B} and back to {A}, {C} goes to {D} and back to {C}, "
         f"{E} goes to {F} and back to {E}, {G} goes to {H} and back to ____"
     ),
     "one_shot": lambda A,B,C,D,E,F,G,H: (
-        f"Complete the 1-cycle analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"Fill in the blank. Reply ONLY as: ANSWER: <word>\n\n"
         f"{A} -> {B} -> {A} : {C} -> {D} -> {C} :: {E} -> {F} -> {E} : {G} -> {H} -> ____\n\n"
         f"Here is one example:\nrose -> flower -> rose : apple -> fruit -> apple :: cat -> pet -> cat : dog -> animal -> ____"
     ),
     "few_shot": lambda A,B,C,D,E,F,G,H: (
-        f"Complete the 1-cycle analogy. Reply ONLY as: ANSWER: <word>\n\n"
+        f"Fill in the blank. Reply ONLY as: ANSWER: <word>\n\n"
         f"{A} -> {B} -> {A} : {C} -> {D} -> {C} :: {E} -> {F} -> {E} : {G} -> {H} -> ____\n\n"
         f"Here are some examples:\n"
         f"rose -> flower -> rose : apple -> fruit -> apple :: cat -> pet -> cat : dog -> animal -> dog\n"

@@ -1,0 +1,87 @@
+{
+  "run_id": "20260309-170658-ff8120",
+  "seed": 12345,
+  "n_trials": 4,
+  "models": {
+    "google/gemini-3-flash-preview": {
+      "n": 16,
+      "hits": 16,
+      "success_rate": 1.0,
+      "prompt_types": {
+        "colon": {
+          "n": 4,
+          "hits": 4,
+          "success_rate": 1.0
+        },
+        "english": {
+          "n": 4,
+          "hits": 4,
+          "success_rate": 1.0
+        },
+        "one_shot": {
+          "n": 4,
+          "hits": 4,
+          "success_rate": 1.0
+        },
+        "few_shot": {
+          "n": 4,
+          "hits": 4,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "anthropic/claude-opus-4.5": {
+      "n": 16,
+      "hits": 14,
+      "success_rate": 0.875,
+      "prompt_types": {
+        "colon": {
+          "n": 4,
+          "hits": 3,
+          "success_rate": 0.75
+        },
+        "english": {
+          "n": 4,
+          "hits": 4,
+          "success_rate": 1.0
+        },
+        "one_shot": {
+          "n": 4,
+          "hits": 3,
+          "success_rate": 0.75
+        },
+        "few_shot": {
+          "n": 4,
+          "hits": 4,
+          "success_rate": 1.0
+        }
+      }
+    }
+  },
+  "stimuli": [
+    [
+      "surveyors",
+      "wishy"
+    ],
+    [
+      "test",
+      "debra"
+    ],
+    [
+      "doth",
+      "syracuse"
+    ],
+    [
+      "savages",
+      "microcosm"
+    ]
+  ],
+  "sampling_spec": {
+    "source_vocab": "ALL",
+    "initial_pool_size": 50000,
+    "total_attempts": 4,
+    "total_rejected": 0,
+    "acceptance_rate": 1.0,
+    "rule": "repeat the item twice; expected answer is 'B B'"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "run_id": "20260309-174827-410253",
+  "seed": 12345,
+  "n_trials": 1,
+  "models": {
+    "google/gemini-3-flash-preview": {
+      "n": 4,
+      "hits": 0,
+      "success_rate": 0.0,
+      "prompt_types": {
+        "colon": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "english": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "one_shot": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "few_shot": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        }
+      }
+    },
+    "anthropic/claude-opus-4.5": {
+      "n": 4,
+      "hits": 0,
+      "success_rate": 0.0,
+      "prompt_types": {
+        "colon": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "english": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "one_shot": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        },
+        "few_shot": {
+          "n": 1,
+          "hits": 0,
+          "success_rate": 0.0
+        }
+      }
+    }
+  },
+  "stimuli": [
+    [
+      "blister",
+      "kids"
+    ]
+  ],
+  "sampling_spec": {
+    "source_vocab": "ALL",
+    "initial_pool_size": 8462,
+    "total_attempts": 1,
+    "total_rejected": 0,
+    "acceptance_rate": 1.0,
+    "relation_key": "class_inclusion",
+    "relation_name": "Class-Inclusion",
+    "a_role_hint": "a broad class or category (not a specific instance, not a verb)",
+    "rule": "A and C are broad class nouns; model generates B and D, then relation is graded as yes/no."
+  }
+}
