@@ -1,0 +1,9 @@
+{
+    "relation_key": "part_whole",
+    "description": "Hand-curated whole objects or collections for part-whole analogies. These should be words that can naturally take constituent-part or typical-member completions.",
+    "words": [
+      "car",
+      "forest",
+      "house"
+    ]
+  }

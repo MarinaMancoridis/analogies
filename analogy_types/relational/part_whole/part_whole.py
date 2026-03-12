@@ -14,12 +14,12 @@ from wordfreq import zipf_frequency
 from analogies.utils import generate_inference
 from analogies.common import clean_answer, ALL, _brys_score, ac_label_brys
 
-TASK_NAME = "relational_class_inclusion"
+TASK_NAME = "relational_part_whole"
 
-REL_KEY = "class_inclusion"
-REL_NAME = "Class-Inclusion"
-REL_TEXT = "B is a more specific instance of A (class → member/individual). e.g., flower:tulip."
-A_ROLE_HINT = "a broad class or category (not a specific instance, not a verb)"
+REL_KEY = "part_whole"
+REL_NAME = "Part-Whole"
+REL_TEXT = "B is a constituent of A (component/part) or a typical member of collection A. e.g., car:engine; forest:tree."
+A_ROLE_HINT = "a whole object or a collection (not the part)"
 
 PROMPT_VARIATIONS = {
     "colon": lambda A, B, C: (
@@ -34,14 +34,14 @@ PROMPT_VARIATIONS = {
         f"Complete the analogy. Reply ONLY as: ANSWER: <word>\n\n"
         f"{A} : {B} :: {C} : ____\n\n"
         f"Here is one example that follows the same relation:\n"
-        f"flower : tulip :: fruit : apple"
+        f"car : engine :: forest : tree"
     ),
     "few_shot": lambda A, B, C: (
         f"Complete the analogy. Reply ONLY as: ANSWER: <word>\n\n"
         f"{A} : {B} :: {C} : ____\n\n"
         f"Here are some examples that follow the same relation:\n"
-        f"flower : tulip :: fruit : apple\n"
-        f"animal : dog :: vehicle : car"
+        f"car : engine :: forest : tree\n"
+        f"house : roof :: book : page"
     ),
 }
 
@@ -56,9 +56,7 @@ def _load_curated_words() -> List[str]:
     words = obj.get("words", [])
     words = [w.strip().lower() for w in words if isinstance(w, str) and w.strip()]
     if len(words) < 2:
-        raise ValueError(
-            f"Need at least 2 curated words in {path}, found {len(words)}"
-        )
+        raise ValueError(f"Need at least 2 curated words in {path}, found {len(words)}")
     return words
 
 
@@ -121,7 +119,7 @@ _SIMPLE_WORD_RULES = (
     "Rules:\n"
     "- Output exactly one lowercase English word.\n"
     "- No punctuation, no spaces, no hyphens, no numbers, no proper nouns.\n"
-    "- The answer must be a specific instance or subtype of A, not merely associated with A.\n"
+    "- The answer must be a constituent part of A or a typical member of collection A, not merely associated with A.\n"
     "Output ONLY: ANSWER: <word>\n"
 )
 
@@ -141,8 +139,8 @@ def _prompt_generate_B(A: str) -> str:
 def _prompt_grade(A: str, B: str, C: str, D: str) -> str:
     return (
         "Grade whether BOTH pairs (A,B) and (C,D) satisfy the relation.\n"
-        "For class-inclusion relations, B must be a specific instance or subtype of A, not merely associated with A.\n\n"
-        "Mere association, description, part, property, or nearby concept does NOT count.\n\n"
+        "For part-whole relations, B must be a genuine constituent part of A or a typical member of collection A; "
+        "mere association, function, location, property, or nearby concept does NOT count.\n\n"
         "Reply ONLY:\n"
         "GRADE: Correct or Incorrect\n"
         "REASON: <short reason>\n\n"
@@ -259,7 +257,7 @@ def run_trial(model: str, *args, prompt_type: str = "colon", verbose: bool = Tru
 
     if verbose:
         print(
-            f"[relational_class_inclusion] "
+            f"[relational_part_whole] "
             f"A={A} B={B} C={C} D={D} "
             f"judge_majority={judge['judge_majority_label']} "
             f"counts={judge['judge_counts']} "
