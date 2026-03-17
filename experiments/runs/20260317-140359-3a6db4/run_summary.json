@@ -1,0 +1,135 @@
+{
+  "run_id": "20260317-140359-3a6db4",
+  "seed": 12345,
+  "n_trials": 3,
+  "models": {
+    "gpt-5.2": {
+      "n": 12,
+      "hits": 11,
+      "success_rate": 0.9166666666666666,
+      "success_fraction": "11/12",
+      "prompt_types": {
+        "colon": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "english": {
+          "n": 3,
+          "hits": 2,
+          "success_rate": 0.6666666666666666,
+          "success_fraction": "2/3"
+        },
+        "one_shot": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "few_shot": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        }
+      }
+    },
+    "google/gemini-3-flash-preview": {
+      "n": 12,
+      "hits": 10,
+      "success_rate": 0.8333333333333334,
+      "success_fraction": "10/12",
+      "prompt_types": {
+        "colon": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "english": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "one_shot": {
+          "n": 3,
+          "hits": 2,
+          "success_rate": 0.6666666666666666,
+          "success_fraction": "2/3"
+        },
+        "few_shot": {
+          "n": 3,
+          "hits": 2,
+          "success_rate": 0.6666666666666666,
+          "success_fraction": "2/3"
+        }
+      }
+    },
+    "anthropic/claude-opus-4.5": {
+      "n": 12,
+      "hits": 12,
+      "success_rate": 1.0,
+      "success_fraction": "12/12",
+      "prompt_types": {
+        "colon": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "english": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "one_shot": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        },
+        "few_shot": {
+          "n": 3,
+          "hits": 3,
+          "success_rate": 1.0,
+          "success_fraction": "3/3"
+        }
+      }
+    }
+  },
+  "stimuli": [
+    [
+      "classes",
+      "involved"
+    ],
+    [
+      "estimate",
+      "buck"
+    ],
+    [
+      "upsetting",
+      "delight"
+    ]
+  ],
+  "sampling_spec": {
+    "source_vocab": "curated_words.json",
+    "initial_pool_size": 50,
+    "total_attempts": 3,
+    "total_rejected": 0,
+    "acceptance_rate": 1.0,
+    "relation_key": "similar",
+    "relation_name": "Similar",
+    "a_role_hint": "a common word that has a close synonym",
+    "judge_strategy": "majority_vote_over_5_attempts",
+    "rule": "A and C are sampled from curated_words.json; B and D are model-generated and relation-judged by majority vote."
+  },
+  "overall": {
+    "n": 36,
+    "hits": 33,
+    "success_rate": 0.9166666666666666,
+    "success_fraction": "33/36"
+  }
+}
