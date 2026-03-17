@@ -45,8 +45,8 @@ from analogies import common as common_mod
 # from analogies.analogy_types.structural import fixed_offset_position as task_mod # fixed offset position task (bad)
 # from analogies.analogy_types.structural import unbracket as task_mod # unbracket task (bad)
 # from analogies.analogy_types.structural import uppercase_transform as task_mod # uppercase transformation task (bad)
-from analogies.analogy_types.relational.class_inclusion import class_inclusion as task_mod  # (good!!! 2)
-# from analogies.analogy_types.relational.part_whole import part_whole as task_mod
+# from analogies.analogy_types.relational.class_inclusion import class_inclusion as task_mod  # (good!!! 2)
+from analogies.analogy_types.relational.part_whole import part_whole as task_mod
 
 # -------------------------------
 # CONFIG
