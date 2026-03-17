@@ -1,0 +1,135 @@
+{
+  "run_id": "20260317-125933-2c9daf",
+  "seed": 12345,
+  "n_trials": 3,
+  "models": {
+    "gpt-5.2": {
+      "n": 12,
+      "hits": 0,
+      "success_rate": 0.0,
+      "success_fraction": "0/12",
+      "prompt_types": {
+        "colon": {
+          "n": 3,
+          "hits": 0,
+          "success_rate": 0.0,
+          "success_fraction": "0/3"
+        },
+        "english": {
+          "n": 3,
+          "hits": 0,
+          "success_rate": 0.0,
+          "success_fraction": "0/3"
+        },
+        "one_shot": {
+          "n": 3,
+          "hits": 0,
+          "success_rate": 0.0,
+          "success_fraction": "0/3"
+        },
+        "few_shot": {
+          "n": 3,
+          "hits": 0,
+          "success_rate": 0.0,
+          "success_fraction": "0/3"
+        }
+      }
+    },
+    "google/gemini-3-flash-preview": {
+      "n": 12,
+      "hits": 2,
+      "success_rate": 0.16666666666666666,
+      "success_fraction": "2/12",
+      "prompt_types": {
+        "colon": {
+          "n": 3,
+          "hits": 0,
+          "success_rate": 0.0,
+          "success_fraction": "0/3"
+        },
+        "english": {
+          "n": 3,
+          "hits": 0,
+          "success_rate": 0.0,
+          "success_fraction": "0/3"
+        },
+        "one_shot": {
+          "n": 3,
+          "hits": 1,
+          "success_rate": 0.3333333333333333,
+          "success_fraction": "1/3"
+        },
+        "few_shot": {
+          "n": 3,
+          "hits": 1,
+          "success_rate": 0.3333333333333333,
+          "success_fraction": "1/3"
+        }
+      }
+    },
+    "anthropic/claude-opus-4.5": {
+      "n": 12,
+      "hits": 6,
+      "success_rate": 0.5,
+      "success_fraction": "6/12",
+      "prompt_types": {
+        "colon": {
+          "n": 3,
+          "hits": 1,
+          "success_rate": 0.3333333333333333,
+          "success_fraction": "1/3"
+        },
+        "english": {
+          "n": 3,
+          "hits": 1,
+          "success_rate": 0.3333333333333333,
+          "success_fraction": "1/3"
+        },
+        "one_shot": {
+          "n": 3,
+          "hits": 2,
+          "success_rate": 0.6666666666666666,
+          "success_fraction": "2/3"
+        },
+        "few_shot": {
+          "n": 3,
+          "hits": 2,
+          "success_rate": 0.6666666666666666,
+          "success_fraction": "2/3"
+        }
+      }
+    }
+  },
+  "stimuli": [
+    [
+      "brand",
+      "toes"
+    ],
+    [
+      "organs",
+      "basket"
+    ],
+    [
+      "instrumentation",
+      "religion"
+    ]
+  ],
+  "sampling_spec": {
+    "source_vocab": "curated_words.json",
+    "initial_pool_size": 50,
+    "total_attempts": 3,
+    "total_rejected": 0,
+    "acceptance_rate": 1.0,
+    "relation_key": "class_inclusion",
+    "relation_name": "Class-Inclusion",
+    "a_role_hint": "a broad class or category (not a specific instance, not a verb)",
+    "judge_strategy": "majority_vote_over_5_attempts",
+    "rule": "A and C are sampled from curated_words.json; B and D are model-generated and relation-judged by majority vote."
+  },
+  "overall": {
+    "n": 36,
+    "hits": 8,
+    "success_rate": 0.2222222222222222,
+    "success_fraction": "8/36"
+  }
+}

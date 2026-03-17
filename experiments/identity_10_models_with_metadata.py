@@ -45,8 +45,8 @@ from analogies import common as common_mod
 # from analogies.analogy_types.structural import fixed_offset_position as task_mod # fixed offset position task (bad)
 # from analogies.analogy_types.structural import unbracket as task_mod # unbracket task (bad)
 # from analogies.analogy_types.structural import uppercase_transform as task_mod # uppercase transformation task (bad)
-# from analogies.analogy_types.relational.class_inclusion import class_inclusion as task_mod (good!!! 2)
-from analogies.analogy_types.relational.part_whole import part_whole as task_mod
+from analogies.analogy_types.relational.class_inclusion import class_inclusion as task_mod  # (good!!! 2)
+# from analogies.analogy_types.relational.part_whole import part_whole as task_mod
 
 # -------------------------------
 # CONFIG
@@ -54,7 +54,7 @@ from analogies.analogy_types.relational.part_whole import part_whole as task_mod
 MODELS = [
     # "gpt-5",
     # "gpt-5-pro",
-    # "gpt-5.2",
+    "gpt-5.2",
     # "o3",
     # "o1",
     # "google/gemini-3.1-pro-preview",
@@ -64,7 +64,7 @@ MODELS = [
     # "x-ai/grok-4"
 ]
 
-N_TRIALS_PER_MODEL = 1
+N_TRIALS_PER_MODEL = 3
 SEED = 12345
 
 BRYS_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "concreteness.txt")
@@ -80,29 +80,35 @@ def _make_run_dir(base: str) -> str:
     os.makedirs(out, exist_ok=True)
     return out
 
+
 def _append_ndjson(path: str, obj: Dict[str, Any]) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "a", encoding="utf-8") as f:
         f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
 
 def _write_json(path: str, obj: Dict[str, Any]) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
 
+
 def _utc_now() -> str:
     return datetime.datetime.utcnow().isoformat() + "Z"
+
 
 # -------------------------------
 # Lexical Metrics
 # -------------------------------
 _RANK_INDEX: Optional[Dict[str, int]] = None
 
+
 def _ensure_rank_index() -> None:
     global _RANK_INDEX
     if _RANK_INDEX is not None:
         return
     _RANK_INDEX = {w.lower(): i + 1 for i, w in enumerate(common_mod.ALL)}
+
 
 def _pos_universal(word: str) -> Optional[str]:
     try:
@@ -111,11 +117,13 @@ def _pos_universal(word: str) -> Optional[str]:
     except Exception:
         return None
 
+
 def _polysemy_count(word: str) -> int:
     try:
         return len(wn.synsets(word.lower()))
     except Exception:
         return 0
+
 
 def _brys_score(word: str) -> Optional[float]:
     try:
@@ -123,11 +131,13 @@ def _brys_score(word: str) -> Optional[float]:
     except Exception:
         return None
 
+
 def _brys_label(word: str) -> Optional[str]:
     try:
         return common_mod.ac_label_brys(word)
     except Exception:
         return None
+
 
 def word_metrics(word: str) -> Dict[str, Any]:
     w = word.lower().strip()
@@ -142,6 +152,7 @@ def word_metrics(word: str) -> Dict[str, Any]:
         "pos": _pos_universal(w),
     }
 
+
 def _valid_word(word: str) -> bool:
     try:
         m = word_metrics(word)
@@ -150,6 +161,7 @@ def _valid_word(word: str) -> bool:
     required_fields = ["pos", "pop_zipf", "pop_rank"]
     return all(m.get(f) is not None for f in required_fields)
 
+
 # -------------------------------
 # Trial evaluation dataclass
 # -------------------------------
@@ -157,6 +169,7 @@ def _valid_word(word: str) -> bool:
 class Counts:
     n: int = 0
     hits: int = 0
+
 
 # -------------------------------
 # Dynamic trial evaluation
@@ -174,6 +187,7 @@ def evaluate_trial(model: str, words: tuple, prompt_types: Optional[List[str]] =
         trials.append(trial)
 
     return trials
+
 
 # -------------------------------
 # Main
@@ -210,6 +224,8 @@ def main() -> None:
         "sampling_spec": sampling_stats,
     }
 
+    grand_total = Counts()
+
     for model in MODELS:
         model_dir = os.path.join(out_dir, model.replace("/", "_"))
         os.makedirs(model_dir, exist_ok=True)
@@ -218,44 +234,68 @@ def main() -> None:
         overall_counts = Counts()
         prompt_type_counts: Dict[str, Counts] = {ptype: Counts() for ptype in prompt_types_to_test}
 
-        # 1️⃣ Default prompt "colon" for all tuples
+        # 1) Default prompt "colon" for all tuples
         for tup in dataset:
             trial = evaluate_trial(model, tup, prompt_types=["colon"])[0]
             _append_ndjson(trials_path, trial)
-            overall_counts.n += 1
-            overall_counts.hits += int(trial.get("is_identity", False))
-            prompt_type_counts["colon"].n += 1
-            prompt_type_counts["colon"].hits += int(trial.get("is_identity", False))
 
-        # 2️⃣ Prompt-variation robustness on subset
+            hit = int(trial.get("is_identity", False))
+
+            overall_counts.n += 1
+            overall_counts.hits += hit
+            prompt_type_counts["colon"].n += 1
+            prompt_type_counts["colon"].hits += hit
+
+        # 2) Prompt-variation robustness on subset
         for tup in prompt_robustness_subset:
             for trial in evaluate_trial(model, tup, prompt_types=prompt_types_to_test):
                 if trial["prompt_type"] == "colon":
                     continue
-                _append_ndjson(trials_path, trial)
-                overall_counts.n += 1
-                overall_counts.hits += int(trial.get("is_identity", False))
-                prompt_type_counts[trial["prompt_type"]].n += 1
-                prompt_type_counts[trial["prompt_type"]].hits += int(trial.get("is_identity", False))
 
-        # Save model summary
+                _append_ndjson(trials_path, trial)
+
+                hit = int(trial.get("is_identity", False))
+
+                overall_counts.n += 1
+                overall_counts.hits += hit
+                prompt_type_counts[trial["prompt_type"]].n += 1
+                prompt_type_counts[trial["prompt_type"]].hits += hit
+
+        model_success_rate = overall_counts.hits / overall_counts.n if overall_counts.n else 0.0
+
         run_summary["models"][model] = {
             "n": overall_counts.n,
             "hits": overall_counts.hits,
-            "success_rate": overall_counts.hits / overall_counts.n if overall_counts.n else 0.0,
+            "success_rate": model_success_rate,
+            "success_fraction": f"{overall_counts.hits}/{overall_counts.n}",
             "prompt_types": {
                 ptype: {
                     "n": counts.n,
                     "hits": counts.hits,
-                    "success_rate": counts.hits / counts.n if counts.n else 0.0
-                } for ptype, counts in prompt_type_counts.items()
-            }
+                    "success_rate": counts.hits / counts.n if counts.n else 0.0,
+                    "success_fraction": f"{counts.hits}/{counts.n}",
+                }
+                for ptype, counts in prompt_type_counts.items()
+            },
         }
 
-        print(f"[{model}] hit_rate={run_summary['models'][model]['success_rate']:.3f}")
+        grand_total.n += overall_counts.n
+        grand_total.hits += overall_counts.hits
+
+        print(f"[{model}] hit_rate={model_success_rate:.3f} ({overall_counts.hits}/{overall_counts.n})")
+
+    grand_success_rate = grand_total.hits / grand_total.n if grand_total.n else 0.0
+    run_summary["overall"] = {
+        "n": grand_total.n,
+        "hits": grand_total.hits,
+        "success_rate": grand_success_rate,
+        "success_fraction": f"{grand_total.hits}/{grand_total.n}",
+    }
 
     _write_json(os.path.join(out_dir, "run_summary.json"), run_summary)
+
     print("\n=== DONE ===")
+    print(f"OVERALL SUCCESS RATE: {grand_total.hits}/{grand_total.n} = {grand_success_rate:.3f}")
     print(json.dumps(run_summary, indent=2))
 
 
