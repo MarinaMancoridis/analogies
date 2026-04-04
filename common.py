@@ -6,7 +6,6 @@ import random
 from typing import List
 import nltk # used for identity — part of speech
 from nltk.corpus import wordnet as wn
-import stanza # used for identity — part of speech
 from functools import lru_cache
 import csv
 import string
@@ -31,6 +30,8 @@ def _ensure_stanza():
     global _STANZA_PIPELINE
     if _STANZA_PIPELINE is not None:
         return
+    import stanza  # lazy: pulls torch; not needed for word list / Brysbaert-only paths
+
     try:
         # Fast, minimal pipeline for tokenized input (we pass a single token)
         _STANZA_PIPELINE = stanza.Pipeline(
