@@ -48,8 +48,9 @@ from analogies import common as common_mod
 # from analogies.analogy_types.relational.class_inclusion import class_inclusion as task_mod  # (good!!! 2)
 # from analogies.analogy_types.relational.part_whole import part_whole as task_mod # (good!!! 3)
 # from analogies.analogy_types.relational.similar import similar as task_mod # (meh but keep 4)
-from analogies.analogy_types.relational.contrast import contrast as task_mod # 
+# from analogies.analogy_types.relational.contrast import contrast as task_mod # 
 # from analogies.analogy_types.relational.attribute import attribute as task_mod # 
+from analogies.analogy_types.relational.non_attribute import non_attribute as task_mod # 
 
 
 # -------------------------------
