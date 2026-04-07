@@ -52,7 +52,8 @@ from analogies import common as common_mod
 # from analogies.analogy_types.relational.attribute import attribute as task_mod # 
 # from analogies.analogy_types.relational.non_attribute import non_attribute as task_mod # 
 # from analogies.analogy_types.relational.case_relations import case_relations as task_mod # 
-from analogies.analogy_types.relational.cause_purpose import cause_purpose as task_mod 
+# from analogies.analogy_types.relational.cause_purpose import cause_purpose as task_mod 
+from analogies.analogy_types.relational.space_time import space_time as task_mod 
 
 
 # -------------------------------
