@@ -15,7 +15,15 @@ models_to_short_name = {
     "Qwen/Qwen2-VL-72B-Instruct": "Qwen2-VL",
     "o1": "o1",
     "o3": "o3",
-    "gpt-5": "GPT-5"
+    "gpt-5": "GPT-5",
+    "meta-llama/llama-3.3-70b-instruct": "Llama-3.3",
+    "openai/gpt-4.1": "GPT-4.1",
+    "openai/gpt-5.4-pro": "GPT-5.4",
+    "google/gemini-3-flash-preview": "Gemini-3-Flash",
+    "google/gemini-3.1-flash-lite-preview": "Gemini-3.1-Flash-Lite",
+    "anthropic/claude-sonnet-4.5": "Claude-Sonnet-4.5",
+    "anthropic/claude-opus-4.6": "Claude-Opus-4.6",
+    "deepseek/deepseek-v3.2": "DeepSeek-V3.2",
 }
 
 # mapping of models to their developers
@@ -45,7 +53,15 @@ models_to_developer = {"meta-llama/Llama-3.3-70B-Instruct-Turbo": "together",
     "mistralai/mistral-large": "openrouter",
     "x-ai/grok-4": "openrouter",
     "x-ai/grok-4.1-fast": "openrouter",
-    "gpt-5-pro": "openai"
+    "gpt-5-pro": "openai",
+    "meta-llama/llama-3.3-70b-instruct": "openrouter",
+    "openai/gpt-4.1": "openrouter",
+    "openai/gpt-5.4-pro": "openrouter",
+    "google/gemini-3-flash-preview": "openrouter",
+    "google/gemini-3.1-flash-lite-preview": "openrouter",
+    "anthropic/claude-sonnet-4.5": "openrouter",
+    "anthropic/claude-opus-4.6": "openrouter",
+    "deepseek/deepseek-v3.2": "openrouter",
 }
 models = list(models_to_developer.keys())
 
