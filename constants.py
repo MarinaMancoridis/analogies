@@ -18,12 +18,13 @@ models_to_short_name = {
     "gpt-5": "GPT-5",
     "meta-llama/llama-3.3-70b-instruct": "Llama-3.3",
     "openai/gpt-4.1": "GPT-4.1",
-    "openai/gpt-5.4-pro": "GPT-5.4",
+    "openai/gpt-5.4-pro": "GPT-5.4", # latency over two minutes, way too slow
     "google/gemini-3-flash-preview": "Gemini-3-Flash",
     "google/gemini-3.1-flash-lite-preview": "Gemini-3.1-Flash-Lite",
     "anthropic/claude-sonnet-4.5": "Claude-Sonnet-4.5",
     "anthropic/claude-opus-4.6": "Claude-Opus-4.6",
     "deepseek/deepseek-v3.2": "DeepSeek-V3.2",
+    "openai/gpt-5.4-mini": "GPT-5.4-Mini",
 }
 
 # mapping of models to their developers
@@ -62,6 +63,7 @@ models_to_developer = {"meta-llama/Llama-3.3-70B-Instruct-Turbo": "together",
     "anthropic/claude-sonnet-4.5": "openrouter",
     "anthropic/claude-opus-4.6": "openrouter",
     "deepseek/deepseek-v3.2": "openrouter",
+    "openai/gpt-5.4-mini": "openrouter",
 }
 models = list(models_to_developer.keys())
 

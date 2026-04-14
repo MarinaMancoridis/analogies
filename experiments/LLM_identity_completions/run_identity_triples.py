@@ -27,7 +27,7 @@ MODELS: List[str] = [
     "meta-llama/llama-3.3-70b-instruct",
     "gpt-4o",
     "openai/gpt-4.1",
-    "openai/gpt-5.4-pro",
+    "openai/gpt-5.4-mini",
     "google/gemini-3-flash-preview",
     "google/gemini-3.1-flash-lite-preview",
     "anthropic/claude-sonnet-4.5",
