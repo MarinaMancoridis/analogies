@@ -1,0 +1,3510 @@
+{
+  "created_at_utc": "2026-04-14T12:17:24.295592Z",
+  "seed": 12345,
+  "n_triples": 100,
+  "source_vocab": "common_mod.ALL (top 50k via wordfreq)",
+  "selection_pipeline": "Randomly sample from ALL; retry until all metrics fields are populated.",
+  "total_sampling_attempts": 462,
+  "triples": [
+    {
+      "triple_id": 1,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "test",
+      "B": "test",
+      "C": "implantation",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 667,
+        "pop_zipf": 5.19,
+        "polysemy": 13,
+        "brys": 3.93,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 667,
+        "pop_zipf": 5.19,
+        "polysemy": 13,
+        "brys": 3.93,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 12,
+        "pop_rank": 28589,
+        "pop_zipf": 3.01,
+        "polysemy": 3,
+        "brys": 3.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 2,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "rainy",
+      "B": "rainy",
+      "C": "feminine",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 10597,
+        "pop_zipf": 3.74,
+        "polysemy": 1,
+        "brys": 4.32,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 10597,
+        "pop_zipf": 3.74,
+        "polysemy": 1,
+        "brys": 4.32,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 8144,
+        "pop_zipf": 3.91,
+        "polysemy": 5,
+        "brys": 2.41,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 3,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "sneezing",
+      "B": "sneezing",
+      "C": "entitle",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 28373,
+        "pop_zipf": 3.02,
+        "polysemy": 2,
+        "brys": 4.36,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 28373,
+        "pop_zipf": 3.02,
+        "polysemy": 2,
+        "brys": 4.36,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 41106,
+        "pop_zipf": 2.71,
+        "polysemy": 3,
+        "brys": 2.25,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 4,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "mourning",
+      "B": "mourning",
+      "C": "multimillion",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 11426,
+        "pop_zipf": 3.69,
+        "polysemy": 5,
+        "brys": 2.17,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 11426,
+        "pop_zipf": 3.69,
+        "polysemy": 5,
+        "brys": 2.17,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 12,
+        "pop_rank": 36256,
+        "pop_zipf": 2.82,
+        "polysemy": 0,
+        "brys": 2.89,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 5,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "envision",
+      "B": "envision",
+      "C": "bobbing",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 23259,
+        "pop_zipf": 3.17,
+        "polysemy": 2,
+        "brys": 2.38,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 23259,
+        "pop_zipf": 3.17,
+        "polysemy": 2,
+        "brys": 2.38,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 34803,
+        "pop_zipf": 2.85,
+        "polysemy": 5,
+        "brys": 3.54,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 6,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "truffle",
+      "B": "truffle",
+      "C": "conjoined",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 27009,
+        "pop_zipf": 3.06,
+        "polysemy": 3,
+        "brys": 4.6,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 27009,
+        "pop_zipf": 3.06,
+        "polysemy": 3,
+        "brys": 4.6,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 38342,
+        "pop_zipf": 2.77,
+        "polysemy": 3,
+        "brys": 3.59,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 7,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "blowing",
+      "B": "blowing",
+      "C": "ultimatum",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 5102,
+        "pop_zipf": 4.2,
+        "polysemy": 23,
+        "brys": 4.21,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 5102,
+        "pop_zipf": 4.2,
+        "polysemy": 23,
+        "brys": 4.21,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 21106,
+        "pop_zipf": 3.25,
+        "polysemy": 1,
+        "brys": 2.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 8,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "stopped",
+      "B": "stopped",
+      "C": "grandiose",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 1542,
+        "pop_zipf": 4.84,
+        "polysemy": 12,
+        "brys": 3.25,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 1542,
+        "pop_zipf": 4.84,
+        "polysemy": 12,
+        "brys": 3.25,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 30071,
+        "pop_zipf": 2.97,
+        "polysemy": 2,
+        "brys": 2.38,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 9,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "transistor",
+      "B": "transistor",
+      "C": "undetermined",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 22251,
+        "pop_zipf": 3.21,
+        "polysemy": 1,
+        "brys": 4.12,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 22251,
+        "pop_zipf": 3.21,
+        "polysemy": 1,
+        "brys": 4.12,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 12,
+        "pop_rank": 33470,
+        "pop_zipf": 2.89,
+        "polysemy": 3,
+        "brys": 1.59,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 10,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "haywire",
+      "B": "haywire",
+      "C": "narcissism",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 48794,
+        "pop_zipf": 2.57,
+        "polysemy": 3,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 48794,
+        "pop_zipf": 2.57,
+        "polysemy": 3,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 27229,
+        "pop_zipf": 3.05,
+        "polysemy": 1,
+        "brys": 1.85,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 11,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "possible",
+      "B": "possible",
+      "C": "carver",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 438,
+        "pop_zipf": 5.36,
+        "polysemy": 4,
+        "brys": 1.56,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 438,
+        "pop_zipf": 5.36,
+        "polysemy": 4,
+        "brys": 1.56,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 18781,
+        "pop_zipf": 3.33,
+        "polysemy": 4,
+        "brys": 4.27,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 12,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "smartphone",
+      "B": "smartphone",
+      "C": "heartwarming",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 6521,
+        "pop_zipf": 4.06,
+        "polysemy": 0,
+        "brys": 4.57,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 6521,
+        "pop_zipf": 4.06,
+        "polysemy": 0,
+        "brys": 4.57,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 12,
+        "pop_rank": 27167,
+        "pop_zipf": 3.05,
+        "polysemy": 1,
+        "brys": 1.52,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 13,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "hedonistic",
+      "B": "hedonistic",
+      "C": "plunge",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 48273,
+        "pop_zipf": 2.58,
+        "polysemy": 1,
+        "brys": 2.36,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 48273,
+        "pop_zipf": 2.58,
+        "polysemy": 1,
+        "brys": 2.36,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 15246,
+        "pop_zipf": 3.49,
+        "polysemy": 10,
+        "brys": 3.04,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 14,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "personally",
+      "B": "personally",
+      "C": "myriad",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 2638,
+        "pop_zipf": 4.57,
+        "polysemy": 5,
+        "brys": 2.07,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 2638,
+        "pop_zipf": 4.57,
+        "polysemy": 5,
+        "brys": 2.07,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 15225,
+        "pop_zipf": 3.49,
+        "polysemy": 3,
+        "brys": 2.12,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 15,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "squeeze",
+      "B": "squeeze",
+      "C": "oyster",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 7852,
+        "pop_zipf": 3.94,
+        "polysemy": 17,
+        "brys": 3.75,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 7852,
+        "pop_zipf": 3.94,
+        "polysemy": 17,
+        "brys": 3.75,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 14181,
+        "pop_zipf": 3.54,
+        "polysemy": 4,
+        "brys": 4.85,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 16,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "baron",
+      "B": "baron",
+      "C": "declared",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 8512,
+        "pop_zipf": 3.88,
+        "polysemy": 3,
+        "brys": 4.14,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 8512,
+        "pop_zipf": 3.88,
+        "polysemy": 3,
+        "brys": 4.14,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 2723,
+        "pop_zipf": 4.55,
+        "polysemy": 10,
+        "brys": 2.38,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 17,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "revolt",
+      "B": "revolt",
+      "C": "strong",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 10757,
+        "pop_zipf": 3.73,
+        "polysemy": 4,
+        "brys": 3.03,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 10757,
+        "pop_zipf": 3.73,
+        "polysemy": 4,
+        "brys": 3.03,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 614,
+        "pop_zipf": 5.22,
+        "polysemy": 10,
+        "brys": 3.14,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 18,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "outing",
+      "B": "outing",
+      "C": "carp",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 15016,
+        "pop_zipf": 3.5,
+        "polysemy": 5,
+        "brys": 2.72,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 15016,
+        "pop_zipf": 3.5,
+        "polysemy": 5,
+        "brys": 2.72,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 22920,
+        "pop_zipf": 3.18,
+        "polysemy": 3,
+        "brys": 4.62,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 19,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "hexagon",
+      "B": "hexagon",
+      "C": "attack",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 35333,
+        "pop_zipf": 2.84,
+        "polysemy": 1,
+        "brys": 4.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 35333,
+        "pop_zipf": 2.84,
+        "polysemy": 1,
+        "brys": 4.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 842,
+        "pop_zipf": 5.09,
+        "polysemy": 15,
+        "brys": 3.71,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 20,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "founder",
+      "B": "founder",
+      "C": "multicolored",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 3233,
+        "pop_zipf": 4.46,
+        "polysemy": 7,
+        "brys": 3.66,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 3233,
+        "pop_zipf": 4.46,
+        "polysemy": 7,
+        "brys": 3.66,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 12,
+        "pop_rank": 46641,
+        "pop_zipf": 2.61,
+        "polysemy": 1,
+        "brys": 4.11,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 21,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "patch",
+      "B": "patch",
+      "C": "federal",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 5149,
+        "pop_zipf": 4.2,
+        "polysemy": 13,
+        "brys": 4.7,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 5149,
+        "pop_zipf": 4.2,
+        "polysemy": 13,
+        "brys": 4.7,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 768,
+        "pop_zipf": 5.13,
+        "polysemy": 6,
+        "brys": 2.41,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 22,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "peddler",
+      "B": "peddler",
+      "C": "bullish",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 46684,
+        "pop_zipf": 2.61,
+        "polysemy": 2,
+        "brys": 4.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 46684,
+        "pop_zipf": 2.61,
+        "polysemy": 2,
+        "brys": 4.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 24102,
+        "pop_zipf": 3.14,
+        "polysemy": 1,
+        "brys": 2.3,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 23,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "empowerment",
+      "B": "empowerment",
+      "C": "conspicuously",
+      "A_metrics": {
+        "len": 11,
+        "pop_rank": 14114,
+        "pop_zipf": 3.54,
+        "polysemy": 1,
+        "brys": 2.36,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 11,
+        "pop_rank": 14114,
+        "pop_zipf": 3.54,
+        "polysemy": 1,
+        "brys": 2.36,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 13,
+        "pop_rank": 33589,
+        "pop_zipf": 2.88,
+        "polysemy": 2,
+        "brys": 1.86,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 24,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "readily",
+      "B": "readily",
+      "C": "devotee",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 7963,
+        "pop_zipf": 3.93,
+        "polysemy": 2,
+        "brys": 1.88,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 7963,
+        "pop_zipf": 3.93,
+        "polysemy": 2,
+        "brys": 1.88,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 31509,
+        "pop_zipf": 2.93,
+        "polysemy": 1,
+        "brys": 2.86,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 25,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "ironclad",
+      "B": "ironclad",
+      "C": "vegetative",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 40754,
+        "pop_zipf": 2.72,
+        "polysemy": 3,
+        "brys": 2.59,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 40754,
+        "pop_zipf": 2.72,
+        "polysemy": 3,
+        "brys": 2.59,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 32231,
+        "pop_zipf": 2.92,
+        "polysemy": 4,
+        "brys": 2.46,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 26,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "nervousness",
+      "B": "nervousness",
+      "C": "aimlessly",
+      "A_metrics": {
+        "len": 11,
+        "pop_rank": 27580,
+        "pop_zipf": 3.04,
+        "polysemy": 3,
+        "brys": 2.31,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 11,
+        "pop_rank": 27580,
+        "pop_zipf": 3.04,
+        "polysemy": 3,
+        "brys": 2.31,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 36033,
+        "pop_zipf": 2.82,
+        "polysemy": 1,
+        "brys": 1.86,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 27,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "periodically",
+      "B": "periodically",
+      "C": "optimal",
+      "A_metrics": {
+        "len": 12,
+        "pop_rank": 13212,
+        "pop_zipf": 3.59,
+        "polysemy": 1,
+        "brys": 1.9,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "B_metrics": {
+        "len": 12,
+        "pop_rank": 13212,
+        "pop_zipf": 3.59,
+        "polysemy": 1,
+        "brys": 1.9,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 7824,
+        "pop_zipf": 3.94,
+        "polysemy": 1,
+        "brys": 1.76,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 28,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "canvass",
+      "B": "canvass",
+      "C": "rendering",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 36475,
+        "pop_zipf": 2.81,
+        "polysemy": 20,
+        "brys": 4.08,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 36475,
+        "pop_zipf": 2.81,
+        "polysemy": 20,
+        "brys": 4.08,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 9809,
+        "pop_zipf": 3.79,
+        "polysemy": 20,
+        "brys": 2.47,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 29,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "helpline",
+      "B": "helpline",
+      "C": "breakout",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 32434,
+        "pop_zipf": 2.91,
+        "polysemy": 0,
+        "brys": 3.23,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 32434,
+        "pop_zipf": 2.91,
+        "polysemy": 0,
+        "brys": 3.23,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 15116,
+        "pop_zipf": 3.49,
+        "polysemy": 1,
+        "brys": 3.41,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 30,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "millennial",
+      "B": "millennial",
+      "C": "babe",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 18894,
+        "pop_zipf": 3.33,
+        "polysemy": 1,
+        "brys": 1.96,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 18894,
+        "pop_zipf": 3.33,
+        "polysemy": 1,
+        "brys": 1.96,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 5938,
+        "pop_zipf": 4.11,
+        "polysemy": 2,
+        "brys": 3.67,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 31,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "lot",
+      "B": "lot",
+      "C": "evolve",
+      "A_metrics": {
+        "len": 3,
+        "pop_rank": 219,
+        "pop_zipf": 5.61,
+        "polysemy": 9,
+        "brys": 3.7,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 3,
+        "pop_rank": 219,
+        "pop_zipf": 5.61,
+        "polysemy": 9,
+        "brys": 3.7,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 9604,
+        "pop_zipf": 3.8,
+        "polysemy": 3,
+        "brys": 1.96,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 32,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "put",
+      "B": "put",
+      "C": "obsolete",
+      "A_metrics": {
+        "len": 3,
+        "pop_rank": 209,
+        "pop_zipf": 5.66,
+        "polysemy": 10,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 3,
+        "pop_rank": 209,
+        "pop_zipf": 5.66,
+        "polysemy": 10,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 12115,
+        "pop_zipf": 3.65,
+        "polysemy": 1,
+        "brys": 2.1,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 33,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "flaring",
+      "B": "flaring",
+      "C": "clinically",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 39814,
+        "pop_zipf": 2.74,
+        "polysemy": 5,
+        "brys": 3.12,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 39814,
+        "pop_zipf": 2.74,
+        "polysemy": 5,
+        "brys": 3.12,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 17320,
+        "pop_zipf": 3.39,
+        "polysemy": 1,
+        "brys": 2.18,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 34,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "stinging",
+      "B": "stinging",
+      "C": "similarly",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 26617,
+        "pop_zipf": 3.07,
+        "polysemy": 7,
+        "brys": 4.04,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 26617,
+        "pop_zipf": 3.07,
+        "polysemy": 7,
+        "brys": 4.04,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 4334,
+        "pop_zipf": 4.3,
+        "polysemy": 1,
+        "brys": 2.83,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 35,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "teeny",
+      "B": "teeny",
+      "C": "wrongly",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 27311,
+        "pop_zipf": 3.05,
+        "polysemy": 1,
+        "brys": 3.17,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 27311,
+        "pop_zipf": 3.05,
+        "polysemy": 1,
+        "brys": 3.17,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 15943,
+        "pop_zipf": 3.46,
+        "polysemy": 2,
+        "brys": 1.83,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 36,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "intervene",
+      "B": "intervene",
+      "C": "connection",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 12080,
+        "pop_zipf": 3.65,
+        "polysemy": 3,
+        "brys": 2.57,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 12080,
+        "pop_zipf": 3.65,
+        "polysemy": 3,
+        "brys": 2.57,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 1788,
+        "pop_zipf": 4.76,
+        "polysemy": 9,
+        "brys": 3.0,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 37,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "sizeable",
+      "B": "sizeable",
+      "C": "disastrous",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 21658,
+        "pop_zipf": 3.23,
+        "polysemy": 2,
+        "brys": 2.7,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 21658,
+        "pop_zipf": 3.23,
+        "polysemy": 2,
+        "brys": 2.7,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 11532,
+        "pop_zipf": 3.68,
+        "polysemy": 1,
+        "brys": 2.32,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 38,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "brisket",
+      "B": "brisket",
+      "C": "cannibal",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 33966,
+        "pop_zipf": 2.87,
+        "polysemy": 1,
+        "brys": 4.61,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 33966,
+        "pop_zipf": 2.87,
+        "polysemy": 1,
+        "brys": 4.61,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 27083,
+        "pop_zipf": 3.05,
+        "polysemy": 1,
+        "brys": 3.82,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 39,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "dumbbell",
+      "B": "dumbbell",
+      "C": "wishing",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 45344,
+        "pop_zipf": 2.63,
+        "polysemy": 2,
+        "brys": 4.69,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 45344,
+        "pop_zipf": 2.63,
+        "polysemy": 2,
+        "brys": 4.69,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 7874,
+        "pop_zipf": 3.94,
+        "polysemy": 7,
+        "brys": 2.04,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 40,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "crucial",
+      "B": "crucial",
+      "C": "hydrothermal",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 4438,
+        "pop_zipf": 4.28,
+        "polysemy": 3,
+        "brys": 2.08,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 4438,
+        "pop_zipf": 4.28,
+        "polysemy": 3,
+        "brys": 2.08,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 12,
+        "pop_rank": 42189,
+        "pop_zipf": 2.69,
+        "polysemy": 0,
+        "brys": 2.59,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 41,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "granny",
+      "B": "granny",
+      "C": "rig",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 12784,
+        "pop_zipf": 3.61,
+        "polysemy": 3,
+        "brys": 4.24,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 12784,
+        "pop_zipf": 3.61,
+        "polysemy": 3,
+        "brys": 4.24,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 3,
+        "pop_rank": 8850,
+        "pop_zipf": 3.86,
+        "polysemy": 11,
+        "brys": 4.0,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 42,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "screenwriting",
+      "B": "screenwriting",
+      "C": "outpatient",
+      "A_metrics": {
+        "len": 13,
+        "pop_rank": 37216,
+        "pop_zipf": 2.8,
+        "polysemy": 0,
+        "brys": 3.78,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 13,
+        "pop_rank": 37216,
+        "pop_zipf": 2.8,
+        "polysemy": 0,
+        "brys": 3.78,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 19157,
+        "pop_zipf": 3.32,
+        "polysemy": 1,
+        "brys": 3.24,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 43,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "terribly",
+      "B": "terribly",
+      "C": "fate",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 8216,
+        "pop_zipf": 3.91,
+        "polysemy": 2,
+        "brys": 1.21,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 8216,
+        "pop_zipf": 3.91,
+        "polysemy": 2,
+        "brys": 1.21,
+        "brys_label": "neither",
+        "pos": "ADV"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 3880,
+        "pop_zipf": 4.36,
+        "polysemy": 4,
+        "brys": 1.53,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 44,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "sprung",
+      "B": "sprung",
+      "C": "destroy",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 17036,
+        "pop_zipf": 3.41,
+        "polysemy": 5,
+        "brys": 3.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 17036,
+        "pop_zipf": 3.41,
+        "polysemy": 5,
+        "brys": 3.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 2887,
+        "pop_zipf": 4.52,
+        "polysemy": 4,
+        "brys": 3.08,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 45,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "strongman",
+      "B": "strongman",
+      "C": "treatable",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 33862,
+        "pop_zipf": 2.88,
+        "polysemy": 2,
+        "brys": 3.96,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 33862,
+        "pop_zipf": 2.88,
+        "polysemy": 2,
+        "brys": 3.96,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 35121,
+        "pop_zipf": 2.85,
+        "polysemy": 0,
+        "brys": 2.55,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 46,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "relaxed",
+      "B": "relaxed",
+      "C": "gulf",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 7050,
+        "pop_zipf": 4.01,
+        "polysemy": 9,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 7050,
+        "pop_zipf": 4.01,
+        "polysemy": 9,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 4454,
+        "pop_zipf": 4.28,
+        "polysemy": 3,
+        "brys": 4.08,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 47,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "stylistic",
+      "B": "stylistic",
+      "C": "smile",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 24329,
+        "pop_zipf": 3.14,
+        "polysemy": 1,
+        "brys": 1.89,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 24329,
+        "pop_zipf": 3.14,
+        "polysemy": 1,
+        "brys": 1.89,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 5,
+        "pop_rank": 2316,
+        "pop_zipf": 4.64,
+        "polysemy": 3,
+        "brys": 4.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 48,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "stifle",
+      "B": "stifle",
+      "C": "gauntlet",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 29104,
+        "pop_zipf": 3.0,
+        "polysemy": 5,
+        "brys": 2.59,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 29104,
+        "pop_zipf": 3.0,
+        "polysemy": 5,
+        "brys": 2.59,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 24163,
+        "pop_zipf": 3.14,
+        "polysemy": 4,
+        "brys": 4.43,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 49,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "mutiny",
+      "B": "mutiny",
+      "C": "formula",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 20438,
+        "pop_zipf": 3.27,
+        "polysemy": 2,
+        "brys": 2.24,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 20438,
+        "pop_zipf": 3.27,
+        "polysemy": 2,
+        "brys": 2.24,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 3301,
+        "pop_zipf": 4.45,
+        "polysemy": 7,
+        "brys": 4.11,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 50,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "taste",
+      "B": "taste",
+      "C": "rebound",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 1924,
+        "pop_zipf": 4.73,
+        "polysemy": 13,
+        "brys": 4.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 1924,
+        "pop_zipf": 4.73,
+        "polysemy": 13,
+        "brys": 4.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 14395,
+        "pop_zipf": 3.53,
+        "polysemy": 5,
+        "brys": 2.69,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 51,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "life",
+      "B": "life",
+      "C": "resolve",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 134,
+        "pop_zipf": 5.89,
+        "polysemy": 14,
+        "brys": 2.69,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 134,
+        "pop_zipf": 5.89,
+        "polysemy": 14,
+        "brys": 2.69,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 5449,
+        "pop_zipf": 4.17,
+        "polysemy": 9,
+        "brys": 1.96,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 52,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "path",
+      "B": "path",
+      "C": "blaster",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 2006,
+        "pop_zipf": 4.71,
+        "polysemy": 4,
+        "brys": 4.41,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 2006,
+        "pop_zipf": 4.71,
+        "polysemy": 4,
+        "brys": 4.41,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 26015,
+        "pop_zipf": 3.08,
+        "polysemy": 1,
+        "brys": 3.67,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 53,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "rectified",
+      "B": "rectified",
+      "C": "morale",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 32148,
+        "pop_zipf": 2.92,
+        "polysemy": 7,
+        "brys": 1.87,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 32148,
+        "pop_zipf": 2.92,
+        "polysemy": 7,
+        "brys": 1.87,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 11917,
+        "pop_zipf": 3.66,
+        "polysemy": 2,
+        "brys": 1.85,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 54,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "interracial",
+      "B": "interracial",
+      "C": "bedtime",
+      "A_metrics": {
+        "len": 11,
+        "pop_rank": 17867,
+        "pop_zipf": 3.37,
+        "polysemy": 2,
+        "brys": 2.93,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 11,
+        "pop_rank": 17867,
+        "pop_zipf": 3.37,
+        "polysemy": 2,
+        "brys": 2.93,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 13668,
+        "pop_zipf": 3.56,
+        "polysemy": 1,
+        "brys": 2.9,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 55,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "prepaid",
+      "B": "prepaid",
+      "C": "conceptualize",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 19671,
+        "pop_zipf": 3.3,
+        "polysemy": 2,
+        "brys": 2.21,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 19671,
+        "pop_zipf": 3.3,
+        "polysemy": 2,
+        "brys": 2.21,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 13,
+        "pop_rank": 47540,
+        "pop_zipf": 2.59,
+        "polysemy": 1,
+        "brys": 1.85,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 56,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "hierarchical",
+      "B": "hierarchical",
+      "C": "folk",
+      "A_metrics": {
+        "len": 12,
+        "pop_rank": 20664,
+        "pop_zipf": 3.26,
+        "polysemy": 1,
+        "brys": 2.22,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 12,
+        "pop_rank": 20664,
+        "pop_zipf": 3.26,
+        "polysemy": 1,
+        "brys": 2.22,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 4947,
+        "pop_zipf": 4.22,
+        "polysemy": 4,
+        "brys": 3.57,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 57,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "diss",
+      "B": "diss",
+      "C": "unlike",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 24144,
+        "pop_zipf": 3.14,
+        "polysemy": 2,
+        "brys": 2.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 24144,
+        "pop_zipf": 3.14,
+        "polysemy": 2,
+        "brys": 2.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 2652,
+        "pop_zipf": 4.57,
+        "polysemy": 2,
+        "brys": 2.67,
+        "brys_label": "neither",
+        "pos": "ADP"
+      }
+    },
+    {
+      "triple_id": 58,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "sizes",
+      "B": "sizes",
+      "C": "membrane",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 5365,
+        "pop_zipf": 4.18,
+        "polysemy": 8,
+        "brys": 3.62,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 5365,
+        "pop_zipf": 4.18,
+        "polysemy": 8,
+        "brys": 3.62,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 9362,
+        "pop_zipf": 3.82,
+        "polysemy": 2,
+        "brys": 3.97,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 59,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "defunct",
+      "B": "defunct",
+      "C": "mural",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 20088,
+        "pop_zipf": 3.28,
+        "polysemy": 2,
+        "brys": 2.16,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 20088,
+        "pop_zipf": 3.28,
+        "polysemy": 2,
+        "brys": 2.16,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 5,
+        "pop_rank": 15221,
+        "pop_zipf": 3.49,
+        "polysemy": 2,
+        "brys": 4.66,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 60,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "grappling",
+      "B": "grappling",
+      "C": "devious",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 21813,
+        "pop_zipf": 3.22,
+        "polysemy": 4,
+        "brys": 3.12,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 21813,
+        "pop_zipf": 3.22,
+        "polysemy": 4,
+        "brys": 3.12,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 27807,
+        "pop_zipf": 3.03,
+        "polysemy": 3,
+        "brys": 2.18,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 61,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "starving",
+      "B": "starving",
+      "C": "frustrating",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 9824,
+        "pop_zipf": 3.79,
+        "polysemy": 7,
+        "brys": 2.89,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 9824,
+        "pop_zipf": 3.79,
+        "polysemy": 7,
+        "brys": 2.89,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 11,
+        "pop_rank": 7450,
+        "pop_zipf": 3.97,
+        "polysemy": 4,
+        "brys": 1.81,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 62,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "inflection",
+      "B": "inflection",
+      "C": "chair",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 33686,
+        "pop_zipf": 2.88,
+        "polysemy": 4,
+        "brys": 1.79,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 33686,
+        "pop_zipf": 2.88,
+        "polysemy": 4,
+        "brys": 1.79,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 5,
+        "pop_rank": 2067,
+        "pop_zipf": 4.69,
+        "polysemy": 7,
+        "brys": 4.58,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 63,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "detergent",
+      "B": "detergent",
+      "C": "fluoride",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 22350,
+        "pop_zipf": 3.2,
+        "polysemy": 3,
+        "brys": 4.77,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 22350,
+        "pop_zipf": 3.2,
+        "polysemy": 3,
+        "brys": 4.77,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 20929,
+        "pop_zipf": 3.25,
+        "polysemy": 1,
+        "brys": 4.37,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 64,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "exclusive",
+      "B": "exclusive",
+      "C": "temporarily",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 2675,
+        "pop_zipf": 4.56,
+        "polysemy": 4,
+        "brys": 2.11,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 2675,
+        "pop_zipf": 4.56,
+        "polysemy": 4,
+        "brys": 2.11,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 11,
+        "pop_rank": 6529,
+        "pop_zipf": 4.06,
+        "polysemy": 1,
+        "brys": 2.04,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 65,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "flux",
+      "B": "flux",
+      "C": "figurine",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 13518,
+        "pop_zipf": 3.57,
+        "polysemy": 11,
+        "brys": 2.54,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 13518,
+        "pop_zipf": 3.57,
+        "polysemy": 11,
+        "brys": 2.54,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 34889,
+        "pop_zipf": 2.85,
+        "polysemy": 1,
+        "brys": 4.86,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 66,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "absenteeism",
+      "B": "absenteeism",
+      "C": "newspaper",
+      "A_metrics": {
+        "len": 11,
+        "pop_rank": 48579,
+        "pop_zipf": 2.57,
+        "polysemy": 1,
+        "brys": 2.35,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 11,
+        "pop_rank": 48579,
+        "pop_zipf": 2.57,
+        "polysemy": 1,
+        "brys": 2.35,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 2492,
+        "pop_zipf": 4.6,
+        "polysemy": 4,
+        "brys": 4.82,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 67,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "urge",
+      "B": "urge",
+      "C": "leak",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 6015,
+        "pop_zipf": 4.11,
+        "polysemy": 5,
+        "brys": 1.93,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 6015,
+        "pop_zipf": 4.11,
+        "polysemy": 5,
+        "brys": 1.93,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 6160,
+        "pop_zipf": 4.09,
+        "polysemy": 9,
+        "brys": 4.28,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 68,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "pretended",
+      "B": "pretended",
+      "C": "cerebellum",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 13588,
+        "pop_zipf": 3.57,
+        "polysemy": 7,
+        "brys": 1.65,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 13588,
+        "pop_zipf": 3.57,
+        "polysemy": 7,
+        "brys": 1.65,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 43077,
+        "pop_zipf": 2.67,
+        "polysemy": 1,
+        "brys": 4.57,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 69,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "phantom",
+      "B": "phantom",
+      "C": "councilor",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 9936,
+        "pop_zipf": 3.78,
+        "polysemy": 3,
+        "brys": 2.43,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 9936,
+        "pop_zipf": 3.78,
+        "polysemy": 3,
+        "brys": 2.43,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 34841,
+        "pop_zipf": 2.85,
+        "polysemy": 0,
+        "brys": 3.78,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 70,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "rabies",
+      "B": "rabies",
+      "C": "hiss",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 21323,
+        "pop_zipf": 3.24,
+        "polysemy": 1,
+        "brys": 3.83,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 21323,
+        "pop_zipf": 3.24,
+        "polysemy": 1,
+        "brys": 3.83,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 27171,
+        "pop_zipf": 3.05,
+        "polysemy": 6,
+        "brys": 3.6,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 71,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "pull",
+      "B": "pull",
+      "C": "horse",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 1611,
+        "pop_zipf": 4.82,
+        "polysemy": 24,
+        "brys": 3.97,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 1611,
+        "pop_zipf": 4.82,
+        "polysemy": 24,
+        "brys": 3.97,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 5,
+        "pop_rank": 1793,
+        "pop_zipf": 4.76,
+        "polysemy": 6,
+        "brys": 5.0,
+        "brys_label": "concrete",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 72,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "livery",
+      "B": "livery",
+      "C": "anemia",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 25457,
+        "pop_zipf": 3.1,
+        "polysemy": 4,
+        "brys": 3.87,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 25457,
+        "pop_zipf": 3.1,
+        "polysemy": 4,
+        "brys": 3.87,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 23169,
+        "pop_zipf": 3.17,
+        "polysemy": 3,
+        "brys": 3.25,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 73,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "pantyhose",
+      "B": "pantyhose",
+      "C": "dutifully",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 35450,
+        "pop_zipf": 2.84,
+        "polysemy": 1,
+        "brys": 5.0,
+        "brys_label": "concrete",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 35450,
+        "pop_zipf": 2.84,
+        "polysemy": 1,
+        "brys": 5.0,
+        "brys_label": "concrete",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 43125,
+        "pop_zipf": 2.67,
+        "polysemy": 1,
+        "brys": 1.45,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 74,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "fathom",
+      "B": "fathom",
+      "C": "guidebook",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 20922,
+        "pop_zipf": 3.25,
+        "polysemy": 4,
+        "brys": 2.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 20922,
+        "pop_zipf": 3.25,
+        "polysemy": 4,
+        "brys": 2.07,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 30818,
+        "pop_zipf": 2.95,
+        "polysemy": 1,
+        "brys": 4.83,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 75,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "undead",
+      "B": "undead",
+      "C": "pellet",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 20528,
+        "pop_zipf": 3.27,
+        "polysemy": 0,
+        "brys": 3.31,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 20528,
+        "pop_zipf": 3.27,
+        "polysemy": 0,
+        "brys": 3.31,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 25525,
+        "pop_zipf": 3.1,
+        "polysemy": 2,
+        "brys": 4.56,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 76,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "turtle",
+      "B": "turtle",
+      "C": "retainer",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 8223,
+        "pop_zipf": 3.91,
+        "polysemy": 4,
+        "brys": 5.0,
+        "brys_label": "concrete",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 8223,
+        "pop_zipf": 3.91,
+        "polysemy": 4,
+        "brys": 5.0,
+        "brys_label": "concrete",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 24886,
+        "pop_zipf": 3.12,
+        "polysemy": 3,
+        "brys": 4.0,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 77,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "refuse",
+      "B": "refuse",
+      "C": "barn",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 3718,
+        "pop_zipf": 4.39,
+        "polysemy": 7,
+        "brys": 3.04,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 3718,
+        "pop_zipf": 4.39,
+        "polysemy": 7,
+        "brys": 3.04,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 7198,
+        "pop_zipf": 3.99,
+        "polysemy": 2,
+        "brys": 4.79,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 78,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "composite",
+      "B": "composite",
+      "C": "swimsuit",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 7779,
+        "pop_zipf": 3.94,
+        "polysemy": 4,
+        "brys": 3.29,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 7779,
+        "pop_zipf": 3.94,
+        "polysemy": 4,
+        "brys": 3.29,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 20241,
+        "pop_zipf": 3.28,
+        "polysemy": 1,
+        "brys": 4.78,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 79,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "buckled",
+      "B": "buckled",
+      "C": "affecting",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 34412,
+        "pop_zipf": 2.86,
+        "polysemy": 3,
+        "brys": 3.76,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 34412,
+        "pop_zipf": 2.86,
+        "polysemy": 3,
+        "brys": 3.76,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 6322,
+        "pop_zipf": 4.07,
+        "polysemy": 6,
+        "brys": 1.75,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 80,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "capitulation",
+      "B": "capitulation",
+      "C": "asleep",
+      "A_metrics": {
+        "len": 12,
+        "pop_rank": 32720,
+        "pop_zipf": 2.9,
+        "polysemy": 3,
+        "brys": 1.78,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 12,
+        "pop_rank": 32720,
+        "pop_zipf": 2.9,
+        "polysemy": 3,
+        "brys": 1.78,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 3860,
+        "pop_zipf": 4.36,
+        "polysemy": 5,
+        "brys": 3.71,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 81,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "bode",
+      "B": "bode",
+      "C": "staffing",
+      "A_metrics": {
+        "len": 4,
+        "pop_rank": 27746,
+        "pop_zipf": 3.03,
+        "polysemy": 1,
+        "brys": 1.88,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 4,
+        "pop_rank": 27746,
+        "pop_zipf": 3.03,
+        "polysemy": 1,
+        "brys": 1.88,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 14422,
+        "pop_zipf": 3.53,
+        "polysemy": 2,
+        "brys": 2.62,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 82,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "instrumentation",
+      "B": "instrumentation",
+      "C": "yeast",
+      "A_metrics": {
+        "len": 15,
+        "pop_rank": 15840,
+        "pop_zipf": 3.46,
+        "polysemy": 4,
+        "brys": 2.53,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 15,
+        "pop_rank": 15840,
+        "pop_zipf": 3.46,
+        "polysemy": 4,
+        "brys": 2.53,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 5,
+        "pop_rank": 11824,
+        "pop_zipf": 3.67,
+        "polysemy": 2,
+        "brys": 4.72,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 83,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "asteroid",
+      "B": "asteroid",
+      "C": "playmate",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 13663,
+        "pop_zipf": 3.56,
+        "polysemy": 2,
+        "brys": 4.86,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 13663,
+        "pop_zipf": 3.56,
+        "polysemy": 2,
+        "brys": 4.86,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 36287,
+        "pop_zipf": 2.82,
+        "polysemy": 1,
+        "brys": 3.79,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 84,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "propriety",
+      "B": "propriety",
+      "C": "sewage",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 37643,
+        "pop_zipf": 2.79,
+        "polysemy": 1,
+        "brys": 2.19,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 37643,
+        "pop_zipf": 2.79,
+        "polysemy": 1,
+        "brys": 2.19,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 14017,
+        "pop_zipf": 3.55,
+        "polysemy": 1,
+        "brys": 4.52,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 85,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "usurper",
+      "B": "usurper",
+      "C": "stupidly",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 47996,
+        "pop_zipf": 2.59,
+        "polysemy": 1,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 47996,
+        "pop_zipf": 2.59,
+        "polysemy": 1,
+        "brys": 2.5,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 29849,
+        "pop_zipf": 2.98,
+        "polysemy": 1,
+        "brys": 1.4,
+        "brys_label": "neither",
+        "pos": "ADV"
+      }
+    },
+    {
+      "triple_id": 86,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "lol",
+      "B": "lol",
+      "C": "spy",
+      "A_metrics": {
+        "len": 3,
+        "pop_rank": 948,
+        "pop_zipf": 5.05,
+        "polysemy": 0,
+        "brys": 2.92,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 3,
+        "pop_rank": 948,
+        "pop_zipf": 5.05,
+        "polysemy": 0,
+        "brys": 2.92,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 3,
+        "pop_rank": 4799,
+        "pop_zipf": 4.24,
+        "polysemy": 6,
+        "brys": 4.14,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 87,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "teenager",
+      "B": "teenager",
+      "C": "horseback",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 6191,
+        "pop_zipf": 4.09,
+        "polysemy": 1,
+        "brys": 4.34,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 6191,
+        "pop_zipf": 4.09,
+        "polysemy": 1,
+        "brys": 4.34,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 17384,
+        "pop_zipf": 3.39,
+        "polysemy": 3,
+        "brys": 4.41,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 88,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "rampant",
+      "B": "rampant",
+      "C": "steamer",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 13998,
+        "pop_zipf": 3.55,
+        "polysemy": 3,
+        "brys": 2.25,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 13998,
+        "pop_zipf": 3.55,
+        "polysemy": 3,
+        "brys": 2.25,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 18195,
+        "pop_zipf": 3.36,
+        "polysemy": 5,
+        "brys": 4.11,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 89,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "clerk",
+      "B": "clerk",
+      "C": "watched",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 7108,
+        "pop_zipf": 4.0,
+        "polysemy": 3,
+        "brys": 4.28,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 7108,
+        "pop_zipf": 4.0,
+        "polysemy": 3,
+        "brys": 4.28,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 1975,
+        "pop_zipf": 4.72,
+        "polysemy": 7,
+        "brys": 3.14,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 90,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "comics",
+      "B": "comics",
+      "C": "resistant",
+      "A_metrics": {
+        "len": 6,
+        "pop_rank": 5402,
+        "pop_zipf": 4.17,
+        "polysemy": 2,
+        "brys": 4.77,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 6,
+        "pop_rank": 5402,
+        "pop_zipf": 4.17,
+        "polysemy": 2,
+        "brys": 4.77,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 9,
+        "pop_rank": 7277,
+        "pop_zipf": 3.99,
+        "polysemy": 5,
+        "brys": 1.83,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 91,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "swarming",
+      "B": "swarming",
+      "C": "erode",
+      "A_metrics": {
+        "len": 8,
+        "pop_rank": 29113,
+        "pop_zipf": 3.0,
+        "polysemy": 2,
+        "brys": 3.0,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 8,
+        "pop_rank": 29113,
+        "pop_zipf": 3.0,
+        "polysemy": 2,
+        "brys": 3.0,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 5,
+        "pop_rank": 27829,
+        "pop_zipf": 3.03,
+        "polysemy": 2,
+        "brys": 3.24,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 92,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "multiplicity",
+      "B": "multiplicity",
+      "C": "likelihood",
+      "A_metrics": {
+        "len": 12,
+        "pop_rank": 37107,
+        "pop_zipf": 2.8,
+        "polysemy": 2,
+        "brys": 2.21,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 12,
+        "pop_rank": 37107,
+        "pop_zipf": 2.8,
+        "polysemy": 2,
+        "brys": 2.21,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 8167,
+        "pop_zipf": 3.91,
+        "polysemy": 1,
+        "brys": 1.73,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 93,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "modem",
+      "B": "modem",
+      "C": "chiffon",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 17186,
+        "pop_zipf": 3.4,
+        "polysemy": 1,
+        "brys": 4.29,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 17186,
+        "pop_zipf": 3.4,
+        "polysemy": 1,
+        "brys": 4.29,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 37377,
+        "pop_zipf": 2.79,
+        "polysemy": 1,
+        "brys": 4.45,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 94,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "interconnect",
+      "B": "interconnect",
+      "C": "drummer",
+      "A_metrics": {
+        "len": 12,
+        "pop_rank": 41698,
+        "pop_zipf": 2.7,
+        "polysemy": 2,
+        "brys": 2.81,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 12,
+        "pop_rank": 41698,
+        "pop_zipf": 2.7,
+        "polysemy": 2,
+        "brys": 2.81,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 11535,
+        "pop_zipf": 3.68,
+        "polysemy": 1,
+        "brys": 4.44,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 95,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "loathsome",
+      "B": "loathsome",
+      "C": "social",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 41230,
+        "pop_zipf": 2.71,
+        "polysemy": 2,
+        "brys": 2.19,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 41230,
+        "pop_zipf": 2.71,
+        "polysemy": 2,
+        "brys": 2.19,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 367,
+        "pop_zipf": 5.42,
+        "polysemy": 7,
+        "brys": 2.27,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      }
+    },
+    {
+      "triple_id": 96,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "undersized",
+      "B": "undersized",
+      "C": "incarceration",
+      "A_metrics": {
+        "len": 10,
+        "pop_rank": 47984,
+        "pop_zipf": 2.59,
+        "polysemy": 1,
+        "brys": 2.65,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 10,
+        "pop_rank": 47984,
+        "pop_zipf": 2.59,
+        "polysemy": 1,
+        "brys": 2.65,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 13,
+        "pop_rank": 18107,
+        "pop_zipf": 3.36,
+        "polysemy": 1,
+        "brys": 3.28,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 97,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "count",
+      "B": "count",
+      "C": "dangling",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 1557,
+        "pop_zipf": 4.83,
+        "polysemy": 12,
+        "brys": 3.0,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 1557,
+        "pop_zipf": 4.83,
+        "polysemy": 12,
+        "brys": 3.0,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 8,
+        "pop_rank": 19806,
+        "pop_zipf": 3.29,
+        "polysemy": 3,
+        "brys": 3.52,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 98,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "treat",
+      "B": "treat",
+      "C": "dissolving",
+      "A_metrics": {
+        "len": 5,
+        "pop_rank": 1844,
+        "pop_zipf": 4.75,
+        "polysemy": 10,
+        "brys": 3.79,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 5,
+        "pop_rank": 1844,
+        "pop_zipf": 4.75,
+        "polysemy": 10,
+        "brys": 3.79,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 10,
+        "pop_rank": 26064,
+        "pop_zipf": 3.08,
+        "polysemy": 12,
+        "brys": 3.22,
+        "brys_label": "neither",
+        "pos": "VERB"
+      }
+    },
+    {
+      "triple_id": 99,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "weathered",
+      "B": "weathered",
+      "C": "bearer",
+      "A_metrics": {
+        "len": 9,
+        "pop_rank": 24054,
+        "pop_zipf": 3.15,
+        "polysemy": 5,
+        "brys": 3.07,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "B_metrics": {
+        "len": 9,
+        "pop_rank": 24054,
+        "pop_zipf": 3.15,
+        "polysemy": 5,
+        "brys": 3.07,
+        "brys_label": "neither",
+        "pos": "VERB"
+      },
+      "C_metrics": {
+        "len": 6,
+        "pop_rank": 16413,
+        "pop_zipf": 3.43,
+        "polysemy": 4,
+        "brys": 3.58,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    },
+    {
+      "triple_id": 100,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "control",
+      "B": "control",
+      "C": "join",
+      "A_metrics": {
+        "len": 7,
+        "pop_rank": 384,
+        "pop_zipf": 5.4,
+        "polysemy": 19,
+        "brys": 1.93,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "B_metrics": {
+        "len": 7,
+        "pop_rank": 384,
+        "pop_zipf": 5.4,
+        "polysemy": 19,
+        "brys": 1.93,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      },
+      "C_metrics": {
+        "len": 4,
+        "pop_rank": 1085,
+        "pop_zipf": 5.0,
+        "polysemy": 7,
+        "brys": 2.86,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    }
+  ]
+}
