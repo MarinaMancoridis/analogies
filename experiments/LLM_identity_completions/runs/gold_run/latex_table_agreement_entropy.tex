@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.08}
+\caption{Three-iteration agreement and entropy per model. $H$ is answer entropy (bits) across the three repeated runs per triple. Standard errors are in parentheses.}
+\label{tab:identity_agreement_entropy}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & $P(agree)$ & $H$ & $P(agree\mid any\ wrong)$ & $H\mid any\ wrong$ & $P(agree\mid all\ wrong)$ \\
+\midrule
+Claude-Sonnet-4.5 & 0.91 (0.03) & 0.083 (0.03) & 0.25 (0.1) & 0.69 (0.1) & 1.0 (0) \\
+Claude-Opus-4.6 & 0.51 (0.05) & 0.53 (0.06) & 0.14 (0.05) & 0.93 (0.06) & 0.50 (0.1) \\
+Gemini-3-Flash & 0.87 (0.03) & 0.13 (0.03) & 0.32 (0.1) & 0.66 (0.1) & 0.86 (0.1) \\
+Gemini-3.1-Flash-Lite & 0.87 (0.03) & 0.13 (0.03) & 0.28 (0.1) & 0.70 (0.1) & 0.71 (0.2) \\
+GPT-4o & 0.96 (0.02) & 0.037 (0.02) & 0.56 (0.2) & 0.41 (0.2) & 0.83 (0.2) \\
+GPT-4.1 & 0.92 (0.03) & 0.073 (0.03) & 0.50 (0.1) & 0.46 (0.1) & 0.89 (0.1) \\
+GPT-5.4-Mini & 0.78 (0.04) & 0.22 (0.04) & 0.15 (0.07) & 0.85 (0.08) & 0.44 (0.2) \\
+DeepSeek-V3 & 0.75 (0.04) & 0.25 (0.04) & 0.29 (0.08) & 0.71 (0.08) & 0.77 (0.1) \\
+DeepSeek-V3.2 & 0.71 (0.05) & 0.30 (0.05) & 0.15 (0.06) & 0.88 (0.08) & 0.83 (0.2) \\
+Llama-3.3 & 0.55 (0.05) & 0.51 (0.06) & 0.39 (0.06) & 0.68 (0.07) & 0.57 (0.07) \\
+\bottomrule
+\end{tabular}
+\end{table}

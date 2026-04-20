@@ -1,0 +1,8 @@
+{
+  "model": "google/gemini-3-flash-preview",
+  "n": 300,
+  "hits": 263,
+  "errors": 0,
+  "success_rate": 0.8766666666666667,
+  "success_fraction": "263/300"
+}

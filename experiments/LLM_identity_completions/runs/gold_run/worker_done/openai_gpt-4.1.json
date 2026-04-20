@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-4.1",
+  "n": 300,
+  "hits": 265,
+  "errors": 0,
+  "success_rate": 0.8833333333333333,
+  "success_fraction": "265/300"
+}

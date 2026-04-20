@@ -1,0 +1,8 @@
+{
+  "model": "gpt-4o",
+  "n": 10,
+  "b_nonempty": 10,
+  "d_nonempty": 10,
+  "errors": 0,
+  "d_nonempty_rate": 1.0
+}

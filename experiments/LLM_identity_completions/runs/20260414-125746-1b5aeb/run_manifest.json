@@ -1,0 +1,62 @@
+{
+  "experiment_name": "LLM_identity_completions",
+  "created_at_utc": "2026-04-14T12:57:46.156682Z",
+  "run_mode": "smoke",
+  "seed": 12345,
+  "prompt_type": "colon",
+  "triples_source": "/Users/marinamancoridis/analogies/static_triples/identity/identity_triples.json",
+  "models": [
+    "meta-llama/llama-3.3-70b-instruct",
+    "gpt-4o",
+    "openai/gpt-4.1",
+    "openai/gpt-5.4-mini",
+    "google/gemini-3-flash-preview",
+    "google/gemini-3.1-flash-lite-preview",
+    "anthropic/claude-sonnet-4.5",
+    "anthropic/claude-opus-4.6",
+    "deepseek-ai/DeepSeek-V3",
+    "deepseek/deepseek-v3.2"
+  ],
+  "n_models": 10,
+  "n_triples": 1,
+  "iterations_per_model_per_triple": 1,
+  "expected_generations": 10,
+  "selected_triples": [
+    {
+      "triple_id": 54,
+      "analogy_type": "identity",
+      "relation": "A equals B",
+      "A": "interracial",
+      "B": "interracial",
+      "C": "bedtime",
+      "A_metrics": {
+        "len": 11,
+        "pop_rank": 17867,
+        "pop_zipf": 3.37,
+        "polysemy": 2,
+        "brys": 2.93,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "B_metrics": {
+        "len": 11,
+        "pop_rank": 17867,
+        "pop_zipf": 3.37,
+        "polysemy": 2,
+        "brys": 2.93,
+        "brys_label": "neither",
+        "pos": "ADJ"
+      },
+      "C_metrics": {
+        "len": 7,
+        "pop_rank": 13668,
+        "pop_zipf": 3.56,
+        "polysemy": 1,
+        "brys": 2.9,
+        "brys_label": "neither",
+        "pos": "NOUN"
+      }
+    }
+  ],
+  "sharded": true
+}

@@ -1,0 +1,8 @@
+{
+  "model": "anthropic/claude-sonnet-4.5",
+  "n": 300,
+  "hits": 279,
+  "errors": 0,
+  "success_rate": 0.93,
+  "success_fraction": "279/300"
+}
