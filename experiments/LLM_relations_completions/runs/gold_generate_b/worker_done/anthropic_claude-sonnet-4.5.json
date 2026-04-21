@@ -1,0 +1,8 @@
+{
+  "model": "anthropic/claude-sonnet-4.5",
+  "n": 2000,
+  "b_nonempty": 2000,
+  "d_nonempty": 2000,
+  "errors": 0,
+  "d_nonempty_rate": 1.0
+}

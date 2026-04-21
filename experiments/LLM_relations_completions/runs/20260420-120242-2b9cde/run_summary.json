@@ -1,0 +1,147 @@
+{
+  "experiment_name": "LLM_relations_completions",
+  "created_at_utc": "2026-04-20T12:02:42.578260Z",
+  "run_mode": "smoke",
+  "seed": 12345,
+  "prompt_type": "colon",
+  "relations_source_dir": "/Users/marinamancoridis/analogies/analogy_types/relational",
+  "triples_source": "/Users/marinamancoridis/analogies/static_triples/relational/relation_triples.json",
+  "models": [
+    "gpt-4o"
+  ],
+  "n_models": 1,
+  "n_relations": 10,
+  "triples_per_relation": 1,
+  "n_total_relation_triples": 10,
+  "expected_generations": 10,
+  "selected_triples": [
+    {
+      "triple_id": 1,
+      "relation_key": "attribute",
+      "relation_triple_id": 1,
+      "A": "sirens",
+      "C": "aluminum",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json",
+      "relation_name": "Attribute",
+      "relation_text": "B is a typical attribute or state of A. e.g., beggar:poor; coward:fear.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/attribute.py"
+    },
+    {
+      "triple_id": 51,
+      "relation_key": "case_relations",
+      "relation_triple_id": 1,
+      "A": "poisons",
+      "C": "broadcast",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json",
+      "relation_name": "Case Relations",
+      "relation_text": "Agent/Instrument or Action/Object: e.g., soldier:gun; plow:earth.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/case_relations.py"
+    },
+    {
+      "triple_id": 101,
+      "relation_key": "cause_purpose",
+      "relation_triple_id": 1,
+      "A": "blossom",
+      "C": "coin",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json",
+      "relation_name": "Cause-Purpose",
+      "relation_text": "B is the typical effect of A or an action taken in response to A. e.g., joke:laughter; hunger:eat.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/cause_purpose.py"
+    },
+    {
+      "triple_id": 151,
+      "relation_key": "class_inclusion",
+      "relation_triple_id": 1,
+      "A": "exams",
+      "C": "brand",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json",
+      "relation_name": "Class-Inclusion",
+      "relation_text": "B is a more specific instance of A (class → member/individual). e.g., flower:tulip.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/class_inclusion.py"
+    },
+    {
+      "triple_id": 201,
+      "relation_key": "contrast",
+      "relation_triple_id": 1,
+      "A": "intellectual",
+      "C": "functional",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json",
+      "relation_name": "Contrast",
+      "relation_text": "B contrasts with A (opposite or reverse). e.g., old:young; buy:sell.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/contrast.py"
+    },
+    {
+      "triple_id": 251,
+      "relation_key": "non_attribute",
+      "relation_triple_id": 1,
+      "A": "gibberish",
+      "C": "terror",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json",
+      "relation_name": "Non-Attribute",
+      "relation_text": "B is an attribute or state A typically lacks or is incompatible with. e.g., fire:cold; corpse:life.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/non_attribute.py"
+    },
+    {
+      "triple_id": 301,
+      "relation_key": "part_whole",
+      "relation_triple_id": 1,
+      "A": "midwest",
+      "C": "analysis",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json",
+      "relation_name": "Part-Whole",
+      "relation_text": "B is a constituent of A (component/part) or a typical member of collection A. e.g., car:engine; forest:tree.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/part_whole.py"
+    },
+    {
+      "triple_id": 351,
+      "relation_key": "reference",
+      "relation_triple_id": 1,
+      "A": "deal",
+      "C": "marker",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json",
+      "relation_name": "Reference",
+      "relation_text": "A is a sign or representation referring to B. e.g., siren:danger; diary:person.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/reference.py"
+    },
+    {
+      "triple_id": 401,
+      "relation_key": "similar",
+      "relation_triple_id": 1,
+      "A": "goodbye",
+      "C": "awful",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json",
+      "relation_name": "Similar",
+      "relation_text": "B is similar or nearly equivalent to A (synonym or close along a dimension). e.g., car:auto; simmer:boil.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/similar.py"
+    },
+    {
+      "triple_id": 451,
+      "relation_key": "space_time",
+      "relation_triple_id": 1,
+      "A": "kansas",
+      "C": "holiday",
+      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json",
+      "relation_name": "Space-Time",
+      "relation_text": "B is typically associated with location or time A. e.g., library:book; winter:snow.",
+      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/space_time.py"
+    }
+  ],
+  "sharded": false,
+  "per_model": {
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "n": 10,
+      "b_nonempty": 10,
+      "d_nonempty": 10,
+      "errors": 0,
+      "d_nonempty_rate": 1.0
+    }
+  },
+  "overall": {
+    "n": 10,
+    "b_nonempty": 10,
+    "d_nonempty": 10,
+    "errors": 0,
+    "d_nonempty_rate": 1.0
+  }
+}

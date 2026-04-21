@@ -43,9 +43,10 @@ MODELS: List[str] = [
 ]
 SMOKE_MODELS: List[str] = ["gpt-4o"]
 
-PROMPT_TYPE = "colon"
+PROMPT_TYPES = ["colon", "english", "one_shot", "few_shot"]
 DEFAULT_SMOKE_TRIPLES_PER_RELATION = 1
 DEFAULT_FULL_TRIPLES_PER_RELATION = 50
+DEFAULT_JUDGE_N = 1
 
 
 @dataclass
@@ -180,6 +181,64 @@ def _word_metrics_or_none(module: ModuleType, word: str) -> Any:
     return None
 
 
+def _run_relation_judge(module: ModuleType, model: str, a: str, b: str, c: str, d: str) -> Dict[str, Any]:
+    """Run relation-specific majority judge helper when available."""
+    judge_fn = getattr(module, "_majority_judge", None)
+    if not callable(judge_fn):
+        return {
+            "judge_prompt": "",
+            "judge_raws": [],
+            "judge_labels": [],
+            "judge_counts": {},
+            "judge_majority_label": None,
+            "judge_majority_correct": False,
+            "judge_n": 0,
+            "judge_error": "module missing _majority_judge",
+        }
+
+    try:
+        out = judge_fn(model=model, A=a, B=b, C=c, D=d, n_judges=DEFAULT_JUDGE_N)
+    except TypeError:
+        try:
+            out = judge_fn(model=model, A=a, B=b, C=c, D=d, n=DEFAULT_JUDGE_N)
+        except TypeError:
+            out = judge_fn(model, a, b, c, d, DEFAULT_JUDGE_N)
+    except Exception as e:
+        return {
+            "judge_prompt": "",
+            "judge_raws": [],
+            "judge_labels": [],
+            "judge_counts": {},
+            "judge_majority_label": None,
+            "judge_majority_correct": False,
+            "judge_n": 0,
+            "judge_error": str(e),
+        }
+
+    if not isinstance(out, dict):
+        return {
+            "judge_prompt": "",
+            "judge_raws": [],
+            "judge_labels": [],
+            "judge_counts": {},
+            "judge_majority_label": None,
+            "judge_majority_correct": False,
+            "judge_n": 0,
+            "judge_error": "judge output was not a dict",
+        }
+
+    return {
+        "judge_prompt": out.get("judge_prompt", ""),
+        "judge_raws": out.get("judge_raws", []) or [],
+        "judge_labels": out.get("judge_labels", []) or [],
+        "judge_counts": out.get("judge_counts", {}) or {},
+        "judge_majority_label": out.get("judge_majority_label"),
+        "judge_majority_correct": bool(out.get("judge_majority_correct", False)),
+        "judge_n": int(out.get("judge_n", 0) or 0),
+        "judge_error": "",
+    }
+
+
 def _load_precomputed_triples(path: Path) -> List[Dict[str, Any]]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     triples = payload.get("triples", [])
@@ -227,7 +286,7 @@ def _run_worker_for_model(
 ) -> Dict[str, Any]:
     trials_path = os.path.join(run_dir, "trials.ndjson")
     counts = Counts()
-    total_jobs = len(selected_triples)
+    total_jobs = len(selected_triples) * len(PROMPT_TYPES)
     _print_worker_progress(model, 0, total_jobs, 0)
 
     for triple in selected_triples:
@@ -235,54 +294,76 @@ def _run_worker_for_model(
         module = _load_relation_module(relation_key)
         a = str(triple["A"])
         c = str(triple["C"])
-        error = None
-        b = ""
-        d = ""
-        raw_b = ""
-        raw_d = ""
-
-        try:
-            prompt_b = module._prompt_generate_B(a)
-            b, raw_b = module._ask_one(model, prompt_b)
-            prompt_d = module.PROMPT_VARIATIONS[PROMPT_TYPE](a, b, c)
-            d, raw_d = module._ask_one(model, prompt_d)
-        except Exception as e:
+        for prompt_type in PROMPT_TYPES:
+            error = None
+            b = ""
+            d = ""
+            raw_b = ""
+            raw_d = ""
             prompt_b = ""
             prompt_d = ""
-            error = str(e)
-            counts.errors += 1
+            judge: Dict[str, Any] = {
+                "judge_prompt": "",
+                "judge_raws": [],
+                "judge_labels": [],
+                "judge_counts": {},
+                "judge_majority_label": None,
+                "judge_majority_correct": False,
+                "judge_n": 0,
+                "judge_error": "",
+            }
 
-        trial = {
-            "timestamp_utc": _utc_now(),
-            "experiment_name": EXPERIMENT_NAME,
-            "run_mode": run_mode,
-            "model": model,
-            "relation_key": relation_key,
-            "relation_name": triple["relation_name"],
-            "relation_text": triple["relation_text"],
-            "triple_id": triple["triple_id"],
-            "relation_triple_id": triple["relation_triple_id"],
-            "prompt_type": PROMPT_TYPE,
-            "A": a,
-            "B": b,
-            "C": c,
-            "D": d,
-            "A_metrics": _word_metrics_or_none(module, a),
-            "B_metrics": _word_metrics_or_none(module, b),
-            "C_metrics": _word_metrics_or_none(module, c),
-            "D_metrics": _word_metrics_or_none(module, d),
-            "prompt_generate_B": prompt_b,
-            "prompt_complete": prompt_d,
-            "raw_response_B": raw_b,
-            "raw_response_D": raw_d,
-            "error": error,
-        }
-        _append_ndjson_locked(trials_path, trial)
+            try:
+                prompt_b = module._prompt_generate_B(a)
+                b, raw_b = module._ask_one(model, prompt_b)
+                prompt_d = module.PROMPT_VARIATIONS[prompt_type](a, b, c)
+                d, raw_d = module._ask_one(model, prompt_d)
+                judge = _run_relation_judge(module, model, a, b, c, d)
+            except Exception as e:
+                error = str(e)
+                counts.errors += 1
 
-        counts.n += 1
-        counts.b_nonempty += int(bool(b))
-        counts.d_nonempty += int(bool(d))
-        _print_worker_progress(model, counts.n, total_jobs, counts.d_nonempty)
+            trial = {
+                "timestamp_utc": _utc_now(),
+                "experiment_name": EXPERIMENT_NAME,
+                "run_mode": run_mode,
+                "model": model,
+                "relation_key": relation_key,
+                "relation_name": triple["relation_name"],
+                "relation_text": triple["relation_text"],
+                "triple_id": triple["triple_id"],
+                "relation_triple_id": triple["relation_triple_id"],
+                "prompt_type": prompt_type,
+                "A": a,
+                "B": b,
+                "C": c,
+                "D": d,
+                "A_metrics": _word_metrics_or_none(module, a),
+                "B_metrics": _word_metrics_or_none(module, b),
+                "C_metrics": _word_metrics_or_none(module, c),
+                "D_metrics": _word_metrics_or_none(module, d),
+                "prompt_generate_B": prompt_b,
+                "prompt_complete": prompt_d,
+                "raw_response_B": raw_b,
+                "raw_response_D": raw_d,
+                "grade_prompt": judge["judge_prompt"],
+                "grade_raw": judge["judge_raws"][-1] if judge["judge_raws"] else "",
+                "grade_correct": judge["judge_majority_correct"],
+                "judge_raws": judge["judge_raws"],
+                "judge_labels": judge["judge_labels"],
+                "judge_counts": judge["judge_counts"],
+                "judge_majority_label": judge["judge_majority_label"],
+                "judge_majority_correct": judge["judge_majority_correct"],
+                "judge_n": judge["judge_n"],
+                "judge_error": judge["judge_error"],
+                "error": error,
+            }
+            _append_ndjson_locked(trials_path, trial)
+
+            counts.n += 1
+            counts.b_nonempty += int(bool(b))
+            counts.d_nonempty += int(bool(d))
+            _print_worker_progress(model, counts.n, total_jobs, counts.d_nonempty)
 
     print()
     return {
@@ -374,7 +455,7 @@ def run_experiment(*, run_mode: str, seed: int, shard: bool) -> str:
         "created_at_utc": _utc_now(),
         "run_mode": run_mode,
         "seed": seed,
-        "prompt_type": PROMPT_TYPE,
+        "prompt_types": PROMPT_TYPES,
         "relations_source_dir": str(RELATIONAL_DIR),
         "triples_source": str(TRIPLES_PATH),
         "models": models,
@@ -382,7 +463,7 @@ def run_experiment(*, run_mode: str, seed: int, shard: bool) -> str:
         "n_relations": len(_discover_relation_dirs()),
         "triples_per_relation": n_per_relation,
         "n_total_relation_triples": len(selected_triples),
-        "expected_generations": len(models) * len(selected_triples),
+        "expected_generations": len(models) * len(selected_triples) * len(PROMPT_TYPES),
         "selected_triples": selected_triples,
         "sharded": shard,
     }
@@ -435,7 +516,7 @@ def parse_args() -> argparse.Namespace:
         default="smoke",
         help=(
             "smoke = 1 triple per relation x 1 model; "
-            "full = 50 triples per relation x 10 models"
+            "full = 50 triples per relation x 10 models x 4 prompt types"
         ),
     )
     parser.add_argument("--seed", type=int, default=12345)
