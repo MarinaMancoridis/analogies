@@ -3,3 +3,4 @@ responses/*
 echo "*.pyc
 __pycache__/
 .env
+LLM_relations_completions/runs/*
