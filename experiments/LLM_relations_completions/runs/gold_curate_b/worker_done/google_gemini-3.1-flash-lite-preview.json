@@ -1,0 +1,8 @@
+{
+  "n": 2000,
+  "b_nonempty": 2000,
+  "d_nonempty": 1993,
+  "errors": 0,
+  "model": "google/gemini-3.1-flash-lite-preview",
+  "d_nonempty_rate": 0.9965
+}

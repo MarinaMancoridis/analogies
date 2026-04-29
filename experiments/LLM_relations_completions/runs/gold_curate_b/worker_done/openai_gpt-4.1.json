@@ -1,0 +1,8 @@
+{
+  "n": 2000,
+  "b_nonempty": 2000,
+  "d_nonempty": 1996,
+  "errors": 0,
+  "model": "openai/gpt-4.1",
+  "d_nonempty_rate": 0.998
+}
