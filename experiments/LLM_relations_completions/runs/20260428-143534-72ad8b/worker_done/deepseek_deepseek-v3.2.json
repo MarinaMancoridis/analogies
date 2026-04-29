@@ -1,0 +1,8 @@
+{
+  "model": "deepseek/deepseek-v3.2",
+  "n": 2000,
+  "b_nonempty": 2000,
+  "d_nonempty": 1995,
+  "errors": 0,
+  "d_nonempty_rate": 0.9975
+}

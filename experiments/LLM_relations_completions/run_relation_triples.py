@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import datetime as dt
 import importlib.util
 import json
@@ -24,6 +25,7 @@ HERE = Path(__file__).resolve().parent
 RUNS_DIR = HERE / "runs"
 RELATIONAL_DIR = HERE.parent.parent / "analogy_types" / "relational"
 TRIPLES_PATH = HERE.parent.parent / "static_triples" / "relational" / "relation_triples.json"
+FIXED_B_CSV_PATH = HERE / "qualtrics_loop_and_merge" / "relation_loop_and_merge_all.csv"
 REPO_ROOT = HERE.parent.parent
 if str(REPO_ROOT.parent) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT.parent))
@@ -277,6 +279,55 @@ def _build_selected_triples(*, n_per_relation: int) -> List[Dict[str, Any]]:
     return selected
 
 
+def _load_fixed_b_map(path: Path) -> Dict[int, Dict[str, str]]:
+    if not path.exists():
+        raise FileNotFoundError(f"Fixed-B CSV not found: {path}")
+    by_id: Dict[int, Dict[str, str]] = {}
+    with path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        required = {"triple_id", "relation_key", "A", "B", "C"}
+        missing = required.difference(reader.fieldnames or [])
+        if missing:
+            raise ValueError(f"Fixed-B CSV missing columns: {sorted(missing)}")
+        for row in reader:
+            tid_raw = (row.get("triple_id") or "").strip()
+            if not tid_raw:
+                continue
+            tid = int(tid_raw)
+            by_id[tid] = {
+                "relation_key": (row.get("relation_key") or "").strip(),
+                "A": (row.get("A") or "").strip(),
+                "B": (row.get("B") or "").strip(),
+                "C": (row.get("C") or "").strip(),
+            }
+    if not by_id:
+        raise ValueError(f"No rows found in fixed-B CSV: {path}")
+    return by_id
+
+
+def _attach_fixed_b(
+    *,
+    selected_triples: List[Dict[str, Any]],
+    fixed_b_map: Dict[int, Dict[str, str]],
+) -> List[Dict[str, Any]]:
+    out: List[Dict[str, Any]] = []
+    for t in selected_triples:
+        tid = int(t["triple_id"])
+        row = fixed_b_map.get(tid)
+        if row is None:
+            raise ValueError(f"Fixed-B CSV missing triple_id={tid}")
+        relation_key = str(t["relation_key"])
+        a = str(t["A"])
+        c = str(t["C"])
+        if row["relation_key"] != relation_key or row["A"] != a or row["C"] != c:
+            raise ValueError(
+                f"Fixed-B mismatch for triple_id={tid}: "
+                f"expected ({relation_key}, {a}, {c}) got ({row['relation_key']}, {row['A']}, {row['C']})"
+            )
+        out.append({**t, "B_fixed": row["B"]})
+    return out
+
+
 def _run_worker_for_model(
     *,
     run_dir: str,
@@ -314,8 +365,13 @@ def _run_worker_for_model(
             }
 
             try:
-                prompt_b = module._prompt_generate_B(a)
-                b, raw_b = module._ask_one(model, prompt_b)
+                if "B_fixed" in triple:
+                    b = str(triple.get("B_fixed", ""))
+                    prompt_b = "[fixed_b_from_csv]"
+                    raw_b = f"ANSWER: {b}" if b else "ANSWER: "
+                else:
+                    prompt_b = module._prompt_generate_B(a)
+                    b, raw_b = module._ask_one(model, prompt_b)
                 prompt_d = module.PROMPT_VARIATIONS[prompt_type](a, b, c)
                 d, raw_d = module._ask_one(model, prompt_d)
                 judge = _run_relation_judge(module, model, a, b, c, d)
@@ -437,7 +493,7 @@ def _aggregate_summary(run_dir: str) -> Dict[str, Any]:
     return summary
 
 
-def run_experiment(*, run_mode: str, seed: int, shard: bool) -> str:
+def run_experiment(*, run_mode: str, seed: int, shard: bool, fixed_b_csv: str = "") -> str:
     if run_mode == "smoke":
         n_per_relation = DEFAULT_SMOKE_TRIPLES_PER_RELATION
         models = SMOKE_MODELS
@@ -446,6 +502,13 @@ def run_experiment(*, run_mode: str, seed: int, shard: bool) -> str:
         models = MODELS
 
     selected_triples = _build_selected_triples(n_per_relation=n_per_relation)
+    fixed_b_source = ""
+    if fixed_b_csv:
+        fixed_b_source = str(Path(fixed_b_csv).resolve())
+        selected_triples = _attach_fixed_b(
+            selected_triples=selected_triples,
+            fixed_b_map=_load_fixed_b_map(Path(fixed_b_source)),
+        )
     out_dir = _make_run_dir()
     os.makedirs(os.path.join(out_dir, "worker_done"), exist_ok=True)
     trials_path = os.path.join(out_dir, "trials.ndjson")
@@ -458,6 +521,7 @@ def run_experiment(*, run_mode: str, seed: int, shard: bool) -> str:
         "prompt_types": PROMPT_TYPES,
         "relations_source_dir": str(RELATIONAL_DIR),
         "triples_source": str(TRIPLES_PATH),
+        "fixed_b_source": fixed_b_source,
         "models": models,
         "n_models": len(models),
         "n_relations": len(_discover_relation_dirs()),
@@ -521,6 +585,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--seed", type=int, default=12345)
     parser.add_argument(
+        "--fixed-b-csv",
+        type=str,
+        default="",
+        help=(
+            "Optional CSV with columns triple_id,relation_key,A,B,C. "
+            "When provided, B is deterministic from CSV instead of generated per trial."
+        ),
+    )
+    parser.add_argument(
         "--serial",
         action="store_true",
         help="Run models sequentially in a single process (default full mode uses sharded windows).",
@@ -553,7 +626,7 @@ def main() -> None:
         return
 
     shard = (args.mode == "full") and (not args.serial)
-    run_experiment(run_mode=args.mode, seed=args.seed, shard=shard)
+    run_experiment(run_mode=args.mode, seed=args.seed, shard=shard, fixed_b_csv=args.fixed_b_csv)
 
 
 if __name__ == "__main__":

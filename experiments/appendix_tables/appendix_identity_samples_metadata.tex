@@ -1,0 +1,23 @@
+\begin{table}[h]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{rllccrrrr}
+\toprule
+ID & First & Second & POS$_1$ & POS$_2$ & Freq$_1$ & Freq$_2$ & Sense$_1$ & Sense$_2$ \\
+\midrule
+1 & test & implantation & NOUN & NOUN & 5.19 & 3.01 & 13 & 3 \\
+2 & rainy & feminine & NOUN & NOUN & 3.74 & 3.91 & 1 & 5 \\
+3 & sneezing & entitle & VERB & NOUN & 3.02 & 2.71 & 2 & 3 \\
+4 & mourning & multimillion & VERB & NOUN & 3.69 & 2.82 & 5 & 0 \\
+5 & envision & bobbing & NOUN & NOUN & 3.17 & 2.85 & 2 & 5 \\
+6 & truffle & conjoined & NOUN & VERB & 3.06 & 2.77 & 3 & 3 \\
+7 & blowing & ultimatum & NOUN & NOUN & 4.20 & 3.25 & 23 & 1 \\
+8 & stopped & grandiose & VERB & NOUN & 4.84 & 2.97 & 12 & 2 \\
+9 & transistor & undetermined & NOUN & ADJ & 3.21 & 2.89 & 1 & 3 \\
+10 & haywire & narcissism & NOUN & NOUN & 2.57 & 3.05 & 3 & 1 \\
+\bottomrule
+\end{tabular}
+\caption{Ten sample identity-task stimuli with lexical metadata. POS is universal part-of-speech tags (NLTK). Frequency is the English Zipf frequency from \texttt{wordfreq}: $\mathrm{freq}(w)=\log_{10}(\text{occurrences per billion tokens of }w)$. Senses is the WordNet synset count for the word.}
+\label{tab:appendix_identity_samples_metadata}
+\end{table}

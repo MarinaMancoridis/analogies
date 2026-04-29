@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lrr}
+\toprule
+Source & $P(agree)$ & Confidence \\
+\midrule
+Claude-Sonnet-4.5 & 0.91 (0.03) & -- \\
+Claude-Opus-4.6 & 0.51 (0.05) & -- \\
+Gemini-3-Flash & 0.87 (0.03) & -- \\
+Gemini-3.1-Flash-Lite & 0.87 (0.03) & -- \\
+GPT-4o & 0.96 (0.02) & -- \\
+GPT-4.1 & 0.92 (0.03) & -- \\
+GPT-5.4-Mini & 0.78 (0.04) & -- \\
+DeepSeek-V3 & 0.75 (0.04) & -- \\
+DeepSeek-V3.2 & 0.71 (0.05) & -- \\
+Llama-3.3 & 0.55 (0.05) & -- \\
+\textit{Human} &  &  \\
+identity_1 & 1.0 (0) & 1.0 (0) \\
+identity_2 & 0.98 (0) & 1.0 (0) \\
+identity_3 & 0.98 (0) & 0.61 (0) \\
+identity_4 & 1.0 (0) & 0.98 (0) \\
+identity_5 & 1.0 (0) & 1.0 (0) \\
+\textbf{Human (mean across sets)} & 0.99 (0) & 0.92 (0) \\
+\bottomrule
+\end{tabular}
+\caption{Agreement comparison between models and human responses. Model rows report three-run agreement on the gold run; human rows report per-set majority-agreement and confidence from completed IP-address submissions. Values are shown as estimate (SE); human confidence is not available for model rows.}
+\label{tab:identity_agreement_human_comparison}
+\end{table}

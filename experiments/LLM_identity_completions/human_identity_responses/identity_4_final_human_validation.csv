@@ -1,0 +1,525 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q1,Q51,Q23,Q52,1_Q24,1_Q49,2_Q24,2_Q49,3_Q24,3_Q49,4_Q24,4_Q49,5_Q24,5_Q49,6_Q24,6_Q49,7_Q24,7_Q49,8_Q24,8_Q49,9_Q24,9_Q49,10_Q24,10_Q49,11_Q24,11_Q49,12_Q24,12_Q49,13_Q24,13_Q49,14_Q24,14_Q49,15_Q24,15_Q49,16_Q24,16_Q49,17_Q24,17_Q49,18_Q24,18_Q49,19_Q24,19_Q49,20_Q24,20_Q49,Q50,PROLIFIC_PID,bonus,exp_duration,bonus_pct,completion_fee,num_total_questions,num_correct,loopnum
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,"Consent to Participate
+    
+      You are invited to take part in a short research study about how people complete word analogies.
+    
+
+    
+      What will I do?
+
+      You will read short word analogy prompts and type or select answers.
+
+      How long will it take?
+
+      About 5–10 minutes.
+
+      Are there risks?
+
+      This study involves minimal risk, no greater than ordinary online activity.
+
+      Do I have to participate?
+
+      No. Participation is voluntary. You may stop at any time.
+
+      How will my data be used?
+
+      Your responses will be used for research purposes. Do not include any personal or identifying information in your answers.
+    
+
+    
+      By selecting I consent, you confirm that:
+    
+    
+      you are at least 18 years old,
+      you understand the information above, and
+      you agree to participate in this study.
+    
+  
+
+
+Do you consent to participate in this study?","What is your Prolific ID?
+
+Please note that this response should auto-fill with the correct ID.","Comprehension Check 1
+    
+      Before we begin, please answer this short question to confirm the instructions.
+    
+
+    
+      
+        tree : leaf :: flower : ____
+      
+      
+        Which answer best follows the same relationship?","Comprehension Check 2
+    
+      Before we begin, please answer this short question to confirm the instructions.
+    
+
+    
+      
+        tree : tree :: flower : ____ 
+      
+        Which answer best follows the same relationship?","starving - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",starving - How confident are you that your answer was the best completion?,"inflection - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",inflection - How confident are you that your answer was the best completion?,"detergent - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",detergent - How confident are you that your answer was the best completion?,"exclusive - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",exclusive - How confident are you that your answer was the best completion?,"flux - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",flux - How confident are you that your answer was the best completion?,"absenteeism - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",absenteeism - How confident are you that your answer was the best completion?,"urge - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",urge - How confident are you that your answer was the best completion?,"pretended - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",pretended - How confident are you that your answer was the best completion?,"phantom - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",phantom - How confident are you that your answer was the best completion?,"rabies - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",rabies - How confident are you that your answer was the best completion?,"pull - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",pull - How confident are you that your answer was the best completion?,"livery - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",livery - How confident are you that your answer was the best completion?,"pantyhose - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",pantyhose - How confident are you that your answer was the best completion?,"fathom - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",fathom - How confident are you that your answer was the best completion?,"undead - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",undead - How confident are you that your answer was the best completion?,"turtle - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",turtle - How confident are you that your answer was the best completion?,"refuse - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",refuse - How confident are you that your answer was the best completion?,"composite - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",composite - How confident are you that your answer was the best completion?,"buckled - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",buckled - How confident are you that your answer was the best completion?,"capitulation - Complete the analogy
+    
+    
+      [CurrentLoopNumber]/20
+    
+  
+
+  
+  
+
+    
+    
+      
+[Field-1] : [Field-2] :: [Field-3] : ____      
+    
+
+    
+    
+      Please type one word that best completes the analogy. There are no trick questions; we are interested in your natural responses.
+
+    
+    
+      
+        After entering your answer below, please indicate how confident you are.",capitulation - How confident are you that your answer was the best completion?,Were there any concerns that affected your ability to answer the questions?,PROLIFIC_PID,bonus,exp_duration,bonus_pct,completion_fee,num_total_questions,num_correct,loopnum
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID1""}","{""ImportId"":""QID51_TEXT""}","{""ImportId"":""QID23""}","{""ImportId"":""QID52""}","{""ImportId"":""1_QID24_TEXT""}","{""ImportId"":""1_QID49""}","{""ImportId"":""2_QID24_TEXT""}","{""ImportId"":""2_QID49""}","{""ImportId"":""3_QID24_TEXT""}","{""ImportId"":""3_QID49""}","{""ImportId"":""4_QID24_TEXT""}","{""ImportId"":""4_QID49""}","{""ImportId"":""5_QID24_TEXT""}","{""ImportId"":""5_QID49""}","{""ImportId"":""6_QID24_TEXT""}","{""ImportId"":""6_QID49""}","{""ImportId"":""7_QID24_TEXT""}","{""ImportId"":""7_QID49""}","{""ImportId"":""8_QID24_TEXT""}","{""ImportId"":""8_QID49""}","{""ImportId"":""9_QID24_TEXT""}","{""ImportId"":""9_QID49""}","{""ImportId"":""10_QID24_TEXT""}","{""ImportId"":""10_QID49""}","{""ImportId"":""11_QID24_TEXT""}","{""ImportId"":""11_QID49""}","{""ImportId"":""12_QID24_TEXT""}","{""ImportId"":""12_QID49""}","{""ImportId"":""13_QID24_TEXT""}","{""ImportId"":""13_QID49""}","{""ImportId"":""14_QID24_TEXT""}","{""ImportId"":""14_QID49""}","{""ImportId"":""15_QID24_TEXT""}","{""ImportId"":""15_QID49""}","{""ImportId"":""16_QID24_TEXT""}","{""ImportId"":""16_QID49""}","{""ImportId"":""17_QID24_TEXT""}","{""ImportId"":""17_QID49""}","{""ImportId"":""18_QID24_TEXT""}","{""ImportId"":""18_QID49""}","{""ImportId"":""19_QID24_TEXT""}","{""ImportId"":""19_QID49""}","{""ImportId"":""20_QID24_TEXT""}","{""ImportId"":""20_QID49""}","{""ImportId"":""QID50_TEXT""}","{""ImportId"":""PROLIFIC_PID""}","{""ImportId"":""bonus""}","{""ImportId"":""exp_duration""}","{""ImportId"":""bonus_pct""}","{""ImportId"":""completion_fee""}","{""ImportId"":""num_total_questions""}","{""ImportId"":""num_correct""}","{""ImportId"":""loopnum""}"
+2026-04-16 07:55:42,2026-04-16 08:01:23,IP Address,100,340,TRUE,2026-04-16 08:01:24,R_8Q9Ps4x2BNwZNIo,anonymous,EN,Yes,67e40c11939295e6b2753094,petal,flower,Frustrating ,Neutral,Chair,Confident,Fluoride,Confident,Temporarily ,Neutral,Figurine,Confident,Newspaper ,Confident,Leak,Confident,Cerebellum ,Confident,Councilor ,Confident,Hiss,Confident,Horse,Confident,Anemia,Confident,Dutifully,Confident,Guidebook,Confident,Pellet,Confident,Retainer,Confident,Barn,Confident,Swimsuit ,Confident,Affecting,Confident,Asleep ,Confident,No,67e40c11939295e6b2753094,0,10,60,3.00,20,0,1
+2026-04-16 07:55:45,2026-04-16 08:03:22,IP Address,100,457,TRUE,2026-04-16 08:03:23,R_2Ia9VqGuirvIVKZ,anonymous,EN,Yes,5c976a80bfb5690001eeeb84,petal,flower,frustrating,Confident,chair,Confident,fluoride,Confident,temporarily,Confident,figurine,Confident,newspaper,Confident,leak,Confident,cerebellum,Confident,councilor,Confident,hiss,Confident,horse,Confident,anemia,Confident,dutifully,Confident,guidebook,Confident,pellet,Confident,retainer,Confident,barn,Confident,swimsuit,Confident,affecting,Confident,asleep,Confident,none,5c976a80bfb5690001eeeb84,0,10,60,3.00,20,0,1
+2026-04-16 07:59:50,2026-04-16 08:05:37,IP Address,100,346,TRUE,2026-04-16 08:05:37,R_8PAU5RGEnYt2jcR,anonymous,EN,Yes,698f277e7eb87d0f843d6bf7,petal,flower,frustrating,Confident,chair,Confident,fluoride,Confident,temporarily,Confident,figurine,Confident,newspaper,Confident,leak,Confident,cerebellum,Confident,councilor,Confident,hiss,Confident,horse,Confident,anemia,Confident,dutifully,Confident,guidebook,Confident,pellet,Confident,retainer,Confident,barn,Confident,swimsuit,Confident,affecting,Confident,asleep,Confident,No,698f277e7eb87d0f843d6bf7,0,10,60,3.00,20,0,1

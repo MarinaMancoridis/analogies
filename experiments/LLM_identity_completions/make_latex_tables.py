@@ -177,6 +177,15 @@ def load_trials(trials_path: Path) -> List[Dict[str, Any]]:
     return out
 
 
+def _load_human_summary() -> Dict[str, Any]:
+    here = Path(__file__).resolve().parent
+    path = here / "human_identity_responses" / "identity_human_agreement_summary.json"
+    if not path.exists():
+        raise FileNotFoundError(f"Missing human summary JSON at {path}")
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def main_result_rows(trials: List[Dict[str, Any]]) -> List[Tuple[str, List[str]]]:
     """Sorted rows: each item is (raw_model_id, [display_name, accuracy_cell])."""
     by_model: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
@@ -321,6 +330,61 @@ def build_agreement_entropy_table(trials: List[Dict[str, Any]]) -> str:
     )
 
 
+def build_agreement_human_comparison_table(trials: List[Dict[str, Any]]) -> str:
+    model_rows = agreement_result_rows(trials)
+    human = _load_human_summary()
+    set_entries = human.get("sets", [])
+
+    rows: List[List[str]] = []
+    for _mid, cells in model_rows:
+        # cells: [display, P(agree), H, P(agree|any wrong), H|any wrong, P(agree|all wrong)]
+        rows.append([cells[0], cells[1], "--"])
+
+    # Add a separator-like label row in plain table text.
+    rows.append(["\\textit{Human}", "", ""])
+    for s in set_entries:
+        set_name = str(s.get("set_name", "human_set"))
+        short_name = set_name.replace("_final_human_validation", "")
+        agree = float(s.get("mean_majority_agreement_pct", 0.0)) / 100.0
+        conf = float(s.get("mean_confidence_pct", 0.0)) / 100.0
+        rows.append(
+            [
+                short_name,
+                _fmt_est_se(agree, 0.0),
+                _fmt_est_se(conf, 0.0),
+            ]
+        )
+
+    if set_entries:
+        mean_agree = mean(float(s.get("mean_majority_agreement_pct", 0.0)) / 100.0 for s in set_entries)
+        mean_conf = mean(float(s.get("mean_confidence_pct", 0.0)) / 100.0 for s in set_entries)
+        rows.append(
+            [
+                "\\textbf{Human (mean across sets)}",
+                _fmt_est_se(mean_agree, 0.0),
+                _fmt_est_se(mean_conf, 0.0),
+            ]
+        )
+
+    return _to_latex_table(
+        header=[
+            "Source",
+            "$P(agree)$",
+            "Confidence",
+        ],
+        rows=rows,
+        caption=(
+            "Agreement comparison between models and human responses. "
+            "Model rows report three-run agreement on the gold run; human rows report "
+            "per-set majority-agreement and confidence from completed IP-address submissions. "
+            "Values are shown as estimate (SE); human confidence is not available for model rows."
+        ),
+        label="tab:identity_agreement_human_comparison",
+        booktabs=True,
+        caption_below=True,
+    )
+
+
 def main() -> None:
     args = parse_args()
     run_dir = Path(args.run_dir).expanduser().resolve() if args.run_dir else _default_run_dir()
@@ -331,14 +395,18 @@ def main() -> None:
     trials = load_trials(trials_path)
     main_table = build_main_results_table(trials)
     agree_table = build_agreement_entropy_table(trials)
+    agree_human_table = build_agreement_human_comparison_table(trials)
 
     out_main = run_dir / "latex_table_main_results.tex"
     out_agree = run_dir / "latex_table_agreement_entropy.tex"
+    out_agree_human = run_dir / "latex_table_agreement_human_comparison.tex"
     out_main.write_text(main_table + "\n", encoding="utf-8")
     out_agree.write_text(agree_table + "\n", encoding="utf-8")
+    out_agree_human.write_text(agree_human_table + "\n", encoding="utf-8")
 
     print(f"Wrote: {out_main}")
     print(f"Wrote: {out_agree}")
+    print(f"Wrote: {out_agree_human}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,8 @@
+{
+  "model": "anthropic/claude-opus-4.6",
+  "n": 2000,
+  "b_nonempty": 2000,
+  "d_nonempty": 1507,
+  "errors": 484,
+  "d_nonempty_rate": 0.7535
+}

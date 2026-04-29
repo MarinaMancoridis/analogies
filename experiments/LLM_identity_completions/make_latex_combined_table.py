@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 from typing import Any, Dict, List
@@ -28,6 +29,18 @@ def parse_args() -> argparse.Namespace:
 
 def _default_run_dir() -> Path:
     return _HERE / "runs" / "gold_run"
+
+
+def _load_human_mean_agreement() -> float:
+    path = _HERE / "human_identity_responses" / "identity_human_agreement_summary.json"
+    if not path.exists():
+        raise FileNotFoundError(f"Missing human summary JSON at {path}")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    sets = payload.get("sets", [])
+    if not sets:
+        raise ValueError(f"No human sets in {path}")
+    vals = [float(s.get("mean_majority_agreement_pct", 0.0)) / 100.0 for s in sets]
+    return sum(vals) / len(vals)
 
 
 def build_combined_table(trials: List[Dict[str, Any]]) -> str:
@@ -74,8 +87,24 @@ def build_combined_table(trials: List[Dict[str, Any]]) -> str:
     ]
     for row in body_rows:
         lines.append(" & ".join(row) + " \\\\")
+    human_mean_agree = _load_human_mean_agreement()
+    human_cell = mlt._fmt_est_se(human_mean_agree, 0.0)
+    lines.append("\\midrule")
+    lines.append(
+        " & ".join(
+            [
+                "\\textbf{Human}",
+                f"\\textbf{{{human_cell}}}",
+                f"\\textbf{{{human_cell}}}",
+                "\\textbf{--}",
+                "\\textbf{--}",
+            ]
+        )
+        + " \\\\"
+    )
     cap = (
         "Identity-copy accuracy and three-iteration agreement statistics per model. "
+        "The final bold Human row is aggregated across all 5 human sets. "
         "Standard errors are in parentheses."
     )
     lines.extend(
