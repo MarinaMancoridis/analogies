@@ -1,0 +1,1174 @@
+{
+  "meta": {
+    "trials_ndjson": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
+    "prompt_type_filter": null,
+    "relation_followed_definition": "Trial counts as relation-followed when judge_majority_correct is true, or judge_majority_label == 'Correct', or all judge_labels are 'Correct'. Trials with non-null error or missing judgment are skipped.",
+    "n_lines_read": 20000,
+    "n_trials_scored": 20000,
+    "skip_counts": {}
+  },
+  "by_relation": {
+    "attribute": {
+      "relation_key": "attribute",
+      "relation_name": "Attribute",
+      "n_trials": 2000,
+      "n_relation_followed": 1109,
+      "pct_relation_followed": 0.5545,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 102,
+          "pct_relation_followed": 0.51
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 89,
+          "pct_relation_followed": 0.445
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 44,
+          "pct_relation_followed": 0.22
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 48,
+          "pct_relation_followed": 0.24
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 137,
+          "pct_relation_followed": 0.685
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 146,
+          "pct_relation_followed": 0.73
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 149,
+          "pct_relation_followed": 0.745
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 140,
+          "pct_relation_followed": 0.7
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 104,
+          "pct_relation_followed": 0.52
+        }
+      }
+    },
+    "case_relations": {
+      "relation_key": "case_relations",
+      "relation_name": "Case Relations",
+      "n_trials": 2000,
+      "n_relation_followed": 1124,
+      "pct_relation_followed": 0.562,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 90,
+          "pct_relation_followed": 0.45
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 95,
+          "pct_relation_followed": 0.475
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 72,
+          "pct_relation_followed": 0.36
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 66,
+          "pct_relation_followed": 0.33
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 148,
+          "pct_relation_followed": 0.74
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 151,
+          "pct_relation_followed": 0.755
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 139,
+          "pct_relation_followed": 0.695
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 119,
+          "pct_relation_followed": 0.595
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 82,
+          "pct_relation_followed": 0.41
+        }
+      }
+    },
+    "cause_purpose": {
+      "relation_key": "cause_purpose",
+      "relation_name": "Cause-Purpose",
+      "n_trials": 2000,
+      "n_relation_followed": 622,
+      "pct_relation_followed": 0.311,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 65,
+          "pct_relation_followed": 0.325
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 28,
+          "pct_relation_followed": 0.14
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 30,
+          "pct_relation_followed": 0.15
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 31,
+          "pct_relation_followed": 0.155
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 56,
+          "pct_relation_followed": 0.28
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 82,
+          "pct_relation_followed": 0.41
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 82,
+          "pct_relation_followed": 0.41
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 115,
+          "pct_relation_followed": 0.575
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 68,
+          "pct_relation_followed": 0.34
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 65,
+          "pct_relation_followed": 0.325
+        }
+      }
+    },
+    "class_inclusion": {
+      "relation_key": "class_inclusion",
+      "relation_name": "Class-Inclusion",
+      "n_trials": 2000,
+      "n_relation_followed": 756,
+      "pct_relation_followed": 0.378,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 109,
+          "pct_relation_followed": 0.545
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 81,
+          "pct_relation_followed": 0.405
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 16,
+          "pct_relation_followed": 0.08
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 20,
+          "pct_relation_followed": 0.1
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 107,
+          "pct_relation_followed": 0.535
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 86,
+          "pct_relation_followed": 0.43
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 48,
+          "pct_relation_followed": 0.24
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 139,
+          "pct_relation_followed": 0.695
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 54,
+          "pct_relation_followed": 0.27
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 96,
+          "pct_relation_followed": 0.48
+        }
+      }
+    },
+    "contrast": {
+      "relation_key": "contrast",
+      "relation_name": "Contrast",
+      "n_trials": 2000,
+      "n_relation_followed": 1787,
+      "pct_relation_followed": 0.8935,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 176,
+          "pct_relation_followed": 0.88
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 167,
+          "pct_relation_followed": 0.835
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 195,
+          "pct_relation_followed": 0.975
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 185,
+          "pct_relation_followed": 0.925
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 196,
+          "pct_relation_followed": 0.98
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 190,
+          "pct_relation_followed": 0.95
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 178,
+          "pct_relation_followed": 0.89
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 188,
+          "pct_relation_followed": 0.94
+        }
+      }
+    },
+    "non_attribute": {
+      "relation_key": "non_attribute",
+      "relation_name": "Non-Attribute",
+      "n_trials": 2000,
+      "n_relation_followed": 1212,
+      "pct_relation_followed": 0.606,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 149,
+          "pct_relation_followed": 0.745
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 105,
+          "pct_relation_followed": 0.525
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 34,
+          "pct_relation_followed": 0.17
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 46,
+          "pct_relation_followed": 0.23
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 156,
+          "pct_relation_followed": 0.78
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 115,
+          "pct_relation_followed": 0.575
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 173,
+          "pct_relation_followed": 0.865
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 177,
+          "pct_relation_followed": 0.885
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 95,
+          "pct_relation_followed": 0.475
+        }
+      }
+    },
+    "part_whole": {
+      "relation_key": "part_whole",
+      "relation_name": "Part-Whole",
+      "n_trials": 2000,
+      "n_relation_followed": 647,
+      "pct_relation_followed": 0.3235,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 81,
+          "pct_relation_followed": 0.405
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 46,
+          "pct_relation_followed": 0.23
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 17,
+          "pct_relation_followed": 0.085
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 19,
+          "pct_relation_followed": 0.095
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 54,
+          "pct_relation_followed": 0.27
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 87,
+          "pct_relation_followed": 0.435
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 56,
+          "pct_relation_followed": 0.28
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 136,
+          "pct_relation_followed": 0.68
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 63,
+          "pct_relation_followed": 0.315
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 88,
+          "pct_relation_followed": 0.44
+        }
+      }
+    },
+    "reference": {
+      "relation_key": "reference",
+      "relation_name": "Reference",
+      "n_trials": 2000,
+      "n_relation_followed": 1307,
+      "pct_relation_followed": 0.6535,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 107,
+          "pct_relation_followed": 0.535
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 30,
+          "pct_relation_followed": 0.15
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 61,
+          "pct_relation_followed": 0.305
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 160,
+          "pct_relation_followed": 0.8
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 143,
+          "pct_relation_followed": 0.715
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 115,
+          "pct_relation_followed": 0.575
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 197,
+          "pct_relation_followed": 0.985
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 164,
+          "pct_relation_followed": 0.82
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 180,
+          "pct_relation_followed": 0.9
+        }
+      }
+    },
+    "similar": {
+      "relation_key": "similar",
+      "relation_name": "Similar",
+      "n_trials": 2000,
+      "n_relation_followed": 1672,
+      "pct_relation_followed": 0.836,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 182,
+          "pct_relation_followed": 0.91
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 166,
+          "pct_relation_followed": 0.83
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 168,
+          "pct_relation_followed": 0.84
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 149,
+          "pct_relation_followed": 0.745
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 169,
+          "pct_relation_followed": 0.845
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 166,
+          "pct_relation_followed": 0.83
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 153,
+          "pct_relation_followed": 0.765
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 186,
+          "pct_relation_followed": 0.93
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 183,
+          "pct_relation_followed": 0.915
+        }
+      }
+    },
+    "space_time": {
+      "relation_key": "space_time",
+      "relation_name": "Space-Time",
+      "n_trials": 2000,
+      "n_relation_followed": 1166,
+      "pct_relation_followed": 0.583,
+      "by_model": {
+        "anthropic/claude-opus-4.6": {
+          "n_trials": 200,
+          "n_relation_followed": 126,
+          "pct_relation_followed": 0.63
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "n_trials": 200,
+          "n_relation_followed": 102,
+          "pct_relation_followed": 0.51
+        },
+        "deepseek-ai/DeepSeek-V3": {
+          "n_trials": 200,
+          "n_relation_followed": 65,
+          "pct_relation_followed": 0.325
+        },
+        "deepseek/deepseek-v3.2": {
+          "n_trials": 200,
+          "n_relation_followed": 52,
+          "pct_relation_followed": 0.26
+        },
+        "google/gemini-3-flash-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "google/gemini-3.1-flash-lite-preview": {
+          "n_trials": 200,
+          "n_relation_followed": 118,
+          "pct_relation_followed": 0.59
+        },
+        "gpt-4o": {
+          "n_trials": 200,
+          "n_relation_followed": 141,
+          "pct_relation_followed": 0.705
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "n_trials": 200,
+          "n_relation_followed": 169,
+          "pct_relation_followed": 0.845
+        },
+        "openai/gpt-4.1": {
+          "n_trials": 200,
+          "n_relation_followed": 134,
+          "pct_relation_followed": 0.67
+        },
+        "openai/gpt-5.4-mini": {
+          "n_trials": 200,
+          "n_relation_followed": 97,
+          "pct_relation_followed": 0.485
+        }
+      }
+    }
+  },
+  "by_model": {
+    "anthropic/claude-opus-4.6": {
+      "n_trials": 2000,
+      "n_relation_followed": 1230,
+      "pct_relation_followed": 0.615,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 102,
+          "pct_relation_followed": 0.51
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 90,
+          "pct_relation_followed": 0.45
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 65,
+          "pct_relation_followed": 0.325
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 109,
+          "pct_relation_followed": 0.545
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 176,
+          "pct_relation_followed": 0.88
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 149,
+          "pct_relation_followed": 0.745
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 81,
+          "pct_relation_followed": 0.405
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 182,
+          "pct_relation_followed": 0.91
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 126,
+          "pct_relation_followed": 0.63
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4.5": {
+      "n_trials": 2000,
+      "n_relation_followed": 986,
+      "pct_relation_followed": 0.493,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 89,
+          "pct_relation_followed": 0.445
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 95,
+          "pct_relation_followed": 0.475
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 28,
+          "pct_relation_followed": 0.14
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 81,
+          "pct_relation_followed": 0.405
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 167,
+          "pct_relation_followed": 0.835
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 105,
+          "pct_relation_followed": 0.525
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 46,
+          "pct_relation_followed": 0.23
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 107,
+          "pct_relation_followed": 0.535
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 166,
+          "pct_relation_followed": 0.83
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 102,
+          "pct_relation_followed": 0.51
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V3": {
+      "n_trials": 2000,
+      "n_relation_followed": 638,
+      "pct_relation_followed": 0.319,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 44,
+          "pct_relation_followed": 0.22
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 72,
+          "pct_relation_followed": 0.36
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 30,
+          "pct_relation_followed": 0.15
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 16,
+          "pct_relation_followed": 0.08
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 34,
+          "pct_relation_followed": 0.17
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 17,
+          "pct_relation_followed": 0.085
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 30,
+          "pct_relation_followed": 0.15
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 168,
+          "pct_relation_followed": 0.84
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 65,
+          "pct_relation_followed": 0.325
+        }
+      }
+    },
+    "deepseek/deepseek-v3.2": {
+      "n_trials": 2000,
+      "n_relation_followed": 642,
+      "pct_relation_followed": 0.321,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 48,
+          "pct_relation_followed": 0.24
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 66,
+          "pct_relation_followed": 0.33
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 31,
+          "pct_relation_followed": 0.155
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 20,
+          "pct_relation_followed": 0.1
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 46,
+          "pct_relation_followed": 0.23
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 19,
+          "pct_relation_followed": 0.095
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 61,
+          "pct_relation_followed": 0.305
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 149,
+          "pct_relation_followed": 0.745
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 52,
+          "pct_relation_followed": 0.26
+        }
+      }
+    },
+    "google/gemini-3-flash-preview": {
+      "n_trials": 2000,
+      "n_relation_followed": 1344,
+      "pct_relation_followed": 0.672,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 137,
+          "pct_relation_followed": 0.685
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 148,
+          "pct_relation_followed": 0.74
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 56,
+          "pct_relation_followed": 0.28
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 107,
+          "pct_relation_followed": 0.535
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 195,
+          "pct_relation_followed": 0.975
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 156,
+          "pct_relation_followed": 0.78
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 54,
+          "pct_relation_followed": 0.27
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 160,
+          "pct_relation_followed": 0.8
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 169,
+          "pct_relation_followed": 0.845
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        }
+      }
+    },
+    "google/gemini-3.1-flash-lite-preview": {
+      "n_trials": 2000,
+      "n_relation_followed": 1279,
+      "pct_relation_followed": 0.6395,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 146,
+          "pct_relation_followed": 0.73
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 151,
+          "pct_relation_followed": 0.755
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 82,
+          "pct_relation_followed": 0.41
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 86,
+          "pct_relation_followed": 0.43
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 185,
+          "pct_relation_followed": 0.925
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 115,
+          "pct_relation_followed": 0.575
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 87,
+          "pct_relation_followed": 0.435
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 143,
+          "pct_relation_followed": 0.715
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 166,
+          "pct_relation_followed": 0.83
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 118,
+          "pct_relation_followed": 0.59
+        }
+      }
+    },
+    "gpt-4o": {
+      "n_trials": 2000,
+      "n_relation_followed": 1253,
+      "pct_relation_followed": 0.6265,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 139,
+          "pct_relation_followed": 0.695
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 82,
+          "pct_relation_followed": 0.41
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 48,
+          "pct_relation_followed": 0.24
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 196,
+          "pct_relation_followed": 0.98
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 173,
+          "pct_relation_followed": 0.865
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 56,
+          "pct_relation_followed": 0.28
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 115,
+          "pct_relation_followed": 0.575
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 153,
+          "pct_relation_followed": 0.765
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 141,
+          "pct_relation_followed": 0.705
+        }
+      }
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "n_trials": 2000,
+      "n_relation_followed": 1620,
+      "pct_relation_followed": 0.81,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 149,
+          "pct_relation_followed": 0.745
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 115,
+          "pct_relation_followed": 0.575
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 139,
+          "pct_relation_followed": 0.695
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 190,
+          "pct_relation_followed": 0.95
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 177,
+          "pct_relation_followed": 0.885
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 136,
+          "pct_relation_followed": 0.68
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 197,
+          "pct_relation_followed": 0.985
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 186,
+          "pct_relation_followed": 0.93
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 169,
+          "pct_relation_followed": 0.845
+        }
+      }
+    },
+    "openai/gpt-4.1": {
+      "n_trials": 2000,
+      "n_relation_followed": 1232,
+      "pct_relation_followed": 0.616,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 140,
+          "pct_relation_followed": 0.7
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 119,
+          "pct_relation_followed": 0.595
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 68,
+          "pct_relation_followed": 0.34
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 54,
+          "pct_relation_followed": 0.27
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 178,
+          "pct_relation_followed": 0.89
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 162,
+          "pct_relation_followed": 0.81
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 63,
+          "pct_relation_followed": 0.315
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 164,
+          "pct_relation_followed": 0.82
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 150,
+          "pct_relation_followed": 0.75
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 134,
+          "pct_relation_followed": 0.67
+        }
+      }
+    },
+    "openai/gpt-5.4-mini": {
+      "n_trials": 2000,
+      "n_relation_followed": 1178,
+      "pct_relation_followed": 0.589,
+      "by_relation": {
+        "attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 104,
+          "pct_relation_followed": 0.52
+        },
+        "case_relations": {
+          "n_trials": 200,
+          "n_relation_followed": 82,
+          "pct_relation_followed": 0.41
+        },
+        "cause_purpose": {
+          "n_trials": 200,
+          "n_relation_followed": 65,
+          "pct_relation_followed": 0.325
+        },
+        "class_inclusion": {
+          "n_trials": 200,
+          "n_relation_followed": 96,
+          "pct_relation_followed": 0.48
+        },
+        "contrast": {
+          "n_trials": 200,
+          "n_relation_followed": 188,
+          "pct_relation_followed": 0.94
+        },
+        "non_attribute": {
+          "n_trials": 200,
+          "n_relation_followed": 95,
+          "pct_relation_followed": 0.475
+        },
+        "part_whole": {
+          "n_trials": 200,
+          "n_relation_followed": 88,
+          "pct_relation_followed": 0.44
+        },
+        "reference": {
+          "n_trials": 200,
+          "n_relation_followed": 180,
+          "pct_relation_followed": 0.9
+        },
+        "similar": {
+          "n_trials": 200,
+          "n_relation_followed": 183,
+          "pct_relation_followed": 0.915
+        },
+        "space_time": {
+          "n_trials": 200,
+          "n_relation_followed": 97,
+          "pct_relation_followed": 0.485
+        }
+      }
+    }
+  }
+}

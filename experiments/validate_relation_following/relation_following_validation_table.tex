@@ -1,0 +1,28 @@
+% Requires: \usepackage{booktabs}, \usepackage{graphicx} (for \resizebox).
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}l@{\hspace{4pt}}@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{\hspace{2pt}}c|@{\hspace{3pt}}c@{}}
+\toprule
+\textbf{Model} & \textbf{\scriptsize Attr.} & \textbf{\scriptsize Case} & \textbf{\scriptsize C--P} & \textbf{\scriptsize C--Inc.} & \textbf{\scriptsize Contr.} & \textbf{\scriptsize Non-att.} & \textbf{\scriptsize P--W} & \textbf{\scriptsize Ref.} & \textbf{\scriptsize Sim.} & \textbf{\scriptsize S--T} & \textbf{\scriptsize Mean} \\
+\midrule
+\scriptsize Llama 3.3 70B Instruct & \scriptsize 0.74 (0.031) & \scriptsize 0.81 (0.028) & \scriptsize 0.57 (0.035) & \scriptsize 0.69 (0.033) & \scriptsize 0.95 (0.015) & \scriptsize 0.89 (0.023) & \scriptsize 0.68 (0.033) & \scriptsize 0.98 (0.009) & \scriptsize 0.93 (0.018) & \scriptsize 0.84 (0.026) & \textbf{\scriptsize 0.81 (0.009)} \\
+\scriptsize GPT-4o & \scriptsize 0.75 (0.031) & \scriptsize 0.69 (0.033) & \scriptsize 0.41 (0.035) & \scriptsize 0.24 (0.030) & \scriptsize 0.98 (0.010) & \scriptsize 0.86 (0.024) & \scriptsize 0.28 (0.032) & \scriptsize 0.57 (0.035) & \scriptsize 0.77 (0.030) & \scriptsize 0.70 (0.032) & \textbf{\scriptsize 0.63 (0.011)} \\
+\scriptsize GPT-4.1 & \scriptsize 0.70 (0.032) & \scriptsize 0.59 (0.035) & \scriptsize 0.34 (0.033) & \scriptsize 0.27 (0.031) & \scriptsize 0.89 (0.022) & \scriptsize 0.81 (0.028) & \scriptsize 0.32 (0.033) & \scriptsize 0.82 (0.027) & \scriptsize 0.75 (0.031) & \scriptsize 0.67 (0.033) & \textbf{\scriptsize 0.62 (0.011)} \\
+\scriptsize GPT-5.4 Mini & \scriptsize 0.52 (0.035) & \scriptsize 0.41 (0.035) & \scriptsize 0.33 (0.033) & \scriptsize 0.48 (0.035) & \scriptsize 0.94 (0.017) & \scriptsize 0.47 (0.035) & \scriptsize 0.44 (0.035) & \scriptsize 0.90 (0.021) & \scriptsize 0.92 (0.020) & \scriptsize 0.48 (0.035) & \textbf{\scriptsize 0.59 (0.011)} \\
+\scriptsize Gemini 3 Flash Preview & \scriptsize 0.69 (0.033) & \scriptsize 0.74 (0.031) & \scriptsize 0.28 (0.032) & \scriptsize 0.54 (0.035) & \scriptsize 0.97 (0.011) & \scriptsize 0.78 (0.029) & \scriptsize 0.27 (0.031) & \scriptsize 0.80 (0.028) & \scriptsize 0.84 (0.026) & \scriptsize 0.81 (0.028) & \textbf{\scriptsize 0.67 (0.010)} \\
+\scriptsize Gemini 3.1 Flash-Lite Preview & \scriptsize 0.73 (0.031) & \scriptsize 0.76 (0.030) & \scriptsize 0.41 (0.035) & \scriptsize 0.43 (0.035) & \scriptsize 0.93 (0.019) & \scriptsize 0.57 (0.035) & \scriptsize 0.43 (0.035) & \scriptsize 0.71 (0.032) & \scriptsize 0.83 (0.027) & \scriptsize 0.59 (0.035) & \textbf{\scriptsize 0.64 (0.011)} \\
+\scriptsize Claude Sonnet 4.5 & \scriptsize 0.45 (0.035) & \scriptsize 0.47 (0.035) & \scriptsize 0.14 (0.025) & \scriptsize 0.41 (0.035) & \scriptsize 0.83 (0.026) & \scriptsize 0.53 (0.035) & \scriptsize 0.23 (0.030) & \scriptsize 0.54 (0.035) & \scriptsize 0.83 (0.027) & \scriptsize 0.51 (0.035) & \textbf{\scriptsize 0.49 (0.011)} \\
+\scriptsize Claude Opus 4.6 & \scriptsize 0.51 (0.035) & \scriptsize 0.45 (0.035) & \scriptsize 0.33 (0.033) & \scriptsize 0.55 (0.035) & \scriptsize 0.88 (0.023) & \scriptsize 0.74 (0.031) & \scriptsize 0.41 (0.035) & \scriptsize 0.75 (0.031) & \scriptsize 0.91 (0.020) & \scriptsize 0.63 (0.034) & \textbf{\scriptsize 0.61 (0.011)} \\
+\scriptsize DeepSeek V3 & \scriptsize 0.22 (0.029) & \scriptsize 0.36 (0.034) & \scriptsize 0.15 (0.025) & \scriptsize 0.08 (0.019) & \scriptsize 0.81 (0.028) & \scriptsize 0.17 (0.027) & \scriptsize 0.09 (0.020) & \scriptsize 0.15 (0.025) & \scriptsize 0.84 (0.026) & \scriptsize 0.33 (0.033) & \textbf{\scriptsize 0.32 (0.010)} \\
+\scriptsize DeepSeek V3.2 & \scriptsize 0.24 (0.030) & \scriptsize 0.33 (0.033) & \scriptsize 0.15 (0.026) & \scriptsize 0.10 (0.021) & \scriptsize 0.75 (0.031) & \scriptsize 0.23 (0.030) & \scriptsize 0.10 (0.021) & \scriptsize 0.30 (0.033) & \scriptsize 0.74 (0.031) & \scriptsize 0.26 (0.031) & \textbf{\scriptsize 0.32 (0.010)} \\
+\midrule
+\textbf{\scriptsize Mean} & \textbf{\scriptsize 0.55 (0.011)} & \textbf{\scriptsize 0.56 (0.011)} & \textbf{\scriptsize 0.31 (0.010)} & \textbf{\scriptsize 0.38 (0.011)} & \textbf{\scriptsize 0.89 (0.007)} & \textbf{\scriptsize 0.61 (0.011)} & \textbf{\scriptsize 0.32 (0.010)} & \textbf{\scriptsize 0.65 (0.011)} & \textbf{\scriptsize 0.84 (0.008)} & \textbf{\scriptsize 0.58 (0.011)} & \textbf{\scriptsize 0.57 (0.004)} \\
+\bottomrule
+\end{tabular}
+}%
+\caption{LLM relation-following rates (binomial proportion with SE in parentheses) by model and relational category, from automated grading (\texttt{judge\_labels} / majority correct) in \texttt{gold\_curate\_b} trials. All prompt types included. \emph{Mean} column and row pool trials across relations or models, respectively; the bottom-right cell pools all trials. \emph{Column labels:} \textit{Attr}\,=\,Attribute; \textit{Case}\,=\,Case Relations; \textit{C--P}\,=\,Cause-Purpose; \textit{C--Inc}\,=\,Class-Inclusion; \textit{Contr}\,=\,Contrast; \textit{Non-att}\,=\,Non-Attribute; \textit{P--W}\,=\,Part-Whole; \textit{Ref}\,=\,Reference; \textit{Sim}\,=\,Similar; \textit{S--T}\,=\,Space-Time.}
+\label{tab:relation_following_validation}
+\end{table}

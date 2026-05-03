@@ -1,0 +1,11 @@
+{
+  "n_human_eligible_nonempty_cleaned": 1300,
+  "n_llm_colon_no_error_nonempty_cleaned": 4983,
+  "human_source": "/Users/marinamancoridis/analogies/experiments/validate_relation_following/human_completions_flat.json",
+  "llm_source": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
+  "preprocessing": "clean_answer (logic matches common.clean_answer; same for both corpora)",
+  "llm_filter": "prompt_type == colon, error is null/empty, D nonempty after clean",
+  "human_filter": "participant_eligible_complete, D nonempty after clean",
+  "unique_triple_id_human": 500,
+  "unique_triple_id_llm": 500
+}
