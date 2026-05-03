@@ -3,7 +3,7 @@
 \small
 \begin{tabular}{lr}
 \toprule
-Evaluator model & Human-chosen proportion \\
+Evaluator & Human-chosen proportion \\
 \midrule
 Llama 3.3 70B Instruct & 0.19 (0.039) \\
 GPT-4o & 0.22 (0.041) \\
@@ -15,8 +15,10 @@ Claude Sonnet 4.5 & 0.2 (0.04) \\
 Claude Opus 4.6 & 0.23 (0.042) \\
 DeepSeek V3 & 0.3 (0.046) \\
 DeepSeek V3.2 & 0.2 (0.04) \\
+\midrule
+\textbf{Human} & \textbf{0.41 (0.018)} \\
 \bottomrule
 \end{tabular}
-\caption{Pairwise preference results by evaluator model, restricted to comparisons where the model completion used the \texttt{colon} prompt type. Values are the proportion of valid pairwise judgments where the evaluator selected the human completion over the model completion, with binomial standard errors in parentheses.}
+\caption{Pairwise preference results by evaluator, restricted to comparisons where the model completion used the \texttt{colon} prompt type. Values are the proportion of judgments where the evaluator preferred the human-sourced completion over the model completion, with binomial standard errors in parentheses. The \textbf{Human} row aggregates eligible survey responses (all item sets) from \texttt{human\_preference\_analysis.json} (same coding as the analysis script).}
 \label{tab:llm_preference_table_colon}
 \end{table}

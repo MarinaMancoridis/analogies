@@ -40,6 +40,15 @@ def parse_args() -> argparse.Namespace:
         default=here / "llm_preference_table_colon.tex",
         help="Output LaTeX table path (default avoids overwriting llm_preference_table.tex).",
     )
+    parser.add_argument(
+        "--human-analysis-json",
+        type=Path,
+        default=here / "human_preference_analysis.json",
+        help=(
+            "Output from analyze_human_preference_responses.py; used for the Human "
+            "evaluator row (overall.n_prefer_human_completion / overall.n_judgments)."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -73,7 +82,18 @@ def _pretty_model_name(model: str) -> str:
     return PRETTY_MODEL_NAMES.get(model, model)
 
 
-def build_table(run_summary: Dict[str, Any]) -> str:
+def _load_human_overall_counts(path: Path) -> tuple[int, int]:
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    o = data["overall"]
+    return int(o["n_prefer_human_completion"]), int(o["n_judgments"])
+
+
+def build_table(
+    run_summary: Dict[str, Any],
+    human_prefer: int,
+    human_n_judgments: int,
+) -> str:
     summary_by_model: Dict[str, Dict[str, Any]] = run_summary["summary_by_model"]
     judge_models: List[str] = run_summary.get("judge_models", list(summary_by_model.keys()))
 
@@ -83,7 +103,7 @@ def build_table(run_summary: Dict[str, Any]) -> str:
     lines.append("\\small")
     lines.append("\\begin{tabular}{lr}")
     lines.append("\\toprule")
-    lines.append("Evaluator model & Human-chosen proportion \\\\")
+    lines.append("Evaluator & Human-chosen proportion \\\\")
     lines.append("\\midrule")
 
     for model in judge_models:
@@ -96,11 +116,19 @@ def build_table(run_summary: Dict[str, Any]) -> str:
         display_name = _pretty_model_name(model)
         lines.append(f"{display_name} & {_fmt_prop(p)} ({_fmt_prop(se)}) \\\\")
 
+    lines.append("\\midrule")
+    hp = (human_prefer / human_n_judgments) if human_n_judgments else 0.0
+    hse = _binomial_se(human_prefer, human_n_judgments)
+    lines.append(
+        f"\\textbf{{Human}} & \\textbf{{{_fmt_prop(hp)} ({_fmt_prop(hse)})}} \\\\"
+    )
+
     lines.append("\\bottomrule")
     lines.append("\\end{tabular}")
     lines.append(
-        "\\caption{Pairwise preference results by evaluator model, restricted to comparisons where the model completion used the \\texttt{colon} prompt type. "
-        "Values are the proportion of valid pairwise judgments where the evaluator selected the human completion over the model completion, with binomial standard errors in parentheses.}"
+        "\\caption{Pairwise preference results by evaluator, restricted to comparisons where the model completion used the \\texttt{colon} prompt type. "
+        "Values are the proportion of judgments where the evaluator preferred the human-sourced completion over the model completion, with binomial standard errors in parentheses. "
+        "The \\textbf{Human} row aggregates eligible survey responses (all item sets) from \\texttt{human\\_preference\\_analysis.json} (same coding as the analysis script).}"
     )
     lines.append("\\label{tab:llm_preference_table_colon}")
     lines.append("\\end{table}")
@@ -111,7 +139,8 @@ def build_table(run_summary: Dict[str, Any]) -> str:
 def main() -> None:
     args = parse_args()
     run_summary = _read_latest_run_summary(args.results_ndjson)
-    tex = build_table(run_summary)
+    h_pref, h_n = _load_human_overall_counts(args.human_analysis_json)
+    tex = build_table(run_summary, h_pref, h_n)
     args.out_tex.write_text(tex, encoding="utf-8")
     print(f"Wrote: {args.out_tex}")
 
