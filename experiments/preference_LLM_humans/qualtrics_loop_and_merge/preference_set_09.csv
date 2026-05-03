@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+9,1,83,290,riches : broke :: dust : ____,barren,clean,llm,human,2,R_53bY0nDQzQaGVtn,openai/gpt-5.4-mini,colon,zero_shot
+9,2,1547,444,presents : showcases :: beast : ____,circus,creature,human,llm,1,R_3wz5G4TDLTRDmw1,gpt-4o,colon,zero_shot
+9,3,1026,230,smooth : choppy :: lying : ____,truthful,truth,llm,human,2,R_6c6DhyU5qp6nVnN,gpt-4o,colon,zero_shot
+9,4,1056,449,notions : concepts :: prize : ____,competition,award,human,llm,1,R_5rSXgRquczJzYAm,openai/gpt-4.1,colon,zero_shot
+9,5,1151,375,handshake : agreement :: symbols : ____,communication,Signs,llm,human,2,R_2KoSF7kTOcJXhin,google/gemini-3-flash-preview,colon,zero_shot
+9,6,227,85,academics : lecture :: panther : ____,Pink,den,human,llm,1,R_2hunmJTLCYE15ux,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+9,7,1244,184,story : myth :: analysis : ____,critique,Read,llm,human,2,R_2fYUbjMObWLl8TT,anthropic/claude-opus-4.6,colon,zero_shot
+9,8,1343,360,prizes : accomplishment :: symbols : ____,meaning,meaning,human,llm,1,R_5amKzKChLNeFFIi,openai/gpt-4.1,colon,zero_shot
+9,9,309,479,greece : island :: cities : ____,new york,capacities,human,llm,1,R_5sBA4KEFxnqJTeV,anthropic/claude-opus-4.6,colon,zero_shot
+9,10,1391,309,tomb : stone :: table : ____,Wood,wood,human,llm,1,R_8VPw3vwkvoQnuM9,anthropic/claude-opus-4.6,colon,zero_shot
+9,11,79,340,galaxy : planet :: cabinet : ____,drawer,dish,llm,human,2,R_7vwtiSNkqmi7RkZ,gpt-4o,colon,zero_shot
+9,12,552,480,neighborhoods : homes :: holidays : ____,days,villas,llm,human,2,R_8RqHKthgcs1wCBy,deepseek/deepseek-v3.2,colon,zero_shot
+9,13,1646,80,wastes : time :: broadcast : ____,air,programs,llm,human,2,R_3wz5G4TDLTRDmw1,openai/gpt-5.4-mini,colon,zero_shot
+9,14,1617,343,analysis : unit :: demonstration : ____,ration,experiment,llm,human,2,R_6IT1xvQUcddRLmA,anthropic/claude-opus-4.6,colon,zero_shot
+9,15,825,273,diamonds : rusted :: relic : ____,misinterpreted,decayed,human,llm,1,R_88NfoZsMGeuuK8O,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+9,16,607,37,squirrel : furry :: air : ____,invisible,Dry,llm,human,2,R_3OJDKarikzM3SHa,openai/gpt-5.4-mini,colon,zero_shot
+9,17,890,149,movie : entertainment :: cars : ____,driving,transportation,human,llm,1,R_8KIodWA3GpCLI02,gpt-4o,colon,zero_shot
+9,18,1634,210,broken : amended :: wisdom : ____,Foolhardy,folly,human,llm,1,R_3OJDKarikzM3SHa,google/gemini-3-flash-preview,colon,zero_shot
+9,19,1427,394,polls : opinions :: ambassadors : ____,Leaders,representatives,human,llm,1,R_27Q1rvssDdJ1QbL,openai/gpt-5.4-mini,colon,zero_shot
+9,20,622,99,smoker : cigar :: government : ____,leader,bureaucracy,human,llm,1,R_88NfoZsMGeuuK8O,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+9,21,982,393,report : event :: motif : ____,Label,theme,human,llm,1,R_80T0N78UHKWfMu3,anthropic/claude-opus-4.6,colon,zero_shot
+9,22,953,438,fathers : parents :: prize : ____,winner,awards,human,llm,1,R_8cdTntfJPwFlNyN,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+9,23,1651,178,lakes : Eerie :: analysis : ____,paralysis,Study,llm,human,2,R_31Hrt0CoTetm3QF,google/gemini-3-flash-preview,colon,zero_shot
+9,24,1216,172,lakes : Superior :: section : ____,Pie,segment,human,llm,1,R_1ENhjkTO16A4r0j,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+9,25,886,220,equals : approximates :: growth : ____,estimates,sprawl,human,llm,1,R_5CB0YW9OOrePXLm,deepseek/deepseek-v3.2,colon,zero_shot

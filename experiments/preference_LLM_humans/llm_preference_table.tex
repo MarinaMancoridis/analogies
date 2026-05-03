@@ -1,0 +1,22 @@
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lr}
+\toprule
+Evaluator model & Human-chosen proportion \\
+\midrule
+Llama 3.3 70B Instruct & 0.31 (0.048) \\
+GPT-4o & 0.33 (0.047) \\
+GPT-4.1 & 0.31 (0.046) \\
+GPT-5.4 Mini & 0.21 (0.041) \\
+Gemini 3 Flash Preview & 0.21 (0.041) \\
+Gemini 3.1 Flash-Lite Preview & 0.18 (0.038) \\
+Claude Sonnet 4.5 & 0.16 (0.037) \\
+Claude Opus 4.6 & 0.24 (0.043) \\
+DeepSeek V3 & 0.2 (0.04) \\
+DeepSeek V3.2 & 0.19 (0.039) \\
+\bottomrule
+\end{tabular}
+\caption{Pairwise preference results by evaluator model. Values are the proportion of valid pairwise judgments where the evaluator selected the human completion over the model completion, with binomial standard errors in parentheses.}
+\label{tab:llm_preference_table}
+\end{table}

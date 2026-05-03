@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+4,1,528,123,strikeouts : outs :: smiles : ____,happy,expressions,human,llm,1,R_8Nz6tdiBzcr7cU6,deepseek-ai/DeepSeek-V3,colon,zero_shot
+4,2,1174,225,growth : plateau :: permits : ____,restricts,authorizes,human,llm,1,R_88NfoZsMGeuuK8O,openai/gpt-5.4-mini,colon,zero_shot
+4,3,868,132,smiles : joy :: threat : ____,Conflict,fear,human,llm,1,R_2OeQXWlWMltaAO5,deepseek-ai/DeepSeek-V3,colon,zero_shot
+4,4,1027,460,lakes : water :: graveyard : ____,corpses,Headstone,llm,human,2,R_3OJDKarikzM3SHa,openai/gpt-4.1,colon,zero_shot
+4,5,268,1,sirens : loud :: aluminum : ____,Shiny,light,human,llm,1,R_8x4vc9NOHTAT3S9,openai/gpt-4.1,colon,zero_shot
+4,6,82,200,turtles : snapping :: soap : ____,castile,Cleaning,llm,human,2,R_5RbgDkGjcydIb73,deepseek-ai/DeepSeek-V3,colon,zero_shot
+4,7,325,416,preserve : keep :: breaking : ____,courage,damaging,human,llm,1,R_8IXZ4JA3Auqk1XG,gpt-4o,colon,zero_shot
+4,8,596,362,calendars : date :: capsule : ____,medicine,time,llm,human,2,R_809aJWG5qHl9P9q,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+4,9,1672,375,handshake : agreement :: symbols : ____,Signs,communication,human,llm,1,R_2KoSF7kTOcJXhin,deepseek-ai/DeepSeek-V3,colon,zero_shot
+4,10,1993,97,rains : umbrella :: waste : ____,garbage,bin,human,llm,1,R_5Tq98KljHtUE74X,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+4,11,25,228,functional : broken :: utility : ____,knife,useless,human,llm,1,R_1eIGYLKJzIQxHot,gpt-4o,colon,zero_shot
+4,12,304,146,threat : panic :: pirates : ____,fear,mutiny,llm,human,2,R_8KIodWA3GpCLI02,anthropic/claude-sonnet-4.5,colon,zero_shot
+4,13,452,19,parties : fun :: dish : ____,food,tasty,human,llm,1,R_6c6DhyU5qp6nVnN,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+4,14,692,211,starts : ends :: preserved : ____,destroyed,expires,llm,human,2,R_6FDvaR3QUoErt7U,anthropic/claude-sonnet-4.5,colon,zero_shot
+4,15,1968,106,shoes : protection :: waste : ____,disposal,can,llm,human,2,R_3DdXoi535SoYYGx,deepseek/deepseek-v3.2,colon,zero_shot
+4,16,685,382,listing : item :: sirens : ____,lure,sound,llm,human,2,R_8X70vB7jiL7mdnT,anthropic/claude-opus-4.6,colon,zero_shot
+4,17,314,177,situation : interview :: dimension : ____,Element,measurement,human,llm,1,R_3yZYqEbvqkBKgc9,anthropic/claude-sonnet-4.5,colon,zero_shot
+4,18,786,280,routine : novel :: germ : ____,Atom,sterile,human,llm,1,R_7oe7puoLomijquq,google/gemini-3-flash-preview,colon,zero_shot
+4,19,1959,262,injustices : fair :: tornado : ____,calm,calm,llm,human,2,R_7vwtiSNkqmi7RkZ,anthropic/claude-opus-4.6,colon,zero_shot
+4,20,36,2,branches : wooden :: sunshine : ____,rays,golden,human,llm,1,R_7vwtiSNkqmi7RkZ,anthropic/claude-opus-4.6,colon,zero_shot
+4,21,94,100,stamping : mail :: charges : ____,file,press,human,llm,1,R_53bY0nDQzQaGVtn,anthropic/claude-sonnet-4.5,colon,zero_shot
+4,22,115,289,air : wet :: disinformation : ____,false,bias,llm,human,2,R_8nSFXSU5ioFZVul,deepseek-ai/DeepSeek-V3,colon,zero_shot
+4,23,1385,208,contracts : expands :: functional : ____,fits,broken,human,llm,1,R_2rq0d8BbI7wB1Ur,deepseek/deepseek-v3.2,colon,zero_shot
+4,24,885,391,diagram : system :: writings : ____,Books,literature,human,llm,1,R_1ENhjkTO16A4r0j,openai/gpt-5.4-mini,colon,zero_shot
+4,25,165,37,squirrel : furry :: air : ____,invisible,invisible,human,llm,1,R_8Zy8uLUzJxoH4jv,deepseek-ai/DeepSeek-V3,colon,zero_shot

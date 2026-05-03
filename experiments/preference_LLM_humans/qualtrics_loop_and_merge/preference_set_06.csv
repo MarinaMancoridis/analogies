@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+6,1,725,57,shaves : hair :: charges : ____,battery,Battery,llm,human,2,R_3yZYqEbvqkBKgc9,anthropic/claude-sonnet-4.5,colon,zero_shot
+6,2,1512,357,census : population :: memoir : ____,recollections,Novel,llm,human,2,R_2nGxSy4I11kQSTs,openai/gpt-5.4-mini,colon,zero_shot
+6,3,1849,364,coupon : discount :: brand : ____,label,loyalty,human,llm,1,R_5rSXgRquczJzYAm,google/gemini-3-flash-preview,colon,zero_shot
+6,4,1366,63,government : laws :: stamping : ____,approval,Authentication,llm,human,2,R_80T0N78UHKWfMu3,openai/gpt-5.4-mini,colon,zero_shot
+6,5,1745,314,demonstration : example :: countryside : ____,rural,landscape,llm,human,2,R_8QQpdefU3uufOyB,anthropic/claude-opus-4.6,colon,zero_shot
+6,6,1725,109,stomach : digestion :: cavity : ____,Filling,excavation,human,llm,1,R_3OJDKarikzM3SHa,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+6,7,1675,208,contracts : expands :: functional : ____,fits,dysfunctional,human,llm,1,R_2rq0d8BbI7wB1Ur,anthropic/claude-sonnet-4.5,colon,zero_shot
+6,8,1645,287,gibberish : english :: tornado : ____,calm,waether,llm,human,2,R_6Xmw9zBHaqjJrBs,gpt-4o,colon,zero_shot
+6,9,984,87,erase : mistake :: smoker : ____,SMOKES,cigarette,human,llm,1,R_214Rq29psT48Uxj,openai/gpt-5.4-mini,colon,zero_shot
+6,10,1697,58,bang : bomb :: proclaim : ____,herald,Shout,llm,human,2,R_87DPfrE1k1Bg990,deepseek-ai/DeepSeek-V3,colon,zero_shot
+6,11,667,117,blossom : bloom :: blender : ____,mix,blend,llm,human,2,R_88NfoZsMGeuuK8O,openai/gpt-5.4-mini,colon,zero_shot
+6,12,1748,321,evaluation : rating :: transportation : ____,transit,Car / vehicle,llm,human,2,R_27Q1rvssDdJ1QbL,gpt-4o,colon,zero_shot
+6,13,411,161,tier : professional :: ventilation : ____,Air,residential,human,llm,1,R_8dGtnoDEklvewjJ,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+6,14,1844,148,politician : legislation :: punches : ____,boxer,pain,llm,human,2,R_2wTZ9plOoEuArAy,deepseek-ai/DeepSeek-V3,colon,zero_shot
+6,15,1511,268,land : liquid :: rains : ____,solid,Water,llm,human,2,R_8dGtnoDEklvewjJ,deepseek/deepseek-v3.2,colon,zero_shot
+6,16,578,433,functioning : working :: wondering : ____,Walking,thinking,human,llm,1,R_2OeQXWlWMltaAO5,deepseek-ai/DeepSeek-V3,colon,zero_shot
+6,17,1525,38,grids : organized :: pumpkin : ____,Fall,seasonal,human,llm,1,R_31Hrt0CoTetm3QF,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+6,18,1061,469,weekends : Sautrday :: outdoors : ____,nature,grass,llm,human,2,R_6Xmw9zBHaqjJrBs,gpt-4o,colon,zero_shot
+6,19,186,62,crabs : claw :: leaking : ____,pipe,drip,human,llm,1,R_8od5rSJl9a7iTJ5,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+6,20,1042,300,blossom : wintry :: bang : ____,whimper,Propane,llm,human,2,R_1i6hMENHDI0RHbz,anthropic/claude-sonnet-4.5,colon,zero_shot
+6,21,1357,358,likeness : person :: agendas : ____,genuine,meetings,human,llm,1,R_8IXZ4JA3Auqk1XG,openai/gpt-4.1,colon,zero_shot
+6,22,1880,147,pencils : notetaking :: stomach : ____,digestion,digestion,human,llm,1,R_7vwtiSNkqmi7RkZ,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+6,23,303,340,galaxy : planet :: cabinet : ____,clothes,drawer,human,llm,1,R_8X70vB7jiL7mdnT,gpt-4o,colon,zero_shot
+6,24,1457,389,symbols : concepts :: address : ____,location,Location,llm,human,2,R_2etIuxra6FAshMV,openai/gpt-5.4-mini,colon,zero_shot
+6,25,1287,486,disneyland : rides :: clinics : ____,medicine,appointments,human,llm,1,R_6Xmw9zBHaqjJrBs,google/gemini-3.1-flash-lite-preview,colon,zero_shot

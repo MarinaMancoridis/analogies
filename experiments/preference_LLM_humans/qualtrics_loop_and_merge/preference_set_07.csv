@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+7,1,1522,309,tomb : stone :: table : ____,Stand,wood,human,llm,1,R_7oe7puoLomijquq,openai/gpt-5.4-mini,colon,zero_shot
+7,2,373,418,wondering : pondering :: classes : ____,Learn,lessons,human,llm,1,R_2fYUbjMObWLl8TT,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+7,3,1204,468,space : asteroid :: greece : ____,Country,ruins,human,llm,1,R_2KoSF7kTOcJXhin,deepseek-ai/DeepSeek-V3,colon,zero_shot
+7,4,197,451,kansas : field :: holiday : ____,vacation,Sun,llm,human,2,R_2GwjqhuxxoYiSWW,deepseek-ai/DeepSeek-V3,colon,zero_shot
+7,5,543,402,exchanged : gave :: warning : ____,cautioned,alerted,llm,human,2,R_27qD7Z0rdtcez0Y,google/gemini-3-flash-preview,colon,zero_shot
+7,6,1004,424,warning : alarm :: icy : ____,cold,Frozen,llm,human,2,R_3OJDKarikzM3SHa,deepseek-ai/DeepSeek-V3,colon,zero_shot
+7,7,829,316,transportation : vehicle :: telescope : ____,spectacle,observatory,human,llm,1,R_6FDvaR3QUoErt7U,openai/gpt-4.1,colon,zero_shot
+7,8,135,311,arrows : arrowhead :: prison : ____,prisoners,prisonhouse,human,llm,1,R_5sBA4KEFxnqJTeV,openai/gpt-5.4-mini,colon,zero_shot
+7,9,914,173,situation : first-date :: outfit : ____,shirt,impression,human,llm,1,R_5sBA4KEFxnqJTeV,google/gemini-3-flash-preview,colon,zero_shot
+7,10,841,494,clinics : patient :: nights : ____,sleep,days,llm,human,2,R_2lVPDRhSRVql3f6,openai/gpt-4.1,colon,zero_shot
+7,11,1796,167,craftsmen : blacksmith :: tier : ____,workmen,row,human,llm,1,R_8IXZ4JA3Auqk1XG,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+7,12,476,170,outfit : swimwear :: table : ____,placemat,Dining,llm,human,2,R_2KoSF7kTOcJXhin,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+7,13,1448,217,forgotten : remembered :: withdraw : ____,deposit,approach,llm,human,2,R_88NfoZsMGeuuK8O,google/gemini-3-flash-preview,colon,zero_shot
+7,14,1881,177,situation : interview :: dimension : ____,measurement,measurment,llm,human,2,R_5Tq98KljHtUE74X,anthropic/claude-sonnet-4.5,colon,zero_shot
+7,15,745,155,regimes : Nazis :: craftsmen : ____,Plumbers,artisans,human,llm,1,R_7gXe70Us4ixU983,anthropic/claude-opus-4.6,colon,zero_shot
+7,16,659,357,census : population :: memoir : ____,recollections,Novel,llm,human,2,R_2nGxSy4I11kQSTs,openai/gpt-5.4-mini,colon,zero_shot
+7,17,352,467,village : villager :: colleges : ____,student,collegians,human,llm,1,R_5sBA4KEFxnqJTeV,anthropic/claude-sonnet-4.5,colon,zero_shot
+7,18,806,362,calendars : date :: capsule : ____,time,medication,human,llm,1,R_809aJWG5qHl9P9q,gpt-4o,colon,zero_shot
+7,19,1902,356,estimates : quantities :: flashback : ____,memories,Memories,llm,human,2,R_8x4vc9NOHTAT3S9,anthropic/claude-opus-4.6,colon,zero_shot
+7,20,1377,457,colleges : building :: manhattan : ____,island,City,llm,human,2,R_8VPw3vwkvoQnuM9,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+7,21,1149,268,land : liquid :: rains : ____,Water,rapids,human,llm,1,R_8dGtnoDEklvewjJ,anthropic/claude-opus-4.6,colon,zero_shot
+7,22,1802,225,growth : plateau :: permits : ____,moratorium,restricts,llm,human,2,R_88NfoZsMGeuuK8O,google/gemini-3-flash-preview,colon,zero_shot
+7,23,1705,229,harder : easier :: defend : ____,Attack,attack,human,llm,1,R_3yZYqEbvqkBKgc9,deepseek/deepseek-v3.2,colon,zero_shot
+7,24,1955,156,capability : athleticism :: relationship : ____,bonding,kinship,human,llm,1,R_8nSFXSU5ioFZVul,openai/gpt-4.1,colon,zero_shot
+7,25,839,178,lakes : Eerie :: analysis : ____,anlysis,Study,llm,human,2,R_31Hrt0CoTetm3QF,openai/gpt-5.4-mini,colon,zero_shot

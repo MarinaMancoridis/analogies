@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+5,1,1975,266,bang : quiet :: relic : ____,New,modern,human,llm,1,R_7gXe70Us4ixU983,openai/gpt-4.1,colon,zero_shot
+5,2,1567,81,locks : door :: leaking : ____,pipe,faucet,llm,human,2,R_1eIGYLKJzIQxHot,openai/gpt-4.1,colon,zero_shot
+5,3,1832,467,village : villager :: colleges : ____,Schools,collegian,human,llm,1,R_2lVPDRhSRVql3f6,openai/gpt-5.4-mini,colon,zero_shot
+5,4,1533,111,bang : noise :: boiler : ____,steam,steam,llm,human,2,R_6IT1xvQUcddRLmA,openai/gpt-5.4-mini,colon,zero_shot
+5,5,26,410,prize : winning :: buck : ____,Dollar,hunting,human,llm,1,R_2KoSF7kTOcJXhin,anthropic/claude-opus-4.6,colon,zero_shot
+5,6,1514,416,preserve : keep :: breaking : ____,courage,stopping,human,llm,1,R_8IXZ4JA3Auqk1XG,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+5,7,1647,314,demonstration : example :: countryside : ____,rural,Hills,llm,human,2,R_1i6hMENHDI0RHbz,anthropic/claude-opus-4.6,colon,zero_shot
+5,8,737,48,branches : twiggy :: appointment : ____,Schedule,scheduled,human,llm,1,R_7oe7puoLomijquq,anthropic/claude-sonnet-4.5,colon,zero_shot
+5,9,1733,315,galaxy : Earth :: countryside : ____,FARM,cottage,human,llm,1,R_214Rq29psT48Uxj,google/gemini-3-flash-preview,colon,zero_shot
+5,10,1335,437,collect : gather :: bothers : ____,Annoy,annoys,human,llm,1,R_7kLFdF6f93m98Ht,gpt-4o,colon,zero_shot
+5,11,1019,359,news : incidence :: motif : ____,theme,Occurrence,llm,human,2,R_5RbgDkGjcydIb73,gpt-4o,colon,zero_shot
+5,12,1494,20,cake : sugary :: matrices : ____,gridlike,rectangular,human,llm,1,R_3j7GTAmvFVgPZn4,anthropic/claude-sonnet-4.5,colon,zero_shot
+5,13,251,99,smoker : cigar :: government : ____,tax,building,llm,human,2,R_809aJWG5qHl9P9q,anthropic/claude-opus-4.6,colon,zero_shot
+5,14,956,474,conferences : meetings :: village : ____,town,Meeting,llm,human,2,R_2fYUbjMObWLl8TT,openai/gpt-4.1,colon,zero_shot
+5,15,1239,110,pirates : raids :: blender : ____,smoothie,blends,human,llm,1,R_8VPw3vwkvoQnuM9,deepseek/deepseek-v3.2,colon,zero_shot
+5,16,1649,116,government : rules :: dogs : ____,wild,barks,human,llm,1,R_2scqndQcVzvSrNo,anthropic/claude-sonnet-4.5,colon,zero_shot
+5,17,38,409,sprung : jumped :: classes : ____,subjects,lessons,human,llm,1,R_57VUuAuC9lOUTHj,google/gemini-3-flash-preview,colon,zero_shot
+5,18,1242,446,teaching : instructing :: classes : ____,Learning,courses,human,llm,1,R_1ENhjkTO16A4r0j,anthropic/claude-opus-4.6,colon,zero_shot
+5,19,981,294,routine : exhilarating :: zombies : ____,Exciting,alive,human,llm,1,R_2mhZR2JbWmpfLah,anthropic/claude-sonnet-4.5,colon,zero_shot
+5,20,655,238,forgotten : reminded :: advanced : ____,Career,regressed,human,llm,1,R_2lVPDRhSRVql3f6,deepseek-ai/DeepSeek-V3,colon,zero_shot
+5,21,1627,260,mistakes : accurate :: terror : ____,Fear,fearless,human,llm,1,R_7kLFdF6f93m98Ht,google/gemini-3-flash-preview,colon,zero_shot
+5,22,1205,367,marker : position :: ambassadors : ____,residency,Senators,llm,human,2,R_8yfTZZpxq7SRaRv,google/gemini-3-flash-preview,colon,zero_shot
+5,23,848,238,forgotten : reminded :: advanced : ____,Career,retreated,human,llm,1,R_2lVPDRhSRVql3f6,anthropic/claude-sonnet-4.5,colon,zero_shot
+5,24,1105,345,catalogue : item :: demonstration : ____,Product,example,human,llm,1,R_31Hrt0CoTetm3QF,openai/gpt-5.4-mini,colon,zero_shot
+5,25,407,445,bothers : irritates :: classes : ____,categories,lectures,human,llm,1,R_8CPpU57kBhw9DZm,gpt-4o,colon,zero_shot

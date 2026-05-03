@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+8,1,1609,30,junk : trashy :: eruption : ____,volcanic,volcanic,llm,human,2,R_8Zy8uLUzJxoH4jv,deepseek/deepseek-v3.2,colon,zero_shot
+8,2,1354,463,village : road :: cities : ____,bridge,highway,human,llm,1,R_5amKzKChLNeFFIi,openai/gpt-4.1,colon,zero_shot
+8,3,1413,438,fathers : parents :: prize : ____,award,winner,llm,human,2,R_8cdTntfJPwFlNyN,anthropic/claude-sonnet-4.5,colon,zero_shot
+8,4,1578,273,diamonds : rusted :: relic : ____,ancient,indiana,llm,human,2,R_809aJWG5qHl9P9q,deepseek/deepseek-v3.2,colon,zero_shot
+8,5,1529,51,poisons : murder :: broadcast : ____,news,announce,human,llm,1,R_5rSXgRquczJzYAm,deepseek/deepseek-v3.2,colon,zero_shot
+8,6,137,256,loves : hateful :: dwarfs : ____,gigantic,Giants,llm,human,2,R_6KwrQYUIB2ccsPe,anthropic/claude-opus-4.6,colon,zero_shot
+8,7,1262,498,morning : sun :: subway : ____,Dark,train,human,llm,1,R_80T0N78UHKWfMu3,gpt-4o,colon,zero_shot
+8,8,1415,290,riches : broke :: dust : ____,clean,clean,human,llm,1,R_53bY0nDQzQaGVtn,deepseek-ai/DeepSeek-V3,colon,zero_shot
+8,9,398,25,fires : warm :: heroin : ____,euphoric,Harm,llm,human,2,R_2nGxSy4I11kQSTs,deepseek/deepseek-v3.2,colon,zero_shot
+8,10,1243,387,vouchers : credit :: certifications : ____,qualification,credentials,human,llm,1,R_2rq0d8BbI7wB1Ur,openai/gpt-4.1,colon,zero_shot
+8,11,1595,111,bang : noise :: boiler : ____,steam,Heat,llm,human,2,R_7gXe70Us4ixU983,openai/gpt-5.4-mini,colon,zero_shot
+8,12,1370,80,wastes : time :: broadcast : ____,show,information,human,llm,1,R_6c6DhyU5qp6nVnN,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+8,13,1549,266,bang : quiet :: relic : ____,modern,new,llm,human,2,R_6IT1xvQUcddRLmA,anthropic/claude-opus-4.6,colon,zero_shot
+8,14,279,216,harder : easier :: familiar : ____,attitude,unfamiliar,human,llm,1,R_8IXZ4JA3Auqk1XG,deepseek/deepseek-v3.2,colon,zero_shot
+8,15,1053,222,familiar : foreign :: tired : ____,awake,energetic,human,llm,1,R_53bY0nDQzQaGVtn,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+8,16,1786,480,neighborhoods : homes :: holidays : ____,rentals,days,human,llm,1,R_2ozRTb2HfQtALFu,deepseek/deepseek-v3.2,colon,zero_shot
+8,17,1386,4,pupils : black :: junk : ____,trash,white,human,llm,1,R_7vwtiSNkqmi7RkZ,anthropic/claude-opus-4.6,colon,zero_shot
+8,18,1144,141,poisons : illness :: punches : ____,injury,bruises,llm,human,2,R_3wz5G4TDLTRDmw1,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+8,19,581,89,dodge : danger :: sketch : ____,outline,Draw,llm,human,2,R_87DPfrE1k1Bg990,openai/gpt-5.4-mini,colon,zero_shot
+8,20,259,455,holidays : present :: clinics : ____,patient,gifts,llm,human,2,R_809aJWG5qHl9P9q,openai/gpt-4.1,colon,zero_shot
+8,21,1493,198,attachment : button :: lakes : ____,boat,reservoirs,human,llm,1,R_8b2Wni7lE608TUP,deepseek/deepseek-v3.2,colon,zero_shot
+8,22,1876,95,panther : fangs :: sing : ____,voice,lyrics,llm,human,2,R_2wTZ9plOoEuArAy,anthropic/claude-sonnet-4.5,colon,zero_shot
+8,23,113,472,conferences : keynotes :: space : ____,Bar,launches,human,llm,1,R_2awNNqRRDeM5rtQ,google/gemini-3-flash-preview,colon,zero_shot
+8,24,538,401,goodbye : farewell :: awful : ____,bad,terrible,human,llm,1,R_2scqndQcVzvSrNo,anthropic/claude-sonnet-4.5,colon,zero_shot
+8,25,852,442,collection : group :: predicted : ____,expected,forseen,llm,human,2,R_1eIGYLKJzIQxHot,deepseek-ai/DeepSeek-V3,colon,zero_shot

@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+10,1,62,462,village : hut :: dock : ____,Boat,ship,human,llm,1,R_8x4vc9NOHTAT3S9,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+10,2,437,24,branches : spikey :: pumpkin : ____,Squishy,smooth,human,llm,1,R_2nGxSy4I11kQSTs,deepseek/deepseek-v3.2,colon,zero_shot
+10,3,686,451,kansas : field :: holiday : ____,Rest,vacation,human,llm,1,R_9jIkpm5e43uXdqV,anthropic/claude-sonnet-4.5,colon,zero_shot
+10,4,1721,283,torpedo : sluggish :: disinformation : ____,Media,informative,human,llm,1,R_2nGxSy4I11kQSTs,anthropic/claude-opus-4.6,colon,zero_shot
+10,5,1956,495,carnival : ride :: weekends : ____,Sundays,relaxation,human,llm,1,R_8x4vc9NOHTAT3S9,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+10,6,173,308,militia : soldier :: church : ____,parishioner,Cathedral,llm,human,2,R_8Nz6tdiBzcr7cU6,google/gemini-3-flash-preview,colon,zero_shot
+10,7,1780,294,routine : exhilarating :: zombies : ____,lively,boring,llm,human,2,R_6c6DhyU5qp6nVnN,deepseek/deepseek-v3.2,colon,zero_shot
+10,8,231,251,gibberish : sensical :: terror : ____,serene,Honour,llm,human,2,R_8x4vc9NOHTAT3S9,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+10,9,388,170,outfit : swimwear :: table : ____,Dining,desk,human,llm,1,R_2etIuxra6FAshMV,deepseek/deepseek-v3.2,colon,zero_shot
+10,10,817,7,farmers : agricultural :: injury : ____,hospital,traumatic,human,llm,1,R_8b2Wni7lE608TUP,deepseek-ai/DeepSeek-V3,colon,zero_shot
+10,11,1580,295,weights : light :: routine : ____,spontaneous,normal,llm,human,2,R_8RqHKthgcs1wCBy,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+10,12,1403,18,cube : geometric :: matrices : ____,algebraic,Graphs,llm,human,2,R_87DPfrE1k1Bg990,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+10,13,551,412,instant : second :: bothers : ____,annoys,leaves,llm,human,2,R_8cdTntfJPwFlNyN,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+10,14,1950,5,farmers : natural :: fires : ____,accidental,Flame,llm,human,2,R_2hunmJTLCYE15ux,openai/gpt-4.1,colon,zero_shot
+10,15,416,379,debt : value :: bets : ____,savings,odds,human,llm,1,R_6FDvaR3QUoErt7U,openai/gpt-4.1,colon,zero_shot
+10,16,594,239,broke : wealthy :: plain : ____,spicy,fancy,human,llm,1,R_27qD7Z0rdtcez0Y,openai/gpt-4.1,colon,zero_shot
+10,17,632,488,woods : deer :: village : ____,people,Villagers,llm,human,2,R_3OJDKarikzM3SHa,gpt-4o,colon,zero_shot
+10,18,1641,207,encouraging : discouraging :: utility : ____,Utilities,futility,human,llm,1,R_5RbgDkGjcydIb73,google/gemini-3-flash-preview,colon,zero_shot
+10,19,154,32,films : artistic :: greece : ____,historical,historical,llm,human,2,R_8b2Wni7lE608TUP,deepseek-ai/DeepSeek-V3,colon,zero_shot
+10,20,1696,34,matrices : organized :: diamonds : ____,Sparkle,compressed,human,llm,1,R_2KoSF7kTOcJXhin,anthropic/claude-opus-4.6,colon,zero_shot
+10,21,1233,364,coupon : discount :: brand : ____,label,quality,human,llm,1,R_5rSXgRquczJzYAm,anthropic/claude-opus-4.6,colon,zero_shot
+10,22,1771,247,tired : energetic :: broke : ____,wealthy,Rich,llm,human,2,R_80T0N78UHKWfMu3,openai/gpt-4.1,colon,zero_shot
+10,23,847,139,tornado : alerts :: academics : ____,forecasts,grades,human,llm,1,R_8cdTntfJPwFlNyN,anthropic/claude-opus-4.6,colon,zero_shot
+10,24,1906,83,eat : snack :: broadcast : ____,watch,snippet,human,llm,1,R_8cdTntfJPwFlNyN,deepseek/deepseek-v3.2,colon,zero_shot
+10,25,318,338,storage : site :: worm : ____,Ground,burrow,human,llm,1,R_2KoSF7kTOcJXhin,google/gemini-3.1-flash-lite-preview,colon,zero_shot

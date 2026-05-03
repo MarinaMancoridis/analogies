@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+3,1,1336,7,farmers : agricultural :: injury : ____,Accidental,accidental,human,llm,1,R_80T0N78UHKWfMu3,openai/gpt-5.4-mini,colon,zero_shot
+3,2,1154,476,wartime : weapon :: holiday : ____,ornament,present,llm,human,2,R_3j7GTAmvFVgPZn4,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+3,3,1935,348,church : steeple :: arrows : ____,fletching,bow,llm,human,2,R_1eIGYLKJzIQxHot,google/gemini-3-flash-preview,colon,zero_shot
+3,4,1978,314,demonstration : example :: countryside : ____,landscape,landscape,llm,human,2,R_8QQpdefU3uufOyB,google/gemini-3-flash-preview,colon,zero_shot
+3,5,763,194,education : elementary :: section : ____,divide,paragraph,human,llm,1,R_27qD7Z0rdtcez0Y,openai/gpt-4.1,colon,zero_shot
+3,6,461,259,error : correct :: fairytale : ____,reality,nonfiction,llm,human,2,R_3DdXoi535SoYYGx,deepseek/deepseek-v3.2,colon,zero_shot
+3,7,1047,462,village : hut :: dock : ____,Boat,boat,human,llm,1,R_2fYUbjMObWLl8TT,deepseek/deepseek-v3.2,colon,zero_shot
+3,8,1982,162,story : fairytale :: regimes : ____,authoritarian,Fiction,llm,human,2,R_2awNNqRRDeM5rtQ,deepseek/deepseek-v3.2,colon,zero_shot
+3,9,1940,23,sirens : audible :: branches : ____,Grow,visible,human,llm,1,R_9jIkpm5e43uXdqV,gpt-4o,colon,zero_shot
+3,10,1750,212,feminine : masculine :: contracts : ____,expands,agreements,llm,human,2,R_8QQpdefU3uufOyB,gpt-4o,colon,zero_shot
+3,11,1932,2,branches : wooden :: sunshine : ____,warm,golden,human,llm,1,R_8X70vB7jiL7mdnT,google/gemini-3-flash-preview,colon,zero_shot
+3,12,658,464,dock : plank :: wartime : ____,unsettling,planks,human,llm,1,R_2rq0d8BbI7wB1Ur,deepseek-ai/DeepSeek-V3,colon,zero_shot
+3,13,1583,450,upsetting : disturbing :: predicted : ____,forecasted,guessed,llm,human,2,R_8nSFXSU5ioFZVul,deepseek/deepseek-v3.2,colon,zero_shot
+3,14,81,225,growth : plateau :: permits : ____,moratorium,Illegal,llm,human,2,R_7kLFdF6f93m98Ht,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+3,15,456,85,academics : lecture :: panther : ____,prowl,Pink,llm,human,2,R_2hunmJTLCYE15ux,deepseek/deepseek-v3.2,colon,zero_shot
+3,16,249,354,kilometers : distance :: listing : ____,hear,inventory,human,llm,1,R_8X70vB7jiL7mdnT,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+3,17,1690,321,evaluation : rating :: transportation : ____,transit,Car / vehicle,llm,human,2,R_27Q1rvssDdJ1QbL,openai/gpt-4.1,colon,zero_shot
+3,18,987,348,church : steeple :: arrows : ____,quiver,bow,llm,human,2,R_1eIGYLKJzIQxHot,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+3,19,434,377,units : quantities :: labels : ____,Ingredients,names,human,llm,1,R_1i6hMENHDI0RHbz,openai/gpt-5.4-mini,colon,zero_shot
+3,20,1791,362,calendars : date :: capsule : ____,medication,Pill,llm,human,2,R_7kLFdF6f93m98Ht,gpt-4o,colon,zero_shot
+3,21,1576,124,academics : papers :: lecturers : ____,speech,lectures,human,llm,1,R_3j7GTAmvFVgPZn4,deepseek/deepseek-v3.2,colon,zero_shot
+3,22,1492,178,lakes : Eerie :: analysis : ____,anlysis,Study,llm,human,2,R_31Hrt0CoTetm3QF,openai/gpt-5.4-mini,colon,zero_shot
+3,23,1114,289,air : wet :: disinformation : ____,fact,misleading,human,llm,1,R_7n7V53W65JrsLPJ,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+3,24,1306,203,lies : truths :: rejects : ____,accepts,Accepts,llm,human,2,R_2KoSF7kTOcJXhin,openai/gpt-4.1,colon,zero_shot
+3,25,381,368,discography : artist :: writings : ____,author,author,human,llm,1,R_2rq0d8BbI7wB1Ur,google/gemini-3-flash-preview,colon,zero_shot

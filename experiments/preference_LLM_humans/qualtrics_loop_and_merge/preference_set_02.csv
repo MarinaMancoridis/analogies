@@ -1,0 +1,26 @@
+Set_Number,Item_Order,comparison_id,triple_id,analogy_prompt,completion_1,completion_2,completion_1_source,completion_2_source,human_is_completion,human_participant_id,llm_model_name,llm_prompt_type,llm_prompt_family
+2,1,653,440,classes : courses :: presented : ____,presentations,offered,human,llm,1,R_3j7GTAmvFVgPZn4,openai/gpt-4.1,colon,zero_shot
+2,2,51,265,rains : dry :: trash : ____,clean,clean,llm,human,2,R_6c6DhyU5qp6nVnN,openai/gpt-5.4-mini,colon,zero_shot
+2,3,911,26,pasta : delicious :: eruption : ____,explosive,volcano,llm,human,2,R_1eIGYLKJzIQxHot,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+2,4,673,495,carnival : ride :: weekends : ____,Sundays,relax,human,llm,1,R_8x4vc9NOHTAT3S9,deepseek-ai/DeepSeek-V3,colon,zero_shot
+2,5,57,26,pasta : delicious :: eruption : ____,catastrophic,Scary,llm,human,2,R_80T0N78UHKWfMu3,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+2,6,1859,389,symbols : concepts :: address : ____,location,Location,llm,human,2,R_2etIuxra6FAshMV,openai/gpt-5.4-mini,colon,zero_shot
+2,7,1016,40,pasta : cheesy :: farmers : ____,muddy,vegetables,llm,human,2,R_3DdXoi535SoYYGx,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+2,8,1351,146,threat : panic :: pirates : ____,captain,plunder,human,llm,1,R_57VUuAuC9lOUTHj,google/gemini-3.1-flash-lite-preview,colon,zero_shot
+2,9,1450,45,chicken : edible :: rainbow : ____,visible,colourful,llm,human,2,R_8RqHKthgcs1wCBy,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+2,10,840,318,maps : legend :: cabinet : ____,Storage,key,human,llm,1,R_7oe7puoLomijquq,openai/gpt-5.4-mini,colon,zero_shot
+2,11,14,454,conferences : session :: cave : ____,chamber,nook,llm,human,2,R_8VPw3vwkvoQnuM9,openai/gpt-5.4-mini,colon,zero_shot
+2,12,23,176,action : exit :: tribes : ____,exodus,Clans,llm,human,2,R_1eIGYLKJzIQxHot,gpt-4o,colon,zero_shot
+2,13,1803,42,diamonds : bright :: fires : ____,hot,hot,llm,human,2,R_8Zy8uLUzJxoH4jv,gpt-4o,colon,zero_shot
+2,14,1297,164,sport : golf :: craftsmen : ____,blacksmith,carpentry,human,llm,1,R_6Xmw9zBHaqjJrBs,openai/gpt-4.1,colon,zero_shot
+2,15,1679,325,organs : lungs :: storage : ____,cupboard,batteries,human,llm,1,R_88NfoZsMGeuuK8O,deepseek-ai/DeepSeek-V3,colon,zero_shot
+2,16,324,353,pronoun : object :: listing : ____,tilt,wording,llm,human,2,R_809aJWG5qHl9P9q,anthropic/claude-opus-4.6,colon,zero_shot
+2,17,1513,331,countryside : plain :: telescope : ____,microscope,stars,llm,human,2,R_2lVPDRhSRVql3f6,meta-llama/llama-3.3-70b-instruct,colon,zero_shot
+2,18,1158,334,evaluation : conclusion :: radiator : ____,heat,heat,llm,human,2,R_8RqHKthgcs1wCBy,anthropic/claude-opus-4.6,colon,zero_shot
+2,19,364,360,prizes : accomplishment :: symbols : ____,meaning,directions,llm,human,2,R_6Xmw9zBHaqjJrBs,gpt-4o,colon,zero_shot
+2,20,576,289,air : wet :: disinformation : ____,QUESTION,false,human,llm,1,R_214Rq29psT48Uxj,anthropic/claude-sonnet-4.5,colon,zero_shot
+2,21,198,467,village : villager :: colleges : ____,collegians,Schools,llm,human,2,R_2lVPDRhSRVql3f6,google/gemini-3-flash-preview,colon,zero_shot
+2,22,1282,396,news : story :: sirens : ____,warning,fire,llm,human,2,R_5sBA4KEFxnqJTeV,google/gemini-3-flash-preview,colon,zero_shot
+2,23,1862,27,scooter : electronic :: woods : ____,Nature,metal,human,llm,1,R_31Hrt0CoTetm3QF,anthropic/claude-opus-4.6,colon,zero_shot
+2,24,218,373,flashback : event :: polls : ____,election,elect,llm,human,2,R_7n7V53W65JrsLPJ,anthropic/claude-opus-4.6,colon,zero_shot
+2,25,1711,129,waste : disposal :: wineries : ____,creating,fermentation,human,llm,1,R_5amKzKChLNeFFIi,gpt-4o,colon,zero_shot
