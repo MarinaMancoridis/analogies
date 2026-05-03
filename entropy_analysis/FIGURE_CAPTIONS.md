@@ -4,8 +4,8 @@
 
 - **Human responses embedded:** **1300** (`participant_eligible_complete`, non-empty `D`, non-empty after `clean_answer`).
 - **LLM responses embedded:** **4983** (`gold_curate_b` trials, `prompt_type == colon`, no `error`, non-empty `D` after `clean_answer`).
-- **Embedding model:** `text-embedding-3-large` (MOCK)
-- **Participation ratio (global PCA):** 49.79
+- **Embedding model:** `text-embedding-3-small`
+- **Participation ratio (global PCA):** 41.28
 
 ## Figures
 
@@ -19,7 +19,7 @@ Cumulative variance explained by PCA components. High intrinsic dimensionality i
 
 ### `fig03_pc1_density_by_source.png`
 
-Kernel-free histogram of PC1 scores. Discrete Shannon entropy of binned PC1 (32 bins): human≈2.945, LLM≈2.902. Higher entropy suggests a more spread-out marginal along the leading direction; interpret cautiously (binning, N).
+Kernel-free histogram of PC1 scores. Discrete Shannon entropy of binned PC1 (32 bins): human≈3.225, LLM≈3.265. Higher entropy suggests a more spread-out marginal along the leading direction; interpret cautiously (binning, N).
 
 ### `fig04_embedding_norm_log.png`
 
@@ -35,7 +35,7 @@ Same global PCA as Fig.1, faceted by **relation_key**. Shows whether human–LLM
 
 ### `fig07_centroid_l2_pca10.png`
 
-L2 distance between mean PCA vectors (first 10 components). Magnitude 0.0703 is exploratory; statistical testing would require paired design or hierarchical models.
+L2 distance between mean PCA vectors (first 10 components). Magnitude 2.2101 is exploratory; statistical testing would require paired design or hierarchical models.
 
 ### `fig08_pairwise_cosine_subsample.png`
 
