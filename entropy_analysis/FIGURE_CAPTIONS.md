@@ -4,8 +4,8 @@
 
 - **Human responses embedded:** **1300** (`participant_eligible_complete`, non-empty `D`, non-empty after `clean_answer`).
 - **LLM responses embedded:** **4983** (`gold_curate_b` trials, `prompt_type == colon`, no `error`, non-empty `D` after `clean_answer`).
-- **Embedding model:** `text-embedding-3-small`
-- **Participation ratio (global PCA):** 41.28
+- **Embedding model:** `mock_dim256` (MOCK)
+- **Participation ratio (global PCA):** 49.78
 
 ## Figures
 
@@ -19,7 +19,7 @@ Cumulative variance explained by PCA components. High intrinsic dimensionality i
 
 ### `fig03_pc1_density_by_source.png`
 
-Kernel-free histogram of PC1 scores. Discrete Shannon entropy of binned PC1 (32 bins): human≈3.225, LLM≈3.265. Higher entropy suggests a more spread-out marginal along the leading direction; interpret cautiously (binning, N).
+Kernel-free histogram of PC1 scores. Discrete Shannon entropy of binned PC1 (32 bins): human≈3.021, LLM≈2.887. Higher entropy suggests a more spread-out marginal along the leading direction; interpret cautiously (binning, N).
 
 ### `fig04_embedding_norm_log.png`
 
@@ -35,7 +35,7 @@ Same global PCA as Fig.1, faceted by **relation_key**. Shows whether human–LLM
 
 ### `fig07_centroid_l2_pca10.png`
 
-L2 distance between mean PCA vectors (first 10 components). Magnitude 2.2101 is exploratory; statistical testing would require paired design or hierarchical models.
+L2 distance between mean PCA vectors (first 10 components). Magnitude 0.1613 is exploratory; statistical testing would require paired design or hierarchical models.
 
 ### `fig08_pairwise_cosine_subsample.png`
 
@@ -52,3 +52,15 @@ t-SNE on a stratified subsample (cap ~1200, max_iter=500) for nonlinear 2-D visu
 ### `fig11_pc1_boxplot_by_relation.png`
 
 PC1 distributions per **relation_key**: for each relation, two boxplots (blue = human, orange = LLM). Shows relation-specific shifts along the main global axis.
+
+### `fig12_paired_dist_hist_to_llm_cloud.png`
+
+Two histograms over **all eligible human completions**: (left) ℓ₂ distance in **standardized** embedding space from the human vector to the **mean of all LLM vectors in the same triple_id**; (right) distance to the **nearest** LLM vector in that triple. This matches the experimental design (same item) better than pooling unrelated analogies.
+
+### `fig13_paired_mean_dist_by_relation.png`
+
+Each point is one **triple_id**: the **mean** (over human completions for that triple) of distance-to-LLM-centroid. Boxplots group triples by **relation_key**. Higher boxes ⇒ humans tend to sit farther from where LLM completions concentrate for that relation.
+
+### `fig14_paired_example_triples_local_pca.png`
+
+**Local** 2D PCA per triple (not the global Fig.1 basis): orange dots are LLM colon completions, stars are human completions, crimson ✕ is their mean. When the orange cloud is tight and the star sits inside or near it, human and LLM geometry align for that item; a distant star is an intuitive “mismatch” visualization.

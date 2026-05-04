@@ -166,6 +166,70 @@ def _participation_ratio(evals: np.ndarray) -> float:
     return float((s**2) / (np.sum(ev**2) + 1e-12))
 
 
+def _paired_triple_human_llm_distances(
+    Xs: np.ndarray,
+    triple_ids: np.ndarray,
+    sources: np.ndarray,
+    relations: np.ndarray,
+) -> Tuple[
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    Dict[int, float],
+    Dict[int, str],
+]:
+    """
+    For each human completion, within the same triple_id as LLM colon completions:
+    - d_centroid: ℓ₂ distance in **standardized** embedding space to the mean of LLM vectors.
+    - d_min: ℓ₂ distance to the **nearest** LLM vector in that triple.
+
+    Returns per-human arrays (d_centroid, d_min, relation, triple_id) and per-triple
+    mean(d_centroid) with relation labels for aggregation plots.
+    """
+    d_cent_list: List[float] = []
+    d_min_list: List[float] = []
+    rel_h: List[str] = []
+    tid_h: List[int] = []
+    triple_to_dcent_vals: Dict[int, List[float]] = {}
+
+    for tid in np.unique(triple_ids):
+        mh = (triple_ids == tid) & (sources == "human")
+        ml = (triple_ids == tid) & (sources == "llm")
+        if not np.any(mh) or not np.any(ml):
+            continue
+        idx_h = np.where(mh)[0]
+        idx_l = np.where(ml)[0]
+        L = Xs[idx_l]
+        centroid = L.mean(axis=0)
+        rk = str(relations[idx_h[0]])
+        vals_t: List[float] = []
+        for hi in idx_h:
+            xh = Xs[hi]
+            dc = float(np.linalg.norm(xh - centroid))
+            dm = float(np.linalg.norm(L - xh, axis=1).min())
+            d_cent_list.append(dc)
+            d_min_list.append(dm)
+            rel_h.append(rk)
+            tid_h.append(int(tid))
+            vals_t.append(dc)
+        triple_to_dcent_vals[int(tid)] = vals_t
+
+    trip_mean_centroid = {t: float(np.mean(v)) for t, v in triple_to_dcent_vals.items()}
+    trip_relation = {
+        t: str(relations[np.where((triple_ids == t) & (sources == "human"))[0][0]])
+        for t in trip_mean_centroid
+    }
+    return (
+        np.array(d_cent_list, dtype=np.float64),
+        np.array(d_min_list, dtype=np.float64),
+        np.array(rel_h),
+        np.array(tid_h, dtype=np.int64),
+        trip_mean_centroid,
+        trip_relation,
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mock", action="store_true", help="Random embeddings; no API.")
@@ -638,8 +702,198 @@ def main() -> None:
     captions.append(
         (
             str(p11.name),
-        "PC1 distributions per **relation_key**: for each relation, two boxplots (blue = human, "
-        "orange = LLM). Shows relation-specific shifts along the main global axis.",
+            "PC1 distributions per **relation_key**: for each relation, two boxplots (blue = human, "
+            "orange = LLM). Shows relation-specific shifts along the main global axis.",
+        )
+    )
+
+    # --- Paired-by-triple: each human vs LLM completions for the same triple_id (standardized Xs)
+    d_cent, d_min, _, _, trip_mean_c, trip_rel_c = _paired_triple_human_llm_distances(
+        Xs, triple_ids, sources, relations
+    )
+    paired_summ = {
+        "n_human_completions_paired": int(len(d_cent)),
+        "n_triples_with_both_sources": int(len(trip_mean_c)),
+        "median_dist_human_to_llm_centroid": float(np.median(d_cent)),
+        "median_dist_human_to_nearest_llm": float(np.median(d_min)),
+        "mean_dist_human_to_llm_centroid": float(np.mean(d_cent)),
+        "mean_dist_human_to_nearest_llm": float(np.mean(d_min)),
+    }
+    (art_dir / "paired_triple_summary.json").write_text(
+        json.dumps(paired_summ, indent=2), encoding="utf-8"
+    )
+
+    # Fig 12: histograms of paired distances (easy read)
+    fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.2))
+    ax0 = axes[0]
+    ax0.hist(d_cent, bins=48, color="#1f77b4", alpha=0.78, edgecolor="white", linewidth=0.4)
+    ax0.axvline(
+        float(np.median(d_cent)),
+        color="crimson",
+        ls="--",
+        lw=2,
+        label=f"median = {float(np.median(d_cent)):.3f}",
+    )
+    ax0.set_xlabel(r"$\ell_2$ distance to mean of LLM vectors (same triple)")
+    ax0.set_ylabel("Human completions (count)")
+    ax0.set_title("Distance to LLM cloud center")
+    ax0.legend(loc="upper right", fontsize=9)
+
+    ax1 = axes[1]
+    ax1.hist(d_min, bins=48, color="#2ca02c", alpha=0.78, edgecolor="white", linewidth=0.4)
+    ax1.axvline(
+        float(np.median(d_min)),
+        color="crimson",
+        ls="--",
+        lw=2,
+        label=f"median = {float(np.median(d_min)):.3f}",
+    )
+    ax1.set_xlabel(r"$\ell_2$ distance to nearest LLM vector (same triple)")
+    ax1.set_ylabel("Human completions (count)")
+    ax1.set_title("Distance to closest LLM draw")
+    ax1.legend(loc="upper right", fontsize=9)
+
+    fig.suptitle(
+        "Paired-by-triple (standardized embeddings): each human vs only LLM completions\n"
+        "for the same analogy item — smaller distances ⇒ human sits closer to the LLM cluster.",
+        fontsize=11,
+        y=1.03,
+    )
+    fig.tight_layout()
+    p12 = fig_dir / "fig12_paired_dist_hist_to_llm_cloud.png"
+    fig.savefig(p12, dpi=160, bbox_inches="tight")
+    plt.close(fig)
+    captions.append(
+        (
+            str(p12.name),
+            "Two histograms over **all eligible human completions**: (left) ℓ₂ distance in **standardized** "
+            "embedding space from the human vector to the **mean of all LLM vectors in the same triple_id**; "
+            "(right) distance to the **nearest** LLM vector in that triple. "
+            "This matches the experimental design (same item) better than pooling unrelated analogies.",
+        )
+    )
+
+    # Fig 13: one value per triple = mean (over humans in that triple) distance to LLM centroid
+    rel_keys_paired = sorted(set(trip_rel_c.values()))
+    data_by_rel: List[List[float]] = []
+    labels_rel: List[str] = []
+    for rk in rel_keys_paired:
+        vals = [trip_mean_c[t] for t in trip_mean_c if trip_rel_c[t] == rk]
+        if vals:
+            data_by_rel.append(vals)
+            labels_rel.append(f"{rk}\n(n={len(vals)} triples)")
+    fig, ax = plt.subplots(figsize=(11.5, 4.2))
+    bp = ax.boxplot(data_by_rel, patch_artist=True, showfliers=False)
+    for box in bp["boxes"]:
+        box.set_facecolor("#aec7e8")
+        box.set_alpha(0.85)
+    ax.set_xticklabels(labels_rel, rotation=38, ha="right", fontsize=8)
+    ax.set_ylabel("Per-triple mean: human → LLM-centroid distance\n(standardized ℓ₂)")
+    ax.set_title("Which relations show humans farther from the LLM cloud center? (one box per relation)")
+    fig.tight_layout()
+    p13 = fig_dir / "fig13_paired_mean_dist_by_relation.png"
+    fig.savefig(p13, dpi=160, bbox_inches="tight")
+    plt.close(fig)
+    captions.append(
+        (
+            str(p13.name),
+            "Each point is one **triple_id**: the **mean** (over human completions for that triple) of "
+            "distance-to-LLM-centroid. Boxplots group triples by **relation_key**. "
+            "Higher boxes ⇒ humans tend to sit farther from where LLM completions concentrate for that relation.",
+        )
+    )
+
+    # Fig 14: 3×3 example triples — local PCA (this triple only) to show clustering
+    valid_tids = [
+        int(t)
+        for t in np.unique(triple_ids)
+        if int(np.sum((triple_ids == t) & (sources == "human"))) >= 1
+        and int(np.sum((triple_ids == t) & (sources == "llm"))) >= 4
+    ]
+    if len(valid_tids) <= 9:
+        chosen_triples = np.array(valid_tids, dtype=np.int64)
+    else:
+        chosen_triples = rng.choice(np.array(valid_tids, dtype=np.int64), size=9, replace=False)
+    fig, axes = plt.subplots(3, 3, figsize=(10.2, 10.2))
+    legend_ax = None
+    for k in range(9):
+        ax = axes.ravel()[k]
+        if k >= len(chosen_triples):
+            ax.axis("off")
+            continue
+        tid = int(chosen_triples[k])
+        mh = (triple_ids == tid) & (sources == "human")
+        ml = (triple_ids == tid) & (sources == "llm")
+        idx_h = np.where(mh)[0]
+        idx_l = np.where(ml)[0]
+        rk = str(relations[idx_h[0]])
+        rows = [Xs[i] for i in idx_h] + [Xs[i] for i in idx_l]
+        sub = np.vstack(rows)
+        if sub.shape[0] < 3:
+            ax.axis("off")
+            continue
+        pca_t = PCA(n_components=2, random_state=args.seed + k)
+        P = pca_t.fit_transform(sub)
+        n_hi = len(idx_h)
+        Ph, Pl = P[:n_hi], P[n_hi:]
+        cent = Pl.mean(axis=0)
+        use_lbl = legend_ax is None
+        ax.scatter(
+            Pl[:, 0],
+            Pl[:, 1],
+            c="#ff7f0e",
+            s=36,
+            alpha=0.55,
+            label="LLM" if use_lbl else "",
+            edgecolors="none",
+        )
+        ax.scatter(
+            Ph[:, 0],
+            Ph[:, 1],
+            c="#1f77b4",
+            s=140,
+            marker="*",
+            zorder=5,
+            label="Human" if use_lbl else "",
+            edgecolors="black",
+            linewidths=0.35,
+        )
+        ax.scatter(
+            [cent[0]],
+            [cent[1]],
+            c="crimson",
+            marker="X",
+            s=110,
+            zorder=6,
+            linewidths=1.2,
+            label="LLM mean" if use_lbl else "",
+        )
+        if use_lbl:
+            legend_ax = ax
+        short_rk = rk[:22] + "…" if len(rk) > 22 else rk
+        ax.set_title(f"triple {tid}\n{short_rk}", fontsize=8)
+        ax.set_xticks([])
+        ax.set_yticks([])
+    fig.suptitle(
+        "Nine example triples — PCA fit **only** to points from that triple\n"
+        "★ human · orange = LLM draws · ✕ = mean LLM — tight orange cloud = similar LLM answers",
+        fontsize=11,
+        y=1.01,
+    )
+    if legend_ax is not None:
+        handles, leg_labels = legend_ax.get_legend_handles_labels()
+        fig.legend(handles, leg_labels, loc="upper center", ncol=3, bbox_to_anchor=(0.5, 0.99), fontsize=9)
+    fig.tight_layout(rect=(0, 0, 1, 0.96))
+    p14 = fig_dir / "fig14_paired_example_triples_local_pca.png"
+    fig.savefig(p14, dpi=160, bbox_inches="tight")
+    plt.close(fig)
+    captions.append(
+        (
+            str(p14.name),
+            "**Local** 2D PCA per triple (not the global Fig.1 basis): orange dots are LLM colon completions, "
+            "stars are human completions, crimson ✕ is their mean. "
+            "When the orange cloud is tight and the star sits inside or near it, human and LLM geometry align "
+            "for that item; a distant star is an intuitive “mismatch” visualization.",
         )
     )
 

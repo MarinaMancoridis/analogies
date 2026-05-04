@@ -1,0 +1,26 @@
+% Requires: \usepackage{booktabs}
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l ccc | ccc@{}}
+\toprule
+\textbf{Model} & \multicolumn{3}{c}{\textbf{(A) Consistency}} & \multicolumn{3}{c}{\textbf{(B) Correctness \& contrast}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+& \textbf{3 same} & \textbf{$\geq$2} & \textbf{pairw.} & \textbf{all corr.} & \textbf{\shortstack{consistency gap\\$\uparrow$\textsuperscript{\textit{a}}}} & \textbf{\shortstack{repeat when wrong\\$\uparrow$\textsuperscript{\textit{b}}}} \\
+\midrule
+\scriptsize Llama 3.3 70B & \scriptsize 0.55 (0.050) & \scriptsize 0.86 (0.035) & \scriptsize 0.65 (0.040) & \scriptsize 0.26 (0.044) & \scriptsize \textbf{+0.39} & \scriptsize \textbf{0.39 (0.057)} \\
+\scriptsize Claude Opus 4.6 & \scriptsize 0.51 (0.050) & \scriptsize 0.88 (0.032) & \scriptsize 0.63 (0.039) & \scriptsize 0.43 (0.050) & \scriptsize \textbf{+0.20} & \scriptsize 0.14 (0.046) \\
+\scriptsize DeepSeek V3 & \scriptsize 0.75 (0.043) & \scriptsize 0.97 (0.017) & \scriptsize 0.82 (0.031) & \scriptsize 0.65 (0.048) & \scriptsize \textbf{+0.17} & \scriptsize 0.29 (0.076) \\
+\scriptsize DeepSeek V3.2 & \scriptsize 0.71 (0.045) & \scriptsize 0.95 (0.022) & \scriptsize 0.79 (0.034) & \scriptsize 0.66 (0.047) & \scriptsize +0.13 & \scriptsize 0.15 (0.061) \\
+\scriptsize GPT-4.1 & \scriptsize 0.92 (0.027) & \scriptsize 1.00 (0.000) & \scriptsize 0.95 (0.018) & \scriptsize 0.84 (0.037) & \scriptsize +0.11 & \scriptsize \textbf{0.50 (0.125)} \\
+\scriptsize GPT-5.4 Mini & \scriptsize 0.78 (0.041) & \scriptsize 0.97 (0.017) & \scriptsize 0.84 (0.030) & \scriptsize 0.74 (0.044) & \scriptsize +0.10 & \scriptsize 0.15 (0.071) \\
+\scriptsize Gemini 3 Flash & \scriptsize 0.87 (0.034) & \scriptsize 0.99 (0.010) & \scriptsize 0.91 (0.024) & \scriptsize 0.81 (0.039) & \scriptsize +0.10 & \scriptsize 0.32 (0.107) \\
+\scriptsize Gemini 3.1 Flash-Lite & \scriptsize 0.87 (0.034) & \scriptsize 0.99 (0.010) & \scriptsize 0.91 (0.024) & \scriptsize 0.82 (0.038) & \scriptsize +0.09 & \scriptsize 0.28 (0.106) \\
+\scriptsize GPT-4o & \scriptsize 0.96 (0.020) & \scriptsize 1.00 (0.000) & \scriptsize 0.97 (0.013) & \scriptsize 0.91 (0.029) & \scriptsize +0.06 & \scriptsize \textbf{0.56 (0.166)} \\
+\scriptsize Claude Sonnet 4.5 & \scriptsize 0.91 (0.029) & \scriptsize 1.00 (0.000) & \scriptsize 0.94 (0.019) & \scriptsize 0.88 (0.032) & \scriptsize +0.06 & \scriptsize 0.25 (0.125) \\
+\bottomrule
+\end{tabular}
+\caption{Models exhibit excess internal consistency relative to correctness on a trivial identity task (\texttt{gold\_run}: $n$ triples per model, three i.i.d.\ draws per prompt). The \textbf{consistency gap} (pairwise agreement minus joint correctness) highlights regimes where models agree with themselves more than with the task; \textsuperscript{\textit{a}}\,\textbf{higher} = \textbf{more consistent than correct}. \textbf{Repeat when wrong} measures how often models produce the same (typically incorrect) answer across all draws when at least one draw is wrong---\textsuperscript{\textit{b}}\,a directly behavioral readout (\textbf{higher} = more stubborn repetition). \textbf{(A)} \emph{3 same} / \emph{$\geq$2} / \emph{pairw.}; \textbf{(B)} \emph{all corr.}\ = all \texttt{is\_identity}. \textbf{Bold} = top three on each contrast column. Binomial SEs in parentheses; ``---'' if no imperfect triples.}
+\label{tab:identity_repeat_agreement}
+\end{table}

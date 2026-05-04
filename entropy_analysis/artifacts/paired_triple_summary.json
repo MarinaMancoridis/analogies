@@ -1,0 +1,8 @@
+{
+  "n_human_completions_paired": 1300,
+  "n_triples_with_both_sources": 500,
+  "median_dist_human_to_llm_centroid": 16.771175422619557,
+  "median_dist_human_to_nearest_llm": 21.287722535068664,
+  "mean_dist_human_to_llm_centroid": 16.78333366877822,
+  "mean_dist_human_to_nearest_llm": 21.284769773937683
+}

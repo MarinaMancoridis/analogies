@@ -3,8 +3,9 @@ from __future__ import annotations
 import argparse
 import json
 import math
+from collections import defaultdict
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional, Tuple
 
 PRETTY_MODEL_NAMES: Dict[str, str] = {
     "meta-llama/llama-3.3-70b-instruct": "Llama 3.3 70B Instruct",
@@ -55,6 +56,15 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=here / "relation_following_validation_table.tex",
         help="Output .tex path.",
+    )
+    p.add_argument(
+        "--human-panel",
+        type=Path,
+        default=here / "human_judgments_panel.ndjson",
+        help=(
+            "NDJSON of human completion judgments (three judge rows per completion_id). "
+            "Used for the Human table row (≥2/3 judges Correct = relation-followed)."
+        ),
     )
     return p.parse_args()
 
@@ -138,7 +148,55 @@ def _get_kn(by_relation: Dict[str, Any], model: str, rk: str) -> tuple[int, int]
     return int(stats["n_relation_followed"]), int(stats["n_trials"])
 
 
-def build_table(data: Dict[str, Any]) -> str:
+def _human_panel_majority_by_relation(
+    panel_path: Path,
+) -> Tuple[Dict[str, Tuple[int, int]], Tuple[int, int]]:
+    """
+    One vote per completion_id: relation-followed iff ≥2 of 3 panel judges have
+    judge_majority_correct True (each NDJSON row is one judge).
+    """
+    votes: Dict[str, List[bool]] = defaultdict(list)
+    cid_rel: Dict[str, str] = {}
+    with panel_path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+            if rec.get("record_type") != "human_completion_judgment":
+                continue
+            cid = rec.get("completion_id")
+            if not isinstance(cid, str):
+                continue
+            votes[cid].append(rec.get("judge_majority_correct") is True)
+            cid_rel[cid] = str(rec.get("relation_key", ""))
+
+    by_rel: Dict[str, Tuple[int, int]] = {}
+    grand_k, grand_n = 0, 0
+    for rk in set(cid_rel.values()):
+        if rk:
+            by_rel[rk] = (0, 0)
+
+    for cid, ys in votes.items():
+        if len(ys) != 3:
+            continue
+        rk = cid_rel.get(cid, "")
+        if not rk or rk not in by_rel:
+            continue
+        maj_correct = sum(ys) >= 2
+        k, n = by_rel[rk]
+        by_rel[rk] = (k + (1 if maj_correct else 0), n + 1)
+        grand_k += 1 if maj_correct else 0
+        grand_n += 1
+
+    return by_rel, (grand_k, grand_n)
+
+
+def build_table(
+    data: Dict[str, Any],
+    human_by_rel: Optional[Dict[str, Tuple[int, int]]] = None,
+    human_grand: Optional[Tuple[int, int]] = None,
+) -> str:
     meta = data["meta"]
     by_relation: Dict[str, Any] = data["by_relation"]
     rel_keys = sorted(by_relation.keys(), key=lambda k: by_relation[k]["relation_name"])
@@ -158,21 +216,6 @@ def build_table(data: Dict[str, Any]) -> str:
         for rk in rel_keys
     ]
     header_cells.append("\\textbf{\\scriptsize Mean}")
-
-    # Pooled column totals (over models) per relation
-    col_kn: List[tuple[int, int]] = []
-    for rk in rel_keys:
-        sk, sn = 0, 0
-        for model in models:
-            k, n_t = _get_kn(by_relation, model, rk)
-            sk += k
-            sn += n_t
-        col_kn.append((sk, sn))
-
-    grand_k = sum(t[0] for t in col_kn)
-    grand_n = sum(t[1] for t in col_kn)
-    grand_p = grand_k / grand_n if grand_n else 0.0
-    grand_se = _binomial_se(grand_k, grand_n)
 
     body_lines: List[str] = []
     for model in models:
@@ -195,17 +238,22 @@ def build_table(data: Dict[str, Any]) -> str:
         )
         body_lines.append(" & ".join(cells) + " \\\\")
 
-    bottom_cells = ["\\textbf{\\scriptsize Mean}"]
-    for sk, sn in col_kn:
-        cp = sk / sn if sn else 0.0
-        cse = _binomial_se(sk, sn)
-        bottom_cells.append(
-            "\\textbf{\\scriptsize " + _fmt_prop_se(cp, cse) + "}"
-        )
-    bottom_cells.append(
-        "\\textbf{\\scriptsize " + _fmt_prop_se(grand_p, grand_se) + "}"
-    )
-    bottom_row = " & ".join(bottom_cells) + " \\\\"
+    footer_lines: List[str] = []
+    if human_by_rel is not None and human_grand is not None:
+        h_cells = ["\\textbf{\\scriptsize Human}"]
+        hgk, hgn = human_grand
+        for rk in rel_keys:
+            k, n = human_by_rel.get(rk, (0, 0))
+            if n <= 0:
+                h_cells.append("\\scriptsize ---")
+                continue
+            hp = k / n
+            hse = _binomial_se(k, n)
+            h_cells.append("\\textbf{\\scriptsize " + _fmt_prop_se(hp, hse) + "}")
+        hgp = hgk / hgn if hgn else 0.0
+        hgse = _binomial_se(hgk, hgn)
+        h_cells.append("\\textbf{\\scriptsize " + _fmt_prop_se(hgp, hgse) + "}")
+        footer_lines.append(" & ".join(h_cells) + " \\\\")
 
     ptf = meta.get("prompt_type_filter")
     ptf_note = (
@@ -214,15 +262,21 @@ def build_table(data: Dict[str, Any]) -> str:
         else "All prompt types included."
     )
     legend = _caption_column_legend(rel_keys, by_relation)
+    human_note = ""
+    if human_by_rel is not None:
+        human_note = (
+            "\\emph{Human} row: eligible human completions; each cell is the fraction for which "
+            "\\(\\geq 2/3\\) LLM judges (same panel as validation) assigned \\texttt{Correct}. "
+        )
     caption = (
         "\\caption{LLM relation-following rates (binomial proportion with SE in parentheses) "
         "by model and relational category, from automated grading "
         "(\\texttt{judge\\_labels} / majority correct) in \\texttt{gold\\_curate\\_b} trials. "
         + ptf_note
         + " "
-        "\\emph{Mean} column and row pool trials across relations or models, respectively; "
-        "the bottom-right cell pools all trials. "
-        "\\emph{Column labels:} "
+        + "\\emph{Mean} column pools trials across relations for each model. "
+        + human_note
+        + "\\emph{Column labels:} "
         + legend
         + ".}"
     )
@@ -240,7 +294,7 @@ def build_table(data: Dict[str, Any]) -> str:
         "\\midrule",
         *body_lines,
         "\\midrule",
-        bottom_row,
+        *footer_lines,
         "\\bottomrule",
         "\\end{tabular}",
         "}%",
@@ -257,7 +311,20 @@ def main() -> None:
     if not args.in_json.is_file():
         raise SystemExit(f"Input JSON not found: {args.in_json}")
     data = json.loads(args.in_json.read_text(encoding="utf-8"))
-    tex = build_table(data)
+    human_by_rel: Optional[Dict[str, Tuple[int, int]]] = None
+    human_grand: Optional[Tuple[int, int]] = None
+    if args.human_panel.is_file():
+        human_by_rel, human_grand = _human_panel_majority_by_relation(args.human_panel)
+        print(
+            f"Human panel: {human_grand[0]}/{human_grand[1]} majority-correct completions "
+            f"({args.human_panel})",
+            flush=True,
+        )
+    else:
+        raise SystemExit(
+            f"Human panel NDJSON not found (required for Human row): {args.human_panel}"
+        )
+    tex = build_table(data, human_by_rel=human_by_rel, human_grand=human_grand)
     args.out_tex.write_text(tex, encoding="utf-8")
     print(f"Wrote {args.out_tex}")
 
