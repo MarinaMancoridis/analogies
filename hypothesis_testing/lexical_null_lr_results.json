@@ -1,0 +1,71 @@
+{
+  "h0_description": "Lexical numeric metrics (len, pop_rank, pop_zipf, polysemy, brys per word role) have all coefficients jointly zero, given control factors. Pooled LR treats rows as i.i.d. Clustered Wald refits the full logit with cov_type='cluster' and tests the same joint hypothesis with cluster-robust covariance (identity: cluster=triple_id; relational: cluster=relation_key:triple_id).",
+  "identity_trial_paths": [
+    "/Users/marinamancoridis/analogies/experiments/LLM_identity_completions/runs/gold_run/trials.ndjson"
+  ],
+  "relational_trial_path": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
+  "results": [
+    {
+      "name": "identity",
+      "n": 3000,
+      "lr_stat": 29.43452410250393,
+      "df_diff": 10,
+      "p_value": 0.0010593220170403697,
+      "ll_null": -1317.8674158165677,
+      "ll_full": -1303.1501537653157,
+      "converged_null": true,
+      "converged_full": true,
+      "lexical_columns_used": [
+        "A_len",
+        "A_pop_rank",
+        "A_pop_zipf",
+        "A_polysemy",
+        "A_brys",
+        "C_len",
+        "C_pop_rank",
+        "C_pop_zipf",
+        "C_polysemy",
+        "C_brys"
+      ],
+      "cluster_key": "triple_id (cluster = same identity analogy item across models/prompts/iterations)",
+      "n_clusters": 100,
+      "wald_cluster_stat": 10.2389480392685,
+      "wald_cluster_df": 10,
+      "wald_cluster_p_value": 0.41978571608535886
+    },
+    {
+      "name": "relational",
+      "n": 20000,
+      "lr_stat": 196.7097846491597,
+      "df_diff": 16,
+      "p_value": 3.663216187628463e-33,
+      "ll_null": -11061.47083501541,
+      "ll_full": -10963.11594269083,
+      "converged_null": true,
+      "converged_full": true,
+      "lexical_columns_used": [
+        "A_len",
+        "A_pop_rank",
+        "A_pop_zipf",
+        "A_polysemy",
+        "B_len",
+        "B_pop_rank",
+        "B_pop_zipf",
+        "B_polysemy",
+        "C_len",
+        "C_pop_rank",
+        "C_pop_zipf",
+        "C_polysemy",
+        "D_len",
+        "D_pop_rank",
+        "D_pop_zipf",
+        "D_polysemy"
+      ],
+      "cluster_key": "relation_key:triple_id (cluster = same relational analogy item)",
+      "n_clusters": 500,
+      "wald_cluster_stat": 17.679956032900336,
+      "wald_cluster_df": 16,
+      "wald_cluster_p_value": 0.3429681652011771
+    }
+  ]
+}

@@ -136,7 +136,7 @@ def build_cyclic_specs(*, weight=1) -> list[dict]:
 def build_pair_specs(*, weight=1) -> list[dict]:
     return [{
         "key": "pair",
-        "module": "analogies.analogy_types.pair_analogy",
+        "module": "analogies.analogy_types.structural.pair_analogy",
         "kwargs": {},
         "weight": weight,
     }]

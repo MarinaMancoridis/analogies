@@ -5,7 +5,7 @@ import random
 import nltk
 from nltk.corpus import wordnet as wn
 from wordfreq import zipf_frequency
-from analogies.analogy_types.pair_analogy import RELATIONS, _pick_from_dict_for_role, _prompt_generate_B, _ask_one, _fallback_C, RNG
+from analogies.analogy_types.structural.pair_analogy import RELATIONS, _pick_from_dict_for_role, _prompt_generate_B, _ask_one, _fallback_C, RNG
 
 # -------------------------------
 # Task name

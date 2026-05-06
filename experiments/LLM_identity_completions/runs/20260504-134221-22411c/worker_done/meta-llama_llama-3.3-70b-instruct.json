@@ -1,0 +1,8 @@
+{
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "n": 300,
+  "hits": 168,
+  "errors": 0,
+  "success_rate": 0.56,
+  "success_fraction": "168/300"
+}

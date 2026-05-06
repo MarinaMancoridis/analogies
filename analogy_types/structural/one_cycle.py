@@ -1,7 +1,7 @@
 from analogies.utils import generate_inference
 from analogies.common import sample_concept, clean_answer, _get_picker, ALL, _brys_score, ac_label_brys
 from typing import List, Dict, Optional
-from analogies.analogy_types.pair_analogy import RELATIONS, _pick_from_dict_for_role, _prompt_generate_B, _ask_one, _fallback_C, RNG
+from analogies.analogy_types.structural.pair_analogy import RELATIONS, _pick_from_dict_for_role, _prompt_generate_B, _ask_one, _fallback_C, RNG
 import random
 import nltk
 from nltk.corpus import wordnet as wn

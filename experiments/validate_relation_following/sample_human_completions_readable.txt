@@ -1,0 +1,405 @@
+Human relational completions — random sample
+source: /Users/marinamancoridis/analogies/experiments/validate_relation_following/human_completions_flat.json
+seed: 42  |  n: 50  |  eligible_only: True
+
+============================================================================
+Sample 1 of 50
+Relation: Contrast (contrast)   |   triple_id: 206
+Eligible: True   |   Confidence: Confident
+completion_id: R_6c6DhyU5qp6nVnN:set15:item9
+
+  broke is to fixed as applied is to removed
+
+============================================================================
+Sample 2 of 50
+Relation: Part-Whole (part_whole)   |   triple_id: 331
+Eligible: True   |   Confidence: Unsure
+completion_id: R_5sBA4KEFxnqJTeV:set10:item12
+
+  countryside is to plain as telescope is to plain
+
+============================================================================
+Sample 3 of 50
+Relation: Contrast (contrast)   |   triple_id: 207
+Eligible: True   |   Confidence: Unsure
+completion_id: R_5RbgDkGjcydIb73:set11:item4
+
+  encouraging is to discouraging as utility is to Utilities
+
+============================================================================
+Sample 4 of 50
+Relation: Similar (similar)   |   triple_id: 444
+Eligible: True   |   Confidence: Confident
+completion_id: R_3wz5G4TDLTRDmw1:set15:item2
+
+  presents is to showcases as beast is to circus
+
+============================================================================
+Sample 5 of 50
+Relation: Reference (reference)   |   triple_id: 397
+Eligible: True   |   Confidence: Confident
+completion_id: R_5amKzKChLNeFFIi:set3:item18
+
+  coupon is to discount as badge is to honor
+
+============================================================================
+Sample 6 of 50
+Relation: Class-Inclusion (class_inclusion)   |   triple_id: 179
+Eligible: True   |   Confidence: Neutral
+completion_id: R_5Tq98KljHtUE74X:set14:item6
+
+  table is to picnic-table as monitor is to computer
+
+============================================================================
+Sample 7 of 50
+Relation: Case Relations (case_relations)   |   triple_id: 100
+Eligible: True   |   Confidence: Neutral
+completion_id: R_53bY0nDQzQaGVtn:set25:item10
+
+  stamping is to mail as charges is to file
+
+============================================================================
+Sample 8 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 273
+Eligible: True   |   Confidence: Unsure
+completion_id: R_7kLFdF6f93m98Ht:set8:item17
+
+  diamonds is to rusted as relic is to Priceless
+
+============================================================================
+Sample 9 of 50
+Relation: Reference (reference)   |   triple_id: 355
+Eligible: True   |   Confidence: Confident
+completion_id: R_2ozRTb2HfQtALFu:set9:item19
+
+  catalog is to items as kilometers is to distance
+
+============================================================================
+Sample 10 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 272
+Eligible: True   |   Confidence: Neutral
+completion_id: R_1i6hMENHDI0RHbz:set24:item10
+
+  dwarfs is to tall as injustices is to Fair
+
+============================================================================
+Sample 11 of 50
+Relation: Cause-Purpose (cause_purpose)   |   triple_id: 110
+Eligible: True   |   Confidence: Unsure
+completion_id: R_8VPw3vwkvoQnuM9:set6:item5
+
+  pirates is to raids as blender is to smoothie
+
+============================================================================
+Sample 12 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 259
+Eligible: True   |   Confidence: Unsure
+completion_id: R_3DdXoi535SoYYGx:set24:item6
+
+  error is to correct as fairytale is to nonfiction
+
+============================================================================
+Sample 13 of 50
+Relation: Reference (reference)   |   triple_id: 369
+Eligible: True   |   Confidence: Unsure
+completion_id: R_3DdXoi535SoYYGx:set24:item2
+
+  certifications is to qualifications as handshake is to deal
+
+============================================================================
+Sample 14 of 50
+Relation: Class-Inclusion (class_inclusion)   |   triple_id: 170
+Eligible: True   |   Confidence: Unsure
+completion_id: R_2etIuxra6FAshMV:set17:item12
+
+  outfit is to swimwear as table is to Dining
+
+============================================================================
+Sample 15 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 299
+Eligible: True   |   Confidence: Unsure
+completion_id: R_5amKzKChLNeFFIi:set3:item8
+
+  whales is to miniscule as loves is to hatred
+
+============================================================================
+Sample 16 of 50
+Relation: Space-Time (space_time)   |   triple_id: 482
+Eligible: True   |   Confidence: Confident
+completion_id: R_57VUuAuC9lOUTHj:set12:item17
+
+  woods is to leaves as lakes is to water
+
+============================================================================
+Sample 17 of 50
+Relation: Similar (similar)   |   triple_id: 436
+Eligible: True   |   Confidence: Unsure
+completion_id: R_3yZYqEbvqkBKgc9:set14:item15
+
+  preserve is to jam as warning is to Caution
+
+============================================================================
+Sample 18 of 50
+Relation: Case Relations (case_relations)   |   triple_id: 61
+Eligible: True   |   Confidence: Unsure
+completion_id: R_8dGtnoDEklvewjJ:set7:item13
+
+  pupil is to exam as businessman is to Shops
+
+============================================================================
+Sample 19 of 50
+Relation: Part-Whole (part_whole)   |   triple_id: 311
+Eligible: True   |   Confidence: Confident
+completion_id: R_5sBA4KEFxnqJTeV:set10:item15
+
+  arrows is to arrowhead as prison is to prisoners
+
+============================================================================
+Sample 20 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 269
+Eligible: True   |   Confidence: Confident
+completion_id: R_5rSXgRquczJzYAm:set22:item10
+
+  fairytale is to true as athlete is to race
+
+============================================================================
+Sample 21 of 50
+Relation: Cause-Purpose (cause_purpose)   |   triple_id: 109
+Eligible: True   |   Confidence: Neutral
+completion_id: R_8Zy8uLUzJxoH4jv:set13:item8
+
+  stomach is to digestion as cavity is to tooth
+
+============================================================================
+Sample 22 of 50
+Relation: Similar (similar)   |   triple_id: 403
+Eligible: True   |   Confidence: Neutral
+completion_id: R_2lVPDRhSRVql3f6:set10:item20
+
+  creature is to animal as buck is to Money
+
+============================================================================
+Sample 23 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 287
+Eligible: True   |   Confidence: Unsure
+completion_id: R_5amKzKChLNeFFIi:set3:item12
+
+  gibberish is to english as tornado is to windy
+
+============================================================================
+Sample 24 of 50
+Relation: Contrast (contrast)   |   triple_id: 205
+Eligible: True   |   Confidence: Neutral
+completion_id: R_8Nz6tdiBzcr7cU6:set6:item20
+
+  silence is to noise as advances is to steps
+
+============================================================================
+Sample 25 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 300
+Eligible: True   |   Confidence: Unsure
+completion_id: R_1i6hMENHDI0RHbz:set24:item7
+
+  blossom is to wintry as bang is to Propane
+
+============================================================================
+Sample 26 of 50
+Relation: Class-Inclusion (class_inclusion)   |   triple_id: 200
+Eligible: True   |   Confidence: Confident
+completion_id: R_5RbgDkGjcydIb73:set11:item10
+
+  turtles is to snapping as soap is to Cleaning
+
+============================================================================
+Sample 27 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 270
+Eligible: True   |   Confidence: Confident
+completion_id: R_2scqndQcVzvSrNo:set1:item14
+
+  fossils is to modern as dwarfs is to giants
+
+============================================================================
+Sample 28 of 50
+Relation: Reference (reference)   |   triple_id: 353
+Eligible: True   |   Confidence: Unsure
+completion_id: R_88NfoZsMGeuuK8O:set8:item7
+
+  pronoun is to object as listing is to prices
+
+============================================================================
+Sample 29 of 50
+Relation: Space-Time (space_time)   |   triple_id: 484
+Eligible: True   |   Confidence: Neutral
+completion_id: R_8VPw3vwkvoQnuM9:set6:item6
+
+  graveyard is to tomb as homes is to Bedrooms
+
+============================================================================
+Sample 30 of 50
+Relation: Reference (reference)   |   triple_id: 388
+Eligible: True   |   Confidence: Neutral
+completion_id: R_7gXe70Us4ixU983:set21:item17
+
+  passports is to person as blueprint is to Building
+
+============================================================================
+Sample 31 of 50
+Relation: Part-Whole (part_whole)   |   triple_id: 344
+Eligible: True   |   Confidence: Unsure
+completion_id: R_87DPfrE1k1Bg990:set7:item19
+
+  basket is to exterior as story is to Book
+
+============================================================================
+Sample 32 of 50
+Relation: Cause-Purpose (cause_purpose)   |   triple_id: 144
+Eligible: True   |   Confidence: Unsure
+completion_id: R_5amKzKChLNeFFIi:set3:item1
+
+  blossom is to flowers as custodian is to chores
+
+============================================================================
+Sample 33 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 266
+Eligible: True   |   Confidence: Confident
+completion_id: R_7gXe70Us4ixU983:set21:item10
+
+  bang is to quiet as relic is to New
+
+============================================================================
+Sample 34 of 50
+Relation: Contrast (contrast)   |   triple_id: 203
+Eligible: True   |   Confidence: Confident
+completion_id: R_2etIuxra6FAshMV:set17:item10
+
+  lies is to truths as rejects is to Accepts
+
+============================================================================
+Sample 35 of 50
+Relation: Case Relations (case_relations)   |   triple_id: 81
+Eligible: True   |   Confidence: Confident
+completion_id: R_80T0N78UHKWfMu3:set20:item19
+
+  locks is to door as leaking is to Tap
+
+============================================================================
+Sample 36 of 50
+Relation: Contrast (contrast)   |   triple_id: 236
+Eligible: True   |   Confidence: Neutral
+completion_id: R_2etIuxra6FAshMV:set17:item19
+
+  upwards is to declined as harder is to Softened
+
+============================================================================
+Sample 37 of 50
+Relation: Cause-Purpose (cause_purpose)   |   triple_id: 124
+Eligible: True   |   Confidence: Confident
+completion_id: R_31Hrt0CoTetm3QF:set4:item16
+
+  academics is to papers as lecturers is to Lectures
+
+============================================================================
+Sample 38 of 50
+Relation: Similar (similar)   |   triple_id: 401
+Eligible: True   |   Confidence: Neutral
+completion_id: R_27qD7Z0rdtcez0Y:set1:item5
+
+  goodbye is to farewell as awful is to terrible
+
+============================================================================
+Sample 39 of 50
+Relation: Attribute (attribute)   |   triple_id: 18
+Eligible: True   |   Confidence: Unsure
+completion_id: R_8dGtnoDEklvewjJ:set7:item17
+
+  cube is to geometric as matrices is to Numbers
+
+============================================================================
+Sample 40 of 50
+Relation: Similar (similar)   |   triple_id: 407
+Eligible: True   |   Confidence: Neutral
+completion_id: R_8IXZ4JA3Auqk1XG:set19:item2
+
+  breaking is to snapping as induced is to forced
+
+============================================================================
+Sample 41 of 50
+Relation: Part-Whole (part_whole)   |   triple_id: 306
+Eligible: True   |   Confidence: Unsure
+completion_id: R_8od5rSJl9a7iTJ5:set22:item9
+
+  instrumentation is to percussion as outfit is to clothing
+
+============================================================================
+Sample 42 of 50
+Relation: Contrast (contrast)   |   triple_id: 220
+Eligible: True   |   Confidence: Unsure
+completion_id: R_5CB0YW9OOrePXLm:set12:item1
+
+  equals is to approximates as growth is to estimates
+
+============================================================================
+Sample 43 of 50
+Relation: Reference (reference)   |   triple_id: 394
+Eligible: True   |   Confidence: Unsure
+completion_id: R_1ENhjkTO16A4r0j:set19:item19
+
+  polls is to opinions as ambassadors is to Rule
+
+============================================================================
+Sample 44 of 50
+Relation: Non-Attribute (non_attribute)   |   triple_id: 252
+Eligible: True   |   Confidence: Confident
+completion_id: R_27Q1rvssDdJ1QbL:set19:item16
+
+  athlete is to overweight as injustices is to Justice
+
+============================================================================
+Sample 45 of 50
+Relation: Attribute (attribute)   |   triple_id: 7
+Eligible: True   |   Confidence: Unsure
+completion_id: R_80T0N78UHKWfMu3:set20:item16
+
+  farmers is to agricultural as injury is to Accidental
+
+============================================================================
+Sample 46 of 50
+Relation: Part-Whole (part_whole)   |   triple_id: 324
+Eligible: True   |   Confidence: Confident
+completion_id: R_2ozRTb2HfQtALFu:set9:item2
+
+  education is to class as conference is to business
+
+============================================================================
+Sample 47 of 50
+Relation: Contrast (contrast)   |   triple_id: 223
+Eligible: True   |   Confidence: Neutral
+completion_id: R_2hunmJTLCYE15ux:set21:item11
+
+  advances is to retracts as keeping is to Discarding
+
+============================================================================
+Sample 48 of 50
+Relation: Part-Whole (part_whole)   |   triple_id: 315
+Eligible: True   |   Confidence: Confident
+completion_id: R_7n7V53W65JrsLPJ:set2:item1
+
+  galaxy is to Earth as countryside is to farm
+
+============================================================================
+Sample 49 of 50
+Relation: Cause-Purpose (cause_purpose)   |   triple_id: 146
+Eligible: True   |   Confidence: Unsure
+completion_id: R_8KIodWA3GpCLI02:set12:item8
+
+  threat is to panic as pirates is to mutiny
+
+============================================================================
+Sample 50 of 50
+Relation: Reference (reference)   |   triple_id: 363
+Eligible: True   |   Confidence: Neutral
+completion_id: R_2wTZ9plOoEuArAy:set18:item7
+
+  notes is to material as report is to work
+
+============================================================================

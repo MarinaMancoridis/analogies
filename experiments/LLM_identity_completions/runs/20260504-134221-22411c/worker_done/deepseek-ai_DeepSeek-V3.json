@@ -1,0 +1,8 @@
+{
+  "model": "deepseek-ai/DeepSeek-V3",
+  "n": 300,
+  "hits": 242,
+  "errors": 0,
+  "success_rate": 0.8066666666666666,
+  "success_fraction": "242/300"
+}

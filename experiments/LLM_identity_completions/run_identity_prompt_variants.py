@@ -22,7 +22,6 @@ Examples:
 from __future__ import annotations
 
 import argparse
-import json
 import os
 import platform
 import re
@@ -30,21 +29,16 @@ import shlex
 import subprocess
 import sys
 import time
-import types
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 HERE = Path(__file__).resolve().parent
-REPO_ROOT = HERE.parents[2]
+REPO_ROOT = HERE.parents[1]
+if str(REPO_ROOT.parent) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT.parent))
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
-
-# Repo root is the `analogies` package (utils.py, constants.py at top level).
-if "analogies" not in sys.modules:
-    _pkg = types.ModuleType("analogies")
-    _pkg.__path__ = [str(REPO_ROOT)]  # type: ignore[attr-defined]
-    sys.modules["analogies"] = _pkg
 
 from analogies.utils import generate_inference
 
@@ -55,18 +49,15 @@ from run_identity_triples import (
     _append_ndjson_locked,
     _aggregate_summary,
     _count_ndjson_lines,
-    _launch_model_in_new_terminal,
     _make_run_dir,
     _print_progress,
     _print_worker_progress,
     _read_json,
-    _slugify_model,
     _utc_now,
     _worker_done_path,
     _write_json,
 )
 
-RUNS_DIR = HERE / "runs"
 DEFAULT_GOLD_RUN = HERE / "runs" / "gold_run"
 
 NONCOLON_PROMPT_TYPES: List[str] = ["english", "one_shot", "few_shot"]
