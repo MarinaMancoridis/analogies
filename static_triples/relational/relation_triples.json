@@ -12,7 +12,7 @@
       "relation_triple_id": 1,
       "A": "sirens",
       "C": "aluminum",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 2,
@@ -20,7 +20,7 @@
       "relation_triple_id": 2,
       "A": "branches",
       "C": "sunshine",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 3,
@@ -28,7 +28,7 @@
       "relation_triple_id": 3,
       "A": "torpedoes",
       "C": "cube",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 4,
@@ -36,7 +36,7 @@
       "relation_triple_id": 4,
       "A": "pupils",
       "C": "junk",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 5,
@@ -44,7 +44,7 @@
       "relation_triple_id": 5,
       "A": "farmers",
       "C": "fires",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 6,
@@ -52,7 +52,7 @@
       "relation_triple_id": 6,
       "A": "torpedoes",
       "C": "yards",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 7,
@@ -60,7 +60,7 @@
       "relation_triple_id": 7,
       "A": "farmers",
       "C": "injury",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 8,
@@ -68,7 +68,7 @@
       "relation_triple_id": 8,
       "A": "grids",
       "C": "indonesia",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 9,
@@ -76,7 +76,7 @@
       "relation_triple_id": 9,
       "A": "eruption",
       "C": "comedy",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 10,
@@ -84,7 +84,7 @@
       "relation_triple_id": 10,
       "A": "grids",
       "C": "eruption",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 11,
@@ -92,7 +92,7 @@
       "relation_triple_id": 11,
       "A": "chicken",
       "C": "squirrel",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 12,
@@ -100,7 +100,7 @@
       "relation_triple_id": 12,
       "A": "aluminum",
       "C": "cells",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 13,
@@ -108,7 +108,7 @@
       "relation_triple_id": 13,
       "A": "greece",
       "C": "squirrel",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 14,
@@ -116,7 +116,7 @@
       "relation_triple_id": 14,
       "A": "sirens",
       "C": "pasta",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 15,
@@ -124,7 +124,7 @@
       "relation_triple_id": 15,
       "A": "cowboy",
       "C": "fires",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 16,
@@ -132,7 +132,7 @@
       "relation_triple_id": 16,
       "A": "rat",
       "C": "logs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 17,
@@ -140,7 +140,7 @@
       "relation_triple_id": 17,
       "A": "aluminum",
       "C": "copper",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 18,
@@ -148,7 +148,7 @@
       "relation_triple_id": 18,
       "A": "cube",
       "C": "matrices",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 19,
@@ -156,7 +156,7 @@
       "relation_triple_id": 19,
       "A": "parties",
       "C": "dish",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 20,
@@ -164,7 +164,7 @@
       "relation_triple_id": 20,
       "A": "cake",
       "C": "matrices",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 21,
@@ -172,7 +172,7 @@
       "relation_triple_id": 21,
       "A": "dish",
       "C": "cowboy",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 22,
@@ -180,7 +180,7 @@
       "relation_triple_id": 22,
       "A": "thorn",
       "C": "squirrel",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 23,
@@ -188,7 +188,7 @@
       "relation_triple_id": 23,
       "A": "sirens",
       "C": "branches",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 24,
@@ -196,7 +196,7 @@
       "relation_triple_id": 24,
       "A": "branches",
       "C": "pumpkin",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 25,
@@ -204,7 +204,7 @@
       "relation_triple_id": 25,
       "A": "fires",
       "C": "heroin",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 26,
@@ -212,7 +212,7 @@
       "relation_triple_id": 26,
       "A": "pasta",
       "C": "eruption",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 27,
@@ -220,7 +220,7 @@
       "relation_triple_id": 27,
       "A": "scooter",
       "C": "woods",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 28,
@@ -228,7 +228,7 @@
       "relation_triple_id": 28,
       "A": "hens",
       "C": "sirens",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 29,
@@ -236,7 +236,7 @@
       "relation_triple_id": 29,
       "A": "woods",
       "C": "elephants",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 30,
@@ -244,7 +244,7 @@
       "relation_triple_id": 30,
       "A": "junk",
       "C": "eruption",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 31,
@@ -252,7 +252,7 @@
       "relation_triple_id": 31,
       "A": "squirrel",
       "C": "song",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 32,
@@ -260,7 +260,7 @@
       "relation_triple_id": 32,
       "A": "films",
       "C": "greece",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 33,
@@ -268,7 +268,7 @@
       "relation_triple_id": 33,
       "A": "taxi",
       "C": "popcorn",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 34,
@@ -276,7 +276,7 @@
       "relation_triple_id": 34,
       "A": "matrices",
       "C": "diamonds",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 35,
@@ -284,7 +284,7 @@
       "relation_triple_id": 35,
       "A": "films",
       "C": "yards",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 36,
@@ -292,7 +292,7 @@
       "relation_triple_id": 36,
       "A": "manhattan",
       "C": "logs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 37,
@@ -300,7 +300,7 @@
       "relation_triple_id": 37,
       "A": "squirrel",
       "C": "air",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 38,
@@ -308,7 +308,7 @@
       "relation_triple_id": 38,
       "A": "grids",
       "C": "pumpkin",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 39,
@@ -316,7 +316,7 @@
       "relation_triple_id": 39,
       "A": "eruption",
       "C": "injury",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 40,
@@ -324,7 +324,7 @@
       "relation_triple_id": 40,
       "A": "pasta",
       "C": "farmers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 41,
@@ -332,7 +332,7 @@
       "relation_triple_id": 41,
       "A": "greece",
       "C": "lions",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 42,
@@ -340,7 +340,7 @@
       "relation_triple_id": 42,
       "A": "diamonds",
       "C": "fires",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 43,
@@ -348,7 +348,7 @@
       "relation_triple_id": 43,
       "A": "sunshine",
       "C": "branches",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 44,
@@ -356,7 +356,7 @@
       "relation_triple_id": 44,
       "A": "rat",
       "C": "films",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 45,
@@ -364,7 +364,7 @@
       "relation_triple_id": 45,
       "A": "chicken",
       "C": "rainbow",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 46,
@@ -372,7 +372,7 @@
       "relation_triple_id": 46,
       "A": "matrices",
       "C": "fires",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 47,
@@ -380,7 +380,7 @@
       "relation_triple_id": 47,
       "A": "song",
       "C": "parties",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 48,
@@ -388,7 +388,7 @@
       "relation_triple_id": 48,
       "A": "branches",
       "C": "appointment",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 49,
@@ -396,7 +396,7 @@
       "relation_triple_id": 49,
       "A": "appointment",
       "C": "popcorn",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 50,
@@ -404,7 +404,7 @@
       "relation_triple_id": 50,
       "A": "wool",
       "C": "cells",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json"
     },
     {
       "triple_id": 51,
@@ -412,7 +412,7 @@
       "relation_triple_id": 1,
       "A": "poisons",
       "C": "broadcast",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 52,
@@ -420,7 +420,7 @@
       "relation_triple_id": 2,
       "A": "bang",
       "C": "government",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 53,
@@ -428,7 +428,7 @@
       "relation_triple_id": 3,
       "A": "catcher",
       "C": "leaking",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 54,
@@ -436,7 +436,7 @@
       "relation_triple_id": 4,
       "A": "pirates",
       "C": "academics",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 55,
@@ -444,7 +444,7 @@
       "relation_triple_id": 5,
       "A": "erase",
       "C": "unravel",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 56,
@@ -452,7 +452,7 @@
       "relation_triple_id": 6,
       "A": "dodge",
       "C": "athlete",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 57,
@@ -460,7 +460,7 @@
       "relation_triple_id": 7,
       "A": "shaves",
       "C": "charges",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 58,
@@ -468,7 +468,7 @@
       "relation_triple_id": 8,
       "A": "bang",
       "C": "proclaim",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 59,
@@ -476,7 +476,7 @@
       "relation_triple_id": 9,
       "A": "competitors",
       "C": "journalists",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 60,
@@ -484,7 +484,7 @@
       "relation_triple_id": 10,
       "A": "government",
       "C": "shaves",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 61,
@@ -492,7 +492,7 @@
       "relation_triple_id": 11,
       "A": "pupil",
       "C": "businessman",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 62,
@@ -500,7 +500,7 @@
       "relation_triple_id": 12,
       "A": "crabs",
       "C": "leaking",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 63,
@@ -508,7 +508,7 @@
       "relation_triple_id": 13,
       "A": "government",
       "C": "stamping",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 64,
@@ -516,7 +516,7 @@
       "relation_triple_id": 14,
       "A": "smoker",
       "C": "dodge",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 65,
@@ -524,7 +524,7 @@
       "relation_triple_id": 15,
       "A": "businessman",
       "C": "digs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 66,
@@ -532,7 +532,7 @@
       "relation_triple_id": 16,
       "A": "operators",
       "C": "competitors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 67,
@@ -540,7 +540,7 @@
       "relation_triple_id": 17,
       "A": "subscribe",
       "C": "educate",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 68,
@@ -548,7 +548,7 @@
       "relation_triple_id": 18,
       "A": "sing",
       "C": "pirates",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 69,
@@ -556,7 +556,7 @@
       "relation_triple_id": 19,
       "A": "subscribe",
       "C": "rains",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 70,
@@ -564,7 +564,7 @@
       "relation_triple_id": 20,
       "A": "digs",
       "C": "carry",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 71,
@@ -572,7 +572,7 @@
       "relation_triple_id": 21,
       "A": "operators",
       "C": "panther",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 72,
@@ -580,7 +580,7 @@
       "relation_triple_id": 22,
       "A": "smoker",
       "C": "bang",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 73,
@@ -588,7 +588,7 @@
       "relation_triple_id": 23,
       "A": "digs",
       "C": "bang",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 74,
@@ -596,7 +596,7 @@
       "relation_triple_id": 24,
       "A": "stamping",
       "C": "competitors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 75,
@@ -604,7 +604,7 @@
       "relation_triple_id": 25,
       "A": "broadcast",
       "C": "dentist",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 76,
@@ -612,7 +612,7 @@
       "relation_triple_id": 26,
       "A": "defend",
       "C": "politician",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 77,
@@ -620,7 +620,7 @@
       "relation_triple_id": 27,
       "A": "eat",
       "C": "sketch",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 78,
@@ -628,7 +628,7 @@
       "relation_triple_id": 28,
       "A": "unravel",
       "C": "nodded",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 79,
@@ -636,7 +636,7 @@
       "relation_triple_id": 29,
       "A": "pupil",
       "C": "broadcast",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 80,
@@ -644,7 +644,7 @@
       "relation_triple_id": 30,
       "A": "wastes",
       "C": "broadcast",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 81,
@@ -652,7 +652,7 @@
       "relation_triple_id": 31,
       "A": "locks",
       "C": "leaking",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 82,
@@ -660,7 +660,7 @@
       "relation_triple_id": 32,
       "A": "educate",
       "C": "broadcast",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 83,
@@ -668,7 +668,7 @@
       "relation_triple_id": 33,
       "A": "eat",
       "C": "broadcast",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 84,
@@ -676,7 +676,7 @@
       "relation_triple_id": 34,
       "A": "broadcast",
       "C": "canceling",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 85,
@@ -684,7 +684,7 @@
       "relation_triple_id": 35,
       "A": "academics",
       "C": "panther",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 86,
@@ -692,7 +692,7 @@
       "relation_triple_id": 36,
       "A": "wastes",
       "C": "pupil",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 87,
@@ -700,7 +700,7 @@
       "relation_triple_id": 37,
       "A": "erase",
       "C": "smoker",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 88,
@@ -708,7 +708,7 @@
       "relation_triple_id": 38,
       "A": "pupil",
       "C": "journalists",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 89,
@@ -716,7 +716,7 @@
       "relation_triple_id": 39,
       "A": "dodge",
       "C": "sketch",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 90,
@@ -724,7 +724,7 @@
       "relation_triple_id": 40,
       "A": "wolverine",
       "C": "nodded",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 91,
@@ -732,7 +732,7 @@
       "relation_triple_id": 41,
       "A": "traveler",
       "C": "crabs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 92,
@@ -740,7 +740,7 @@
       "relation_triple_id": 42,
       "A": "proclaim",
       "C": "shaves",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 93,
@@ -748,7 +748,7 @@
       "relation_triple_id": 43,
       "A": "canceling",
       "C": "crabs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 94,
@@ -756,7 +756,7 @@
       "relation_triple_id": 44,
       "A": "traveler",
       "C": "waste",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 95,
@@ -764,7 +764,7 @@
       "relation_triple_id": 45,
       "A": "panther",
       "C": "sing",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 96,
@@ -772,7 +772,7 @@
       "relation_triple_id": 46,
       "A": "educate",
       "C": "canceling",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 97,
@@ -780,7 +780,7 @@
       "relation_triple_id": 47,
       "A": "rains",
       "C": "waste",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 98,
@@ -788,7 +788,7 @@
       "relation_triple_id": 48,
       "A": "carry",
       "C": "erase",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 99,
@@ -796,7 +796,7 @@
       "relation_triple_id": 49,
       "A": "smoker",
       "C": "government",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 100,
@@ -804,7 +804,7 @@
       "relation_triple_id": 50,
       "A": "stamping",
       "C": "charges",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json"
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json"
     },
     {
       "triple_id": 101,
@@ -812,7 +812,7 @@
       "relation_triple_id": 1,
       "A": "blossom",
       "C": "coin",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 102,
@@ -820,7 +820,7 @@
       "relation_triple_id": 2,
       "A": "booklet",
       "C": "stomach",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 103,
@@ -828,7 +828,7 @@
       "relation_triple_id": 3,
       "A": "boiler",
       "C": "movie",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 104,
@@ -836,7 +836,7 @@
       "relation_triple_id": 4,
       "A": "ovens",
       "C": "custodian",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 105,
@@ -844,7 +844,7 @@
       "relation_triple_id": 5,
       "A": "punches",
       "C": "oder",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 106,
@@ -852,7 +852,7 @@
       "relation_triple_id": 6,
       "A": "shoes",
       "C": "waste",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 107,
@@ -860,7 +860,7 @@
       "relation_triple_id": 7,
       "A": "concerts",
       "C": "boiler",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 108,
@@ -868,7 +868,7 @@
       "relation_triple_id": 8,
       "A": "batteries",
       "C": "oder",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 109,
@@ -876,7 +876,7 @@
       "relation_triple_id": 9,
       "A": "stomach",
       "C": "cavity",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 110,
@@ -884,7 +884,7 @@
       "relation_triple_id": 10,
       "A": "pirates",
       "C": "blender",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 111,
@@ -892,7 +892,7 @@
       "relation_triple_id": 11,
       "A": "bang",
       "C": "boiler",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 112,
@@ -900,7 +900,7 @@
       "relation_triple_id": 12,
       "A": "academics",
       "C": "kettle",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 113,
@@ -908,7 +908,7 @@
       "relation_triple_id": 13,
       "A": "blender",
       "C": "wineries",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 114,
@@ -916,7 +916,7 @@
       "relation_triple_id": 14,
       "A": "blossom",
       "C": "kettle",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 115,
@@ -924,7 +924,7 @@
       "relation_triple_id": 15,
       "A": "pirates",
       "C": "lecturers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 116,
@@ -932,7 +932,7 @@
       "relation_triple_id": 16,
       "A": "government",
       "C": "dogs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 117,
@@ -940,7 +940,7 @@
       "relation_triple_id": 17,
       "A": "blossom",
       "C": "blender",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 118,
@@ -948,7 +948,7 @@
       "relation_triple_id": 18,
       "A": "alarm",
       "C": "sickness",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 119,
@@ -956,7 +956,7 @@
       "relation_triple_id": 19,
       "A": "meme",
       "C": "mug",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 120,
@@ -964,7 +964,7 @@
       "relation_triple_id": 20,
       "A": "pinch",
       "C": "bang",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 121,
@@ -972,7 +972,7 @@
       "relation_triple_id": 21,
       "A": "oder",
       "C": "politician",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 122,
@@ -980,7 +980,7 @@
       "relation_triple_id": 22,
       "A": "alarm",
       "C": "question",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 123,
@@ -988,7 +988,7 @@
       "relation_triple_id": 23,
       "A": "strikeouts",
       "C": "smiles",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 124,
@@ -996,7 +996,7 @@
       "relation_triple_id": 24,
       "A": "academics",
       "C": "lecturers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 125,
@@ -1004,7 +1004,7 @@
       "relation_triple_id": 25,
       "A": "journalists",
       "C": "cavity",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 126,
@@ -1012,7 +1012,7 @@
       "relation_triple_id": 26,
       "A": "meme",
       "C": "cars",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 127,
@@ -1020,7 +1020,7 @@
       "relation_triple_id": 27,
       "A": "kettle",
       "C": "sketch",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 128,
@@ -1028,7 +1028,7 @@
       "relation_triple_id": 28,
       "A": "band",
       "C": "weapons",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 129,
@@ -1036,7 +1036,7 @@
       "relation_triple_id": 29,
       "A": "waste",
       "C": "wineries",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 130,
@@ -1044,7 +1044,7 @@
       "relation_triple_id": 30,
       "A": "kettle",
       "C": "boiler",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 131,
@@ -1052,7 +1052,7 @@
       "relation_triple_id": 31,
       "A": "stomach",
       "C": "cologne",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 132,
@@ -1060,7 +1060,7 @@
       "relation_triple_id": 32,
       "A": "smiles",
       "C": "threat",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 133,
@@ -1068,7 +1068,7 @@
       "relation_triple_id": 33,
       "A": "politician",
       "C": "concerts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 134,
@@ -1076,7 +1076,7 @@
       "relation_triple_id": 34,
       "A": "kettle",
       "C": "sickness",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 135,
@@ -1084,7 +1084,7 @@
       "relation_triple_id": 35,
       "A": "tornado",
       "C": "booklet",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 136,
@@ -1092,7 +1092,7 @@
       "relation_triple_id": 36,
       "A": "smiles",
       "C": "pinch",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 137,
@@ -1100,7 +1100,7 @@
       "relation_triple_id": 37,
       "A": "concerts",
       "C": "question",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 138,
@@ -1108,7 +1108,7 @@
       "relation_triple_id": 38,
       "A": "snowing",
       "C": "stomach",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 139,
@@ -1116,7 +1116,7 @@
       "relation_triple_id": 39,
       "A": "tornado",
       "C": "academics",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 140,
@@ -1124,7 +1124,7 @@
       "relation_triple_id": 40,
       "A": "band",
       "C": "stomach",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 141,
@@ -1132,7 +1132,7 @@
       "relation_triple_id": 41,
       "A": "poisons",
       "C": "punches",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 142,
@@ -1140,7 +1140,7 @@
       "relation_triple_id": 42,
       "A": "lecturers",
       "C": "concerts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 143,
@@ -1148,7 +1148,7 @@
       "relation_triple_id": 43,
       "A": "applauding",
       "C": "cars",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 144,
@@ -1156,7 +1156,7 @@
       "relation_triple_id": 44,
       "A": "blossom",
       "C": "custodian",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 145,
@@ -1164,7 +1164,7 @@
       "relation_triple_id": 45,
       "A": "ovens",
       "C": "meme",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 146,
@@ -1172,7 +1172,7 @@
       "relation_triple_id": 46,
       "A": "threat",
       "C": "pirates",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 147,
@@ -1180,7 +1180,7 @@
       "relation_triple_id": 47,
       "A": "pencils",
       "C": "stomach",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 148,
@@ -1188,7 +1188,7 @@
       "relation_triple_id": 48,
       "A": "politician",
       "C": "punches",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 149,
@@ -1196,7 +1196,7 @@
       "relation_triple_id": 49,
       "A": "movie",
       "C": "cars",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 150,
@@ -1204,7 +1204,7 @@
       "relation_triple_id": 50,
       "A": "microwaves",
       "C": "snowing",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json"
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json"
     },
     {
       "triple_id": 151,
@@ -1212,7 +1212,7 @@
       "relation_triple_id": 1,
       "A": "exams",
       "C": "brand",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 152,
@@ -1220,7 +1220,7 @@
       "relation_triple_id": 2,
       "A": "tribes",
       "C": "organs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 153,
@@ -1228,7 +1228,7 @@
       "relation_triple_id": 3,
       "A": "fitness",
       "C": "tribes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 154,
@@ -1236,7 +1236,7 @@
       "relation_triple_id": 4,
       "A": "wines",
       "C": "capability",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 155,
@@ -1244,7 +1244,7 @@
       "relation_triple_id": 5,
       "A": "regimes",
       "C": "craftsmen",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 156,
@@ -1252,7 +1252,7 @@
       "relation_triple_id": 6,
       "A": "capability",
       "C": "relationship",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 157,
@@ -1260,7 +1260,7 @@
       "relation_triple_id": 7,
       "A": "skirt",
       "C": "dimension",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 158,
@@ -1268,7 +1268,7 @@
       "relation_triple_id": 8,
       "A": "brand",
       "C": "soap",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 159,
@@ -1276,7 +1276,7 @@
       "relation_triple_id": 9,
       "A": "sport",
       "C": "instrumentation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 160,
@@ -1284,7 +1284,7 @@
       "relation_triple_id": 10,
       "A": "exams",
       "C": "sport",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 161,
@@ -1292,7 +1292,7 @@
       "relation_triple_id": 11,
       "A": "tier",
       "C": "ventilation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 162,
@@ -1300,7 +1300,7 @@
       "relation_triple_id": 12,
       "A": "story",
       "C": "regimes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 163,
@@ -1308,7 +1308,7 @@
       "relation_triple_id": 13,
       "A": "exams",
       "C": "poll",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 164,
@@ -1316,7 +1316,7 @@
       "relation_triple_id": 14,
       "A": "sport",
       "C": "craftsmen",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 165,
@@ -1324,7 +1324,7 @@
       "relation_triple_id": 15,
       "A": "analysis",
       "C": "soap",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 166,
@@ -1332,7 +1332,7 @@
       "relation_triple_id": 16,
       "A": "crafts",
       "C": "craftsmen",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 167,
@@ -1340,7 +1340,7 @@
       "relation_triple_id": 17,
       "A": "craftsmen",
       "C": "tier",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 168,
@@ -1348,7 +1348,7 @@
       "relation_triple_id": 18,
       "A": "basket",
       "C": "hat",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 169,
@@ -1356,7 +1356,7 @@
       "relation_triple_id": 19,
       "A": "tier",
       "C": "charts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 170,
@@ -1364,7 +1364,7 @@
       "relation_triple_id": 20,
       "A": "outfit",
       "C": "table",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 171,
@@ -1372,7 +1372,7 @@
       "relation_triple_id": 21,
       "A": "charts",
       "C": "section",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 172,
@@ -1380,7 +1380,7 @@
       "relation_triple_id": 22,
       "A": "lakes",
       "C": "section",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 173,
@@ -1388,7 +1388,7 @@
       "relation_triple_id": 23,
       "A": "situation",
       "C": "outfit",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 174,
@@ -1396,7 +1396,7 @@
       "relation_triple_id": 24,
       "A": "transportation",
       "C": "crafts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 175,
@@ -1404,7 +1404,7 @@
       "relation_triple_id": 25,
       "A": "table",
       "C": "basket",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 176,
@@ -1412,7 +1412,7 @@
       "relation_triple_id": 26,
       "A": "action",
       "C": "tribes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 177,
@@ -1420,7 +1420,7 @@
       "relation_triple_id": 27,
       "A": "situation",
       "C": "dimension",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 178,
@@ -1428,7 +1428,7 @@
       "relation_triple_id": 28,
       "A": "lakes",
       "C": "analysis",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 179,
@@ -1436,7 +1436,7 @@
       "relation_triple_id": 29,
       "A": "table",
       "C": "monitor",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 180,
@@ -1444,7 +1444,7 @@
       "relation_triple_id": 30,
       "A": "attachment",
       "C": "storage",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 181,
@@ -1452,7 +1452,7 @@
       "relation_triple_id": 31,
       "A": "exchanges",
       "C": "skirt",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 182,
@@ -1460,7 +1460,7 @@
       "relation_triple_id": 32,
       "A": "tier",
       "C": "capability",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 183,
@@ -1468,7 +1468,7 @@
       "relation_triple_id": 33,
       "A": "regimes",
       "C": "chemical",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 184,
@@ -1476,7 +1476,7 @@
       "relation_triple_id": 34,
       "A": "story",
       "C": "analysis",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 185,
@@ -1484,7 +1484,7 @@
       "relation_triple_id": 35,
       "A": "transportation",
       "C": "action",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 186,
@@ -1492,7 +1492,7 @@
       "relation_triple_id": 36,
       "A": "education",
       "C": "charts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 187,
@@ -1500,7 +1500,7 @@
       "relation_triple_id": 37,
       "A": "education",
       "C": "disasters",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 188,
@@ -1508,7 +1508,7 @@
       "relation_triple_id": 38,
       "A": "action",
       "C": "skirt",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 189,
@@ -1516,7 +1516,7 @@
       "relation_triple_id": 39,
       "A": "story",
       "C": "toes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 190,
@@ -1524,7 +1524,7 @@
       "relation_triple_id": 40,
       "A": "dimension",
       "C": "relationship",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 191,
@@ -1532,7 +1532,7 @@
       "relation_triple_id": 41,
       "A": "organs",
       "C": "label",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 192,
@@ -1540,7 +1540,7 @@
       "relation_triple_id": 42,
       "A": "religion",
       "C": "harm",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 193,
@@ -1548,7 +1548,7 @@
       "relation_triple_id": 43,
       "A": "fitness",
       "C": "harm",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 194,
@@ -1556,7 +1556,7 @@
       "relation_triple_id": 44,
       "A": "education",
       "C": "section",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 195,
@@ -1564,7 +1564,7 @@
       "relation_triple_id": 45,
       "A": "situation",
       "C": "display",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 196,
@@ -1572,7 +1572,7 @@
       "relation_triple_id": 46,
       "A": "charts",
       "C": "chemical",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 197,
@@ -1580,7 +1580,7 @@
       "relation_triple_id": 47,
       "A": "action",
       "C": "relative",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 198,
@@ -1588,7 +1588,7 @@
       "relation_triple_id": 48,
       "A": "attachment",
       "C": "lakes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 199,
@@ -1596,7 +1596,7 @@
       "relation_triple_id": 49,
       "A": "instrumentation",
       "C": "toes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 200,
@@ -1604,7 +1604,7 @@
       "relation_triple_id": 50,
       "A": "turtles",
       "C": "soap",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json"
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json"
     },
     {
       "triple_id": 201,
@@ -1612,7 +1612,7 @@
       "relation_triple_id": 1,
       "A": "intellectual",
       "C": "functional",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 202,
@@ -1620,7 +1620,7 @@
       "relation_triple_id": 2,
       "A": "defend",
       "C": "contracts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 203,
@@ -1628,7 +1628,7 @@
       "relation_triple_id": 3,
       "A": "lies",
       "C": "rejects",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 204,
@@ -1636,7 +1636,7 @@
       "relation_triple_id": 4,
       "A": "broke",
       "C": "direct",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 205,
@@ -1644,7 +1644,7 @@
       "relation_triple_id": 5,
       "A": "silence",
       "C": "advances",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 206,
@@ -1652,7 +1652,7 @@
       "relation_triple_id": 6,
       "A": "broke",
       "C": "applied",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 207,
@@ -1660,7 +1660,7 @@
       "relation_triple_id": 7,
       "A": "encouraging",
       "C": "utility",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 208,
@@ -1668,7 +1668,7 @@
       "relation_triple_id": 8,
       "A": "contracts",
       "C": "functional",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 209,
@@ -1676,7 +1676,7 @@
       "relation_triple_id": 9,
       "A": "stays",
       "C": "encouraging",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 210,
@@ -1684,7 +1684,7 @@
       "relation_triple_id": 10,
       "A": "broken",
       "C": "wisdom",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 211,
@@ -1692,7 +1692,7 @@
       "relation_triple_id": 11,
       "A": "starts",
       "C": "preserved",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 212,
@@ -1700,7 +1700,7 @@
       "relation_triple_id": 12,
       "A": "feminine",
       "C": "contracts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 213,
@@ -1708,7 +1708,7 @@
       "relation_triple_id": 13,
       "A": "rejects",
       "C": "advanced",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 214,
@@ -1716,7 +1716,7 @@
       "relation_triple_id": 14,
       "A": "depart",
       "C": "ending",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 215,
@@ -1724,7 +1724,7 @@
       "relation_triple_id": 15,
       "A": "preserved",
       "C": "straight",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 216,
@@ -1732,7 +1732,7 @@
       "relation_triple_id": 16,
       "A": "harder",
       "C": "familiar",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 217,
@@ -1740,7 +1740,7 @@
       "relation_triple_id": 17,
       "A": "forgotten",
       "C": "withdraw",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 218,
@@ -1748,7 +1748,7 @@
       "relation_triple_id": 18,
       "A": "smooth",
       "C": "ending",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 219,
@@ -1756,7 +1756,7 @@
       "relation_triple_id": 19,
       "A": "growth",
       "C": "fat",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 220,
@@ -1764,7 +1764,7 @@
       "relation_triple_id": 20,
       "A": "equals",
       "C": "growth",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 221,
@@ -1772,7 +1772,7 @@
       "relation_triple_id": 21,
       "A": "concentrated",
       "C": "silence",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 222,
@@ -1780,7 +1780,7 @@
       "relation_triple_id": 22,
       "A": "familiar",
       "C": "tired",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 223,
@@ -1788,7 +1788,7 @@
       "relation_triple_id": 23,
       "A": "advances",
       "C": "keeping",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 224,
@@ -1796,7 +1796,7 @@
       "relation_triple_id": 24,
       "A": "upwards",
       "C": "lesser",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 225,
@@ -1804,7 +1804,7 @@
       "relation_triple_id": 25,
       "A": "growth",
       "C": "permits",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 226,
@@ -1812,7 +1812,7 @@
       "relation_triple_id": 26,
       "A": "growth",
       "C": "advanced",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 227,
@@ -1820,7 +1820,7 @@
       "relation_triple_id": 27,
       "A": "advances",
       "C": "familiar",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 228,
@@ -1828,7 +1828,7 @@
       "relation_triple_id": 28,
       "A": "functional",
       "C": "utility",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 229,
@@ -1836,7 +1836,7 @@
       "relation_triple_id": 29,
       "A": "harder",
       "C": "defend",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 230,
@@ -1844,7 +1844,7 @@
       "relation_triple_id": 30,
       "A": "smooth",
       "C": "lying",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 231,
@@ -1852,7 +1852,7 @@
       "relation_triple_id": 31,
       "A": "broken",
       "C": "harder",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 232,
@@ -1860,7 +1860,7 @@
       "relation_triple_id": 32,
       "A": "smooth",
       "C": "defend",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 233,
@@ -1868,7 +1868,7 @@
       "relation_triple_id": 33,
       "A": "concentrated",
       "C": "advances",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 234,
@@ -1876,7 +1876,7 @@
       "relation_triple_id": 34,
       "A": "breaks",
       "C": "ending",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 235,
@@ -1884,7 +1884,7 @@
       "relation_triple_id": 35,
       "A": "enlarged",
       "C": "specialized",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 236,
@@ -1892,7 +1892,7 @@
       "relation_triple_id": 36,
       "A": "upwards",
       "C": "harder",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 237,
@@ -1900,7 +1900,7 @@
       "relation_triple_id": 37,
       "A": "specialized",
       "C": "forgotten",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 238,
@@ -1908,7 +1908,7 @@
       "relation_triple_id": 38,
       "A": "forgotten",
       "C": "advanced",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 239,
@@ -1916,7 +1916,7 @@
       "relation_triple_id": 39,
       "A": "broke",
       "C": "plain",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 240,
@@ -1924,7 +1924,7 @@
       "relation_triple_id": 40,
       "A": "advances",
       "C": "harder",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 241,
@@ -1932,7 +1932,7 @@
       "relation_triple_id": 41,
       "A": "depart",
       "C": "functional",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 242,
@@ -1940,7 +1940,7 @@
       "relation_triple_id": 42,
       "A": "encouraging",
       "C": "enlarged",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 243,
@@ -1948,7 +1948,7 @@
       "relation_triple_id": 43,
       "A": "functional",
       "C": "lies",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 244,
@@ -1956,7 +1956,7 @@
       "relation_triple_id": 44,
       "A": "growth",
       "C": "familiar",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 245,
@@ -1964,7 +1964,7 @@
       "relation_triple_id": 45,
       "A": "intellectual",
       "C": "rejects",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 246,
@@ -1972,7 +1972,7 @@
       "relation_triple_id": 46,
       "A": "ending",
       "C": "defend",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 247,
@@ -1980,7 +1980,7 @@
       "relation_triple_id": 47,
       "A": "tired",
       "C": "broke",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 248,
@@ -1988,7 +1988,7 @@
       "relation_triple_id": 48,
       "A": "plain",
       "C": "applied",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 249,
@@ -1996,7 +1996,7 @@
       "relation_triple_id": 49,
       "A": "goodness",
       "C": "intellectual",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 250,
@@ -2004,7 +2004,7 @@
       "relation_triple_id": 50,
       "A": "keeping",
       "C": "lesser",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json"
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json"
     },
     {
       "triple_id": 251,
@@ -2012,7 +2012,7 @@
       "relation_triple_id": 1,
       "A": "gibberish",
       "C": "terror",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 252,
@@ -2020,7 +2020,7 @@
       "relation_triple_id": 2,
       "A": "athlete",
       "C": "injustices",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 253,
@@ -2028,7 +2028,7 @@
       "relation_triple_id": 3,
       "A": "heights",
       "C": "zombies",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 254,
@@ -2036,7 +2036,7 @@
       "relation_triple_id": 4,
       "A": "enemies",
       "C": "junior",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 255,
@@ -2044,7 +2044,7 @@
       "relation_triple_id": 5,
       "A": "cookie",
       "C": "land",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 256,
@@ -2052,7 +2052,7 @@
       "relation_triple_id": 6,
       "A": "loves",
       "C": "dwarfs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 257,
@@ -2060,7 +2060,7 @@
       "relation_triple_id": 7,
       "A": "overheating",
       "C": "junior",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 258,
@@ -2068,7 +2068,7 @@
       "relation_triple_id": 8,
       "A": "nervousness",
       "C": "gibberish",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 259,
@@ -2076,7 +2076,7 @@
       "relation_triple_id": 9,
       "A": "error",
       "C": "fairytale",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 260,
@@ -2084,7 +2084,7 @@
       "relation_triple_id": 10,
       "A": "mistakes",
       "C": "terror",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 261,
@@ -2092,7 +2092,7 @@
       "relation_triple_id": 11,
       "A": "cookie",
       "C": "fluid",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 262,
@@ -2100,7 +2100,7 @@
       "relation_triple_id": 12,
       "A": "injustices",
       "C": "tornado",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 263,
@@ -2108,7 +2108,7 @@
       "relation_triple_id": 13,
       "A": "excitement",
       "C": "bang",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 264,
@@ -2116,7 +2116,7 @@
       "relation_triple_id": 14,
       "A": "routine",
       "C": "skyscraper",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 265,
@@ -2124,7 +2124,7 @@
       "relation_triple_id": 15,
       "A": "rains",
       "C": "trash",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 266,
@@ -2132,7 +2132,7 @@
       "relation_triple_id": 16,
       "A": "bang",
       "C": "relic",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 267,
@@ -2140,7 +2140,7 @@
       "relation_triple_id": 17,
       "A": "athlete",
       "C": "weights",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 268,
@@ -2148,7 +2148,7 @@
       "relation_triple_id": 18,
       "A": "land",
       "C": "rains",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 269,
@@ -2156,7 +2156,7 @@
       "relation_triple_id": 19,
       "A": "fairytale",
       "C": "athlete",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 270,
@@ -2164,7 +2164,7 @@
       "relation_triple_id": 20,
       "A": "fossils",
       "C": "dwarfs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 271,
@@ -2172,7 +2172,7 @@
       "relation_triple_id": 21,
       "A": "trash",
       "C": "dust",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 272,
@@ -2180,7 +2180,7 @@
       "relation_triple_id": 22,
       "A": "dwarfs",
       "C": "injustices",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 273,
@@ -2188,7 +2188,7 @@
       "relation_triple_id": 23,
       "A": "diamonds",
       "C": "relic",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 274,
@@ -2196,7 +2196,7 @@
       "relation_triple_id": 24,
       "A": "boiler",
       "C": "mistakes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 275,
@@ -2204,7 +2204,7 @@
       "relation_triple_id": 25,
       "A": "dust",
       "C": "skyscraper",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 276,
@@ -2212,7 +2212,7 @@
       "relation_triple_id": 26,
       "A": "alarm",
       "C": "relic",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 277,
@@ -2220,7 +2220,7 @@
       "relation_triple_id": 27,
       "A": "loves",
       "C": "nervousness",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 278,
@@ -2228,7 +2228,7 @@
       "relation_triple_id": 28,
       "A": "disinformation",
       "C": "torpedo",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 279,
@@ -2236,7 +2236,7 @@
       "relation_triple_id": 29,
       "A": "dust",
       "C": "silk",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 280,
@@ -2244,7 +2244,7 @@
       "relation_triple_id": 30,
       "A": "routine",
       "C": "germ",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 281,
@@ -2252,7 +2252,7 @@
       "relation_triple_id": 31,
       "A": "mistakes",
       "C": "fires",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 282,
@@ -2260,7 +2260,7 @@
       "relation_triple_id": 32,
       "A": "fossils",
       "C": "errors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 283,
@@ -2268,7 +2268,7 @@
       "relation_triple_id": 33,
       "A": "torpedo",
       "C": "disinformation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 284,
@@ -2276,7 +2276,7 @@
       "relation_triple_id": 34,
       "A": "ovens",
       "C": "mistakes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 285,
@@ -2284,7 +2284,7 @@
       "relation_triple_id": 35,
       "A": "bang",
       "C": "skyscraper",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 286,
@@ -2292,7 +2292,7 @@
       "relation_triple_id": 36,
       "A": "tornado",
       "C": "overheating",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 287,
@@ -2300,7 +2300,7 @@
       "relation_triple_id": 37,
       "A": "gibberish",
       "C": "tornado",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 288,
@@ -2308,7 +2308,7 @@
       "relation_triple_id": 38,
       "A": "excitement",
       "C": "sunroof",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 289,
@@ -2316,7 +2316,7 @@
       "relation_triple_id": 39,
       "A": "air",
       "C": "disinformation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 290,
@@ -2324,7 +2324,7 @@
       "relation_triple_id": 40,
       "A": "riches",
       "C": "dust",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 291,
@@ -2332,7 +2332,7 @@
       "relation_triple_id": 41,
       "A": "dwarfs",
       "C": "enemies",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 292,
@@ -2340,7 +2340,7 @@
       "relation_triple_id": 42,
       "A": "rains",
       "C": "smiles",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 293,
@@ -2348,7 +2348,7 @@
       "relation_triple_id": 43,
       "A": "spark",
       "C": "diamonds",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 294,
@@ -2356,7 +2356,7 @@
       "relation_triple_id": 44,
       "A": "routine",
       "C": "zombies",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 295,
@@ -2364,7 +2364,7 @@
       "relation_triple_id": 45,
       "A": "weights",
       "C": "routine",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 296,
@@ -2372,7 +2372,7 @@
       "relation_triple_id": 46,
       "A": "cookie",
       "C": "silk",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 297,
@@ -2380,7 +2380,7 @@
       "relation_triple_id": 47,
       "A": "fairytale",
       "C": "torpedo",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 298,
@@ -2388,7 +2388,7 @@
       "relation_triple_id": 48,
       "A": "germ",
       "C": "blues",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 299,
@@ -2396,7 +2396,7 @@
       "relation_triple_id": 49,
       "A": "whales",
       "C": "loves",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 300,
@@ -2404,7 +2404,7 @@
       "relation_triple_id": 50,
       "A": "blossom",
       "C": "bang",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json"
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json"
     },
     {
       "triple_id": 301,
@@ -2412,7 +2412,7 @@
       "relation_triple_id": 1,
       "A": "midwest",
       "C": "analysis",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 302,
@@ -2420,7 +2420,7 @@
       "relation_triple_id": 2,
       "A": "basket",
       "C": "tomb",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 303,
@@ -2428,7 +2428,7 @@
       "relation_triple_id": 3,
       "A": "profile",
       "C": "prison",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 304,
@@ -2436,7 +2436,7 @@
       "relation_triple_id": 4,
       "A": "scissors",
       "C": "gym",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 305,
@@ -2444,7 +2444,7 @@
       "relation_triple_id": 5,
       "A": "chicken",
       "C": "gym",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 306,
@@ -2452,7 +2452,7 @@
       "relation_triple_id": 6,
       "A": "instrumentation",
       "C": "outfit",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 307,
@@ -2460,7 +2460,7 @@
       "relation_triple_id": 7,
       "A": "evaluation",
       "C": "crafts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 308,
@@ -2468,7 +2468,7 @@
       "relation_triple_id": 8,
       "A": "militia",
       "C": "church",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 309,
@@ -2476,7 +2476,7 @@
       "relation_triple_id": 9,
       "A": "tomb",
       "C": "table",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 310,
@@ -2484,7 +2484,7 @@
       "relation_triple_id": 10,
       "A": "tomb",
       "C": "arrows",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 311,
@@ -2492,7 +2492,7 @@
       "relation_triple_id": 11,
       "A": "arrows",
       "C": "prison",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 312,
@@ -2500,7 +2500,7 @@
       "relation_triple_id": 12,
       "A": "crafts",
       "C": "profile",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 313,
@@ -2508,7 +2508,7 @@
       "relation_triple_id": 13,
       "A": "basket",
       "C": "midwest",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 314,
@@ -2516,7 +2516,7 @@
       "relation_triple_id": 14,
       "A": "demonstration",
       "C": "countryside",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 315,
@@ -2524,7 +2524,7 @@
       "relation_triple_id": 15,
       "A": "galaxy",
       "C": "countryside",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 316,
@@ -2532,7 +2532,7 @@
       "relation_triple_id": 16,
       "A": "transportation",
       "C": "telescope",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 317,
@@ -2540,7 +2540,7 @@
       "relation_triple_id": 17,
       "A": "storage",
       "C": "labour",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 318,
@@ -2548,7 +2548,7 @@
       "relation_triple_id": 18,
       "A": "maps",
       "C": "cabinet",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 319,
@@ -2556,7 +2556,7 @@
       "relation_triple_id": 19,
       "A": "furnace",
       "C": "chicken",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 320,
@@ -2564,7 +2564,7 @@
       "relation_triple_id": 20,
       "A": "portfolio",
       "C": "basket",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 321,
@@ -2572,7 +2572,7 @@
       "relation_triple_id": 21,
       "A": "evaluation",
       "C": "transportation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 322,
@@ -2580,7 +2580,7 @@
       "relation_triple_id": 22,
       "A": "skirt",
       "C": "furnace",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 323,
@@ -2588,7 +2588,7 @@
       "relation_triple_id": 23,
       "A": "labour",
       "C": "radiator",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 324,
@@ -2596,7 +2596,7 @@
       "relation_triple_id": 24,
       "A": "education",
       "C": "conference",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 325,
@@ -2604,7 +2604,7 @@
       "relation_triple_id": 25,
       "A": "organs",
       "C": "storage",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 326,
@@ -2612,7 +2612,7 @@
       "relation_triple_id": 26,
       "A": "church",
       "C": "organs",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 327,
@@ -2620,7 +2620,7 @@
       "relation_triple_id": 27,
       "A": "labour",
       "C": "spacecraft",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 328,
@@ -2628,7 +2628,7 @@
       "relation_triple_id": 28,
       "A": "resume",
       "C": "tomb",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 329,
@@ -2636,7 +2636,7 @@
       "relation_triple_id": 29,
       "A": "knight",
       "C": "church",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 330,
@@ -2644,7 +2644,7 @@
       "relation_triple_id": 30,
       "A": "cow",
       "C": "labour",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 331,
@@ -2652,7 +2652,7 @@
       "relation_triple_id": 31,
       "A": "countryside",
       "C": "telescope",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 332,
@@ -2660,7 +2660,7 @@
       "relation_triple_id": 32,
       "A": "maps",
       "C": "labour",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 333,
@@ -2668,7 +2668,7 @@
       "relation_triple_id": 33,
       "A": "subway",
       "C": "midwest",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 334,
@@ -2676,7 +2676,7 @@
       "relation_triple_id": 34,
       "A": "evaluation",
       "C": "radiator",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 335,
@@ -2684,7 +2684,7 @@
       "relation_triple_id": 35,
       "A": "earth",
       "C": "radiator",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 336,
@@ -2692,7 +2692,7 @@
       "relation_triple_id": 36,
       "A": "labour",
       "C": "church",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 337,
@@ -2700,7 +2700,7 @@
       "relation_triple_id": 37,
       "A": "earth",
       "C": "evaluation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 338,
@@ -2708,7 +2708,7 @@
       "relation_triple_id": 38,
       "A": "storage",
       "C": "worm",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 339,
@@ -2716,7 +2716,7 @@
       "relation_triple_id": 39,
       "A": "analysis",
       "C": "portfolio",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 340,
@@ -2724,7 +2724,7 @@
       "relation_triple_id": 40,
       "A": "galaxy",
       "C": "cabinet",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 341,
@@ -2732,7 +2732,7 @@
       "relation_triple_id": 41,
       "A": "scissors",
       "C": "analysis",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 342,
@@ -2740,7 +2740,7 @@
       "relation_triple_id": 42,
       "A": "militia",
       "C": "earth",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 343,
@@ -2748,7 +2748,7 @@
       "relation_triple_id": 43,
       "A": "analysis",
       "C": "demonstration",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 344,
@@ -2756,7 +2756,7 @@
       "relation_triple_id": 44,
       "A": "basket",
       "C": "story",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 345,
@@ -2764,7 +2764,7 @@
       "relation_triple_id": 45,
       "A": "catalogue",
       "C": "demonstration",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 346,
@@ -2772,7 +2772,7 @@
       "relation_triple_id": 46,
       "A": "catalogue",
       "C": "conference",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 347,
@@ -2780,7 +2780,7 @@
       "relation_triple_id": 47,
       "A": "storage",
       "C": "spacecraft",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 348,
@@ -2788,7 +2788,7 @@
       "relation_triple_id": 48,
       "A": "church",
       "C": "arrows",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 349,
@@ -2796,7 +2796,7 @@
       "relation_triple_id": 49,
       "A": "labour",
       "C": "basket",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 350,
@@ -2804,7 +2804,7 @@
       "relation_triple_id": 50,
       "A": "storage",
       "C": "radish",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json"
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json"
     },
     {
       "triple_id": 351,
@@ -2812,7 +2812,7 @@
       "relation_triple_id": 1,
       "A": "deal",
       "C": "marker",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 352,
@@ -2820,7 +2820,7 @@
       "relation_triple_id": 2,
       "A": "news",
       "C": "questionnaires",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 353,
@@ -2828,7 +2828,7 @@
       "relation_triple_id": 3,
       "A": "pronoun",
       "C": "listing",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 354,
@@ -2836,7 +2836,7 @@
       "relation_triple_id": 4,
       "A": "kilometers",
       "C": "listing",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 355,
@@ -2844,7 +2844,7 @@
       "relation_triple_id": 5,
       "A": "catalog",
       "C": "kilometers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 356,
@@ -2852,7 +2852,7 @@
       "relation_triple_id": 6,
       "A": "estimates",
       "C": "flashback",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 357,
@@ -2860,7 +2860,7 @@
       "relation_triple_id": 7,
       "A": "census",
       "C": "memoir",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 358,
@@ -2868,7 +2868,7 @@
       "relation_triple_id": 8,
       "A": "likeness",
       "C": "agendas",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 359,
@@ -2876,7 +2876,7 @@
       "relation_triple_id": 9,
       "A": "news",
       "C": "motif",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 360,
@@ -2884,7 +2884,7 @@
       "relation_triple_id": 10,
       "A": "prizes",
       "C": "symbols",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 361,
@@ -2892,7 +2892,7 @@
       "relation_triple_id": 11,
       "A": "symbols",
       "C": "handshake",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 362,
@@ -2900,7 +2900,7 @@
       "relation_triple_id": 12,
       "A": "calendars",
       "C": "capsule",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 363,
@@ -2908,7 +2908,7 @@
       "relation_triple_id": 13,
       "A": "notes",
       "C": "report",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 364,
@@ -2916,7 +2916,7 @@
       "relation_triple_id": 14,
       "A": "coupon",
       "C": "brand",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 365,
@@ -2924,7 +2924,7 @@
       "relation_triple_id": 15,
       "A": "bets",
       "C": "diagram",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 366,
@@ -2932,7 +2932,7 @@
       "relation_triple_id": 16,
       "A": "symbols",
       "C": "passports",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 367,
@@ -2940,7 +2940,7 @@
       "relation_triple_id": 17,
       "A": "marker",
       "C": "ambassadors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 368,
@@ -2948,7 +2948,7 @@
       "relation_triple_id": 18,
       "A": "discography",
       "C": "writings",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 369,
@@ -2956,7 +2956,7 @@
       "relation_triple_id": 19,
       "A": "certifications",
       "C": "handshake",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 370,
@@ -2964,7 +2964,7 @@
       "relation_triple_id": 20,
       "A": "token",
       "C": "agendas",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 371,
@@ -2972,7 +2972,7 @@
       "relation_triple_id": 21,
       "A": "listing",
       "C": "catalog",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 372,
@@ -2980,7 +2980,7 @@
       "relation_triple_id": 22,
       "A": "badge",
       "C": "flashback",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 373,
@@ -2988,7 +2988,7 @@
       "relation_triple_id": 23,
       "A": "flashback",
       "C": "polls",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 374,
@@ -2996,7 +2996,7 @@
       "relation_triple_id": 24,
       "A": "questionnaires",
       "C": "coupon",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 375,
@@ -3004,7 +3004,7 @@
       "relation_triple_id": 25,
       "A": "handshake",
       "C": "symbols",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 376,
@@ -3012,7 +3012,7 @@
       "relation_triple_id": 26,
       "A": "vouchers",
       "C": "marker",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 377,
@@ -3020,7 +3020,7 @@
       "relation_triple_id": 27,
       "A": "units",
       "C": "labels",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 378,
@@ -3028,7 +3028,7 @@
       "relation_triple_id": 28,
       "A": "token",
       "C": "bets",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 379,
@@ -3036,7 +3036,7 @@
       "relation_triple_id": 29,
       "A": "debt",
       "C": "bets",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 380,
@@ -3044,7 +3044,7 @@
       "relation_triple_id": 30,
       "A": "agendas",
       "C": "news",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 381,
@@ -3052,7 +3052,7 @@
       "relation_triple_id": 31,
       "A": "questionnaires",
       "C": "diagram",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 382,
@@ -3060,7 +3060,7 @@
       "relation_triple_id": 32,
       "A": "listing",
       "C": "sirens",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 383,
@@ -3068,7 +3068,7 @@
       "relation_triple_id": 33,
       "A": "memoir",
       "C": "prizes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 384,
@@ -3076,7 +3076,7 @@
       "relation_triple_id": 34,
       "A": "representatives",
       "C": "estimates",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 385,
@@ -3084,7 +3084,7 @@
       "relation_triple_id": 35,
       "A": "catalog",
       "C": "likeness",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 386,
@@ -3092,7 +3092,7 @@
       "relation_triple_id": 36,
       "A": "likeness",
       "C": "plan",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 387,
@@ -3100,7 +3100,7 @@
       "relation_triple_id": 37,
       "A": "vouchers",
       "C": "certifications",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 388,
@@ -3108,7 +3108,7 @@
       "relation_triple_id": 38,
       "A": "passports",
       "C": "blueprint",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 389,
@@ -3116,7 +3116,7 @@
       "relation_triple_id": 39,
       "A": "symbols",
       "C": "address",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 390,
@@ -3124,7 +3124,7 @@
       "relation_triple_id": 40,
       "A": "address",
       "C": "polls",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 391,
@@ -3132,7 +3132,7 @@
       "relation_triple_id": 41,
       "A": "diagram",
       "C": "writings",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 392,
@@ -3140,7 +3140,7 @@
       "relation_triple_id": 42,
       "A": "disciplines",
       "C": "coupon",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 393,
@@ -3148,7 +3148,7 @@
       "relation_triple_id": 43,
       "A": "report",
       "C": "motif",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 394,
@@ -3156,7 +3156,7 @@
       "relation_triple_id": 44,
       "A": "polls",
       "C": "ambassadors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 395,
@@ -3164,7 +3164,7 @@
       "relation_triple_id": 45,
       "A": "brand",
       "C": "diagram",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 396,
@@ -3172,7 +3172,7 @@
       "relation_triple_id": 46,
       "A": "news",
       "C": "sirens",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 397,
@@ -3180,7 +3180,7 @@
       "relation_triple_id": 47,
       "A": "coupon",
       "C": "badge",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 398,
@@ -3188,7 +3188,7 @@
       "relation_triple_id": 48,
       "A": "coupon",
       "C": "syllabus",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 399,
@@ -3196,7 +3196,7 @@
       "relation_triple_id": 49,
       "A": "estimates",
       "C": "symbols",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 400,
@@ -3204,7 +3204,7 @@
       "relation_triple_id": 50,
       "A": "badge",
       "C": "estimates",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json"
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json"
     },
     {
       "triple_id": 401,
@@ -3212,7 +3212,7 @@
       "relation_triple_id": 1,
       "A": "goodbye",
       "C": "awful",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 402,
@@ -3220,7 +3220,7 @@
       "relation_triple_id": 2,
       "A": "exchanged",
       "C": "warning",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 403,
@@ -3228,7 +3228,7 @@
       "relation_triple_id": 3,
       "A": "creature",
       "C": "buck",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 404,
@@ -3236,7 +3236,7 @@
       "relation_triple_id": 4,
       "A": "estimate",
       "C": "nicer",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 405,
@@ -3244,7 +3244,7 @@
       "relation_triple_id": 5,
       "A": "pinnacle",
       "C": "collection",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 406,
@@ -3252,7 +3252,7 @@
       "relation_triple_id": 6,
       "A": "fathers",
       "C": "presents",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 407,
@@ -3260,7 +3260,7 @@
       "relation_triple_id": 7,
       "A": "breaking",
       "C": "induced",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 408,
@@ -3268,7 +3268,7 @@
       "relation_triple_id": 8,
       "A": "pretend",
       "C": "estimate",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 409,
@@ -3276,7 +3276,7 @@
       "relation_triple_id": 9,
       "A": "sprung",
       "C": "classes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 410,
@@ -3284,7 +3284,7 @@
       "relation_triple_id": 10,
       "A": "prize",
       "C": "buck",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 411,
@@ -3292,7 +3292,7 @@
       "relation_triple_id": 11,
       "A": "predicted",
       "C": "instant",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 412,
@@ -3300,7 +3300,7 @@
       "relation_triple_id": 12,
       "A": "instant",
       "C": "bothers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 413,
@@ -3308,7 +3308,7 @@
       "relation_triple_id": 13,
       "A": "preserve",
       "C": "predicted",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 414,
@@ -3316,7 +3316,7 @@
       "relation_triple_id": 14,
       "A": "wounded",
       "C": "nicer",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 415,
@@ -3324,7 +3324,7 @@
       "relation_triple_id": 15,
       "A": "amazing",
       "C": "presented",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 416,
@@ -3332,7 +3332,7 @@
       "relation_triple_id": 16,
       "A": "preserve",
       "C": "breaking",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 417,
@@ -3340,7 +3340,7 @@
       "relation_triple_id": 17,
       "A": "beauty",
       "C": "bothers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 418,
@@ -3348,7 +3348,7 @@
       "relation_triple_id": 18,
       "A": "wondering",
       "C": "classes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 419,
@@ -3356,7 +3356,7 @@
       "relation_triple_id": 19,
       "A": "preserve",
       "C": "tough",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 420,
@@ -3364,7 +3364,7 @@
       "relation_triple_id": 20,
       "A": "bells",
       "C": "picked",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 421,
@@ -3372,7 +3372,7 @@
       "relation_triple_id": 21,
       "A": "notions",
       "C": "fathers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 422,
@@ -3380,7 +3380,7 @@
       "relation_triple_id": 22,
       "A": "bothers",
       "C": "estimate",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 423,
@@ -3388,7 +3388,7 @@
       "relation_triple_id": 23,
       "A": "marked",
       "C": "picked",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 424,
@@ -3396,7 +3396,7 @@
       "relation_triple_id": 24,
       "A": "warning",
       "C": "icy",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 425,
@@ -3404,7 +3404,7 @@
       "relation_triple_id": 25,
       "A": "nicer",
       "C": "upsetting",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 426,
@@ -3412,7 +3412,7 @@
       "relation_triple_id": 26,
       "A": "warning",
       "C": "pinnacle",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 427,
@@ -3420,7 +3420,7 @@
       "relation_triple_id": 27,
       "A": "teaching",
       "C": "instant",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 428,
@@ -3428,7 +3428,7 @@
       "relation_triple_id": 28,
       "A": "beauty",
       "C": "delight",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 429,
@@ -3436,7 +3436,7 @@
       "relation_triple_id": 29,
       "A": "pretend",
       "C": "prize",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 430,
@@ -3444,7 +3444,7 @@
       "relation_triple_id": 30,
       "A": "yell",
       "C": "sprung",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 431,
@@ -3452,7 +3452,7 @@
       "relation_triple_id": 31,
       "A": "wounded",
       "C": "soften",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 432,
@@ -3460,7 +3460,7 @@
       "relation_triple_id": 32,
       "A": "outstanding",
       "C": "sprung",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 433,
@@ -3468,7 +3468,7 @@
       "relation_triple_id": 33,
       "A": "functioning",
       "C": "wondering",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 434,
@@ -3476,7 +3476,7 @@
       "relation_triple_id": 34,
       "A": "amazing",
       "C": "teaching",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 435,
@@ -3484,7 +3484,7 @@
       "relation_triple_id": 35,
       "A": "tough",
       "C": "pretend",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 436,
@@ -3492,7 +3492,7 @@
       "relation_triple_id": 36,
       "A": "preserve",
       "C": "warning",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 437,
@@ -3500,7 +3500,7 @@
       "relation_triple_id": 37,
       "A": "collect",
       "C": "bothers",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 438,
@@ -3508,7 +3508,7 @@
       "relation_triple_id": 38,
       "A": "fathers",
       "C": "prize",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 439,
@@ -3516,7 +3516,7 @@
       "relation_triple_id": 39,
       "A": "delight",
       "C": "involved",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 440,
@@ -3524,7 +3524,7 @@
       "relation_triple_id": 40,
       "A": "classes",
       "C": "presented",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 441,
@@ -3532,7 +3532,7 @@
       "relation_triple_id": 41,
       "A": "estimate",
       "C": "delight",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 442,
@@ -3540,7 +3540,7 @@
       "relation_triple_id": 42,
       "A": "collection",
       "C": "predicted",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 443,
@@ -3548,7 +3548,7 @@
       "relation_triple_id": 43,
       "A": "classes",
       "C": "irritation",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 444,
@@ -3556,7 +3556,7 @@
       "relation_triple_id": 44,
       "A": "presents",
       "C": "beast",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 445,
@@ -3564,7 +3564,7 @@
       "relation_triple_id": 45,
       "A": "bothers",
       "C": "classes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 446,
@@ -3572,7 +3572,7 @@
       "relation_triple_id": 46,
       "A": "teaching",
       "C": "classes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 447,
@@ -3580,7 +3580,7 @@
       "relation_triple_id": 47,
       "A": "awful",
       "C": "functioning",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 448,
@@ -3588,7 +3588,7 @@
       "relation_triple_id": 48,
       "A": "sprung",
       "C": "notions",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 449,
@@ -3596,7 +3596,7 @@
       "relation_triple_id": 49,
       "A": "notions",
       "C": "prize",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 450,
@@ -3604,7 +3604,7 @@
       "relation_triple_id": 50,
       "A": "upsetting",
       "C": "predicted",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json"
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json"
     },
     {
       "triple_id": 451,
@@ -3612,7 +3612,7 @@
       "relation_triple_id": 1,
       "A": "kansas",
       "C": "holiday",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 452,
@@ -3620,7 +3620,7 @@
       "relation_triple_id": 2,
       "A": "rivers",
       "C": "oxford",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 453,
@@ -3628,7 +3628,7 @@
       "relation_triple_id": 3,
       "A": "woods",
       "C": "carnival",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 454,
@@ -3636,7 +3636,7 @@
       "relation_triple_id": 4,
       "A": "conferences",
       "C": "cave",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 455,
@@ -3644,7 +3644,7 @@
       "relation_triple_id": 5,
       "A": "holidays",
       "C": "clinics",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 456,
@@ -3652,7 +3652,7 @@
       "relation_triple_id": 6,
       "A": "daytime",
       "C": "lakes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 457,
@@ -3660,7 +3660,7 @@
       "relation_triple_id": 7,
       "A": "colleges",
       "C": "manhattan",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 458,
@@ -3668,7 +3668,7 @@
       "relation_triple_id": 8,
       "A": "residence",
       "C": "space",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 459,
@@ -3676,7 +3676,7 @@
       "relation_triple_id": 9,
       "A": "caribbean",
       "C": "paradise",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 460,
@@ -3684,7 +3684,7 @@
       "relation_triple_id": 10,
       "A": "lakes",
       "C": "graveyard",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 461,
@@ -3692,7 +3692,7 @@
       "relation_triple_id": 11,
       "A": "lakes",
       "C": "nights",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 462,
@@ -3700,7 +3700,7 @@
       "relation_triple_id": 12,
       "A": "village",
       "C": "dock",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 463,
@@ -3708,7 +3708,7 @@
       "relation_triple_id": 13,
       "A": "village",
       "C": "cities",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 464,
@@ -3716,7 +3716,7 @@
       "relation_triple_id": 14,
       "A": "dock",
       "C": "wartime",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 465,
@@ -3724,7 +3724,7 @@
       "relation_triple_id": 15,
       "A": "conferences",
       "C": "outdoors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 466,
@@ -3732,7 +3732,7 @@
       "relation_triple_id": 16,
       "A": "heaven",
       "C": "subway",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 467,
@@ -3740,7 +3740,7 @@
       "relation_triple_id": 17,
       "A": "village",
       "C": "colleges",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 468,
@@ -3748,7 +3748,7 @@
       "relation_triple_id": 18,
       "A": "space",
       "C": "greece",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 469,
@@ -3756,7 +3756,7 @@
       "relation_triple_id": 19,
       "A": "weekends",
       "C": "outdoors",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 470,
@@ -3764,7 +3764,7 @@
       "relation_triple_id": 20,
       "A": "metropolis",
       "C": "pier",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 471,
@@ -3772,7 +3772,7 @@
       "relation_triple_id": 21,
       "A": "clinics",
       "C": "graveyard",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 472,
@@ -3780,7 +3780,7 @@
       "relation_triple_id": 22,
       "A": "conferences",
       "C": "space",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 473,
@@ -3788,7 +3788,7 @@
       "relation_triple_id": 23,
       "A": "cities",
       "C": "savannah",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 474,
@@ -3796,7 +3796,7 @@
       "relation_triple_id": 24,
       "A": "conferences",
       "C": "village",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 475,
@@ -3804,7 +3804,7 @@
       "relation_triple_id": 25,
       "A": "metropolis",
       "C": "hells",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 476,
@@ -3812,7 +3812,7 @@
       "relation_triple_id": 26,
       "A": "wartime",
       "C": "holiday",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 477,
@@ -3820,7 +3820,7 @@
       "relation_triple_id": 27,
       "A": "meeting",
       "C": "conferences",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 478,
@@ -3828,7 +3828,7 @@
       "relation_triple_id": 28,
       "A": "hells",
       "C": "meeting",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 479,
@@ -3836,7 +3836,7 @@
       "relation_triple_id": 29,
       "A": "greece",
       "C": "cities",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 480,
@@ -3844,7 +3844,7 @@
       "relation_triple_id": 30,
       "A": "neighborhoods",
       "C": "holidays",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 481,
@@ -3852,7 +3852,7 @@
       "relation_triple_id": 31,
       "A": "woods",
       "C": "colleges",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 482,
@@ -3860,7 +3860,7 @@
       "relation_triple_id": 32,
       "A": "woods",
       "C": "lakes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 483,
@@ -3868,7 +3868,7 @@
       "relation_triple_id": 33,
       "A": "pier",
       "C": "dusk",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 484,
@@ -3876,7 +3876,7 @@
       "relation_triple_id": 34,
       "A": "graveyard",
       "C": "homes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 485,
@@ -3884,7 +3884,7 @@
       "relation_triple_id": 35,
       "A": "colleges",
       "C": "autumn",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 486,
@@ -3892,7 +3892,7 @@
       "relation_triple_id": 36,
       "A": "disneyland",
       "C": "clinics",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 487,
@@ -3900,7 +3900,7 @@
       "relation_triple_id": 37,
       "A": "weekends",
       "C": "hells",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 488,
@@ -3908,7 +3908,7 @@
       "relation_triple_id": 38,
       "A": "woods",
       "C": "village",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 489,
@@ -3916,7 +3916,7 @@
       "relation_triple_id": 39,
       "A": "colleges",
       "C": "dock",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 490,
@@ -3924,7 +3924,7 @@
       "relation_triple_id": 40,
       "A": "daytime",
       "C": "holidays",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 491,
@@ -3932,7 +3932,7 @@
       "relation_triple_id": 41,
       "A": "nights",
       "C": "dusk",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 492,
@@ -3940,7 +3940,7 @@
       "relation_triple_id": 42,
       "A": "hells",
       "C": "pier",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 493,
@@ -3948,7 +3948,7 @@
       "relation_triple_id": 43,
       "A": "disneyland",
       "C": "lakes",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 494,
@@ -3956,7 +3956,7 @@
       "relation_triple_id": 44,
       "A": "clinics",
       "C": "nights",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 495,
@@ -3964,7 +3964,7 @@
       "relation_triple_id": 45,
       "A": "carnival",
       "C": "weekends",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 496,
@@ -3972,7 +3972,7 @@
       "relation_triple_id": 46,
       "A": "carnival",
       "C": "residence",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 497,
@@ -3980,7 +3980,7 @@
       "relation_triple_id": 47,
       "A": "paradise",
       "C": "afternoon",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 498,
@@ -3988,7 +3988,7 @@
       "relation_triple_id": 48,
       "A": "morning",
       "C": "subway",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 499,
@@ -3996,7 +3996,7 @@
       "relation_triple_id": 49,
       "A": "kansas",
       "C": "resorts",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     },
     {
       "triple_id": 500,
@@ -4004,7 +4004,7 @@
       "relation_triple_id": 50,
       "A": "nights",
       "C": "venice",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json"
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json"
     }
   ]
 }

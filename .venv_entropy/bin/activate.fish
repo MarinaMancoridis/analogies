@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/marinamancoridis/analogies/.venv_entropy"
+set -gx VIRTUAL_ENV (cd (dirname (status filename))/.. && pwd)
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -4,7 +4,7 @@
   "run_mode": "smoke",
   "seed": 12345,
   "prompt_type": "colon",
-  "relations_source_dir": "/Users/marinamancoridis/analogies/analogy_types/relational",
+  "relations_source_dir": "analogy_types/relational",
   "models": [
     "gpt-4o"
   ],
@@ -20,8 +20,8 @@
       "relation_key": "attribute",
       "relation_name": "Attribute",
       "relation_text": "B is a typical attribute or state of A. e.g., beggar:poor; coward:fear.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/attribute.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/attribute/curated_words.json",
+      "module_path": "analogy_types/relational/attribute/attribute.py",
+      "curated_words_path": "analogy_types/relational/attribute/curated_words.json",
       "A": "sirens",
       "C": "aluminum"
     },
@@ -31,8 +31,8 @@
       "relation_key": "case_relations",
       "relation_name": "Case Relations",
       "relation_text": "Agent/Instrument or Action/Object: e.g., soldier:gun; plow:earth.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/case_relations.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/case_relations/curated_words.json",
+      "module_path": "analogy_types/relational/case_relations/case_relations.py",
+      "curated_words_path": "analogy_types/relational/case_relations/curated_words.json",
       "A": "bang",
       "C": "walking"
     },
@@ -42,8 +42,8 @@
       "relation_key": "cause_purpose",
       "relation_name": "Cause-Purpose",
       "relation_text": "B is the typical effect of A or an action taken in response to A. e.g., joke:laughter; hunger:eat.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/cause_purpose.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/cause_purpose/curated_words.json",
+      "module_path": "analogy_types/relational/cause_purpose/cause_purpose.py",
+      "curated_words_path": "analogy_types/relational/cause_purpose/curated_words.json",
       "A": "boiler",
       "C": "smiles"
     },
@@ -53,8 +53,8 @@
       "relation_key": "class_inclusion",
       "relation_name": "Class-Inclusion",
       "relation_text": "B is a more specific instance of A (class → member/individual). e.g., flower:tulip.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/class_inclusion.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/class_inclusion/curated_words.json",
+      "module_path": "analogy_types/relational/class_inclusion/class_inclusion.py",
+      "curated_words_path": "analogy_types/relational/class_inclusion/curated_words.json",
       "A": "relative",
       "C": "charts"
     },
@@ -64,8 +64,8 @@
       "relation_key": "contrast",
       "relation_name": "Contrast",
       "relation_text": "B contrasts with A (opposite or reverse). e.g., old:young; buy:sell.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/contrast.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/contrast/curated_words.json",
+      "module_path": "analogy_types/relational/contrast/contrast.py",
+      "curated_words_path": "analogy_types/relational/contrast/curated_words.json",
       "A": "depart",
       "C": "straight"
     },
@@ -75,8 +75,8 @@
       "relation_key": "non_attribute",
       "relation_name": "Non-Attribute",
       "relation_text": "B is an attribute or state A typically lacks or is incompatible with. e.g., fire:cold; corpse:life.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/non_attribute.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/non_attribute/curated_words.json",
+      "module_path": "analogy_types/relational/non_attribute/non_attribute.py",
+      "curated_words_path": "analogy_types/relational/non_attribute/curated_words.json",
       "A": "germ",
       "C": "cookie"
     },
@@ -86,8 +86,8 @@
       "relation_key": "part_whole",
       "relation_name": "Part-Whole",
       "relation_text": "B is a constituent of A (component/part) or a typical member of collection A. e.g., car:engine; forest:tree.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/part_whole.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/part_whole/curated_words.json",
+      "module_path": "analogy_types/relational/part_whole/part_whole.py",
+      "curated_words_path": "analogy_types/relational/part_whole/curated_words.json",
       "A": "resume",
       "C": "basket"
     },
@@ -97,8 +97,8 @@
       "relation_key": "reference",
       "relation_name": "Reference",
       "relation_text": "A is a sign or representation referring to B. e.g., siren:danger; diary:person.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/reference.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/reference/curated_words.json",
+      "module_path": "analogy_types/relational/reference/reference.py",
+      "curated_words_path": "analogy_types/relational/reference/curated_words.json",
       "A": "news",
       "C": "handshake"
     },
@@ -108,8 +108,8 @@
       "relation_key": "similar",
       "relation_name": "Similar",
       "relation_text": "B is similar or nearly equivalent to A (synonym or close along a dimension). e.g., car:auto; simmer:boil.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/similar.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/similar/curated_words.json",
+      "module_path": "analogy_types/relational/similar/similar.py",
+      "curated_words_path": "analogy_types/relational/similar/curated_words.json",
       "A": "functioning",
       "C": "fixed"
     },
@@ -119,8 +119,8 @@
       "relation_key": "space_time",
       "relation_name": "Space-Time",
       "relation_text": "B is typically associated with location or time A. e.g., library:book; winter:snow.",
-      "module_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/space_time.py",
-      "curated_words_path": "/Users/marinamancoridis/analogies/analogy_types/relational/space_time/curated_words.json",
+      "module_path": "analogy_types/relational/space_time/space_time.py",
+      "curated_words_path": "analogy_types/relational/space_time/curated_words.json",
       "A": "wartime",
       "C": "greece"
     }

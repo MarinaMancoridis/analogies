@@ -1,5 +1,5 @@
 Human relational completions — random sample
-source: /Users/marinamancoridis/analogies/experiments/validate_relation_following/human_completions_flat.json
+source: experiments/validate_relation_following/human_completions_flat.json
 seed: 42  |  n: 50  |  eligible_only: True
 
 ============================================================================

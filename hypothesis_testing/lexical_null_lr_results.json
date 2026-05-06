@@ -1,9 +1,9 @@
 {
   "h0_description": "Lexical numeric metrics (len, pop_rank, pop_zipf, polysemy, brys per word role) have all coefficients jointly zero, given control factors. Pooled LR treats rows as i.i.d. Clustered Wald refits the full logit with cov_type='cluster' and tests the same joint hypothesis with cluster-robust covariance (identity: cluster=triple_id; relational: cluster=relation_key:triple_id).",
   "identity_trial_paths": [
-    "/Users/marinamancoridis/analogies/experiments/LLM_identity_completions/runs/gold_run/trials.ndjson"
+    "experiments/LLM_identity_completions/runs/gold_run/trials.ndjson"
   ],
-  "relational_trial_path": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
+  "relational_trial_path": "experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
   "results": [
     {
       "name": "identity",

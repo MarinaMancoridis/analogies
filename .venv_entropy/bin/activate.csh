@@ -8,7 +8,12 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/marinamancoridis/analogies/.venv_entropy"
+# cd to the repository root (the directory that contains .venv_entropy), then source this file.
+if ( ! -d .venv_entropy ) then
+    echo "activate.csh: cd to the repository root first, then: source .venv_entropy/bin/activate.csh" >&2
+    exit 1
+endif
+setenv VIRTUAL_ENV "`cd .venv_entropy && pwd`"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

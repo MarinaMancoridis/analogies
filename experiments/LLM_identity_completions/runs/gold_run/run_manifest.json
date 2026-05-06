@@ -4,7 +4,7 @@
   "run_mode": "full",
   "seed": 12345,
   "prompt_type": "colon",
-  "triples_source": "/Users/marinamancoridis/analogies/static_triples/identity/identity_triples.json",
+  "triples_source": "static_triples/identity/identity_triples.json",
   "models": [
     "meta-llama/llama-3.3-70b-instruct",
     "gpt-4o",

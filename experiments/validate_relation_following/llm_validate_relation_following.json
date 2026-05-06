@@ -1,6 +1,6 @@
 {
   "meta": {
-    "trials_ndjson": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
+    "trials_ndjson": "experiments/LLM_relations_completions/runs/gold_curate_b/trials.ndjson",
     "prompt_type_filter": null,
     "relation_followed_definition": "Trial counts as relation-followed when judge_majority_correct is true, or judge_majority_label == 'Correct', or all judge_labels are 'Correct'. Trials with non-null error or missing judgment are skipped.",
     "n_lines_read": 20000,

@@ -1,4 +1,4 @@
-#!/Users/marinamancoridis/analogies/.venv_entropy/bin/python3.11
+#!/usr/bin/env python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys

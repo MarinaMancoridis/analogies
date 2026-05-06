@@ -3,8 +3,8 @@
   "created_at_utc": "2026-05-04T13:42:21.108679Z",
   "run_mode": "noncolon_prompt_variants",
   "collection_kind": "identity_noncolon_prompts",
-  "colon_reference_run_dir": "/Users/marinamancoridis/analogies/experiments/LLM_identity_completions/runs/gold_run",
-  "colon_reference_manifest": "/Users/marinamancoridis/analogies/experiments/LLM_identity_completions/runs/gold_run/run_manifest.json",
+  "colon_reference_run_dir": "experiments/LLM_identity_completions/runs/gold_run",
+  "colon_reference_manifest": "experiments/LLM_identity_completions/runs/gold_run/run_manifest.json",
   "prompt_types": [
     "english",
     "one_shot",

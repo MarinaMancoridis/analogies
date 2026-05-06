@@ -20,6 +20,8 @@ This repository holds code and **frozen artifacts** (trial logs, human exports, 
 
   All `python ...` commands below assume you have run these two lines from inside the repo (or set the variables equivalently).
 
+- **Paths inside committed JSON/NDJSON** (`run_manifest.json`, `human_completions_flat.json`, `runs.ndjson`, etc.) are stored **relative to the repository root** (no machine-specific prefix). Run scripts from the repo root so those paths resolve the same way everywhere.
+
 ## API keys (only if you generate new LLM outputs)
 
 Inference is routed by model in `constants.py` (`models_to_developer`). Keys are read in `constants.py` from the environment:

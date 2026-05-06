@@ -1,7 +1,7 @@
 {
   "generated_at_utc": "2026-04-30T13:48:22.125444+00:00",
-  "source_answers_csv": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/human_completions/humans.csv",
-  "source_blocks_dir": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/qualtrics_loop_and_merge/curate_b_25_blocks",
+  "source_answers_csv": "experiments/LLM_relations_completions/human_completions/humans.csv",
+  "source_blocks_dir": "experiments/LLM_relations_completions/qualtrics_loop_and_merge/curate_b_25_blocks",
   "eligibility_rules": {
     "status": "IP Address",
     "finished": true,

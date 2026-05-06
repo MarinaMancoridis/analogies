@@ -1,8 +1,8 @@
 {
   "generated_at_utc": "2026-05-03T15:47:05.812938+00:00",
   "only_eligible_participants": false,
-  "source_answers_csv": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/human_completions/humans.csv",
-  "source_blocks_dir": "/Users/marinamancoridis/analogies/experiments/LLM_relations_completions/qualtrics_loop_and_merge/curate_b_25_blocks",
+  "source_answers_csv": "experiments/LLM_relations_completions/human_completions/humans.csv",
+  "source_blocks_dir": "experiments/LLM_relations_completions/qualtrics_loop_and_merge/curate_b_25_blocks",
   "eligibility_note": "participant_eligible_complete matches process_human_answers.py (IP Address, finished, 100%, Q23=petal, Q52=flower, all 20 answers and confidence fields filled).",
   "n_completions": 1380,
   "n_eligible_completions": 1300,
